@@ -1,0 +1,17 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Shared Persistency",
+      "description": "Different microservices access the same relational database. In the worst case, different services access the same entities of the same relational database. Also proposed as Data Ownership",
+      "detection": "",
+      "consequences": "This smell highly couples the microservices connected to the same data, reducing team and service independence.",
+      "cause": "",
+      "solution": "Three possible solutions are to \n 1. use independent databases for each service, \n 2. use a shared database with a set of private tables for each service that can be accessed by only that service, or \n 3. use a private database schema for each service.",
+      "example": "",
+      "source": "On the Definition of Microservice Bad Smells",
+      "tags": [
+        "bad_smell"
+      ]
+    }
+  ]
+}

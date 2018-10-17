@@ -1,0 +1,17 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Cyclic Dependency",
+      "description": "A cyclic chain of calls between microservices exists.",
+      "detection": "The existence of cycles of calls between microservices; e.g., A calls B, B calls C, and C calls back A.",
+      "consequences": "Microservices involved in a cyclic dependency can be hard to maintain or reuse in isolation.",
+      "cause": "",
+      "solution": "Refine the cycles according to their shape, 4 and apply the API Gateway pattern.",
+      "example": "A depends on B, B on C and C on A",
+      "source": "On the Definition of Microservice Bad Smells",
+      "tags": [
+        "bad_smell"
+      ]
+    }
+  ]
+}

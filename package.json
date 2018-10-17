@@ -1,0 +1,35 @@
+{
+  "name": "micro-service-antipatterns",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.2.0",
+    "vue-json-pretty": "^1.4.1",
+    "vue-property-decorator": "^7.2.0",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.6",
+    "@types/fs-extra": "^5.0.4",
+    "@types/mocha": "^5.2.5",
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-typescript": "^3.0.4",
+    "@vue/cli-plugin-unit-mocha": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "chai": "^4.2.0",
+    "file-loader": "^2.0.0",
+    "merge-jsons-webpack-plugin": "^1.0.18",
+    "preload-webpack-plugin": "^2.3.0",
+    "typescript": "^3.1.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
