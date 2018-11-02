@@ -10,7 +10,7 @@
       "solution": "APIs need to be semantically versioned to allow services to know \n whether they are communicating with the right version of the service or \n   whether they need to adapt their communication to a new contract.",
       "example": "Api v1 than v3, ...",
       "sources": [
-        "On the Definition of Microservice Bad Smells"
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}"
       ],
       "tags": [
         "bad_smell"
