@@ -10,7 +10,7 @@
       "solution": "Perform a clear analysis of business processes and the need for resources.",
       "example": "",
       "sources": [
-        "On the Definition of Microservice Bad Smells"
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}"
       ],
       "tags": [
         "bad_smell"

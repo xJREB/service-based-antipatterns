@@ -10,7 +10,7 @@
       "solution": "Three possible solutions are to \n 1. use independent databases for each service, \n 2. use a shared database with a set of private tables for each service that can be accessed by only that service, or \n 3. use a private database schema for each service.",
       "example": "",
       "sources": [
-        "On the Definition of Microservice Bad Smells"
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}"
       ],
       "tags": [
         "bad_smell"
