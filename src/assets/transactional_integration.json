@@ -2,13 +2,16 @@
   "antiPatterns": [
     {
       "name": "Transactional Integration",
+      "aliases": "",
       "description": "Transactions extend across service boundaries and are not isolated inside services.",
       "detection": "",
       "consequences": "",
       "cause": "",
       "solution": "",
       "example": "",
-      "source": "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}",
+      "sources": [
+        "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}"
+      ],
       "tags": [
         "architecture"
       ]

@@ -2,13 +2,16 @@
   "antiPatterns": [
     {
       "name": "The Knot",
+      "aliases": "",
       "description": "The services are tightly coupled by hardcoded point-to-point integration and context-specific interfaces",
       "detection": "",
       "consequences": "Decrease flexibility, hard to maintain",
       "cause": "To complex buisness processe, wrong cuts",
       "solution": "",
       "example": "",
-      "source": "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}",
+      "sources": [
+        "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}"
+      ],
       "tags": [
         "architecture"
       ]
