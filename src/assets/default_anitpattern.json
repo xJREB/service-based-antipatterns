@@ -2,13 +2,16 @@
   "antiPatterns": [
     {
       "name": "",
+      "aliases": "",
       "description": "",
       "detection": "",
       "consequences": "",
       "cause": "",
       "solution": "",
       "example": "",
-      "source": "",
+      "sources": [
+        ""
+      ],
       "tags": [
         ""
       ]

@@ -2,13 +2,16 @@
   "antiPatterns": [
     {
       "name": "Megaservice",
+      "aliases": "",
       "description": "A service that is responsible for many functionalities and should be decomposed into separated microservices.",
       "detection": "",
       "consequences": "",
       "cause": "",
       "solution": "",
       "example": "",
-      "source": "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}",
+      "sources": [
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}"
+      ],
       "tags": [
         "architecture"
       ]

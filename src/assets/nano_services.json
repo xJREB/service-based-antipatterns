@@ -2,13 +2,16 @@
   "antiPatterns": [
     {
       "name": "Nanoservices",
+      "aliases": "",
       "description": "A service is to fine-grained, so that communications, maintenance, and so on outweights its utility.",
       "detection": "",
       "consequences": "Bad performance, fragmendted logic and overhead.",
       "cause": "",
       "solution": "",
       "example": "",
-      "source": "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}",
+      "sources": [
+        "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}"
+      ],
       "tags": [
         "architecture"
       ]

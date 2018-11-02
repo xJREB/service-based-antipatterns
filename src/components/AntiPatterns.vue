@@ -36,6 +36,14 @@
 
                                         <v-list-tile>
                                             <v-list-tile-content>
+                                                <v-list-tile-title>Aliases</v-list-tile-title>
+                                                <v-list-tile-sub-title>{{ antiPattern.aliases }}
+                                                </v-list-tile-sub-title>
+                                            </v-list-tile-content>
+                                        </v-list-tile>
+
+                                        <v-list-tile>
+                                            <v-list-tile-content>
                                                 <v-list-tile-title>Description</v-list-tile-title>
                                                 <v-list-tile-sub-title>{{ antiPattern.description }}
                                                 </v-list-tile-sub-title>
@@ -76,8 +84,8 @@
 
                                         <v-list-tile>
                                             <v-list-tile-content>
-                                                <v-list-tile-title>Source</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.source }}
+                                                <v-list-tile-title>Sources</v-list-tile-title>
+                                                <v-list-tile-sub-title>{{ antiPattern.sources }}
                                                 </v-list-tile-sub-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
