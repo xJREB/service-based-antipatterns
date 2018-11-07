@@ -2,7 +2,9 @@
   "antiPatterns": [
     {
       "name": "",
-      "aliases": "",
+      "aliases": [
+        ""
+      ],
       "description": "",
       "detection": "",
       "consequences": "",

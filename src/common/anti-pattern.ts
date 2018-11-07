@@ -1,6 +1,6 @@
 export class AntiPattern {
     public name?: string;
-    public aliases?: string;
+    public aliases?: string[];
     public description?: string;
     public detection?: string;
     public cause?: string;
@@ -9,8 +9,8 @@ export class AntiPattern {
     public sources?: string[];
     public tags?: string[];
 
-    constructor(name?: string, aliases?: string, description?: string, detection?: string, cause?: string, solution?: string,
-                example?: string, sources?: string[], tags?: string[]) {
+    constructor(name?: string, aliases?: string[], description?: string, detection?: string, cause?: string,
+                solution?: string, example?: string, sources?: string[], tags?: string[]) {
         this.name = name;
         this.aliases = aliases;
         this.description = description;

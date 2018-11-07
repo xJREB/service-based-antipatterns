@@ -2,7 +2,9 @@
   "antiPatterns": [
     {
       "name": "Shared Persistency",
-      "aliases": "",
+      "aliases": [
+        ""
+      ],
       "description": "Different microservices access the same relational database. In the worst case, different services access the same entities of the same relational database. Also proposed as Data Ownership",
       "detection": "",
       "consequences": "This smell highly couples the microservices connected to the same data, reducing team and service independence.",
