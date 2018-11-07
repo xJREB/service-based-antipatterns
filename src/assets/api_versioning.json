@@ -2,7 +2,9 @@
   "antiPatterns": [
     {
       "name": "API Versioning",
-      "aliases": "",
+      "aliases": [
+        ""
+      ],
       "description": "APIs are not semantically versioned",
       "detection": "A lack of semantically consistent versions of APIs (e.g., v1.1, 1.2, etc.). \n Also proposed as Static Contract Pitfall.",
       "consequences": "In the case of new versions of non-semantically-versioned APIs, API consumers may face connection issues. For example, the returning data might be different or might need to be called differently.",

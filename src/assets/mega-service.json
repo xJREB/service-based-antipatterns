@@ -2,7 +2,9 @@
   "antiPatterns": [
     {
       "name": "Megaservice",
-      "aliases": "",
+      "aliases": [
+        ""
+      ],
       "description": "A service that is responsible for many functionalities and should be decomposed into separated microservices.",
       "detection": "",
       "consequences": "",

@@ -2,7 +2,9 @@
   "antiPatterns": [
     {
       "name": "The Knot",
-      "aliases": "",
+      "aliases": [
+        ""
+      ],
       "description": "The services are tightly coupled by hardcoded point-to-point integration and context-specific interfaces",
       "detection": "",
       "consequences": "Decrease flexibility, hard to maintain",

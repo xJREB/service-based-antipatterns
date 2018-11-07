@@ -2,7 +2,9 @@
   "antiPatterns": [
     {
       "name": "Nanoservices",
-      "aliases": "",
+      "aliases": [
+        ""
+      ],
       "description": "A service is to fine-grained, so that communications, maintenance, and so on outweights its utility.",
       "detection": "",
       "consequences": "Bad performance, fragmendted logic and overhead.",

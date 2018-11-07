@@ -2,7 +2,9 @@
   "antiPatterns": [
     {
       "name": "Transactional Integration",
-      "aliases": "",
+      "aliases": [
+        ""
+      ],
       "description": "Transactions extend across service boundaries and are not isolated inside services.",
       "detection": "",
       "consequences": "",
