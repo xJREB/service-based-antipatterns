@@ -89,15 +89,9 @@
                                                 </v-list-tile-sub-title>
                                             </v-list-tile-content>
                                         </v-list-tile>
-
-                                        <v-list-tile>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Tags</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.tags }}
-                                                </v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
                                     </v-list>
+                                    <v-chip v-for="tag in antiPattern.tags">{{ tag }}
+                                    </v-chip>
                                 </v-card-text>
                             </v-card>
                         </v-dialog>
