@@ -1,4 +1,4 @@
-# microservice-antipatterns
+# Service-Based Antipatterns
 
 ## Project setup
 ```

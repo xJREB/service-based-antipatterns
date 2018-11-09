@@ -3,13 +3,11 @@
         <v-navigation-drawer
                 fixed
                 clipped
-                class="grey lighten-4"
                 app
                 v-model="drawer"
         >
             <v-list
                     dense
-                    class="grey lighten-4"
             >
                 <template v-for="(item, i) in items">
                     <v-layout
@@ -42,7 +40,7 @@
                             <v-icon>{{ item.icon }}</v-icon>
                         </v-list-tile-action>
                         <v-list-tile-content>
-                            <v-list-tile-title class="grey--text">
+                            <v-list-tile-title>
                                 {{ item.text }}
                             </v-list-tile-title>
                         </v-list-tile-content>
@@ -50,9 +48,9 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-toolbar color="blue" app clipped-left>
+        <v-toolbar class="primary" dark clipped-left>
             <v-toolbar-side-icon @click.native="drawer = !drawer"></v-toolbar-side-icon>
-            <span class="title ml-3 mr-5">service-based-antipatterns</span>
+            <span class="title ml-3 mr-5">Service-Based Antipatterns</span>
             <v-text-field
                     solo-inverted
                     flat

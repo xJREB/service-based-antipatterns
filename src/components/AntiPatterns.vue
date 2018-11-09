@@ -18,74 +18,9 @@
                     </v-card-title>
                     <v-card-actions>
                         <v-btn flat color="orange">Share</v-btn>
-                        <v-dialog v-model="dialog" width="600px">
-                            <v-btn slot="activator" flat color="orange">Explore</v-btn>
-                            <v-card>
-                                <v-card-title>
-                                    <span class="headline">{{antiPattern.name}}</span>
-                                </v-card-title>
-                                <v-card-text>
-                                    <v-list>
-                                        <v-list-tile>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Aliases</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.aliases }}
-                                                </v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
-
-                                        <v-list-tile>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Description</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.description }}
-                                                </v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
-
-                                        <v-list-tile>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Cause</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.cause }}
-                                                </v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
-
-                                        <v-list-tile>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Detection</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.detection }}
-                                                </v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
-
-                                        <v-list-tile>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Example</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.example }}
-                                                </v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
-
-                                        <v-list-tile>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Solution</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.solution }}
-                                                </v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
-
-                                        <v-list-tile>
-                                            <v-list-tile-content>
-                                                <v-list-tile-title>Sources</v-list-tile-title>
-                                                <v-list-tile-sub-title>{{ antiPattern.sources }}
-                                                </v-list-tile-sub-title>
-                                            </v-list-tile-content>
-                                        </v-list-tile>
-                                    </v-list>
-                                    <v-chip v-for="tag in antiPattern.tags">{{ tag }}
-                                    </v-chip>
-                                </v-card-text>
-                            </v-card>
+                        <v-dialog lazy scrollable v-model="dialog" width="1000px">
+                            <v-btn slot="activator" dark flat color="orange">Explore</v-btn>
+                            <anti-pattern-detail-component :anti-pattern="antiPattern" />
                         </v-dialog>
                     </v-card-actions>
                 </v-card>
@@ -97,9 +32,11 @@
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
     import axios from 'axios';
-    import {AntiPattern} from '@/common/anti-pattern';
-
-    @Component
+    import {AntiPattern} from '../common/anti-pattern';
+    import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
+    @Component({
+        components: {AntiPatternDetailComponent}
+    })
     export default class AntiPatterns extends Vue {
         private antiPatterns: AntiPattern[] = [];
 
