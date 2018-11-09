@@ -3,15 +3,7 @@
         <v-toolbar class="secondary" card dark>
             <v-toolbar-title>{{antiPattern.name}}</v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-btn icon>
-                <v-icon>content_copy</v-icon>
-            </v-btn>
-            <v-btn icon>
-                <v-icon>format_quote</v-icon>
-            </v-btn>
-            <v-btn icon>
-                <v-icon>share</v-icon>
-            </v-btn>
+            <anti-pattern-actions-component :anti-pattern="antiPattern"/>
         </v-toolbar>
 
         <v-card-text>
@@ -51,8 +43,10 @@
 <script lang="ts">
     import {Component, Prop, Vue} from 'vue-property-decorator';
     import {AntiPattern} from '../common/anti-pattern';
-
-    @Component
+    import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
+    @Component({
+        components: {AntiPatternActionsComponent}
+    })
     export default class AntiPatterns extends Vue {
         @Prop(Object) antiPattern: AntiPattern;
     }
