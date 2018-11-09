@@ -60,16 +60,14 @@
             <v-spacer></v-spacer>
         </v-toolbar>
         <v-content>
-            <v-container fluid fill-height class="grey lighten-4">
-                <anti-patterns/>
-            </v-container>
+            <anti-patterns/>
         </v-content>
     </div>
 </template>
 
 <script lang="ts">
     import {Component, Vue} from 'vue-property-decorator';
-    import AntiPatterns from '@/components/AntiPatterns';
+    import AntiPatterns from '@/components/AntiPatternsContainerComponent';
 
     @Component({
         components: {AntiPatterns},
@@ -79,7 +77,7 @@
             return {
                 drawer: null,
                 items: [
-                     {icon: 'lightbulb_outline', text: 'Tags'},
+                    {icon: 'lightbulb_outline', text: 'Tags'},
                     {divider: true},
                     {icon: 'device_hub', text: 'Github'},
                     {icon: 'help', text: 'Help'},

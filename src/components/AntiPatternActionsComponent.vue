@@ -27,6 +27,6 @@
 
     @Component
     export default class AntiPatterns extends Vue {
-        @Prop(Object) antiPattern: AntiPattern;
+        @Prop(Object) public antiPattern!: AntiPattern;
     }
 </script>

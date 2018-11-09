@@ -26,14 +26,14 @@
             <v-card-text>{{antiPattern.example}}</v-card-text>
 
             <v-subheader>Source</v-subheader>
-            <v-card-text v-for="source in antiPattern.sources">
+            <v-card-text v-for="source in antiPattern.sources" :key="source">
                 <code>{{source}}</code>
             </v-card-text>
 
             <v-divider class="my-2"></v-divider>
 
             <v-subheader>Tags</v-subheader>
-            <v-chip v-for="tag in antiPattern.tags">
+            <v-chip v-for="tag in antiPattern.tags" :key="tag">
                 {{ tag }}
             </v-chip>
         </v-card-text>
@@ -45,9 +45,11 @@
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     @Component({
-        components: {AntiPatternActionsComponent}
+        components: {
+            AntiPatternActionsComponent,
+        },
     })
     export default class AntiPatterns extends Vue {
-        @Prop(Object) antiPattern: AntiPattern;
+        @Prop(Object) public antiPattern!: AntiPattern;
     }
 </script>
