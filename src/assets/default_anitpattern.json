@@ -1,0 +1,22 @@
+{
+  "antiPatterns": [
+    {
+      "name": "",
+      "aliases": [
+        ""
+      ],
+      "description": "",
+      "detection": "",
+      "consequences": "",
+      "cause": "",
+      "solution": "",
+      "example": "",
+      "sources": [
+        ""
+      ],
+      "tags": [
+        ""
+      ]
+    }
+  ]
+}

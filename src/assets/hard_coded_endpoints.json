@@ -1,0 +1,22 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Hard-Coded Endpoints",
+      "aliases": [
+        ""
+      ],
+      "description": "Hardcoded IP addresses and ports of the services between connected microservices exist. Also proposed as Hardcoded IPs and Ports.",
+      "detection": "",
+      "consequences": "Microservices connected with hardcoded endpoints lead to problems when their locations need to be changed.",
+      "cause": "",
+      "solution": "Adopt a service discovery approach.",
+      "example": "",
+      "sources": [
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}"
+      ],
+      "tags": [
+        "bad_smell"
+      ]
+    }
+  ]
+}

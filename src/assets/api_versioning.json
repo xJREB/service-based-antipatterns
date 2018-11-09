@@ -1,0 +1,22 @@
+{
+  "antiPatterns": [
+    {
+      "name": "API Versioning",
+      "aliases": [
+        ""
+      ],
+      "description": "APIs are not semantically versioned",
+      "detection": "A lack of semantically consistent versions of APIs (e.g., v1.1, 1.2, etc.). \n Also proposed as Static Contract Pitfall.",
+      "consequences": "In the case of new versions of non-semantically-versioned APIs, API consumers may face connection issues. For example, the returning data might be different or might need to be called differently.",
+      "cause": "",
+      "solution": "APIs need to be semantically versioned to allow services to know \n whether they are communicating with the right version of the service or \n   whether they need to adapt their communication to a new contract.",
+      "example": "Api v1 than v3, ...",
+      "sources": [
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}"
+      ],
+      "tags": [
+        "bad_smell"
+      ]
+    }
+  ]
+}

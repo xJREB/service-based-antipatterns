@@ -1,0 +1,22 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Wrong Cuts",
+      "aliases": [
+        ""
+      ],
+      "description": "Microservices are split on the basis of technical layers (presentation, business, and data layers) instead of business capabilities.",
+      "detection": "",
+      "consequences": "The wrong separation of concerns and increased data-splitting complexity can occur.",
+      "cause": "",
+      "solution": "Perform a clear analysis of business processes and the need for resources.",
+      "example": "",
+      "sources": [
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}"
+      ],
+      "tags": [
+        "bad_smell"
+      ]
+    }
+  ]
+}
