@@ -26,7 +26,7 @@
     import {AntiPattern} from '../common/anti-pattern';
 
     @Component
-    export default class AntiPatterns extends Vue {
+    export default class AntiPatternActionsComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
     }
 </script>

@@ -7,7 +7,7 @@
             <div>{{antiPattern.description}}</div>
         </v-card-title>
         <v-card-actions>
-            <v-dialog lazy scrollable v-model="dialog" width="1000px">
+            <v-dialog lazy scrollable v-model='dialog' @keydown.esc="dialog = false" width="1000px">
                 <v-btn icon slot="activator">
                     <v-icon>open_in_new</v-icon>
                 </v-btn>
@@ -31,7 +31,8 @@
             AntiPatternDetailComponent,
         },
     })
-    export default class AntiPatterns extends Vue {
+    export default class AntiPatternSimpleComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
+        public dialog: boolean = false;
     }
 </script>

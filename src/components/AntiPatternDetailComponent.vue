@@ -33,8 +33,9 @@
             <v-divider class="my-2"></v-divider>
 
             <v-subheader>Tags</v-subheader>
-            <v-chip v-for="tag in antiPattern.tags" :key="tag">
-                {{ tag }}
+            <v-chip label v-for="tag in antiPattern.tags" :key="tag">
+                <v-icon left>label</v-icon>
+                <v-list-tile-title>{{ tag }}</v-list-tile-title>
             </v-chip>
         </v-card-text>
     </v-card>
@@ -49,7 +50,7 @@
             AntiPatternActionsComponent,
         },
     })
-    export default class AntiPatterns extends Vue {
+    export default class AntiPatternDetailComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
     }
 </script>
