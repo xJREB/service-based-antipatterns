@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue} from 'vue-property-decorator';
+    import {Component, Prop, Provide, Vue, Watch} from 'vue-property-decorator';
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
@@ -34,5 +34,12 @@
     export default class AntiPatternSimpleComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
         public dialog: boolean = false;
+
+        @Watch('router', {immediate: true, deep: true})
+        public beforeRouteUpdate(to: any, from: any) {
+            if (this.$route.params.antipattern === this.antiPattern.name) {
+                this.dialog = true;
+            }
+        }
     }
 </script>
