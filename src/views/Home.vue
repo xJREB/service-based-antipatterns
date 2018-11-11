@@ -1,88 +1,96 @@
 <template>
     <div class="home">
-        <v-navigation-drawer
-                fixed
-                clipped
-                app
-                v-model="drawer"
-        >
-            <v-list
-                    dense
-            >
-                <template v-for="(item, i) in items">
-                    <v-layout
-                            row
-                            v-if="item.heading"
-                            align-center
-                            :key="i"
-                    >
-                        <v-flex xs6>
-                            <v-subheader v-if="item.heading">
-                                {{ item.heading }}
-                            </v-subheader>
-                        </v-flex>
-                        <v-flex xs6 class="text-xs-right">
-                            <v-btn small flat>edit</v-btn>
-                        </v-flex>
-                    </v-layout>
-                    <v-divider
-                            dark
-                            v-else-if="item.divider"
-                            class="my-3"
-                            :key="i"
-                    ></v-divider>
-                    <v-list-tile
-                            :key="i"
-                            v-else
-                            @click=""
-                    >
-                        <v-list-tile-action>
-                            <v-icon>{{ item.icon }}</v-icon>
-                        </v-list-tile-action>
-                        <v-list-tile-content>
-                            <v-list-tile-title>
-                                {{ item.text }}
-                            </v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
-                </template>
-            </v-list>
-        </v-navigation-drawer>
-        <v-toolbar class="primary" dark clipped-left>
-            <v-toolbar-side-icon @click.native="drawer = !drawer"></v-toolbar-side-icon>
+        <anti-pattern-tags-component v-model="selectedTags" :tags="tags"/>
+        <v-toolbar class="primary" app dark clipped-left>
             <span class="title ml-3 mr-5">Service-Based Antipatterns</span>
             <v-text-field
                     solo-inverted
                     flat
+                    clearable
+                    hide-details
                     label="Search"
-                    prepend-icon="search"
+                    prepend-inner-icon="search"
+                    v-model="searchTerm"
+                    @keydown.esc="clearSearch()"
             ></v-text-field>
             <v-spacer></v-spacer>
         </v-toolbar>
         <v-content>
-            <anti-patterns/>
+            <anti-patterns-container-component :anti-patterns="antiPatterns"/>
         </v-content>
     </div>
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
-    import AntiPatterns from '@/components/AntiPatternsContainerComponent';
+    import {Component, Vue, Watch} from 'vue-property-decorator';
+    import axios from 'axios';
+    import AntiPatternsContainerComponent from '../components/AntiPatternsContainerComponent';
+    import AntiPatternTagsComponent from "../components/AntiPatternTagsComponent";
+    import {AntiPattern} from "../common/anti-pattern";
+    import Utils from "../utils/Utils";
 
     @Component({
-        components: {AntiPatterns},
+        components: {AntiPatternTagsComponent, AntiPatternsContainerComponent},
     })
     export default class Home extends Vue {
-        public data() {
-            return {
-                drawer: null,
-                items: [
-                    {icon: 'lightbulb_outline', text: 'Tags'},
-                    {divider: true},
-                    {icon: 'device_hub', text: 'Github'},
-                    {icon: 'help', text: 'Help'},
-                ],
-            };
+        private antiPatterns: AntiPattern[] = [];
+        private antiPatternsAll: AntiPattern[] = [];
+        private antiPatternsSelected: AntiPattern[] = [];
+        private antiPatternsFiltered: AntiPattern[] = [];
+        private selectedTags: string[] = [];
+        private searchTerm: string = "";
+
+        public created() {
+            axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
+                this.antiPatternsAll = response.data.antiPatterns.filter((item: AntiPattern) => item.name);
+                this.antiPatterns = this.antiPatternsAll;
+                this.antiPatternsFiltered = this.antiPatternsAll;
+                this.antiPatternsSelected = this.antiPatternsAll;
+            }).catch();
+        }
+
+        public get tags() {
+            const tags = this.antiPatternsAll.
+                filter((item) => item.tags).
+                map((item) => item.tags).
+                reduce((previousValue, currentValue) => {
+                    previousValue = previousValue ? previousValue : [];
+                    currentValue = currentValue ? currentValue : [];
+                    return previousValue.concat(currentValue);
+                }, []);
+            this.selectedTags = [...new Set(tags)];
+            return [...new Set(tags)];
+        }
+
+        @Watch('selectedTags')
+        public filterForTags(selectedModel: string[]) {
+            if (selectedModel) {
+                this.antiPatternsSelected = this.antiPatternsAll.filter((antiPattern) => {
+                    return antiPattern.tags && antiPattern.tags.map((tag) => selectedModel.includes(tag)).includes(true);
+                });
+            } else {
+                this.antiPatternsSelected = this.antiPatternsAll;
+            }
+            this.antiPatterns = this.antiPatternsSelected.filter((item) => this.antiPatternsFiltered.includes(item));
+        }
+
+        @Watch('searchTerm')
+        public onSearch(searchTerm: string) {
+            if (searchTerm) {
+                this.antiPatternsFiltered = this.antiPatternsAll.filter((item) => {
+                    const name = item.name ? Utils.cleanString(item.name) : '';
+                    const description = item.description ? Utils.cleanString(item.description) : '';
+                    const filter = Utils.cleanString(searchTerm);
+                    return name.includes(filter) || description.includes(filter);
+                });
+            } else {
+                this.antiPatternsFiltered = this.antiPatternsAll;
+            }
+            this.antiPatterns = this.antiPatternsSelected.filter((item) => this.antiPatternsFiltered.includes(item));
+        }
+
+        public clearSearch() {
+            this.searchTerm = '';
         }
     }
 </script>

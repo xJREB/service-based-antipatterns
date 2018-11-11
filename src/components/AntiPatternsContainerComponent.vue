@@ -9,8 +9,7 @@
 </template>
 
 <script lang="ts">
-    import {Component, Vue} from 'vue-property-decorator';
-    import axios from 'axios';
+    import {Component, Prop, Vue} from 'vue-property-decorator';
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternSimpleComponent from "./AntiPatternSimpleComponent";
 
@@ -19,14 +18,7 @@
             AntiPatternSimpleComponent,
         },
     })
-    export default class AntiPatterns extends Vue {
-        private antiPatterns: AntiPattern[] = [];
-
-        public created() {
-            axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
-                this.antiPatterns = response.data.antiPatterns;
-                this.antiPatterns = this.antiPatterns.filter((item) => item.name);
-            }).catch();
-        }
+    export default class AntiPatternsContainerComponent extends Vue {
+        @Prop(Array) public antiPatterns!: AntiPattern[];
     }
 </script>
