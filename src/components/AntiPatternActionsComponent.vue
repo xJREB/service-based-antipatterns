@@ -9,7 +9,7 @@
             <span>Copy the json file</span>
         </v-tooltip>
         <v-tooltip top>
-            <v-btn slot="activator" icon v-clipboard="antiPattern.sources[0]"
+            <v-btn slot="activator" icon v-clipboard="bibTextCopy"
                    @success="onCopySuccess('BibTex')"
                    @error="onCopyError('BibTex')">
                 <v-icon>format_quote</v-icon>
@@ -48,6 +48,14 @@
 
         public get antiPatternAsJson(): string {
             return JSON.stringify(this.antiPattern, null, 2);
+        }
+
+        public get bibTextCopy(): string {
+            let bibTextCopy: string = '';
+            for (let source of this.antiPattern.sources) {
+                bibTextCopy = bibTextCopy + source + "\n";
+            }
+            return bibTextCopy;
         }
 
         public onCopySuccess(type?: string): void {
