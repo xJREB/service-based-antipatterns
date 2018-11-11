@@ -42,7 +42,7 @@
 
         public created() {
             axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
-                this.antiPatternsAll = response.data.antiPatterns.filter((item) => item.name);
+                this.antiPatternsAll = response.data.antiPatterns.filter((item: AntiPattern) => item.name);
                 this.antiPatterns = this.antiPatternsAll;
                 this.antiPatternsFiltered = this.antiPatternsAll;
                 this.antiPatternsSelected = this.antiPatternsAll;
