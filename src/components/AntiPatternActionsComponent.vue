@@ -52,9 +52,7 @@
 
         public get bibTextCopy(): string {
             let bibTextCopy: string = '';
-            for (let source of this.antiPattern.sources) {
-                bibTextCopy = bibTextCopy + source + "\n";
-            }
+            this.antiPattern!.sources!.forEach((source) => bibTextCopy = bibTextCopy + source + "\n");
             return bibTextCopy;
         }
 
