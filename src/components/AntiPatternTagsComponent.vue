@@ -1,15 +1,6 @@
 <template>
     <v-navigation-drawer permanent clipped app>
-        <v-toolbar flat>
-            <v-list>
-                <v-list-tile>
-                    <v-list-tile-title class="title">Tags</v-list-tile-title>
-                </v-list-tile>
-            </v-list>
-        </v-toolbar>
-
-        <v-divider></v-divider>
-
+        <v-subheader>Tags</v-subheader>
         <v-list dense>
             <v-list-tile v-for="tag in tags" :key="tag">
                 <v-list-tile-action>
