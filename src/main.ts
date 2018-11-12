@@ -15,6 +15,8 @@ Vue.use(Toasted, {
     theme: "primary",
     position: "bottom-right",
     duration : 5000,
+    iconPack: "material",
+    className: "application",
 });
 
 new Vue({

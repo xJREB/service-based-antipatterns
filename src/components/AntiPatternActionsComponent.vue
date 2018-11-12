@@ -51,9 +51,7 @@
         }
 
         public get bibTextCopy(): string {
-            let bibTextCopy: string = '';
-            this.antiPattern!.sources!.forEach((source) => bibTextCopy = bibTextCopy + source + "\n");
-            return bibTextCopy;
+            return this.antiPattern!.sources!.join("\n");
         }
 
         public onCopySuccess(type?: string): void {
