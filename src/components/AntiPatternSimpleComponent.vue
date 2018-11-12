@@ -41,5 +41,17 @@
                 this.dialog = true;
             }
         }
+
+        @Watch('dialog')
+        public onDialogUpdate(newValue: boolean, oldValue: boolean) {
+            if (newValue) {
+                this.$router.push({
+                    name: 'homeWithTerm',
+                    params: {antipattern: this.antiPattern!.name!},
+                });
+            } else {
+                this.$router.push({name: 'home'});
+            }
+        }
     }
 </script>
