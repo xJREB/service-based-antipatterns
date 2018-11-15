@@ -1,7 +1,7 @@
 <template>
-    <v-container fill-height fluid grid-list-md>
+    <v-container fluid grid-list-lg>
         <v-layout wrap>
-            <v-flex xs3 v-for="antiPattern in antiPatterns" :key="antiPattern.name">
+            <v-flex xs12 sm6 md4 lg3 lx2 v-for="antiPattern in antiPatterns" :key="antiPattern.name">
                 <anti-pattern-simple-component :anti-pattern="antiPattern"/>
             </v-flex>
         </v-layout>

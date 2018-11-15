@@ -1,10 +1,10 @@
 <template>
-    <v-navigation-drawer permanent clipped app>
+    <v-navigation-drawer clipped app v-model="value.drawer">
         <v-subheader>Tags</v-subheader>
         <v-list dense>
             <v-list-tile v-for="tag in tags" :key="tag">
                 <v-list-tile-action>
-                    <v-checkbox v-model="selectedTags" @change="selectionChanged" :value="tag"></v-checkbox>
+                    <v-checkbox v-model="value.selection" :value="tag"></v-checkbox>
                 </v-list-tile-action>
 
                 <v-list-tile-content>
@@ -19,26 +19,12 @@
 </template>
 
 <script lang="ts">
-    import {Component, Emit, Prop, Vue} from 'vue-property-decorator';
+    import {Component, Prop, Vue} from 'vue-property-decorator';
+    import {Sidebar} from "../common/sidebar";
 
     @Component
     export default class AntiPatternTagsComponent extends Vue {
-        @Prop(Array) public value!: string[];
+        @Prop(Object) public value!: Sidebar;
         @Prop(Array) public tags!: string[];
-        private selection!: string[];
-
-        public get selectedTags() {
-            return this.value;
-        }
-
-        public set selectedTags(value: string[]) {
-            this.selection = value;
-        }
-
-        @Emit('input')
-        public selectionChanged() {
-            return this.selection;
-        }
-
     }
 </script>

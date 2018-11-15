@@ -16,6 +16,7 @@ Vue.use(Toasted, {
     position: "bottom-right",
     duration : 5000,
     iconPack: "material",
+    icon: 'info_outline',
     className: "application",
 });
 

@@ -1,9 +1,9 @@
 <template>
-    <v-card>
+    <v-card style="display: flex; flex-direction: column;" height="100%">
         <v-card-title class="primary white--text">
             <div class="headline">{{antiPattern.name}}</div>
         </v-card-title>
-        <v-card-text>
+        <v-card-text class="grow">
             <div>{{antiPattern.description}}</div>
         </v-card-text>
         <v-card-actions>

@@ -1,7 +1,8 @@
 <template>
     <div class="home">
-        <anti-pattern-tags-component v-model="selectedTags" :tags="tags"/>
+        <anti-pattern-tags-component v-model="tagsModel" :tags="tags"/>
         <v-toolbar class="primary" app dark clipped-left>
+            <v-toolbar-side-icon @click.native="tagsModel.drawer = !tagsModel.drawer"></v-toolbar-side-icon>
             <span class="title ml-3 mr-5">Service-Based Antipatterns</span>
             <v-text-field
                     solo-inverted
@@ -28,6 +29,7 @@
     import AntiPatternTagsComponent from "../components/AntiPatternTagsComponent";
     import {AntiPattern} from "../common/anti-pattern";
     import Utils from "../utils/Utils";
+    import {DefaultSidebar, Sidebar} from "../common/sidebar";
 
     @Component({
         components: {AntiPatternTagsComponent, AntiPatternsContainerComponent},
@@ -37,8 +39,8 @@
         private antiPatternsAll: AntiPattern[] = [];
         private antiPatternsSelected: AntiPattern[] = [];
         private antiPatternsFiltered: AntiPattern[] = [];
-        private selectedTags: string[] = [];
         private searchTerm: string = "";
+        private tagsModel: Sidebar = new DefaultSidebar();
 
         public created() {
             axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
@@ -58,11 +60,11 @@
                     currentValue = currentValue ? currentValue : [];
                     return previousValue.concat(currentValue);
                 }, []);
-            this.selectedTags = [...new Set(tags)];
+            this.tagsModel.selection = [...new Set(tags)];
             return [...new Set(tags)];
         }
 
-        @Watch('selectedTags')
+        @Watch('tagsModel.selection')
         public filterForTags(selectedModel: string[]) {
             if (selectedModel) {
                 this.antiPatternsSelected = this.antiPatternsAll.filter((antiPattern) => {
