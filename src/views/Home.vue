@@ -29,6 +29,7 @@
     import AntiPatternTagsComponent from "../components/AntiPatternTagsComponent";
     import {AntiPattern} from "../common/anti-pattern";
     import Utils from "../utils/Utils";
+    import {DefaultSidebar, Sidebar} from "../common/sidebar";
 
     @Component({
         components: {AntiPatternTagsComponent, AntiPatternsContainerComponent},
@@ -39,10 +40,7 @@
         private antiPatternsSelected: AntiPattern[] = [];
         private antiPatternsFiltered: AntiPattern[] = [];
         private searchTerm: string = "";
-        private tagsModel = {
-            selection: [] as string[],
-            drawer: null as unknown | boolean,
-        };
+        private tagsModel: Sidebar = new DefaultSidebar();
 
         public created() {
             axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {

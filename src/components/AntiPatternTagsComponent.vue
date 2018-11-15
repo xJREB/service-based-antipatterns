@@ -20,10 +20,11 @@
 
 <script lang="ts">
     import {Component, Prop, Vue} from 'vue-property-decorator';
+    import {Sidebar} from "../common/sidebar";
 
     @Component
     export default class AntiPatternTagsComponent extends Vue {
-        @Prop(Object) public value!: object;
+        @Prop(Object) public value!: Sidebar;
         @Prop(Array) public tags!: string[];
     }
 </script>
