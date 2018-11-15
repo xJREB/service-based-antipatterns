@@ -1,5 +1,9 @@
 <template>
     <v-navigation-drawer clipped app v-model="value.drawer">
+        <v-toolbar dark clipped-left class="primary hidden-lg-and-up">Service-Based Antipatterns
+            <v-spacer></v-spacer>
+            <v-toolbar-side-icon @click.native="value.drawer = !value.drawer"></v-toolbar-side-icon>
+        </v-toolbar>
         <v-subheader>Tags</v-subheader>
         <v-list dense>
             <v-list-tile v-for="tag in tags" :key="tag">
