@@ -41,8 +41,8 @@
                 antiPatternName = this.antiPattern.name;
             }
             return window.location.origin + this.$router.resolve({
-                name: 'homeWithTerm',
-                params: {antipattern: antiPatternName},
+                name: 'home',
+                query: {antipattern: antiPatternName},
             }).href;
         }
 

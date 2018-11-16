@@ -37,7 +37,7 @@
 
         @Watch('router', {immediate: true, deep: true})
         public beforeRouteUpdate(to: any, from: any) {
-            if (this.$route.params.antipattern === this.antiPattern.name) {
+            if (this.$route.query.antipattern === this.antiPattern.name) {
                 this.dialog = true;
             }
         }
@@ -46,8 +46,8 @@
         public onDialogUpdate(newValue: boolean, oldValue: boolean) {
             if (newValue) {
                 this.$router.push({
-                    name: 'homeWithTerm',
-                    params: {antipattern: this.antiPattern!.name!},
+                    name: 'home',
+                    query: {antipattern: this.antiPattern!.name!},
                 });
             } else {
                 this.$router.push({name: 'home'});

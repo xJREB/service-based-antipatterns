@@ -13,10 +13,5 @@ export default new Router({
             name: 'home',
             component: Home,
         },
-        {
-            path: '/:antipattern',
-            name: 'homeWithTerm',
-            component: Home,
-        },
     ],
 });
