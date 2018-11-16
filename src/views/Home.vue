@@ -3,8 +3,9 @@
         <anti-pattern-tags-component v-model="tagsModel" :tags="tags"/>
         <v-toolbar class="primary" app dark clipped-left>
             <v-toolbar-side-icon @click.native="tagsModel.drawer = !tagsModel.drawer"></v-toolbar-side-icon>
-            <span class="title ml-3 mr-5">Service-Based Antipatterns</span>
+            <span class="title ml-3 hidden-md-and-down">Service-Based Antipatterns</span>
             <v-text-field
+                    class="ml-3"
                     solo-inverted
                     flat
                     clearable
@@ -14,7 +15,7 @@
                     v-model="searchTerm"
                     @keydown.esc="clearSearch()"
             ></v-text-field>
-            <v-spacer></v-spacer>
+            <v-spacer class="hidden-md-and-down" ></v-spacer>
         </v-toolbar>
         <v-content>
             <anti-patterns-container-component :anti-patterns="antiPatterns"/>
