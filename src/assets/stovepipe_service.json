@@ -1,0 +1,24 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Stovepipe Service",
+      "aliases": [
+        "Multilayer Service"
+      ],
+      "description": "Common infrastructure functions are implemented in different services. These might include technical processes such as logging but can also extend to common business functions like currency conversion. These functions are implemented in multiple services and result in duplicated code and different implementations for the same functionality.",
+      "detection": "Stovepipe services typically have a large number of private implementation methods",
+      "consequences": "Large number of (private) methods and overall large service implementation. Technical and utility functions are implemented inconsistently. The development time of stovepipe services is considerably larger.",
+      "cause": "Inexperience in developing multilayer architecture is one reason that can result in stovepipe services. They can also be caused by insufficient communication and insufficient design/code reviews during service implementation.",
+      "solution": "Refactor the common private methods of all services into new technical services or utility classes. Alternatively these functionality can be refactored to a new super class from which all services can inherit.",
+      "example": "A service implements private methods for technical tasks such as auditEvent and notify which might also be implemented by other services.",
+      "sources": [
+        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
+      ],
+      "tags": [
+        "bad_smell",
+        "multilayer",
+        "system"
+      ]
+    }
+  ]
+}
