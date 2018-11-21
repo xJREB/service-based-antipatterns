@@ -11,7 +11,7 @@
                 <v-btn icon slot="activator">
                     <v-icon>open_in_new</v-icon>
                 </v-btn>
-                <anti-pattern-detail-component :anti-pattern="antiPattern"/>
+                <anti-pattern-detail-component v-model="dialog" :anti-pattern="antiPattern"/>
             </v-dialog>
             <v-spacer></v-spacer>
             <anti-pattern-actions-component :anti-pattern="antiPattern"/>

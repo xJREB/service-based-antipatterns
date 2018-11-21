@@ -4,6 +4,13 @@
             <v-toolbar-title>{{antiPattern.name}}</v-toolbar-title>
             <v-spacer></v-spacer>
             <anti-pattern-actions-component :anti-pattern="antiPattern"/>
+                <v-tooltip top>
+                    <v-btn slot="activator" icon
+                           @click="closeDialog">
+                        <v-icon>close</v-icon>
+                    </v-btn>
+                    <span>Close the dialog</span>
+                </v-tooltip>
         </v-toolbar>
 
         <v-card-text>
@@ -42,7 +49,7 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue} from 'vue-property-decorator';
+    import {Component, Emit, Prop, Vue} from 'vue-property-decorator';
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     @Component({
@@ -52,5 +59,10 @@
     })
     export default class AntiPatternDetailComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
+
+        @Emit('input')
+        public closeDialog() {
+            return false;
+        }
     }
 </script>
