@@ -54,17 +54,21 @@
     })
     export default class AntiPatternDetailComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
-        sources: String[] = [];
 
-        public get sources() {
-            this.antiPattern?.sources.forEach(source => {
-                const csl = new Cite(source);
-                this.sources.push(csl.format('bibliography', {
-                    format: 'html',
-                    template: 'citation-apa',
-                    lang: 'en-GB'
-                }));
-            });
+        get sources() {
+            if (this.antiPattern.sources) {
+                return this.antiPattern.sources.map((source) => {
+                    const csl = new Cite(source);
+                    return csl.format('bibliography', {
+                        format: 'html',
+                        template: 'citation-apa',
+                        lang: 'en-US',
+                    });
+                });
+            } else {
+                return [];
+            }
+
         }
     }
 </script>

@@ -4,19 +4,6 @@ module.exports = {
         host: '0.0.0.0',
         port: 8081
     },
-    chainWebpack: config => {
-        config.module.rule('json')
-            .type('javascript/auto')
-            .test(/\.json$/)
-            .use('file-loader')
-            .loader('file-loader')
-            .tap(options => {
-                options = {
-                    name: 'assets/[name].[ext]'
-                };
-                return options
-            })
-    },
     configureWebpack: {
         plugins: [
             new MergeJsonWebpackPlugin({
