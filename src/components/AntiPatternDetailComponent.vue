@@ -26,8 +26,8 @@
             <v-card-text>{{antiPattern.example}}</v-card-text>
 
             <v-subheader>Source</v-subheader>
-            <v-card-text v-for="source in antiPattern.sources" :key="source">
-                <code>{{source}}</code>
+            <v-card-text v-for="source in sources" :key="source">
+                <div v-html="source"></div>
             </v-card-text>
 
             <v-divider class="my-2"></v-divider>
@@ -45,6 +45,8 @@
     import {Component, Prop, Vue} from 'vue-property-decorator';
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
+    import Cite from 'citation-js';
+
     @Component({
         components: {
             AntiPatternActionsComponent,
@@ -52,5 +54,17 @@
     })
     export default class AntiPatternDetailComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
+        sources: String[] = [];
+
+        public get sources() {
+            this.antiPattern?.sources.forEach(source => {
+                const csl = new Cite(source);
+                this.sources.push(csl.format('bibliography', {
+                    format: 'html',
+                    template: 'citation-apa',
+                    lang: 'en-GB'
+                }));
+            });
+        }
     }
 </script>
