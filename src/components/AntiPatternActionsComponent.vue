@@ -1,25 +1,19 @@
 <template>
     <span>
         <v-tooltip top>
-            <v-btn slot="activator" icon v-clipboard="antiPatternAsJson"
-                   @success="onCopySuccess('JSON file')"
-                   @error="onCopyError('JSON file')">
+            <v-btn slot="activator" icon @click="copy(antiPatternAsJson, 'JSON file')">
                 <v-icon>content_copy</v-icon>
             </v-btn>
             <span>Copy the json file</span>
         </v-tooltip>
         <v-tooltip top>
-            <v-btn slot="activator" icon v-clipboard="bibTextCopy"
-                   @success="onCopySuccess('BibTex')"
-                   @error="onCopyError('BibTex')">
+            <v-btn slot="activator" icon @click="copy(bibTextCopy, 'BibTex')">
                 <v-icon>format_quote</v-icon>
             </v-btn>
             <span>Copy the BibTex source</span>
         </v-tooltip>
         <v-tooltip top>
-            <v-btn slot="activator" icon v-clipboard="shareLink"
-                   @success="onCopySuccess('Link')"
-                   @error="onCopyError('link')">
+            <v-btn slot="activator" icon @click="copy(shareLink, 'Link')">
                 <v-icon>share</v-icon>
             </v-btn>
             <span>Copy the link to this antipattern to the clipboard</span>
@@ -60,6 +54,10 @@
 
         public onCopyError(type?: string): void {
             this.$toasted.error('Error copying ' + type);
+        }
+
+        public copy(message: string, type?: string) {
+            (this as any).$copyText(message).then(() => this.onCopySuccess(type), () => this.onCopyError(type));
         }
     }
 </script>

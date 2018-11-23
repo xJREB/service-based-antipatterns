@@ -2,13 +2,14 @@ import Vue from 'vue';
 import './plugins/vuetify';
 import App from './App.vue';
 import router from './router';
-import VueClipboards from 'vue-clipboards';
+import VueClipboard from 'vue-clipboard2';
 import Toasted from 'vue-toasted';
 import 'roboto-fontface/css/roboto/roboto-fontface.css';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
 Vue.config.productionTip = false;
-Vue.use(VueClipboards);
+VueClipboard.config.autoSetContainer = true;
+Vue.use(VueClipboard);
 
 // @ts-ignore
 Vue.use(Toasted, {
