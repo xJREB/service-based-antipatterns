@@ -1,0 +1,23 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Client Completes Service",
+      "aliases": [
+        "Incomplete Service"
+      ],
+      "description": "A service has a well defined abstraction and interface. However, the functionality of the service requires additional implementation for non functional requirements by the client such as input validation and security checking.",
+      "detection": "In web-based applications there is code in the client artifacts such as JSP or servlets for e.g. data validation or security checking.",
+      "consequences": "Client artifacts contain code for server-side functions. Therefore, it might be possible to insert bad data or gain unauthorized access to the service. The functionality is implemented multiple times and can vary depending on the client. Units tests regarding such conditions e.g. data range might fail or they contain a lot of overhead code to properly test such a service.",
+      "cause": "Mainly caused by a lack of understanding that services shall be self-contained, standalone functional components. This comes from a web-centric development approach where developers think that client artifacts are the only ones that use the service. A lack of communication in the development team can also lead to a client completes service. Often shortcuts are taken to reduce the development time of a service and there is no time for major refactorings.",
+      "solution": "Refactor the infrastructure-related functionality from the client to the server. The client can still include some code for e.g. data validation or security checking to enhance its performance.",
+      "example": "A servlet or JSP includes code to validate user input in order to correctly use an underlying service.",
+      "sources": [
+        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
+      ],
+      "tags": [
+        "antipattern",
+        "architecture"
+      ]
+    }
+  ]
+}
