@@ -12,7 +12,7 @@
       "solution": "Refine the cycles according to their shape, 4 and apply the API Gateway pattern.",
       "example": "A depends on B, B on C and C on A",
       "sources": [
-        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}"
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}, doi={10.1109/ms.2018.2141031}}"
       ],
       "tags": [
         "bad_smell"
