@@ -7,6 +7,17 @@
         </v-toolbar>
         <v-subheader>Tags</v-subheader>
         <v-list dense>
+            <v-list-tile>
+                <v-list-tile-action>
+                    <v-checkbox v-model="allTagsEnabled" @change="toggleTags"></v-checkbox>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-chip label>
+                        <v-icon left>label</v-icon>
+                        <v-list-tile-title>All</v-list-tile-title>
+                    </v-chip>
+                </v-list-tile-content>
+            </v-list-tile>
             <v-list-tile v-for="tag in tags" :key="tag">
                 <v-list-tile-action>
                     <v-checkbox v-model="value.selection" :value="tag"></v-checkbox>
@@ -24,12 +35,26 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue} from 'vue-property-decorator';
+    import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
     import {Sidebar} from "../common/sidebar";
 
     @Component
     export default class AntiPatternTagsComponent extends Vue {
         @Prop(Object) public value!: Sidebar;
         @Prop(Array) public tags!: string[];
+        private allTagsEnabled: boolean = true;
+
+        @Watch('value.selection')
+        private selectionChange() {
+            this.allTagsEnabled = this.value.selection.length === this.tags.length;
+        }
+
+        private toggleTags() {
+            if (this.value.selection.length === this.tags.length) {
+                this.value.selection = [];
+            } else {
+                this.value.selection = this.tags;
+            }
+        }
     }
 </script>
