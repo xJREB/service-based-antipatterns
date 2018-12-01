@@ -36,6 +36,9 @@
                 </v-list-tile-content>
             </v-list-tile>
         </v-list>
+        <v-subheader>Evidence</v-subheader>
+        <v-slider v-model="value.evidence"
+                  min="1"></v-slider>
     </v-navigation-drawer>
 </template>
 
@@ -63,3 +66,10 @@
         }
     }
 </script>
+<style>
+    .v-slider {
+        margin-left: 16px;
+        margin-right: 16px;
+        background-image: linear-gradient(to right, gray 2%, rgba(255,0,0,0) 2%, rgba(255,0,0,1) 49%);
+    }
+</style>

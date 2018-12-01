@@ -44,6 +44,7 @@
     import Cite from 'citation-js';
     import {BibliographyTemplate} from "@/common/bibliography";
     import AntiPatternHelpComponent from "@/components/AntiPatternHelpComponent.vue";
+    import EvidenceService from "../services/EvidenceService";
 
     @Component({
         components: {AntiPatternHelpComponent, AntiPatternTagsComponent, AntiPatternsContainerComponent},
@@ -77,10 +78,16 @@
 
         public loadAntipatterns() {
             axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
-                this.antiPatternsAll = response.data.antiPatterns.filter((item: AntiPattern) => item.name);
-                this.antiPatterns = this.antiPatternsAll;
-                this.antiPatternsFiltered = this.antiPatternsAll;
-                this.antiPatternsSelected = this.antiPatternsAll;
+                response.data.antiPatterns.filter((item: AntiPattern) => item.name)
+                    .forEach((pattern: AntiPattern) => {
+                            EvidenceService.addReferenceCount(pattern).then((filledPattern: AntiPattern) => {
+                                this.antiPatternsAll.push(filledPattern);
+                                this.antiPatterns.push(filledPattern);
+                                this.antiPatternsFiltered.push(filledPattern);
+                                this.antiPatternsSelected.push(filledPattern);
+                            });
+                        },
+                    );
             }).catch(() => {
                 this.$toasted.error('Failed to load antipatterns');
             });
@@ -104,10 +111,8 @@
         }
 
         public get tags() {
-            const tags = this.antiPatternsAll.
-                filter((item) => item.tags).
-                map((item) => item.tags).
-                reduce((previousValue, currentValue) => {
+            const tags = this.antiPatternsAll.filter((item) => item.tags)
+                .map((item) => item.tags).reduce((previousValue, currentValue) => {
                     previousValue = previousValue ? previousValue : [];
                     currentValue = currentValue ? currentValue : [];
                     return previousValue.concat(currentValue);
@@ -141,6 +146,14 @@
                 this.antiPatternsFiltered = this.antiPatternsAll;
             }
             this.antiPatterns = this.antiPatternsSelected.filter((item) => this.antiPatternsFiltered.includes(item));
+        }
+
+        @Watch("tagsModel.evidence")
+        public onSetEvidence(evidenceFilter: number, old: number) {
+            if (evidenceFilter) {
+                this.antiPatterns = this.antiPatternsSelected
+                    .filter((item) => evidenceFilter <= 1 || (item.median && item.median >= evidenceFilter));
+            }
         }
 
         public clearSearch() {
