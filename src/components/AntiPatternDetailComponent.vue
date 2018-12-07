@@ -95,7 +95,7 @@
             } else {
                 return new Cite(bibtex).format('bibliography', {
                     format,
-                    template: template.toString().toLowerCase(),
+                    template: template.toString().toLowerCase().replace(/_/g, '-'),
                     lang: 'en-US',
                 });
             }
@@ -119,6 +119,5 @@
     .csl-left-margin {
         float: left;
         margin-right: 5px;
-
     }
 </style>

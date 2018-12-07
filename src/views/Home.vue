@@ -34,6 +34,8 @@
     import {AntiPattern} from "../common/anti-pattern";
     import Utils from "../utils/Utils";
     import {DefaultSidebar, Sidebar} from "../common/sidebar";
+    import Cite from 'citation-js';
+    import {BibliographyTemplate} from "@/common/bibliography";
 
     @Component({
         components: {AntiPatternTagsComponent, AntiPatternsContainerComponent},
@@ -47,12 +49,36 @@
         private tagsModel: Sidebar = new DefaultSidebar();
 
         public created() {
+            this.loadAntipatterns();
+            this.loadCitationStyles();
+        }
+
+        public loadAntipatterns() {
             axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
                 this.antiPatternsAll = response.data.antiPatterns.filter((item: AntiPattern) => item.name);
                 this.antiPatterns = this.antiPatternsAll;
                 this.antiPatternsFiltered = this.antiPatternsAll;
                 this.antiPatternsSelected = this.antiPatternsAll;
-            }).catch();
+            }).catch(() => {
+                this.$toasted.error('Failed to load antipatterns');
+            });
+        }
+
+        public loadCitationStyles() {
+            for (const template of Object.keys(BibliographyTemplate)) {
+                const templateName = template.toLowerCase().replace(/_/g, '-');
+                const styleUrl = 'https://raw.githubusercontent.com/citation-style-language/styles/master/' +
+                    templateName + '.csl';
+                // citation.js already provides templates for the following styles, so we do not need to load them again
+                if (!['apa', 'harvard1', 'vancouver', 'bibtex'].includes(templateName)) {
+                    axios.get(styleUrl).then((response) => {
+                        const config = Cite.plugins.config.get('csl');
+                        config.templates.add(templateName, response.data);
+                    }).catch(() => {
+                        this.$toasted.error('Failed to load citation style ' + templateName);
+                    });
+                }
+            }
         }
 
         public get tags() {
