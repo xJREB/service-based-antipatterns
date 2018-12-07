@@ -34,25 +34,7 @@
 
             <v-subheader>Source</v-subheader>
             <v-card-text>
-                <v-tabs>
-                    <v-tab v-for="template in bibliographyTemplates" :key="template">
-                        {{template}}
-                    </v-tab>
-                    <v-tab-item v-for="key in Object.keys(bibliographyTemplates)" :key="key">
-                        <v-card flat>
-                            <v-card-text
-                                    v-for="bibtexSource in antiPattern.sources" :key="bibtexSource">
-                                <v-tooltip top>
-                                    <div slot="activator" :style="{ cursor: 'pointer'}"
-                                         v-html="getFormatted(bibtexSource, bibliographyFormat.HTML, key)"
-                                         @click="copy(getFormatted(bibtexSource, bibliographyFormat.TEXT, key), key)">
-                                    </div>
-                                    <span>Click to copy single source</span>
-                                </v-tooltip>
-                            </v-card-text>
-                        </v-card>
-                    </v-tab-item>
-                </v-tabs>
+                <anti-pattern-citations-component :sources="antiPattern.sources"/>
             </v-card-text>
 
             <v-divider class="my-2"></v-divider>
@@ -67,57 +49,22 @@
 
 <script lang="ts">
     import {Component, Emit, Prop, Vue} from 'vue-property-decorator';
-    import {AntiPattern} from '../common/anti-pattern';
+    import {AntiPattern} from '@/common/anti-pattern';
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
-    import {BibliographyFormat, BibliographyTemplate} from "../common/bibliography";
-    import Cite from 'citation-js';
+    import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
 
     @Component({
         components: {
+            AntiPatternCitationsComponent,
             AntiPatternActionsComponent,
         },
     })
     export default class AntiPatternDetailComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
-        public bibliographyTemplates = BibliographyTemplate;
-        public bibliographyFormat = BibliographyFormat;
 
         @Emit('input')
         public closeDialog() {
             return false;
         }
-
-        public getFormatted(bibtex: string, format: string, template: keyof typeof BibliographyTemplate) {
-            if (BibliographyTemplate[template] === BibliographyTemplate.BIBTEX) {
-                return new Cite(bibtex).format('bibtex', {
-                    format,
-                });
-            } else {
-                return new Cite(bibtex).format('bibliography', {
-                    format,
-                    template: template.toString().toLowerCase().replace(/_/g, '-'),
-                    lang: 'en-US',
-                });
-            }
-        }
-
-        public onCopySuccess(key: keyof typeof BibliographyTemplate): void {
-            this.$toasted.info(BibliographyTemplate[key] + ' was copied successfully');
-        }
-
-        public onCopyError(key: keyof typeof BibliographyTemplate): void {
-            this.$toasted.error('Error copying ' + BibliographyTemplate[key]);
-        }
-
-        public copy(message: string, key: keyof typeof BibliographyTemplate) {
-            (this as any).$copyText(message).then(() => this.onCopySuccess(key), () => this.onCopyError(key));
-        }
     }
 </script>
-
-<style>
-    .csl-left-margin {
-        float: left;
-        margin-right: 5px;
-    }
-</style>
