@@ -4,45 +4,66 @@
             <v-toolbar-title>{{antiPattern.name}}</v-toolbar-title>
             <v-spacer></v-spacer>
             <anti-pattern-actions-component :anti-pattern="antiPattern"/>
-                <v-tooltip top>
-                    <v-btn slot="activator" icon
-                           @click="closeDialog">
-                        <v-icon>close</v-icon>
-                    </v-btn>
-                    <span>Close the dialog</span>
-                </v-tooltip>
+            <v-tooltip top>
+                <v-btn slot="activator" icon
+                       @click="closeDialog">
+                    <v-icon>close</v-icon>
+                </v-btn>
+                <span>Close the dialog</span>
+            </v-tooltip>
         </v-toolbar>
 
-        <v-card-text>
-            <v-subheader>Also known as</v-subheader>
-            <v-card-text>{{antiPattern.aliases.join(", ")}}</v-card-text>
+        <v-card-text style="padding: 0">
+            <v-container grid-list-md >
+                <v-layout  wrap>
+                    <v-flex md2 xs3>
+                        <v-subheader>Also known as</v-subheader>
+                    </v-flex>
+                    <v-flex md10 xs9>
+                        <v-card-text>{{antiPattern.aliases.join(", ")}}</v-card-text>
+                    </v-flex>
+                    <v-flex md2 xs3>
+                        <v-subheader>Description</v-subheader>
+                    </v-flex>
+                    <v-flex md10 xs9>
+                        <v-card-text>{{antiPattern.description}}</v-card-text>
+                    </v-flex>
+                    <v-flex md2 xs3>
+                        <v-subheader>Cause</v-subheader>
+                    </v-flex>
+                    <v-flex md10 xs9>
+                        <v-card-text>{{antiPattern.cause}}</v-card-text>
+                    </v-flex>
+                    <v-flex md2 xs3>
+                        <v-subheader>Detection</v-subheader>
+                    </v-flex>
+                    <v-flex md10 xs9>
+                        <v-card-text>{{antiPattern.detection}}</v-card-text>
+                    </v-flex>
+                    <v-flex md2 xs3>
+                        <v-subheader>Solution</v-subheader>
+                    </v-flex>
+                    <v-flex md10 xs9>
+                        <v-card-text>{{antiPattern.solution}}</v-card-text>
+                    </v-flex>
+                    <v-flex md2 xs3>
+                        <v-subheader>Example</v-subheader>
+                    </v-flex>
+                    <v-flex md10 xs9>
+                        <v-card-text>{{antiPattern.example}}</v-card-text>
+                    </v-flex>
+                </v-layout>
+                <v-card-text>
+                    <anti-pattern-citations-component :sources="antiPattern.sources"/>
+                </v-card-text>
 
-            <v-subheader>Description</v-subheader>
-            <v-card-text>{{antiPattern.description}}</v-card-text>
+                <v-divider class="my-2"></v-divider>
 
-            <v-subheader>Cause</v-subheader>
-            <v-card-text>{{antiPattern.cause}}</v-card-text>
-
-            <v-subheader>Detection</v-subheader>
-            <v-card-text>{{antiPattern.detection}}</v-card-text>
-
-            <v-subheader>Solution</v-subheader>
-            <v-card-text>{{antiPattern.solution}}</v-card-text>
-
-            <v-subheader>Example</v-subheader>
-            <v-card-text>{{antiPattern.example}}</v-card-text>
-
-            <v-subheader>Source</v-subheader>
-            <v-card-text>
-                <anti-pattern-citations-component :sources="antiPattern.sources"/>
-            </v-card-text>
-
-            <v-divider class="my-2"></v-divider>
-
-            <v-chip label v-for="tag in antiPattern.tags" :key="tag">
-                <v-icon left>label</v-icon>
-                <v-list-tile-title>{{ tag }}</v-list-tile-title>
-            </v-chip>
+                <v-chip label v-for="tag in antiPattern.tags" :key="tag">
+                    <v-icon left>label</v-icon>
+                    <v-list-tile-title>{{ tag }}</v-list-tile-title>
+                </v-chip>
+            </v-container>
         </v-card-text>
     </v-card>
 </template>
