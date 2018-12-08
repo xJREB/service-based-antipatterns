@@ -1,4 +1,6 @@
 var MergeJsonWebpackPlugin = require("merge-jsons-webpack-plugin");
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
     devServer: {
         host: '0.0.0.0',
@@ -20,7 +22,17 @@ module.exports = {
                     "nosort": false,
                     "prefixFileName": true,
                 }
-            })
+            }),
+            new CopyWebpackPlugin([
+                {
+                  from: './README.md',
+                  to: './assets/'
+                },
+                {
+                    from: './src/**/*.md',
+                    to: './assets/[name].[ext]'
+                }
+              ])
         ]
     },
     baseUrl: process.env.NODE_ENV === 'production' ? '/service-based-antipatterns/' : '/service-based-antipatterns/'
