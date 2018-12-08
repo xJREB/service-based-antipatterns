@@ -8,9 +8,12 @@
         </v-card-text>
         <v-card-actions>
             <v-dialog lazy scrollable v-model='dialog' @keydown.esc="dialog = false" width="1000px">
-                <v-btn icon slot="activator">
-                    <v-icon>open_in_new</v-icon>
-                </v-btn>
+                <v-tooltip top slot="activator">
+                    <v-btn icon slot="activator">
+                        <v-icon>open_in_new</v-icon>
+                    </v-btn>
+                    <span>Open the detail view</span>
+                </v-tooltip>
                 <anti-pattern-detail-component v-model="dialog" :anti-pattern="antiPattern"/>
             </v-dialog>
             <v-spacer></v-spacer>
