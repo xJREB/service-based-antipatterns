@@ -25,12 +25,8 @@ module.exports = {
             }),
             new CopyWebpackPlugin([
                 {
-                  from: './README.md',
-                  to: './assets/'
-                },
-                {
-                    from: './src/**/*.md',
-                    to: './assets/[name].[ext]'
+                  from: './*.md',
+                  to: './assets/[name].[ext]'
                 }
               ])
         ]
