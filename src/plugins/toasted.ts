@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Toasted from 'vue-toasted';;
+import Toasted from 'vue-toasted';
 
 // @ts-ignore
 Vue.use(Toasted, {
