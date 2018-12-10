@@ -19,6 +19,12 @@
             <v-btn icon href='https://github.com/xJREB/service-based-antipatterns/'>
                 <font-awesome-icon size="2x" :icon="['fab', 'github']"></font-awesome-icon>
             </v-btn>
+            <v-dialog lazy scrollable v-model="dialog" @keydown.esc="dialog = false" width="1000px">
+                <v-btn icon slot="activator">
+                    <font-awesome-icon size="2x" :icon="['far', 'question-circle']"></font-awesome-icon>
+                </v-btn>
+                <anti-pattern-help-component v-model="dialog" :files="files"/>
+            </v-dialog>
         </v-toolbar>
         <v-content>
             <anti-patterns-container-component :anti-patterns="antiPatterns"/>
@@ -32,13 +38,15 @@
     import AntiPatternsContainerComponent from '../components/AntiPatternsContainerComponent';
     import AntiPatternTagsComponent from "../components/AntiPatternTagsComponent";
     import {AntiPattern} from "../common/anti-pattern";
+    import {File} from "@/common/file";
     import Utils from "../utils/Utils";
     import {DefaultSidebar, Sidebar} from "../common/sidebar";
     import Cite from 'citation-js';
     import {BibliographyTemplate} from "@/common/bibliography";
+    import AntiPatternHelpComponent from "@/components/AntiPatternHelpComponent.vue";
 
     @Component({
-        components: {AntiPatternTagsComponent, AntiPatternsContainerComponent},
+        components: {AntiPatternHelpComponent, AntiPatternTagsComponent, AntiPatternsContainerComponent},
     })
     export default class Home extends Vue {
         private antiPatterns: AntiPattern[] = [];
@@ -47,10 +55,24 @@
         private antiPatternsFiltered: AntiPattern[] = [];
         private searchTerm: string = "";
         private tagsModel: Sidebar = new DefaultSidebar();
+        private files: File[] = [];
+        private dialog: boolean = false;
 
         public created() {
+            this.loadMarkdownFiles();
             this.loadAntipatterns();
             this.loadCitationStyles();
+        }
+
+        public loadMarkdownFiles() {
+            const fileNames = ['README', 'SLR', 'CONTRIBUTING'];
+            for (const name of fileNames) {
+                axios.get('/service-based-antipatterns/assets/' + name + '.md').then((response) => {
+                    this.files.push({name, content: response.data} as File);
+                }).catch(() => {
+                    this.$toasted.error('Failed to load ' + name + '.md');
+                });
+            }
         }
 
         public loadAntipatterns() {
