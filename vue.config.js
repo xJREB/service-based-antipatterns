@@ -13,7 +13,7 @@ module.exports = {
                 "output": {
                     "groupBy": [
                         {
-                            "pattern": "./src/assets/*.json",
+                            "pattern": "./antipatterns/*.json",
                             "fileName": "./assets/result.json"
                         }
                     ]
@@ -25,10 +25,10 @@ module.exports = {
             }),
             new CopyWebpackPlugin([
                 {
-                  from: './*.md',
-                  to: './assets/[name].[ext]'
+                    from: './*.md',
+                    to: './assets/[name].[ext]'
                 }
-              ])
+            ])
         ]
     },
     baseUrl: process.env.NODE_ENV === 'production' ? '/service-based-antipatterns/' : '/service-based-antipatterns/'
