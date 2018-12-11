@@ -14,8 +14,8 @@
         </v-toolbar>
 
         <v-card-text style="padding: 0">
-            <v-container grid-list-md >
-                <v-layout  wrap>
+            <v-container grid-list-md>
+                <v-layout wrap>
                     <v-flex md2 xs3>
                         <v-subheader>Also known as</v-subheader>
                     </v-flex>
@@ -57,8 +57,11 @@
                     <anti-pattern-citations-component :sources="antiPattern.sources"/>
                 </v-card-text>
 
-                <v-divider class="my-2"></v-divider>
+                <v-divider class="my-2" v-if="antiPattern.relatedAntiPatterns"></v-divider>
+                <anti-pattern-related-component v-if="antiPattern.relatedAntiPatterns"
+                                                :relatedAntiPatterns="antiPattern.relatedAntiPatterns"/>
 
+                <v-divider class="my-2"></v-divider>
                 <v-chip label v-for="tag in antiPattern.tags" :key="tag">
                     <v-icon left>label</v-icon>
                     <v-list-tile-title>{{ tag }}</v-list-tile-title>
@@ -73,9 +76,11 @@
     import {AntiPattern} from '@/common/anti-pattern';
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
+    import AntiPatternRelatedComponent from "@/components/AntiPatternRelatedComponent.vue";
 
     @Component({
         components: {
+            AntiPatternRelatedComponent,
             AntiPatternCitationsComponent,
             AntiPatternActionsComponent,
         },

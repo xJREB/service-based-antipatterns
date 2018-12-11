@@ -56,6 +56,7 @@
         public loadAntipatterns() {
             axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
                 this.antiPatternsAll = response.data.antiPatterns.filter((item: AntiPattern) => item.name);
+                Utils.setRelatedAntiPatterns(this.antiPatternsAll);
                 this.antiPatterns = this.antiPatternsAll;
                 this.antiPatternsFiltered = this.antiPatternsAll;
                 this.antiPatternsSelected = this.antiPatternsAll;
