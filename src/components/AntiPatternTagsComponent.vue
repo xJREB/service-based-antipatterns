@@ -5,6 +5,11 @@
             <v-spacer></v-spacer>
             <v-toolbar-side-icon @click.native="value.drawer = !value.drawer"></v-toolbar-side-icon>
         </v-toolbar>
+        <v-card-text>
+            <v-icon>info</v-icon>
+            This website serves as a knowledge base for Service-Based Antipatterns
+            and has been created due to a study project at the University of Stuttgart.
+        </v-card-text>
         <v-subheader>Tags</v-subheader>
         <v-list dense>
             <v-list-tile>
