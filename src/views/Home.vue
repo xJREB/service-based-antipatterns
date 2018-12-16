@@ -45,6 +45,7 @@
     import {BibliographyTemplate} from "@/common/bibliography";
     import AntiPatternHelpComponent from "@/components/AntiPatternHelpComponent.vue";
     import EvidenceService from "../services/EvidenceService";
+    import Math from 'mathjs';
 
     @Component({
         components: {AntiPatternHelpComponent, AntiPatternTagsComponent, AntiPatternsContainerComponent},
@@ -54,6 +55,7 @@
         private antiPatternsAll: AntiPattern[] = [];
         private antiPatternsSelected: AntiPattern[] = [];
         private antiPatternsFiltered: AntiPattern[] = [];
+        private antiPatternsEvidence: AntiPattern[] = [];
         private searchTerm: string = "";
         private tagsModel: Sidebar = new DefaultSidebar();
         private files: File[] = [];
@@ -85,6 +87,7 @@
                                 this.antiPatterns.push(filledPattern);
                                 this.antiPatternsFiltered.push(filledPattern);
                                 this.antiPatternsSelected.push(filledPattern);
+                                this.antiPatternsEvidence.push(filledPattern);
                             });
                         },
                     );
@@ -130,7 +133,7 @@
             } else {
                 this.antiPatternsSelected = this.antiPatternsAll;
             }
-            this.antiPatterns = this.antiPatternsSelected.filter((item) => this.antiPatternsFiltered.includes(item));
+            this.afterFilter();
         }
 
         @Watch('searchTerm')
@@ -145,19 +148,29 @@
             } else {
                 this.antiPatternsFiltered = this.antiPatternsAll;
             }
-            this.antiPatterns = this.antiPatternsSelected.filter((item) => this.antiPatternsFiltered.includes(item));
+            this.afterFilter();
         }
 
         @Watch("tagsModel.evidence")
         public onSetEvidence(evidenceFilter: number, old: number) {
+            evidenceFilter = Math.pow(evidenceFilter, 3) * 5;
             if (evidenceFilter) {
-                this.antiPatterns = this.antiPatternsSelected
+                this.antiPatternsEvidence = this.antiPatternsAll
                     .filter((item) => evidenceFilter <= 1 || (item.median && item.median >= evidenceFilter));
+            } else {
+                this.antiPatternsEvidence = this.antiPatternsAll;
             }
+            this.afterFilter();
         }
 
         public clearSearch() {
             this.searchTerm = '';
+        }
+
+        private afterFilter() {
+            this.antiPatterns = this.antiPatternsSelected
+                .filter((item) => this.antiPatternsFiltered.includes(item)
+                    && this.antiPatternsEvidence.includes(item));
         }
     }
 </script>

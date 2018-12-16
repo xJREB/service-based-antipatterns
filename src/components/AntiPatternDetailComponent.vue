@@ -12,8 +12,6 @@
                 <span>Close the dialog</span>
             </v-tooltip>
         </v-toolbar>
-
-<<<<<<< HEAD
         <v-card-text style="padding: 0">
             <v-container grid-list-md >
                 <v-layout  wrap>
