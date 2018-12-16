@@ -45,7 +45,6 @@
     import {BibliographyTemplate} from "@/common/bibliography";
     import AntiPatternHelpComponent from "@/components/AntiPatternHelpComponent.vue";
     import EvidenceService from "../services/EvidenceService";
-    import Math from 'mathjs';
 
     @Component({
         components: {AntiPatternHelpComponent, AntiPatternTagsComponent, AntiPatternsContainerComponent},
@@ -59,6 +58,7 @@
         private searchTerm: string = "";
         private tagsModel: Sidebar = new DefaultSidebar();
         private files: File[] = [];
+        private evidenceLabel: { [s: number]: number; } = {0: -1, 1: 0, 2: 30, 3: 100};
         private dialog: boolean = false;
 
         public created() {
@@ -153,10 +153,10 @@
 
         @Watch("tagsModel.evidence")
         public onSetEvidence(evidenceFilter: number, old: number) {
-            evidenceFilter = Math.pow(evidenceFilter, 3) * 5;
             if (evidenceFilter) {
+                evidenceFilter = this.evidenceLabel[evidenceFilter];
                 this.antiPatternsEvidence = this.antiPatternsAll
-                    .filter((item) => evidenceFilter <= 1 || (item.median && item.median >= evidenceFilter));
+                    .filter((item) => evidenceFilter < 0 || (item.median && item.median >= evidenceFilter));
             } else {
                 this.antiPatternsEvidence = this.antiPatternsAll;
             }
