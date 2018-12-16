@@ -14,8 +14,9 @@
       "solution": "The service's inappropriate methods need to be extracted to new interfaces.",
       "example": "A service, implementing methods for ordering, paying and shipping and order.",
       "sources": [
-        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}}",
-        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}, doi={10.1109/ms.2018.2141031}}",
+        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}",
+        "@article{7332971, author={A. Ouni and M. Kessentini and K. Inoue and M. Ó. Cinnéide}, journal={IEEE Transactions on Services Computing}, title={Search-Based Web Service Antipatterns Detection}, year={2017}, volume={10}, number={4}, pages={603-617}, keywords={cooperative systems;evolutionary computation;optimisation;parallel algorithms;quality of service;search problems;service-oriented architecture;statistical analysis;Web services;Web service antipatterns detection;service oriented architecture;SOA;service-based systems;SBSs;quality of service;QoS;cooperative parallel evolutionary algorithm;P-EA;optimization process;random search;statistical analysis;Web services;Measurement;Sociology;Statistics;Optimization;Business;Web Services;web service design;antipattern;service-oriented computing;search-based software engineering}, doi={10.1109/TSC.2015.2502595}, ISSN={1939-1374}, month={July},}"
       ],
       "tags": [
         "architecture", "system", "service", "microservice"

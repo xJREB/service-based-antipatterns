@@ -5,6 +5,11 @@
             <v-spacer></v-spacer>
             <v-toolbar-side-icon @click.native="value.drawer = !value.drawer"></v-toolbar-side-icon>
         </v-toolbar>
+        <v-card-text>
+            <v-icon>info</v-icon>
+            This website serves as a knowledge base for Service-Based Antipatterns
+            and has been created due to a study project at the University of Stuttgart.
+        </v-card-text>
         <v-subheader>Tags</v-subheader>
         <v-list dense>
             <v-list-tile>
@@ -31,6 +36,15 @@
                 </v-list-tile-content>
             </v-list-tile>
         </v-list>
+        <v-subheader>Evidence</v-subheader>
+        <v-slider
+                v-model="value.evidence"
+                :tick-labels="ticksLabels"
+                :max="3"
+                step="1"
+                ticks="always"
+                tick-size="2"
+        ></v-slider>
     </v-navigation-drawer>
 </template>
 
@@ -43,6 +57,9 @@
         @Prop(Object) public value!: Sidebar;
         @Prop(Array) public tags!: string[];
         private allTagsEnabled: boolean = true;
+        private ticksLabels = [
+            'not set', 'low', 'medium', 'high',
+        ];
 
         @Watch('value.selection')
         private selectionChange() {
@@ -58,3 +75,11 @@
         }
     }
 </script>
+<style>
+    .v-slider {
+        margin-left: 16px;
+        margin-right: 16px;
+        height: 15px;
+        background-image: linear-gradient(to right, gray 2%, rgba(0,172,193,0) 2%, rgba(0,172,193,1) 49%);
+    }
+</style>

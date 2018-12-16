@@ -12,7 +12,6 @@
                 <span>Close the dialog</span>
             </v-tooltip>
         </v-toolbar>
-
         <v-card-text style="padding: 0">
             <v-container grid-list-md>
                 <v-layout wrap>
@@ -52,6 +51,14 @@
                     <v-flex md10 xs9>
                         <v-card-text>{{antiPattern.example}}</v-card-text>
                     </v-flex>
+                    <v-flex md2 xs3>
+                        <v-subheader>Evidence</v-subheader>
+                    </v-flex>
+                    <v-flex md10 xs9>
+                        <v-card-text v-bind:style="{ background: 'linear-gradient(90deg, white 98%, ' + referenceMedianColor + ' 2%) !important'}">
+                            {{antiPattern.median}}
+                        </v-card-text>
+                    </v-flex>
                 </v-layout>
                 <v-card-text>
                     <anti-pattern-citations-component :sources="antiPattern.sources"/>
@@ -77,6 +84,7 @@
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
     import AntiPatternRelatedComponent from "@/components/AntiPatternRelatedComponent.vue";
+    import EvidenceService from "../services/EvidenceService";
 
     @Component({
         components: {
@@ -91,6 +99,10 @@
         @Emit('input')
         public closeDialog() {
             return false;
+        }
+
+        public get referenceMedianColor(): string {
+            return EvidenceService.getReferenceMedianColor(this.antiPattern);
         }
     }
 </script>

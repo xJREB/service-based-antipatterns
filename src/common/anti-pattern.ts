@@ -8,6 +8,8 @@ export class AntiPattern {
     public example?: string;
     public sources?: string[];
     public tags?: string[];
+    public median?: number;
+    public sourcesReferences?: Map<number, number>;
     public relatedItems?: RelatedItem[];
     public relatedAntiPatterns?: RelatedAntiPattern[];
 
