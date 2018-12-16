@@ -14,16 +14,20 @@ export default class Utils {
         for (const antiPattern of antiPatterns) {
             if (antiPattern.relatedItems) {
                 antiPattern.relatedItems.forEach((relatedItem) => {
-                    const relatedAntipattern = antiPatterns.filter((item) => item.name === relatedItem.name).pop();
-                    if (relatedAntipattern) {
+                    const relatedAntipatternName = antiPatterns.filter((item) => item.name === relatedItem.name).pop();
+                    if (relatedAntipatternName) {
                         if (!antiPattern.relatedAntiPatterns) {
                             antiPattern.relatedAntiPatterns = [];
                         }
-                        antiPattern.relatedAntiPatterns.push({
+                        const relatedAntipattern = {
                             relation: relatedItem.relation,
-                            name: relatedAntipattern.name,
-                            description: relatedAntipattern.description,
-                        } as RelatedAntiPattern);
+                            name: relatedAntipatternName.name,
+                            description: relatedAntipatternName.description,
+                        } as RelatedAntiPattern;
+                        if (antiPattern.relatedAntiPatterns.filter(
+                            (p) => p.name === relatedAntipattern.name).length === 0) {
+                            antiPattern.relatedAntiPatterns.push(relatedAntipattern);
+                        }
                     }
                 });
             }
