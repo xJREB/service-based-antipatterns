@@ -80,6 +80,6 @@
         margin-left: 16px;
         margin-right: 16px;
         height: 15px;
-        background-image: linear-gradient(to right, gray 2%, rgba(255, 0, 0, 0) 2%, rgba(255, 0, 0, 1) 49%);
+        background-image: linear-gradient(to right, gray 2%, rgba(0,172,193,0) 2%, rgba(0,172,193,1) 49%);
     }
 </style>
