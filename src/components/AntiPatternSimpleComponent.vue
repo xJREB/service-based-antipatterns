@@ -1,6 +1,7 @@
 <template>
     <v-card style="display: flex; flex-direction: column;" height="100%">
-        <v-card-title class="primary white--text">
+        <v-card-title class="primary white--text"
+                      v-bind:style="{ background: 'linear-gradient(90deg, #3f51b5 98%, ' + referenceMedianColor + ' 2%) !important'}">
             <div class="headline">{{antiPattern.name}}</div>
         </v-card-title>
         <v-card-text class="grow">
@@ -23,10 +24,11 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Provide, Vue, Watch} from 'vue-property-decorator';
+    import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
+    import EvidenceService from "../services/EvidenceService";
 
     @Component({
         components: {
@@ -37,6 +39,10 @@
     export default class AntiPatternSimpleComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
         public dialog: boolean = false;
+
+        public get referenceMedianColor(): string {
+            return EvidenceService.getReferenceMedianColor(this.antiPattern);
+        }
 
         @Watch('router', {immediate: true, deep: true})
         public beforeRouteUpdate(to: any, from: any) {

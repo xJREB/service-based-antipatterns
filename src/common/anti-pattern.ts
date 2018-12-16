@@ -8,6 +8,8 @@ export class AntiPattern {
     public example?: string;
     public sources?: string[];
     public tags?: string[];
+    public median?: number;
+    public sourcesReferences?: Map<number, number>;
 
     constructor(name?: string, aliases?: string[], description?: string, detection?: string, cause?: string,
                 solution?: string, example?: string, sources?: string[], tags?: string[]) {

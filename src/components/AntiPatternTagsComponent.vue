@@ -36,6 +36,15 @@
                 </v-list-tile-content>
             </v-list-tile>
         </v-list>
+        <v-subheader>Evidence</v-subheader>
+        <v-slider
+                v-model="value.evidence"
+                :tick-labels="ticksLabels"
+                :max="3"
+                step="1"
+                ticks="always"
+                tick-size="2"
+        ></v-slider>
     </v-navigation-drawer>
 </template>
 
@@ -48,6 +57,9 @@
         @Prop(Object) public value!: Sidebar;
         @Prop(Array) public tags!: string[];
         private allTagsEnabled: boolean = true;
+        private ticksLabels = [
+            'not set', 'low', 'medium', 'high',
+        ];
 
         @Watch('value.selection')
         private selectionChange() {
@@ -63,3 +75,11 @@
         }
     }
 </script>
+<style>
+    .v-slider {
+        margin-left: 16px;
+        margin-right: 16px;
+        height: 15px;
+        background-image: linear-gradient(to right, gray 2%, rgba(0,172,193,0) 2%, rgba(0,172,193,1) 49%);
+    }
+</style>
