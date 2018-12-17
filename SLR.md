@@ -53,6 +53,7 @@ First page only
 ## Criteria
 ### Inclusion
 
+* all terms mentioned above must appear in the title
 * for each year at least 10 references
 * terms `antipattern` or `bad smells` must occur in title, abstract, conclusion or ToC
 
