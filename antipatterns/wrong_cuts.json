@@ -6,6 +6,7 @@
         ""
       ],
       "description": "Microservices are split on the basis of technical layers (presentation, business, and data layers) instead of business capabilities.",
+      "context": "",
       "detection": "",
       "consequences": "The wrong separation of concerns and increased data-splitting complexity can occur.",
       "cause": "",

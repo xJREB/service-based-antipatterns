@@ -2,6 +2,7 @@ export class AntiPattern {
     public name?: string;
     public aliases?: string[];
     public description?: string;
+    public context?: string;
     public detection?: string;
     public cause?: string;
     public solution?: string;
@@ -11,11 +12,12 @@ export class AntiPattern {
     public median?: number;
     public sourcesReferences?: Map<number, number>;
 
-    constructor(name?: string, aliases?: string[], description?: string, detection?: string, cause?: string,
-                solution?: string, example?: string, sources?: string[], tags?: string[]) {
+    constructor(name?: string, aliases?: string[], description?: string, context?: string, detection?: string,
+                cause?: string, solution?: string, example?: string, sources?: string[], tags?: string[]) {
         this.name = name;
         this.aliases = aliases;
         this.description = description;
+        this.context = context;
         this.detection = detection;
         this.cause = cause;
         this.solution = solution;

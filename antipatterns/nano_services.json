@@ -7,6 +7,7 @@
         "Refactor Mercilessly"
       ],
       "description": "A service is too fine-grained, so that communications, maintenance, and so on outweights its utility.",
+      "context": "",
       "detection": "A nanoservice interface has few methods or possibly only one which implements an incomplete subset of one abstraction.",
       "consequences": "Bad performance, fragmented logic and overhead due to the few interface methods. The functionality of one core abstraction is cluttered to multiple services. This means multiple services have to be changed during implementation and maintenance of a particular application requirement. Testing sucha requirement also involves testing numerous services at once. Therefore, developer also need to know about the functionality and interoperability of multiple services.",
       "cause": "The requirements might be nonexistent or poorly structured making it very hard to identify their abstractions so individual use cases are mapped into separate services. Often patterns are used when designing the services which might lead to antipatterns when misunderstood or wrongly applied. One of such patterns is the EJB Command pattern which can lead to a Nano service when misunderstood.",
