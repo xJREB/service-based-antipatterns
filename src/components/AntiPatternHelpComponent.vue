@@ -47,3 +47,8 @@
         }
     }
 </script>
+<style>
+    .help-dialog {
+        height: 100%;
+    }
+</style>
