@@ -19,7 +19,8 @@
             <v-btn icon href='https://github.com/xJREB/service-based-antipatterns/'>
                 <font-awesome-icon size="2x" :icon="['fab', 'github']"></font-awesome-icon>
             </v-btn>
-            <v-dialog lazy scrollable v-model="dialog" @keydown.esc="dialog = false" width="1000px">
+            <v-dialog content-class="help-dialog" help-dialog lazy scrollable v-model="dialog"
+                      @keydown.esc="dialog = false" width="1000px">
                 <v-btn icon slot="activator">
                     <font-awesome-icon size="2x" :icon="['far', 'question-circle']"></font-awesome-icon>
                 </v-btn>
