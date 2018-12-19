@@ -53,9 +53,9 @@ First page only
 ## Criteria
 ### Inclusion
 
-* all terms mentioned above must appear in the title
-* for each year at least 10 references
-* terms `antipattern` or `bad smells` must occur in title, abstract, conclusion or ToC
+* the term `antipattern`, `anti-pattern`, `bad smell`, `pattern` must appear in the title
+* if only `pattern` occurs in the title, the title also has to contain any of `service`, `microservice`, `web service`, `service oriented architecture`, `soa`, `service oriented computing` additionally
+* terms `antipattern`, `anti-pattern` or `bad smells` must occur in abstract, conclusion or ToC
 
 ### Exclusion
 
