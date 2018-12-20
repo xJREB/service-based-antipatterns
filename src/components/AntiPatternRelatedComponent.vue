@@ -4,20 +4,23 @@
             <v-subheader>Related Antipatterns</v-subheader>
         </v-flex>
         <v-flex md10 xs9>
-            <v-window v-model="relatedItemCardIndex">
-                <v-window-item v-for="relatedAntiPattern in relatedAntiPatterns"
-                               :key="relatedAntiPattern.name">
+            <v-expansion-panel inset v-model="panel">
+                <v-expansion-panel-content v-for="relatedAntiPattern in relatedAntiPatterns"
+                                           :key="relatedAntiPattern.name"
+                                           :class="getDynamicPrimaryHeaderClass(relatedAntiPattern.name)"
+                                           :hide-actions="isRelatedAntiPatternSelected(relatedAntiPattern.name)">
+                    <div slot="header">
+                        <v-tooltip top>
+                            <v-btn :class="getDynamicWhiteTextClass(relatedAntiPattern.name)"
+                                   icon class="ma-0" slot="activator"
+                                   @click="openAntiPattern(relatedAntiPattern.name)">
+                                <v-icon>open_in_new</v-icon>
+                            </v-btn>
+                            <span>Open the detail view</span>
+                        </v-tooltip>
+                        {{relatedAntiPattern.name}}
+                    </div>
                     <v-card>
-                        <v-card-title class="primary white--text">
-                            <div class="headline">{{relatedAntiPattern.name}}</div>
-                            <v-spacer></v-spacer>
-                            <v-tooltip top slot="activator">
-                                <v-btn icon dark slot="activator" @click="openAntiPattern(relatedAntiPattern.name)">
-                                    <v-icon>open_in_new</v-icon>
-                                </v-btn>
-                                <span>Open the detail view</span>
-                            </v-tooltip>
-                        </v-card-title>
                         <v-card-text class="grow">
                             <div>{{relatedAntiPattern.description}}</div>
                         </v-card-text>
@@ -25,26 +28,8 @@
                             Relation: {{relatedAntiPattern.relation}}
                         </v-card-text>
                     </v-card>
-                </v-window-item>
-            </v-window>
-            <v-card-actions class="justify-space-between">
-                <v-btn flat @click="prev">
-                    <v-icon>navigate_before</v-icon>
-                </v-btn>
-                <v-item-group v-model="relatedItemCardIndex" class="text-xs-center" mandatory>
-                    <v-item v-for="relatedAntiPattern in relatedAntiPatterns" :key="relatedAntiPattern.name">
-                        <v-btn slot-scope="{ active, toggle }"
-                               :input-value="active"
-                               icon
-                               @click="toggle">
-                            <v-icon>fiber_manual_record</v-icon>
-                        </v-btn>
-                    </v-item>
-                </v-item-group>
-                <v-btn flat @click="next">
-                    <v-icon>navigate_next</v-icon>
-                </v-btn>
-            </v-card-actions>
+                </v-expansion-panel-content>
+            </v-expansion-panel>
         </v-flex>
     </v-layout>
 </template>
@@ -64,16 +49,21 @@
     })
     export default class AntiPatternRelatedComponent extends Vue {
         @Prop(Array) public relatedAntiPatterns!: AntiPattern[];
-        public relatedItemCardIndex: number = 0;
+        private panel: number = null;
 
-        public next() {
-            this.relatedItemCardIndex =
-                this.relatedItemCardIndex + 1 === this.relatedAntiPatterns.length ? 0 : this.relatedItemCardIndex + 1;
+        public getDynamicPrimaryHeaderClass(name: string) {
+            return {
+                'primary': this.isRelatedAntiPatternSelected(name),
+                'white--text': this.isRelatedAntiPatternSelected(name)
+            };
         }
 
-        public prev() {
-            this.relatedItemCardIndex =
-                this.relatedItemCardIndex - 1 < 0 ? this.relatedAntiPatterns.length - 1 : this.relatedItemCardIndex - 1;
+        public getDynamicWhiteTextClass(name: string) {
+            return {'white--text': this.isRelatedAntiPatternSelected(name)};
+        }
+
+        public isRelatedAntiPatternSelected(name: string) {
+            return this.panel === this.relatedAntiPatterns.map(a => a.name).indexOf(name);
         }
 
         public openAntiPattern(antiPatternName: string) {
