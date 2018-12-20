@@ -6,6 +6,7 @@
         ""
       ],
       "description": "The services are tightly coupled by hardcoded point-to-point integration and context-specific interfaces",
+      "context": "",
       "detection": "",
       "consequences": "Decrease flexibility, hard to maintain",
       "cause": "To complex buisness processe, wrong cuts",

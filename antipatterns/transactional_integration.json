@@ -6,6 +6,7 @@
         ""
       ],
       "description": "Transactions extend across service boundaries and are not isolated inside services.",
+      "context": "",
       "detection": "",
       "consequences": "",
       "cause": "",

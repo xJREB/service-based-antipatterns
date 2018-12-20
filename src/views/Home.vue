@@ -19,7 +19,8 @@
             <v-btn icon href='https://github.com/xJREB/service-based-antipatterns/'>
                 <font-awesome-icon size="2x" :icon="['fab', 'github']"></font-awesome-icon>
             </v-btn>
-            <v-dialog lazy scrollable v-model="dialog" @keydown.esc="dialog = false" width="1000px">
+            <v-dialog content-class="help-dialog" help-dialog lazy scrollable v-model="dialog"
+                      @keydown.esc="dialog = false" width="1000px">
                 <v-btn icon slot="activator">
                     <font-awesome-icon size="2x" :icon="['far', 'question-circle']"></font-awesome-icon>
                 </v-btn>
@@ -38,7 +39,7 @@
     import AntiPatternsContainerComponent from '../components/AntiPatternsContainerComponent';
     import AntiPatternTagsComponent from "../components/AntiPatternTagsComponent";
     import {AntiPattern} from "../common/anti-pattern";
-    import {File} from "@/common/file";
+    import {MarkdownFile} from "@/common/markdown-file";
     import Utils from "../utils/Utils";
     import {DefaultSidebar, Sidebar} from "../common/sidebar";
     import Cite from 'citation-js';
@@ -57,7 +58,7 @@
         private antiPatternsEvidence: AntiPattern[] = [];
         private searchTerm: string = "";
         private tagsModel: Sidebar = new DefaultSidebar();
-        private files: File[] = [];
+        private files: MarkdownFile[] = [];
         private evidenceLabel: { [s: number]: number; } = {0: -1, 1: 0, 2: 30, 3: 100};
         private dialog: boolean = false;
 
@@ -71,7 +72,8 @@
             const fileNames = ['README', 'SLR', 'CONTRIBUTING'];
             for (const name of fileNames) {
                 axios.get('/service-based-antipatterns/assets/' + name + '.md').then((response) => {
-                    this.files.push({name, content: response.data} as File);
+                    const position = fileNames.indexOf(name);
+                    this.files.push({name, content: response.data, position} as MarkdownFile);
                 }).catch(() => {
                     this.$toasted.error('Failed to load ' + name + '.md');
                 });
@@ -155,7 +157,7 @@
         @Watch("tagsModel.evidence")
         public onSetEvidence(evidenceFilter: number, old: number) {
             if (evidenceFilter) {
-                evidenceFilter = this.evidenceLabel[evidenceFilter];
+                evidenceFilter = EvidenceService.evidenceLabel[evidenceFilter][0];
                 this.antiPatternsEvidence = this.antiPatternsAll
                     .filter((item) => evidenceFilter < 0 || (item.median && item.median >= evidenceFilter));
             } else {

@@ -5,6 +5,13 @@ import Math from 'mathjs';
 
 export default class EvidenceService {
 
+    public static evidenceLabel: { [s: number]: [number, string]; } = {
+        0: [-1, "not set"],
+        1: [0, "low"],
+        2: [30, "medium"],
+        3: [100, "high"],
+    };
+
     public static addReferenceCount(antiPattern: AntiPattern): Promise<AntiPattern> {
         if (antiPattern.sources) {
             antiPattern.sourcesReferences = new Map<number, number>();
@@ -30,6 +37,18 @@ export default class EvidenceService {
             return "rgba(0, 172, 193, " + alphaValue + ")";
         }
         return "lightgrey";
+    }
+
+    public static getReferenceMedianLabel(antiPattern: AntiPattern): string {
+        if (antiPattern.median) {
+            const size = 3;
+            for (const i in this.evidenceLabel) {
+                if (antiPattern.median > this.evidenceLabel[size - +i][0]) {
+                    return this.evidenceLabel[size - +i][1];
+                }
+            }
+        }
+        return this.evidenceLabel[0][1];
     }
 
     private static callRefCross(doi: string, antiPattern: AntiPattern, key: number): Promise<AntiPattern> {

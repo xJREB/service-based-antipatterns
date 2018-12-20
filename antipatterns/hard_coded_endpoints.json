@@ -6,6 +6,7 @@
         ""
       ],
       "description": "Hardcoded IP addresses and ports of the services between connected microservices exist. Also proposed as Hardcoded IPs and Ports.",
+      "context": "",
       "detection": "",
       "consequences": "Microservices connected with hardcoded endpoints lead to problems when their locations need to be changed.",
       "cause": "",

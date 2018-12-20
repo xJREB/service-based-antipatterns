@@ -12,7 +12,7 @@
                 <span>Close the dialog</span>
             </v-tooltip>
             <v-tabs color="transparent" slot="extension" fixed-tabs v-model="tab">
-                <v-tab v-for="file in files" :key="file.name">
+                <v-tab v-for="file in sortedFiles" :key="file.name">
                     {{file.name}}
                 </v-tab>
             </v-tabs>
@@ -20,7 +20,7 @@
 
         <v-card-text>
             <v-tabs-items v-model="tab">
-                <v-tab-item v-for="file in files" :key="file.content">
+                <v-tab-item v-for="file in sortedFiles" :key="file.content">
                     <v-card flat>
                         <v-card-text>
                             <vue-markdown>{{file.content}}</vue-markdown>
@@ -34,12 +34,17 @@
 
 <script lang="ts">
     import {Component, Emit, Prop, Vue} from 'vue-property-decorator';
-    import {File} from "@/common/file";
+    import {MarkdownFile} from "@/common/markdown-file";
+    import Utils from "@/utils/Utils";
 
     @Component
     export default class AntiPatternDetailComponent extends Vue {
-        @Prop(Array) public files!: File[];
+        @Prop(Array) public files!: MarkdownFile[];
         private tab: number = 0;
+
+        public get sortedFiles() {
+            return this.files.sort(Utils.sortMarkdownFiles);
+        }
 
         @Emit('input')
         public closeDialog() {
@@ -47,3 +52,8 @@
         }
     }
 </script>
+<style>
+    .help-dialog {
+        height: 100%;
+    }
+</style>

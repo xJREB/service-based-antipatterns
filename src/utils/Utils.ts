@@ -1,3 +1,4 @@
+import {MarkdownFile} from "@/common/markdown-file";
 import {AntiPattern, RelatedAntiPattern} from "@/common/anti-pattern";
 
 export default class Utils {
@@ -8,6 +9,10 @@ export default class Utils {
         } else {
             return stringToClean;
         }
+    }
+
+    public static sortMarkdownFiles(file1: MarkdownFile, file2: MarkdownFile) {
+        return file1.position - file2.position;
     }
 
     public static setRelatedAntiPatterns(antiPatterns: AntiPattern[]) {
