@@ -55,7 +55,7 @@ First page only
 
 * the term `antipattern`, `anti-pattern`, `bad smell`, `pattern` must appear in the title
 * if only `pattern` occurs in the title, the title also has to contain any of `service`, `microservice`, `web service`, `service oriented architecture`, `soa`, `service oriented computing` additionally
-* terms `antipattern`, `anti-pattern` or `bad smells` must occur in abstract, conclusion or ToC
+* one of the terms `antipattern`, `anti-pattern` or `bad smell` must occur in abstract, conclusion or ToC
 
 ### Exclusion
 
