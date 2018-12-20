@@ -13,8 +13,8 @@
             </v-tooltip>
         </v-toolbar>
         <v-card-text style="padding: 0">
-            <v-container grid-list-md >
-                <v-layout  wrap>
+            <v-container grid-list-md>
+                <v-layout wrap>
                     <v-flex md2 xs3>
                         <v-subheader>Also known as</v-subheader>
                     </v-flex>
@@ -61,8 +61,9 @@
                         <v-subheader>Evidence</v-subheader>
                     </v-flex>
                     <v-flex md10 xs9>
-                        <v-card-text v-bind:style="{ background: 'linear-gradient(90deg, white 98%, ' + referenceMedianColor + ' 2%) !important'}">
-                            {{antiPattern.median}}
+                        <v-card-text
+                                v-bind:style="{ background: 'linear-gradient(90deg, white 98%, ' + referenceMedianColor + ' 2%) !important'}">
+                            {{ referenceMedianLabel }}
                         </v-card-text>
                     </v-flex>
                 </v-layout>
@@ -104,6 +105,10 @@
 
         public get referenceMedianColor(): string {
             return EvidenceService.getReferenceMedianColor(this.antiPattern);
+        }
+
+        public get referenceMedianLabel(): string {
+            return EvidenceService.getReferenceMedianLabel(this.antiPattern);
         }
     }
 </script>

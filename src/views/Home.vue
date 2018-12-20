@@ -156,7 +156,7 @@
         @Watch("tagsModel.evidence")
         public onSetEvidence(evidenceFilter: number, old: number) {
             if (evidenceFilter) {
-                evidenceFilter = this.evidenceLabel[evidenceFilter];
+                evidenceFilter = EvidenceService.evidenceLabel[evidenceFilter][0];
                 this.antiPatternsEvidence = this.antiPatternsAll
                     .filter((item) => evidenceFilter < 0 || (item.median && item.median >= evidenceFilter));
             } else {
