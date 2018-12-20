@@ -1,3 +1,5 @@
+import {MarkdownFile} from "@/common/markdown-file";
+
 export default class Utils {
 
     public static cleanString(stringToClean: string) {
@@ -6,6 +8,10 @@ export default class Utils {
         } else {
             return stringToClean;
         }
+    }
+
+    public static sortMarkdownFiles(file1: MarkdownFile, file2: MarkdownFile) {
+        return file1.position - file2.position;
     }
 
 }

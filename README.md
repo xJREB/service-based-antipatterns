@@ -2,8 +2,8 @@
 
 This repository should serve as a knowledge base for Service-Based Antipatterns and has been created due to a study project at the University of Stuttgart.
 
-The basis of the antipatterns has been collected by applying a Systematic Literature Review (SLR) which has been documented [here](SLR.md).
-Anyone can contribute with new antipatterns to this project by following the contribution guidelines specified [here](CONTRIBUTING.md).
+The basis of the antipatterns has been collected by applying a Systematic Literature Review (SLR) which has been documented [here](https://github.com/xJREB/service-based-antipatterns/blob/master/SLR.md).
+Anyone can contribute with new antipatterns to this project by following the contribution guidelines specified [here](https://github.com/xJREB/service-based-antipatterns/blob/master/CONTRIBUTING.md).
 
 The repository has been created
 1. to collect the information in a structured way (JSON)

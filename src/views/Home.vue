@@ -39,7 +39,7 @@
     import AntiPatternsContainerComponent from '../components/AntiPatternsContainerComponent';
     import AntiPatternTagsComponent from "../components/AntiPatternTagsComponent";
     import {AntiPattern} from "../common/anti-pattern";
-    import {File} from "@/common/file";
+    import {MarkdownFile} from "@/common/markdown-file";
     import Utils from "../utils/Utils";
     import {DefaultSidebar, Sidebar} from "../common/sidebar";
     import Cite from 'citation-js';
@@ -58,7 +58,7 @@
         private antiPatternsEvidence: AntiPattern[] = [];
         private searchTerm: string = "";
         private tagsModel: Sidebar = new DefaultSidebar();
-        private files: File[] = [];
+        private files: MarkdownFile[] = [];
         private evidenceLabel: { [s: number]: number; } = {0: -1, 1: 0, 2: 30, 3: 100};
         private dialog: boolean = false;
 
@@ -72,7 +72,8 @@
             const fileNames = ['README', 'SLR', 'CONTRIBUTING'];
             for (const name of fileNames) {
                 axios.get('/service-based-antipatterns/assets/' + name + '.md').then((response) => {
-                    this.files.push({name, content: response.data} as File);
+                    const position = fileNames.indexOf(name);
+                    this.files.push({name, content: response.data, position} as MarkdownFile);
                 }).catch(() => {
                     this.$toasted.error('Failed to load ' + name + '.md');
                 });
