@@ -28,6 +28,12 @@
                         <v-card-text>{{antiPattern.description}}</v-card-text>
                     </v-flex>
                     <v-flex md2 xs3>
+                        <v-subheader>Context</v-subheader>
+                    </v-flex>
+                    <v-flex md10 xs9>
+                        <v-card-text>{{antiPattern.context}}</v-card-text>
+                    </v-flex>
+                    <v-flex md2 xs3>
                         <v-subheader>Cause</v-subheader>
                     </v-flex>
                     <v-flex md10 xs9>

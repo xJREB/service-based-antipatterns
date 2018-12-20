@@ -6,6 +6,7 @@
         "Multilayer Service"
       ],
       "description": "Common infrastructure functions are implemented in different services. These might include technical processes such as logging but can also extend to common business functions like currency conversion. These functions are implemented in multiple services and result in duplicated code and different implementations for the same functionality.",
+      "context": "",
       "detection": "Stovepipe services typically have a large number of private implementation methods",
       "consequences": "Large number of (private) methods and overall large service implementation. Technical and utility functions are implemented inconsistently. The development time of stovepipe services is considerably larger.",
       "cause": "Inexperience in developing multilayer architecture is one reason that can result in stovepipe services. They can also be caused by insufficient communication and insufficient design/code reviews during service implementation.",

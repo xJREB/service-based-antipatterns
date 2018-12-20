@@ -6,6 +6,7 @@
         ""
       ],
       "description": "A cyclic chain of calls between microservices exists.",
+      "context": "",
       "detection": "The existence of cycles of calls between microservices; e.g., A calls B, B calls C, and C calls back A.",
       "consequences": "Microservices involved in a cyclic dependency can be hard to maintain or reuse in isolation.",
       "cause": "",
