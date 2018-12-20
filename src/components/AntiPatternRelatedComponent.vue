@@ -49,12 +49,12 @@
     })
     export default class AntiPatternRelatedComponent extends Vue {
         @Prop(Array) public relatedAntiPatterns!: AntiPattern[];
-        private panel: number = null;
+        private panel: number | null = null;
 
         public getDynamicPrimaryHeaderClass(name: string) {
             return {
                 'primary': this.isRelatedAntiPatternSelected(name),
-                'white--text': this.isRelatedAntiPatternSelected(name)
+                'white--text': this.isRelatedAntiPatternSelected(name),
             };
         }
 
@@ -63,7 +63,7 @@
         }
 
         public isRelatedAntiPatternSelected(name: string) {
-            return this.panel === this.relatedAntiPatterns.map(a => a.name).indexOf(name);
+            return this.panel === this.relatedAntiPatterns.map((antiPattern) => antiPattern.name).indexOf(name);
         }
 
         public openAntiPattern(antiPatternName: string) {
