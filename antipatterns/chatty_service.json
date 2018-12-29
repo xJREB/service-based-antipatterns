@@ -1,0 +1,30 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Chatty Service",
+      "aliases": [
+        ""
+      ],
+      "description": "A high number of operations are required to complete one abstraction where the operations are typically attribute-level setters or getters.",
+      "context": "",
+      "detection": "",
+      "consequences": "Maintenance becomes harder since inferring the order of invocation is difficult. Many interactions are required, which degrades the overall performance with higher response time.",
+      "cause": "",
+      "solution": "",
+      "example": "",
+      "sources": [
+        "@article{Palma2014b, author={Palma, Francis and Moha, Naouel and Tremblay, Guy and Gu{\\'e}h{\\'e}neuc, Yann-Ga{\\\"e}l}, doi = {10.1007/978-3-319-09970-5_6}, isbn = {9783319099699}, issn = {16113349}, journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages = {58--73}, title = {{Specification and detection of SOA antipatterns in web services}}, volume = {8627 LNCS}, year = {2014}}"
+      ],
+      "tags": [
+        "antipattern",
+        "service"
+      ],
+      "relatedItems": [
+        {
+          "relation": "",
+          "name": ""
+        }
+      ]
+    }
+  ]
+}
