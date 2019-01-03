@@ -1,0 +1,25 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Data-Driven Migration",
+      "aliases": [
+        ""
+      ],
+      "description": "Because it is rarely to get the granularity of each service right the first time, you may be frequently adjusting the granularity of your services. Optimally you want to migrate the data for each service only once, because data migrations are complex and error-prone much more than source code migrations.",
+      "context": "The data-driven migration antipattern occurs mostly when you are migrating from a monolithic application to a microservices architecture and try to migrate both the service functionality and the corresponding data together.",
+      "detection": "",
+      "consequences": "Migrate data more than once and wasting time.",
+      "cause": "Trying to split each service right the first time.",
+      "solution": "The primary avoidance technique for this antipattern is to migrate the functionality of the service first, and worry about the bounded context between the service and the data later. Once you learn more about the service you will likely find the need to adjust the level of granularity through service consolidation or service splitting. After you are satisfied that you have the level of granularity correct, then migrate the data.",
+      "example": "",
+      "sources": [
+        "@book{Richards2016, author = {Richards, Mark}, isbn = {9781491963319}, pages = {66}, title = {{Microservices AntiPatterns and Pitfalls}}, year = {2016}}"
+      ],
+      "tags": [
+        "antipattern",
+        "microservice",
+        "migration"
+      ]
+    }
+  ]
+}
