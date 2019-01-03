@@ -1,0 +1,24 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Data Service",
+      "aliases": [
+        ""
+      ],
+      "description": "Typically only contains accessor operations, i.e., getters and setters, and perform some simple information retrieval or data access operations.",
+      "context": "",
+      "detection": "Usually deals with very small messages of primitive types and may have high data cohesion.",
+      "consequences": "",
+      "cause": "",
+      "solution": "",
+      "example": "",
+      "sources": [
+        "@article{Palma2014b, author={Palma, Francis and Moha, Naouel and Tremblay, Guy and Gu{\\'e}h{\\'e}neuc, Yann-Ga{\\\"e}l}, doi = {10.1007/978-3-319-09970-5_6}, isbn = {9783319099699}, issn = {16113349}, journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages = {58--73}, title = {{Specification and detection of SOA antipatterns in web services}}, volume = {8627 LNCS}, year = {2014}}"
+      ],
+      "tags": [
+        "antipattern",
+        "service"
+      ]
+    }
+  ]
+}
