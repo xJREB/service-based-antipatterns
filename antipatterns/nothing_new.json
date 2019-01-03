@@ -1,0 +1,23 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Nothing New Antipattern",
+      "aliases": [
+        ""
+      ],
+      "description": "Practices of OO programming are used in service orientation (SO) because the features of SO have not been understood.",
+      "context": "Experienced object oriented (OO) developers don't see new features in SO and apply their OO practices to SO.",
+      "detection": "If a service supports or computerizes human activities it should not use RPC.",
+      "consequences": "Using this antipattern leads to poorly usable interfaces.",
+      "cause": "Experienced developers fail to see new features of SO which is why they attempt to use all practices of OO in SO.",
+      "solution": "If RPC is used often the system has to be rewritten from scratch or legacy systems have to rewritten in particular.",
+      "example": "Use SOAP only as an envelop of RPC calls and limit service interfaces only to RPC.",
+      "sources": [
+        "@inproceedings{kral2009popular,author={Kr{\\'a}l, Jaroslav and {\\v{Z}}emlicka, Michal},booktitle={2009 Computation World: Future Computing, Service Computation, Cognitive, Adaptive, Content, Patterns},title={Popular SOA Antipatterns},year={2009},pages={271-276},doi={10.1109/ComputationWorld.2009.80},month={Nov}}"
+      ],
+      "tags": [
+        "antipattern"
+      ]
+    }
+  ]
+}
