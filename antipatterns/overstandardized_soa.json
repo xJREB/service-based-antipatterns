@@ -1,0 +1,25 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Overstandardized SOA",
+      "aliases": [
+        "Standardization Paralysis"
+      ],
+      "description": "In SOA there is a tendency to overstandardize the technical domain resulting in many SOA standards and adding additional complexity.",
+      "context": "Standardization is useful a useful part of any technical domain but most commonly SOA standards are set by large software vendors.",
+      "detection": "",
+      "consequences": "There are many (interdependent) standards that have to be introduced, updated and maintained constantly. Since most commonly these standards are set by large software vendors, the culture of large enterprises is (unintentionally) applied. Users of the standard are also depending on its vendor since the changes that are made to support it are typically very large.",
+      "cause": "Tendency to standardize all the technical aspects and dimensions of SOA.",
+      "solution": "Reduce standards to SOA aspects where they have the greatest effect which can be done by using coarse-grained user knowledge domain oriented interfaces.",
+      "example": "",
+      "sources": [
+        "@inproceedings{kral2009popular,author={Kr{\\'a}l, Jaroslav and {\\v{Z}}emlicka, Michal},booktitle={2009 Computation World: Future Computing, Service Computation, Cognitive, Adaptive, Content, Patterns},title={Popular SOA Antipatterns},year={2009},pages={271-276},doi={10.1109/ComputationWorld.2009.80},month={Nov}}"
+      ],
+      "tags": [
+        "antipattern",
+        "standardization",
+        "system"
+      ]
+    }
+  ]
+}
