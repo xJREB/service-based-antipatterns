@@ -17,7 +17,7 @@
       "sources": [
         "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}, doi={10.1109/ms.2018.2141031}}",
         "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}",
-        "@article{7332971, author={A. Ouni and M. Kessentini and K. Inoue and M. Ó. Cinn{\\'e}ide}, journal={IEEE Transactions on Services Computing}, title={Search-Based Web Service Antipatterns Detection}, year={2017}, volume={10}, number={4}, pages={603-617}, doi={10.1109/TSC.2015.2502595}, ISSN={1939-1374}, month={July},}",
+        "@article{7332971, author={A. Ouni and M. Kessentini and K. Inoue and M. {\\'O}. Cinn{\\'e}ide}, journal={IEEE Transactions on Services Computing}, title={Search-Based Web Service Antipatterns Detection}, year={2017}, volume={10}, number={4}, pages={603-617}, doi={10.1109/TSC.2015.2502595}, ISSN={1939-1374}, month={July},}",
         "@article{Palma2014b, author={Palma, Francis and Moha, Naouel and Tremblay, Guy and Gu{\\'e}h{\\'e}neuc, Yann-Ga{\\\"e}l}, doi = {10.1007/978-3-319-09970-5_6}, isbn = {9783319099699}, issn = {16113349}, journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages = {58--73}, title = {{Specification and detection of SOA antipatterns in web services}}, volume = {8627 LNCS}, year = {2014}}"
       ],
       "tags": [
