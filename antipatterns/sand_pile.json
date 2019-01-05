@@ -1,0 +1,28 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Sand Pile",
+      "aliases": [
+        ""
+      ],
+      "description": "This antipattern describes a frequent implementation of SOA where one elementary service is used per software component resulting in many small software components that are sharing data.",
+      "context": "SOA is often implemented by having one elementary service per software component.",
+      "detection": "Many small software components share data.",
+      "consequences": "Inefficiencies and big maintenance problems due to the large amount of small software components.",
+      "cause": "The antipattern is caused by a wrong grouping of \"atomic\" capabilities.",
+      "solution": "Regroup related elementary services into one software component with a common interface.",
+      "example": "Many highly specialized car service workshops are working separately. It is not an enterprise that provides all car repair services at one spot.",
+      "sources": [
+        "@inproceedings{kral2007most,author={Kral, Jaroslav and Zemlicka, Michal},booktitle={International Conference on Software Engineering Advances (ICSEA 2007)},title={The Most Important Service-Oriented Antipatterns},year={2007},pages={29--29},doi={10.1109/ICSEA.2007.74},month={Aug}}"
+      ],
+      "tags": [
+        "antipattern",
+        "service",
+        "microservice",
+        "architecture",
+        "system",
+        "high_cohesion"
+      ]
+    }
+  ]
+}
