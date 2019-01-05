@@ -8,9 +8,9 @@
       "description": "Transactions extend across service boundaries and are not isolated inside services.",
       "context": "",
       "detection": "",
-      "consequences": "",
-      "cause": "",
-      "solution": "",
+      "consequences": "The three main consequences being performance problem, security threats and rigidity.",
+      "cause": "Business processes are not static and if you start designing the SOA completely upfront without keeping some of the lanes open.",
+      "solution": "Using the Orchestration, Saga or Inversion of Communications pattern.",
       "example": "",
       "sources": [
         "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}"
