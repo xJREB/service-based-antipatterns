@@ -1,0 +1,24 @@
+{
+  "antiPatterns": [
+    {
+      "name": "CRUDy Interface",
+      "aliases": [
+        ""
+      ],
+      "description": "An RPC-like behaviour is used to design create, read, update and delete (CRUD) operations as service interfaces which can results in chatty interfaces.",
+      "context": "",
+      "detection": "",
+      "consequences": "Chatty interfaces because multiple methods need to be invoked to achieve one goal.",
+      "cause": "",
+      "solution": "CRUD interfaces should not be exposed via interfaces.",
+      "example": "",
+      "sources": [
+        "@article{ouni2017search, title={Search-based web service antipatterns detection}, author={Ouni, Ali and Kessentini, Marouane and Inoue, Katsuro and Cinn{\\'e}ide, Mel O}, journal={IEEE Transactions on Services Computing}, volume={10}, number={4}, pages={603--617}, year={2017}, publisher={IEEE}, doi={10.1109/TSC.2015.2502595}}"
+      ],
+      "tags": [
+        "antipattern",
+        "application"
+      ]
+    }
+  ]
+}
