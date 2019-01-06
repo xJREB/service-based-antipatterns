@@ -3,7 +3,7 @@
     {
       "name": "Duplicated Service",
       "aliases": [
-        ""
+        "Duplicated Web Service"
       ],
       "description": "Services with highly similar functionalities.",
       "context": "",
@@ -13,7 +13,8 @@
       "solution": "",
       "example": "",
       "sources": [
-        "@article{Palma2014b, author={Palma, Francis and Moha, Naouel and Tremblay, Guy and Gu{\\'e}h{\\'e}neuc, Yann-Ga{\\\"e}l}, doi = {10.1007/978-3-319-09970-5_6}, isbn = {9783319099699}, issn = {16113349}, journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages = {58--73}, title = {{Specification and detection of SOA antipatterns in web services}}, volume = {8627 LNCS}, year = {2014}}"
+        "@article{Palma2014b, author={Palma, Francis and Moha, Naouel and Tremblay, Guy and Gu{\\'e}h{\\'e}neuc, Yann-Ga{\\\"e}l}, doi = {10.1007/978-3-319-09970-5_6}, isbn = {9783319099699}, issn = {16113349}, journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages = {58--73}, title = {{Specification and detection of SOA antipatterns in web services}}, volume = {8627 LNCS}, year = {2014}}",
+        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}, organization={IEEE}}"
       ],
       "tags": [
         "antipattern",

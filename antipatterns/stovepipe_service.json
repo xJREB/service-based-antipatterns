@@ -13,7 +13,8 @@
       "solution": "Refactor the common private methods of all services into new technical services or utility classes. Alternatively these functionality can be refactored to a new super class from which all services can inherit.",
       "example": "A service implements private methods for technical tasks such as auditEvent and notify which might also be implemented by other services.",
       "sources": [
-        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
+        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}",
+        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}, organization={IEEE}}"
       ],
       "tags": [
         "antipattern",
