@@ -1,0 +1,25 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Bottleneck Service",
+      "aliases": [
+        ""
+      ],
+      "description": "This antipattern describes a service that is being used by too many external clients resulting in high response times and low availability of this service.",
+      "context": "A service is being used by too many external clients. ",
+      "detection": "",
+      "consequences": "High response times and low availability of this service.",
+      "cause": "",
+      "solution": "",
+      "example": "",
+      "sources": [
+        "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}, organization={IEEE}}"
+      ],
+      "tags": [
+        "antipattern",
+        "microservice",
+        "architecture"
+      ]
+    }
+  ]
+}
