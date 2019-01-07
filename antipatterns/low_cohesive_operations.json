@@ -1,0 +1,23 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Low Cohesive Operations",
+      "aliases": [
+        ""
+      ],
+      "description": "This antipatterns describes a service that performs many low cohesive operations on a single port-type, which might not be semantically related to each other.",
+      "context": "",
+      "detection": "",
+      "consequences": "",
+      "cause": "",
+      "solution": "",
+      "example": "",
+      "sources": [
+        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}, organization={IEEE}}"
+      ],
+      "tags": [
+        "antipattern"
+      ]
+    }
+  ]
+}
