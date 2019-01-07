@@ -1,0 +1,22 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Scattered Parasitic Functionality",
+      "aliases": [
+      ],
+      "description": "This antipattern describes that multiple components are responsible for the same concern and some of these components are also responsible for orthogonal concerns. This first violates, that a single concern is splitted among multiple components and second that at least one component handles multiple orthogonal concerns. This means that the concerns infects a component with another orthogonal concern, like a parasite.",
+      "context": "",
+      "detection": "",
+      "consequences": "The modifiability, reusability, modifiability and the testability are reduced by this antipattern. Because if a concern that is shared by two components and this concern has to be changed, then there are two places where it has to be changed and tested. Also the shared concern cannot be reused when not both components are used.",
+      "cause": "Easier to implement by giving every component the concern.",
+      "solution": "Implement a monitoring connector to exchange the data or the status of the data.",
+      "example": "Consider components A, B and C. Component A has a SharedConcern. Component B and C also have this shared concern, but also an orthogonal concern ConcernB respectively ConcernC. ",
+      "sources": [
+        "@inproceedings{Garcia:2009:TCA:1574262.1574275, author = {Garcia, Joshua and Popescu, Daniel and Edwards, George and Medvidovic, Nenad}, title = {Toward a Catalogue of Architectural Bad Smells}, booktitle = {Proceedings of the 5th International Conference on the Quality of Software Architectures: Architectures for Adaptive Software Systems}, series = {QoSA '09}, year = {2009}, isbn = {978-3-642-02350-7}, location = {East Stroudsburg, PA, USA}, pages = {146--162}, numpages = {17}, url = {http://dx.doi.org/10.1007/978-3-642-02351-4_10}, Titel anhand dieser DOI in Citavi-Projekt übernehmen Titel anhand dieser DOI in Citavi-Projekt übernehmendoi = {10.1007/978-3-642-02351-4_10}, acmid = {1574275}, publisher = {Springer-Verlag}, address = {Berlin, Heidelberg} ,} "],
+      "tags": [
+        "antipattern",
+        "architecture"
+      ]
+    }
+  ]
+}
