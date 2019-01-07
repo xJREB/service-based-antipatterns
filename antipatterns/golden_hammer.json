@@ -1,0 +1,24 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Golden Hammer",
+      "aliases": [
+        "When in doubt, make it a service"
+      ],
+      "description": "System implements functionalities as services although there is no reason for them to be a service and they do not benefit from it. Also algorithmic functions are type of this antipattern if they are frequently used and use large data exchanges. ",
+      "context": "",
+      "detection": "",
+      "consequences": "Performance issues, because direct communication methods are more efficient. Also there is more development, testing and debugging overhead because implementing functionality as a service needs more effort.   ",
+      "cause": "Service is created, because the requirements could change in the future and there could be an interoperability issue. Another reason could be that the requirements are not really understood. In addition to that, the interest to use a new technology could be another reason to use a service for every problem.",
+      "solution": "Refactor service to appropriate Java/J2EE component.",
+      "example": "Webservice provides functionality that is only accessed by J2EE systems. This would be better done by J2EE mechanisms.",
+      "sources": [
+        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
+      ],
+      "tags": [
+        "antipattern",
+        "architecture"
+      ]
+    }
+  ]
+}
