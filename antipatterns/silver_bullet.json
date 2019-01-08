@@ -1,0 +1,25 @@
+{
+  "antiPatterns": [
+    {
+      "name": "Silver Bullet",
+      "aliases": [
+        "Web Services Will Fix Our Problems"
+      ],
+      "description": "Describes a number of web services that are used to solve a problem on top of an existing architecture. This comes from the assumption that (web-)services will fix any problem. If the underlying architecture has lacks in his structure, e.g., a bloated session, then the webservice will exhibit the this structure with a bloated web service. ",
+      "context": "",
+      "detection": "Typically have a number of web services on top of an existing architecture.",
+      "consequences": "There is either a significant refactoring of the logic or if just copy and pasted there is a maintenance overhead. Also the web services that are created in this way are hard to reuse, because they are for this specific purpose and tightly coupled. Additionally, there is a development overhead for the web services.",
+      "cause": "The assumption, that a web service can fix the issues that the implementation in the underlying structure has. It can also be caused by the decision high-level technical managers and not by architects, without understanding them. It can also be caused by a poor architecture and design.",
+      "solution": "A refactoring of the underlying system is needed.",
+      "example": "An example is a bloated session with a similarly structured web service endpoint on top of it. This is a tight coupling because the web service is specific to this session. The expectation is that the client view on this system will be usable, scalable and allow reusing.",
+      "sources": [
+        "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
+      ],
+      "tags": [
+        "antipattern",
+        "architecture",
+        "system"
+      ]
+    }
+  ]
+}
