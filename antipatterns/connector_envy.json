@@ -5,16 +5,16 @@
       "aliases": [
         ""
       ],
-      "description": "Services with this antipattern have much  interaction-related functionality implemented. Therefore, interaction can mean communication, coordination, conversation or facilitation. These functionalities should be implemented by a connector.",
+      "description": "Services with this antipattern have much interaction-related functionality implemented. Therefore, interaction can mean communication, coordination, conversation or facilitation. These functionalities should be implemented by a connector.",
       "context": "",
       "detection": "",
-      "consequences": "Reusability is reduced, because the connection and application-specific service have to be reused. Also Understandability is reduced, because different concerns are mixed up. Lastly, the testability is reduced, because the connector and service funtionality cannot be tested separately.",
+      "consequences": "Reusability is reduced, because the connection and application-specific service have to be reused. Also understandability is reduced, because different concerns are mixed up. Lastly, the testability is reduced, because the connector and service funtionality cannot be tested separately.",
       "cause": "The performance was preferred to maintainability. Since the separation of the connector functionality and the service functionality creates a new level of indirection. This can also lead sometimes to new threads or processes. ",
       "solution": "Extract the connector specific functionality in an own connector service.",
       "example": "Service A implements communication and facilitation services. It also imports a communication library, which means, that it manages the networking facilities, which is used to implement the remote communication. But the delivery and routing services handled by the remote communication are type of the facilitation service ",
       "sources": [
         "@inproceedings{Garcia:2009:TCA:1574262.1574275, author = {Garcia, Joshua and Popescu, Daniel and Edwards, George and Medvidovic, Nenad}, title = {Toward a Catalogue of Architectural Bad Smells}, booktitle = {Proceedings of the 5th International Conference on the Quality of Software Architectures: Architectures for Adaptive Software Systems}, series = {QoSA '09}, year = {2009}, isbn = {978-3-642-02350-7}, location = {East Stroudsburg, PA, USA}, pages = {146--162}, numpages = {17}, url = {http://dx.doi.org/10.1007/978-3-642-02351-4_10}, Titel anhand dieser DOI in Citavi-Projekt übernehmendoi = {10.1007/978-3-642-02351-4_10}, acmid = {1574275}, publisher = {Springer-Verlag}, address = {Berlin, Heidelberg} ,} ",
-        "@inproceedings{inproceedings,\n author = {Andrade, Hugo and Almeida, Eduardo and Crnkovic, Ivica},\n year = {2014},\n month = {04},\npages = {},\n title = {Architectural bad smells in Software Product Lines: An exploratory study},\n journal = {ACM International Conference Proceeding Series},\n doi = {10.1145/2578128.2578237} \n}"
+        "@inproceedings{inproceedings, author = {Andrade, Hugo and Almeida, Eduardo and Crnkovic, Ivica}, year = {2014}, month = {04}, pages = {}, title = {Architectural bad smells in Software Product Lines: An exploratory study}, journal = {ACM International Conference Proceeding Series}, doi = {10.1145/2578128.2578237} }"
       ],
       "tags": [
         "antipattern",
