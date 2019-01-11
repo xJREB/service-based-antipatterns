@@ -1,7 +1,7 @@
 {
   "antiPatterns": [
     {
-      "name": "Connector envy",
+      "name": "Connector Envy",
       "aliases": [
         ""
       ],
