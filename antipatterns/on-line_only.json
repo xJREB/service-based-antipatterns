@@ -1,0 +1,25 @@
+{
+  "antiPatterns": [
+    {
+      "name": "On-Line Only",
+      "aliases": [
+        ""
+      ],
+      "description": "This antipattern applies when batch systems are not used in service orientation even if there are parts in the systems that should be run in batch mode. E.g. long running tasks or legacy systems.",
+      "context": "A batch system needs to be integrated into a service oriented system. This can be a legacy application or a system for long running tasks or it might have software engineering reasons.",
+      "detection": "",
+      "consequences": "Solutions using this antipattern can be expensive and unstable.",
+      "cause": "The antipattern is caused by a prejudice that integrating batch application in service orientation is an obsolete technique.",
+      "solution": "Implement a classic data store and wrap it as a service which is filled by batch subsystems in batches used interactively by other services.",
+      "example": "",
+      "sources": [
+        "@inproceedings{kral2007most,author={Kral, Jaroslav and Zemlicka, Michal},booktitle={International Conference on Software Engineering Advances (ICSEA 2007)},title={The Most Important Service-Oriented Antipatterns},year={2007},pages={29--29},doi={10.1109/ICSEA.2007.74},month={Aug}}"
+      ],
+      "tags": [
+        "antipattern",
+        "service",
+        "architecture"
+      ]
+    }
+  ]
+}

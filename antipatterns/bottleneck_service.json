@@ -1,30 +1,26 @@
 {
   "antiPatterns": [
     {
-      "name": "The Knot",
+      "name": "Bottleneck Service",
       "aliases": [
         ""
       ],
-      "description": "A set of low cohesive services are tightly coupled by hardcoded point-to-point integration and context-specific interfaces.",
-      "context": "",
+      "description": "This antipattern describes a service that is being used by too many external clients resulting in high response times and low availability of this service.",
+      "context": "A service is being used by too many external clients. ",
       "detection": "",
-      "consequences": "Decrease flexibility, hard to maintain and reducing the reusability of the services. Due to the complex architecture of the services their response times might be higher and they have low availability.",
-      "cause": "To complex buisness processe, wrong cuts",
+      "consequences": "High response times and low availability of this service.",
+      "cause": "",
       "solution": "",
       "example": "",
       "sources": [
-        "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}",
         "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}, organization={IEEE}}",
         "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}, organization={IEEE}}"
       ],
       "tags": [
-        "architecture",
-        "low_cohesion",
+        "antipattern",
+        "microservice",
         "architecture"
-      ],
-      "relatedItems": [
       ]
     }
   ]
 }
-  
