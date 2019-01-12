@@ -18,7 +18,7 @@
                 <anti-pattern-detail-component v-model="dialog" :anti-pattern="antiPattern"/>
             </v-dialog>
             <v-spacer></v-spacer>
-            <anti-pattern-actions-component :anti-pattern="antiPattern"/>
+            <anti-pattern-actions-component :antiPattern="antiPattern"/>
         </v-card-actions>
     </v-card>
 </template>
@@ -26,8 +26,8 @@
 <script lang="ts">
     import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
     import {AntiPattern} from '../common/anti-pattern';
-    import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
+    import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
     import EvidenceService from "../services/EvidenceService";
 
     @Component({
@@ -36,7 +36,7 @@
             AntiPatternDetailComponent,
         },
     })
-    export default class AntiPatternSimpleComponent extends Vue {
+    export default class AntiPatternCardComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
         public dialog: boolean = false;
 

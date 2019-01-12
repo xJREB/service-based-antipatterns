@@ -71,8 +71,11 @@
                     <anti-pattern-citations-component :sources="antiPattern.sources"/>
                 </v-card-text>
 
-                <v-divider class="my-2"></v-divider>
+                <v-divider class="my-2" v-if="antiPattern.relatedAntiPatterns"></v-divider>
+                <anti-pattern-related-component v-if="antiPattern.relatedAntiPatterns"
+                                                :relatedAntiPatterns="antiPattern.relatedAntiPatterns"/>
 
+                <v-divider class="my-2"></v-divider>
                 <v-chip label v-for="tag in antiPattern.tags" :key="tag">
                     <v-icon left>label</v-icon>
                     <v-list-tile-title>{{ tag }}</v-list-tile-title>
@@ -87,10 +90,12 @@
     import {AntiPattern} from '@/common/anti-pattern';
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
+    import AntiPatternRelatedComponent from "@/components/AntiPatternRelatedComponent.vue";
     import EvidenceService from "../services/EvidenceService";
 
     @Component({
         components: {
+            AntiPatternRelatedComponent,
             AntiPatternCitationsComponent,
             AntiPatternActionsComponent,
         },

@@ -14,11 +14,13 @@
       "example": "create_X(), read_Y()",
       "sources": [
         "@article{ouni2017search, title={Search-based web service antipatterns detection}, author={Ouni, Ali and Kessentini, Marouane and Inoue, Katsuro and Cinn{\\'e}ide, Mel O}, journal={IEEE Transactions on Services Computing}, volume={10}, number={4}, pages={603--617}, year={2017}, publisher={IEEE}, doi={10.1109/TSC.2015.2502595}}",
-        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}, organization={IEEE}}"
+        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}"
       ],
       "tags": [
         "antipattern",
         "application"
+      ],
+      "relatedItems": [
       ]
     }
   ]

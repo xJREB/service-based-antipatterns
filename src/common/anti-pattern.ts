@@ -11,9 +11,12 @@ export class AntiPattern {
     public tags?: string[];
     public median?: number;
     public sourcesReferences?: Map<number, number>;
+    public relatedItems?: RelatedItem[];
+    public relatedAntiPatterns?: RelatedAntiPattern[];
 
     constructor(name?: string, aliases?: string[], description?: string, context?: string, detection?: string,
-                cause?: string, solution?: string, example?: string, sources?: string[], tags?: string[]) {
+                cause?: string, solution?: string, example?: string, sources?: string[], tags?: string[],
+                relatedItems?: RelatedItem[]) {
         this.name = name;
         this.aliases = aliases;
         this.description = description;
@@ -24,5 +27,17 @@ export class AntiPattern {
         this.example = example;
         this.sources = sources;
         this.tags = tags;
+        this.relatedItems = relatedItems;
     }
+}
+
+export interface RelatedItem {
+    relation: string;
+    name: string;
+}
+
+export interface RelatedAntiPattern {
+    relation: string;
+    name: string;
+    description: string;
 }

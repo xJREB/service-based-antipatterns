@@ -90,6 +90,7 @@
                                 this.antiPatternsFiltered.push(filledPattern);
                                 this.antiPatternsSelected.push(filledPattern);
                                 this.antiPatternsEvidence.push(filledPattern);
+                                Utils.setRelatedAntiPatterns(this.antiPatternsAll);
                             });
                         },
                     );

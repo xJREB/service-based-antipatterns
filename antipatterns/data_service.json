@@ -14,14 +14,16 @@
       "example": "",
       "sources": [
         "@article{Palma2014b, author={Palma, Francis and Moha, Naouel and Tremblay, Guy and Gu{\\'e}h{\\'e}neuc, Yann-Ga{\\\"e}l}, doi = {10.1007/978-3-319-09970-5_6}, isbn = {9783319099699}, issn = {16113349}, journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages = {58--73}, title = {{Specification and detection of SOA antipatterns in web services}}, volume = {8627 LNCS}, year = {2014}}",
-        "@inproceedings{ouni2015web, author = {Ouni, Ali and Gaikovina Kula, Raula and Kessentini, Marouane and Inoue, Katsuro}, title = {Web Service Antipatterns Detection Using Genetic Programming}, booktitle = {Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation}, series = {GECCO '15}, year = {2015}, isbn = {978-1-4503-3472-3}, location = {Madrid, Spain}, pages = {1351--1358}, numpages = {8}, url = {http://doi.acm.org/10.1145/2739480.2754724}, doi = {10.1145/2739480.2754724}, acmid = {2754724}, publisher = {ACM}, address = {New York, NY, USA}}",
+        "@inproceedings{ouni2015web, author = {Ouni, Ali and Gaikovina Kula, Raula and Kessentini, Marouane and Inoue, Katsuro}, title = {Web Service Antipatterns Detection Using Genetic Programming}, booktitle = {Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation}, series = {GECCO '15}, year = {2015}, isbn = {978-1-4503-3472-3}, location = {Madrid, Spain}, pages = {1351--1358}, numpages = {8}, url = {http://doi.acm.org/10.1145/2739480.2754724}, doi = {10.1145/2739480.2754724}, publisher = {ACM}, address = {New York, NY, USA}}",
         "@article{ouni2017search, author={A. Ouni and M. Kessentini and K. Inoue and M. {\\'O}. Cinn{\\'e}ide}, journal={IEEE Transactions on Services Computing}, title={Search-Based Web Service Antipatterns Detection}, year={2017}, volume={10}, number={4}, pages={603--617}, doi={10.1109/TSC.2015.2502595}, ISSN={1939-1374}, month={July},}",
-        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}, organization={IEEE}}"
+        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}"
       ],
       "tags": [
         "antipattern",
         "service",
         "high_data_cohesion"
+      ],
+      "relatedItems": [
       ]
     }
   ]
