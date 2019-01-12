@@ -62,7 +62,7 @@
                     </v-flex>
                     <v-flex md10 xs9>
                         <v-card-text
-                                v-bind:style="{ background: 'linear-gradient(90deg, white 98%, ' + referenceMedianColor + ' 2%) !important'}">
+                                v-bind:style="{ background: 'linear-gradient(90deg, ' + referenceMedianColor + ' 0%, white 10%) !important'}">
                             {{ referenceMedianLabel }}
                         </v-card-text>
                     </v-flex>
