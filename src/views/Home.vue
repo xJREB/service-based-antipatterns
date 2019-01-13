@@ -166,6 +166,19 @@
             this.afterFilter();
         }
 
+        @Watch("tagsModel.sorting")
+        public onSetSorting(sorting: string[]) {
+            if (sorting.includes("name")) {
+                this.antiPatterns.sort((a1, a2) => a1!.name!.localeCompare(a2!.name!));
+            }
+            if (sorting.includes("evidence")) {
+                this.antiPatterns.forEach((a) => {
+                    if (isNaN(a!.median!)) { a.median = 0; }
+                });
+                this.antiPatterns.sort((a1, a2) => a2!.median! - a1!.median!);
+            }
+        }
+
         public clearSearch() {
             this.searchTerm = '';
         }
