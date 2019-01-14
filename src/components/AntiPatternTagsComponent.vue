@@ -10,11 +10,6 @@
             This website serves as a knowledge base for Service-Based Antipatterns
             and has been created due to a study project at the University of Stuttgart.
         </v-card-text>
-        <v-subheader>Sorting</v-subheader>
-        <v-radio-group v-model="value.sorting">
-            <v-radio label="Name" value="name"/>
-            <v-radio label="Evidence" value="evidence"/>
-        </v-radio-group>
         <v-subheader>Tags</v-subheader>
         <v-list dense>
             <v-list-tile>
