@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue} from 'vue-property-decorator';
+    import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternCardComponent from "@/components/AntiPatternCardComponent.vue";
 
@@ -20,5 +20,24 @@
     })
     export default class AntiPatternsContainerComponent extends Vue {
         @Prop(Array) public antiPatterns!: AntiPattern[];
+        @Prop(String) public sorting!: string;
+
+        @Watch('sorting')
+        public onChangedSorting(sorting: string) {
+            if (sorting.match("name.*")) {
+                this.antiPatterns.sort((a1, a2) => a1!.name!.localeCompare(a2!.name!));
+            }
+            if (sorting.match("evidence.*")) {
+                this.antiPatterns.forEach((a) => {
+                    if (isNaN(a!.median!)) {
+                        a.median = 0;
+                    }
+                });
+                this.antiPatterns.sort((a1, a2) => a2!.median! - a1!.median!);
+            }
+            if (sorting.match(".*Reverse")) {
+                this.antiPatterns.reverse();
+            }
+        }
     }
 </script>
