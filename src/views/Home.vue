@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <anti-pattern-tags-component v-model="tagsModel" :tags="tags"/>
-        <v-toolbar class="primary" app dark clipped-left>
+        <v-toolbar class="primary" app dark clipped-left :extended="$vuetify.breakpoint.xs">
             <v-toolbar-side-icon @click.native="tagsModel.drawer = !tagsModel.drawer"></v-toolbar-side-icon>
             <span class="title ml-1 hidden-md-and-down">Service-Based Antipatterns</span>
             <v-text-field
@@ -15,20 +15,19 @@
                     v-model="searchTerm"
                     @keydown.esc="clearSearch()"
             ></v-text-field>
-            <v-flex xs6 sm4 md2 lg2 lx2>
-            <v-select
-                    @change="onChangedSorting"
-                    style="padding: 0px;"
-                    color="white"
-                    label="Sorting"
-                    :items="sortingItems"
-                    item-text="name"
-                    item-value="value"
-                    prepend-icon="sort"
-                    single-line
-                    attach
-                    hide-details
-            ></v-select>
+            <v-flex xs12 sm4 md2 lg2 lx2 :slot="slot">
+                <v-select
+                        v-model="sorting"
+                        style="padding: 0;"
+                        label="Sorting"
+                        :items="sortingItems"
+                        item-text="name"
+                        item-value="value"
+                        prepend-icon="sort"
+                        single-line
+                        attach
+                        hide-details
+                ></v-select>
             </v-flex>
             <v-spacer class="hidden-md-and-down"></v-spacer>
             <v-btn icon href='https://github.com/xJREB/service-based-antipatterns/'>
@@ -43,7 +42,7 @@
             </v-dialog>
         </v-toolbar>
         <v-content>
-            <anti-patterns-container-component :anti-patterns="antiPatterns"/>
+            <anti-patterns-container-component :sorting="sorting" :anti-patterns="antiPatterns"/>
         </v-content>
     </div>
 </template>
@@ -75,13 +74,18 @@
         private tagsModel: Sidebar = new DefaultSidebar();
         private files: MarkdownFile[] = [];
         private evidenceLabel: { [s: number]: number; } = {0: -1, 1: 0, 2: 30, 3: 100};
+        private dialog: boolean = false;
+        private sorting: string = "";
         private sortingItems = [
             {name: "name: A-Z", value: "name"},
             {name: "name: Z-A", value: "nameReverse"},
             {name: "evidence: high-low", value: "evidence"},
             {name: "evidence: low-high", value: "evidenceReverse"},
         ];
-        private dialog: boolean = false;
+
+        public get slot() {
+            return this.$vuetify.breakpoint.xs ? "extension" : "default";
+        }
 
         public created() {
             this.loadMarkdownFiles();
@@ -185,23 +189,6 @@
                 this.antiPatternsEvidence = this.antiPatternsAll;
             }
             this.afterFilter();
-        }
-
-        public onChangedSorting(sorting: string) {
-            if (sorting.match("name.*")) {
-                this.antiPatterns.sort((a1, a2) => a1!.name!.localeCompare(a2!.name!));
-            }
-            if (sorting.match("evidence.*")) {
-                this.antiPatterns.forEach((a) => {
-                    if (isNaN(a!.median!)) {
-                        a.median = 0;
-                    }
-                });
-                this.antiPatterns.sort((a1, a2) => a2!.median! - a1!.median!);
-            }
-            if (sorting.match(".*Reverse")) {
-                this.antiPatterns.reverse();
-            }
         }
 
         public clearSearch() {
