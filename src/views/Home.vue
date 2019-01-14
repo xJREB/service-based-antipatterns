@@ -3,7 +3,7 @@
         <anti-pattern-tags-component v-model="tagsModel" :tags="tags"/>
         <v-toolbar class="primary" app dark clipped-left :extended="$vuetify.breakpoint.xs">
             <v-toolbar-side-icon @click.native="tagsModel.drawer = !tagsModel.drawer"></v-toolbar-side-icon>
-            <span class="title ml-1 hidden-md-and-down">Service-Based Antipatterns</span>
+            <span class="title ml-1 mr-1 hidden-md-and-down">Service-Based Antipatterns</span>
             <v-text-field
                     class="ml-1 mr-1"
                     solo-inverted
@@ -15,7 +15,7 @@
                     v-model="searchTerm"
                     @keydown.esc="clearSearch()"
             ></v-text-field>
-            <v-flex xs12 sm4 md2 lg2 lx2 :slot="slot">
+            <v-flex class="mr-2" xs12 sm4 md2 lg2 lx2 :slot="slot">
                 <v-select
                         v-model="sorting"
                         style="padding: 0;"
@@ -29,6 +29,9 @@
                         hide-details
                 ></v-select>
             </v-flex>
+            <v-chip class="title ml-1 mr-1" :slot="slot" outline text-color="white">
+                {{antiPatterns.length}}/{{antiPatternsAll.length}}
+            </v-chip>
             <v-spacer class="hidden-md-and-down"></v-spacer>
             <v-btn icon href='https://github.com/xJREB/service-based-antipatterns/'>
                 <font-awesome-icon size="2x" :icon="['fab', 'github']"></font-awesome-icon>
