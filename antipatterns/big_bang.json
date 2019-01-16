@@ -21,6 +21,18 @@
         "architecture"
       ],
       "relatedItems": [
+        {
+          "relation": "precedes",
+          "name": "Nothing New"
+        },
+        {
+          "relation": "precedes",
+          "name": "nanoservices"
+        },
+        {
+          "relation": "follows",
+          "name": "No Legacy"
+        }
       ]
     }
   ]

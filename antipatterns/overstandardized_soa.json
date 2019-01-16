@@ -3,7 +3,8 @@
     {
       "name": "Overstandardized SOA",
       "aliases": [
-        "Standardization Paralysis"
+        "Standardization Paralysis",
+        "Vendor-Lock-In"
       ],
       "description": "In SOA there is a tendency to overstandardize the technical domain resulting in many SOA standards and adding additional complexity.",
       "context": "Standardization is a useful part of any technical domain but most commonly SOA standards are set by large software vendors.",
@@ -22,6 +23,14 @@
         "system"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "No Legacy"
+        },
+        {
+          "relation": "follows",
+          "name": "Nanoservices"
+        }
       ]
     }
   ]

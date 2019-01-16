@@ -1,7 +1,7 @@
 {
   "antiPatterns": [
     {
-      "name": "Nothing New Antipattern",
+      "name": "Nothing New",
       "aliases": [
         "Same Old Way"
       ],
@@ -20,6 +20,18 @@
         "antipattern"
       ],
       "relatedItems": [
+        {
+          "relation": "follows",
+          "name": "Nanoservices"
+        },
+        {
+          "relation": "follows",
+          "name": "Big Bang"
+        },
+        {
+          "relation": "follows",
+          "name": "No Legacy"
+        }
       ]
     }
   ]

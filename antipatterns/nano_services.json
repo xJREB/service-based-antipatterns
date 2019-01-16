@@ -33,6 +33,18 @@
         "microservice"
       ],
       "relatedItems": [
+        {
+          "relation": "precedes",
+          "name": "Nothing New"
+        },
+        {
+          "relation": "precedes",
+          "name": "Overstandardized SOA"
+        },
+        {
+          "relation": "follows",
+          "name": "Big Bang"
+        }
       ]
     }
   ]
