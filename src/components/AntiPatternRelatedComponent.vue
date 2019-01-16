@@ -19,6 +19,9 @@
                             <span>Open the detail view</span>
                         </v-tooltip>
                         {{relatedAntiPattern.name}}
+                        <span v-if="!isRelatedAntiPatternSelected(relatedAntiPattern.name)">
+                            &#8212; {{relatedAntiPattern.relation}}
+                        </span>
                     </div>
                     <v-card>
                         <v-card-text class="grow">
