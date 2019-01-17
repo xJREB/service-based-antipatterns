@@ -19,6 +19,7 @@
                 <v-select
                         v-model="sorting"
                         style="padding: 0;"
+                        color="white"
                         label="Sorting"
                         :items="sortingItems"
                         item-text="name"
