@@ -24,6 +24,14 @@
         "high_data_cohesion"
       ],
       "relatedItems": [
+        {
+          "relation": "follows",
+          "name": "CRUDy Interface"
+        },
+        {
+          "relation": "precedes",
+          "name": "Wrong Cuts"
+        }
       ]
     }
   ]
