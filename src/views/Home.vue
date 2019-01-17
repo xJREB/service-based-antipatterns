@@ -85,6 +85,8 @@
             {name: "name: Z-A", value: "nameReverse"},
             {name: "evidence: high-low", value: "evidence"},
             {name: "evidence: low-high", value: "evidenceReverse"},
+            {name: "sources: many-few", value: "sources"},
+            {name: "sources: few-many", value: "sourcesReverse"},
         ];
 
         public get slot() {

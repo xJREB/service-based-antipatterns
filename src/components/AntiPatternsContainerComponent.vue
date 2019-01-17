@@ -35,6 +35,9 @@
                 });
                 this.antiPatterns.sort((a1, a2) => a2!.median! - a1!.median!);
             }
+            if (sorting.match("sources.*")) {
+                this.antiPatterns.sort((a1, a2) => a2!.sources!.length - a1!.sources!.length);
+            }
             if (sorting.match(".*Reverse")) {
                 this.antiPatterns.reverse();
             }

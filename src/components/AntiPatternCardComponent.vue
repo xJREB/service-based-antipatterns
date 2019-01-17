@@ -3,6 +3,13 @@
         <v-card-title class="primary white--text"
                       v-bind:style="{ background: 'linear-gradient(90deg, #3f51b5 98%, ' + referenceMedianColor + ' 2%) !important'}">
             <div class="headline">{{antiPattern.name}}</div>
+            <v-spacer></v-spacer>
+            <v-tooltip top>
+                <v-icon dark slot="activator">
+                    {{uiUtils.getIconForSources(antiPattern.sources.length)}}
+                </v-icon>
+                <span>Antipattern has {{antiPattern.sources.length}} sources</span>
+            </v-tooltip>
         </v-card-title>
         <v-card-text class="grow">
             <div>{{antiPattern.description}}</div>
@@ -29,6 +36,7 @@
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
     import EvidenceService from "../services/EvidenceService";
+    import UiUtils from "@/utils/UiUtils";
 
     @Component({
         components: {
@@ -39,6 +47,7 @@
     export default class AntiPatternCardComponent extends Vue {
         @Prop(Object) public antiPattern!: AntiPattern;
         public dialog: boolean = false;
+        public uiUtils = UiUtils;
 
         public get referenceMedianColor(): string {
             return EvidenceService.getReferenceMedianColor(this.antiPattern);
