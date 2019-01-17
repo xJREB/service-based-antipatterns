@@ -31,6 +31,14 @@
         {
           "relation": "follows",
           "name": "No Legacy"
+        },
+        {
+          "relation": "related",
+          "name": "Silver Bullet"
+        },
+        {
+          "relation": "related",
+          "name": "Golden Hammer"
         }
       ]
     }
