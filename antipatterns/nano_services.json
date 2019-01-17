@@ -44,6 +44,10 @@
         {
           "relation": "follows",
           "name": "Big Bang"
+        },
+        {
+          "relation": "follows",
+          "name": "Chatty Service"
         }
       ]
     }

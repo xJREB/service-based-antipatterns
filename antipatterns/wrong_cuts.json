@@ -19,6 +19,18 @@
         "bad_smell"
       ],
       "relatedItems": [
+        {
+          "relation": "follows",
+          "name": "Data Service"
+        },
+        {
+          "relation": "follows",
+          "name": "Transactional Integration"
+        },
+        {
+          "relation": "follows",
+          "name": "Service Chain"
+        }
       ]
     }
   ]

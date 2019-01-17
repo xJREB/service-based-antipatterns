@@ -21,6 +21,14 @@
         "application"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Chatty Service"
+        },
+        {
+          "relation": "precedes",
+          "name": "Data Service"
+        }
       ]
     }
   ]

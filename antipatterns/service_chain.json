@@ -20,6 +20,14 @@
         "system"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Chatty Service"
+        },
+        {
+          "relation": "precedes",
+          "name": "Wrong Cuts"
+        }
       ]
     }
   ]

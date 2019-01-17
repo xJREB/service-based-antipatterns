@@ -21,6 +21,10 @@
         "services"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Redundant PortTypes"
+        }
       ]
     }
   ]

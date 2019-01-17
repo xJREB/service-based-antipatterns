@@ -19,6 +19,14 @@
         "bad_smell"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Chatty Service"
+        },
+        {
+          "relation": "relates",
+          "name": "Nanoservices"
+        }
       ]
     }
   ]
