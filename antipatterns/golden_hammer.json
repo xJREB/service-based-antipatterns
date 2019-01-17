@@ -15,6 +15,7 @@
       "sources": [
         "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
       ],
+      "evidence": 115,
       "tags": [
         "antipattern",
         "architecture"

@@ -15,6 +15,7 @@
       "sources": [
         "@inproceedings{kral2009popular,author={Kr{\\'a}l, Jaroslav and {\\v{Z}}emlicka, Michal},booktitle={2009 Computation World: Future Computing, Service Computation, Cognitive, Adaptive, Content, Patterns},title={Popular SOA Antipatterns},year={2009},pages={271-276},doi={10.1109/ComputationWorld.2009.80},month={Nov}}"
       ],
+      "evidence": 24,
       "tags": [
         "antipattern",
         "legacy",

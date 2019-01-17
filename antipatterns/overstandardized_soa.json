@@ -17,6 +17,7 @@
         "@inproceedings{kral2009popular,author={Kr{\\'a}l, Jaroslav and {\\v{Z}}emlicka, Michal},booktitle={2009 Computation World: Future Computing, Service Computation, Cognitive, Adaptive, Content, Patterns},title={Popular SOA Antipatterns},year={2009},pages={271-276},doi={10.1109/ComputationWorld.2009.80},month={Nov}}",
         "@inproceedings{kral2007most,author={Kral, Jaroslav and Zemlicka, Michal},booktitle={International Conference on Software Engineering Advances (ICSEA 2007)},title={The Most Important Service-Oriented Antipatterns},year={2007},pages={29--29},doi={10.1109/ICSEA.2007.74},month={Aug}}"
       ],
+      "evidence": 21.5,
       "tags": [
         "antipattern",
         "standardization",

@@ -18,6 +18,7 @@
         "@article{ouni2017search, author={A. Ouni and M. Kessentini and K. Inoue and M. {\\'O}. Cinn{\\'e}ide}, journal={IEEE Transactions on Services Computing}, title={Search-Based Web Service Antipatterns Detection}, year={2017}, volume={10}, number={4}, pages={603--617}, doi={10.1109/TSC.2015.2502595}, ISSN={1939-1374}, month={July},}",
         "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}"
       ],
+      "evidence": 24,
       "tags": [
         "antipattern",
         "service",

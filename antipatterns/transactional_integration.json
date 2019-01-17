@@ -15,6 +15,7 @@
       "sources": [
         "@book{rotem2012soa,title={SOA patterns}, author={Rotem-Gal-Oz, Arnon and Bruno, Eric and Dahan, Udi}, year={2012}, publisher={Manning}}"
       ],
+      "evidence": 87,
       "tags": [
         "architecture"
       ],
