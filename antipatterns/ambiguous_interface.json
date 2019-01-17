@@ -20,6 +20,10 @@
         "architecture"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "Bloated Service"
+        }
       ]
     }
   ]

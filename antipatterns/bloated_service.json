@@ -19,6 +19,10 @@
         "antipattern"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "Ambiguous Interface"
+        }
       ]
     }
   ]

@@ -21,6 +21,10 @@
         "architecture"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "SOAPY Business Logic"
+        }
       ]
     }
   ]
