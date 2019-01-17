@@ -22,6 +22,18 @@
         "architecture"
       ],
       "relatedItems": [
+        {
+          "relation": "precedes",
+          "name": "Big Bang"
+        },
+        {
+          "relation": "precedes",
+          "name": "Nothing New"
+        },
+        {
+          "relation": "relates",
+          "name": "Overstandardized SOA"
+        }
       ]
     }
   ]
