@@ -1,7 +1,7 @@
 <template>
     <v-card style="display: flex; flex-direction: column;" height="100%">
         <v-card-title class="primary white--text"
-                      v-bind:style="{ background: 'linear-gradient(90deg, #3f51b5 98%, ' + referenceMedianColor + ' 2%) !important'}">
+                      v-bind:style="{ background: 'linear-gradient(90deg, #3f51b5 98%, ' + referenceEvidenceColor + ' 2%) !important'}">
             <div class="headline">{{antiPattern.name}}</div>
         </v-card-title>
         <v-card-text class="grow">
@@ -28,7 +28,7 @@
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
-    import EvidenceService from "../services/EvidenceService";
+    import EvidenceUtils from "../utils/EvidenceUtils";
 
     @Component({
         components: {
@@ -40,8 +40,8 @@
         @Prop(Object) public antiPattern!: AntiPattern;
         public dialog: boolean = false;
 
-        public get referenceMedianColor(): string {
-            return EvidenceService.getReferenceMedianColor(this.antiPattern);
+        public get referenceEvidenceColor(): string {
+            return EvidenceUtils.getReferenceEvidenceColor(this.antiPattern);
         }
 
         @Watch('router', {immediate: true, deep: true})

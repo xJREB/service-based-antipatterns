@@ -62,8 +62,8 @@
                     </v-flex>
                     <v-flex md10 xs9>
                         <v-card-text
-                                v-bind:style="{ background: 'linear-gradient(90deg, ' + referenceMedianColor + ' 0%, white 10%) !important'}">
-                            {{ referenceMedianLabel }}
+                                v-bind:style="{ background: 'linear-gradient(90deg, ' + referenceEvidenceColor + ' 0%, white 10%) !important'}">
+                            {{ referenceEvidenceLabel }}
                         </v-card-text>
                     </v-flex>
                 </v-layout>
@@ -91,7 +91,7 @@
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
     import AntiPatternRelatedComponent from "@/components/AntiPatternRelatedComponent.vue";
-    import EvidenceService from "../services/EvidenceService";
+    import EvidenceUtils from "../utils/EvidenceUtils";
 
     @Component({
         components: {
@@ -108,12 +108,12 @@
             return false;
         }
 
-        public get referenceMedianColor(): string {
-            return EvidenceService.getReferenceMedianColor(this.antiPattern);
+        public get referenceEvidenceColor(): string {
+            return EvidenceUtils.getReferenceEvidenceColor(this.antiPattern);
         }
 
-        public get referenceMedianLabel(): string {
-            return EvidenceService.getReferenceMedianLabel(this.antiPattern);
+        public get referenceEvidenceLabel(): string {
+            return EvidenceUtils.getReferenceEvidenceLabel(this.antiPattern);
         }
     }
 </script>

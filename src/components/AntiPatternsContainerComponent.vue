@@ -28,12 +28,7 @@
                 this.antiPatterns.sort((a1, a2) => a1!.name!.localeCompare(a2!.name!));
             }
             if (sorting.match("evidence.*")) {
-                this.antiPatterns.forEach((a) => {
-                    if (isNaN(a!.median!)) {
-                        a.median = 0;
-                    }
-                });
-                this.antiPatterns.sort((a1, a2) => a2!.median! - a1!.median!);
+                this.antiPatterns.sort((a1, a2) => a2!.evidence! - a1!.evidence!);
             }
             if (sorting.match(".*Reverse")) {
                 this.antiPatterns.reverse();

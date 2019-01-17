@@ -62,7 +62,7 @@
     import Cite from 'citation-js';
     import {BibliographyTemplate} from "@/common/bibliography";
     import AntiPatternHelpComponent from "@/components/AntiPatternHelpComponent.vue";
-    import EvidenceService from "../services/EvidenceService";
+    import EvidenceUtils from "../utils/EvidenceUtils";
 
     @Component({
         components: {AntiPatternHelpComponent, AntiPatternTagsComponent, AntiPatternsContainerComponent},
@@ -111,15 +111,13 @@
         public loadAntipatterns() {
             axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
                 response.data.antiPatterns.filter((item: AntiPattern) => item.name)
-                    .forEach((pattern: AntiPattern) => {
-                            EvidenceService.addReferenceCount(pattern).then((filledPattern: AntiPattern) => {
-                                this.antiPatternsAll.push(filledPattern);
-                                this.antiPatterns.push(filledPattern);
-                                this.antiPatternsFiltered.push(filledPattern);
-                                this.antiPatternsSelected.push(filledPattern);
-                                this.antiPatternsEvidence.push(filledPattern);
-                                Utils.setRelatedAntiPatterns(this.antiPatternsAll);
-                            });
+                    .forEach((filledAntiPattern: AntiPattern) => {
+                            this.antiPatternsAll.push(filledAntiPattern);
+                            this.antiPatterns.push(filledAntiPattern);
+                            this.antiPatternsFiltered.push(filledAntiPattern);
+                            this.antiPatternsSelected.push(filledAntiPattern);
+                            this.antiPatternsEvidence.push(filledAntiPattern);
+                            Utils.setRelatedAntiPatterns(this.antiPatternsAll);
                         },
                     );
             }).catch(() => {
@@ -185,9 +183,9 @@
         @Watch("tagsModel.evidence")
         public onSetEvidence(evidenceFilter: number, old: number) {
             if (evidenceFilter) {
-                evidenceFilter = EvidenceService.evidenceLabel[evidenceFilter][0];
+                evidenceFilter = EvidenceUtils.evidenceModel[evidenceFilter][0];
                 this.antiPatternsEvidence = this.antiPatternsAll
-                    .filter((item) => evidenceFilter < 0 || (item.median && item.median >= evidenceFilter));
+                    .filter((item) => evidenceFilter < 0 || (item.evidence && item.evidence >= evidenceFilter));
             } else {
                 this.antiPatternsEvidence = this.antiPatternsAll;
             }
