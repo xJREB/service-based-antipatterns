@@ -3,6 +3,14 @@ import {AntiPattern, RelatedAntiPattern} from "@/common/anti-pattern";
 
 export default class Utils {
 
+    public static get context() {
+        return ['microservices', 'soa'];
+    }
+
+    public static get category() {
+        return ['business', 'application', 'architecture'];
+    }
+
     public static cleanString(stringToClean: string) {
         if (stringToClean) {
             return stringToClean.toLowerCase().replace(/[^a-zA-Z ]/g, "");

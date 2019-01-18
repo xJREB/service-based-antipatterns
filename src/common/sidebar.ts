@@ -1,13 +1,17 @@
+import {DefaultTags, Tags} from "@/common/tags";
+
 export class DefaultSidebar implements Sidebar {
     public drawer = undefined;
-    public selection = [];
+    public tags = new DefaultTags();
+    public selectionContext = [];
+    public selectionCategory = [];
     public evidence = 0;
     public sorting = [];
 }
 
 export interface Sidebar {
     drawer: unknown | boolean;
-    selection: string[];
+    tags: Tags;
     evidence: number;
     sorting: string[];
 }
