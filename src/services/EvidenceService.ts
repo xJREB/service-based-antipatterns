@@ -34,7 +34,7 @@ export default class EvidenceService {
     public static getReferenceMedianColor(antiPattern: AntiPattern): string {
         if (antiPattern.median) {
             const alphaValue = antiPattern.median / 100 + 0.1;
-            return "rgba(0, 172, 193, " + alphaValue + ")";
+            return "rgb(255, 165, 0, " + alphaValue + ")";
         }
         return "lightgrey";
     }

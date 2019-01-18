@@ -1,7 +1,7 @@
 <template>
     <v-card style="display: flex; flex-direction: column;" height="100%">
         <v-card-title class="primary white--text"
-                      v-bind:style="{ background: 'linear-gradient(90deg, #3f51b5 98%, ' + referenceMedianColor + ' 2%) !important'}">
+                      v-bind:style="{ background: 'linear-gradient(90deg, #10627a 96%, ' + referenceMedianColor + ' 4%) !important'}">
             <div class="headline">{{antiPattern.name}}</div>
         </v-card-title>
         <v-card-text class="grow">
