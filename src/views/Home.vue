@@ -163,16 +163,16 @@
                     return antiPattern.tags
                         && (tags.selectionContext.length === 0 || tags.selectionContext.some((tag) => {
                             const t = antiPattern!.tags!.filter((aTag) => Utils.context.includes(aTag));
-                            return t.length === 0 || t.includes(tag);
+                            return t.length !== 0 && t.includes(tag);
                         }))
                         && (tags.selectionCategory.length === 0 || tags.selectionCategory.some((tag) => {
                             const t = antiPattern!.tags!.filter((aTag) => Utils.category.includes(aTag));
-                            return t.length === 0 || t.includes(tag);
+                            return t.length !== 0 && t.includes(tag);
                         }))
                         && (tags.selection.length === 0 || tags.selection.some((tag) => {
                             const t = antiPattern!.tags!.filter((aTag) => !Utils.context.includes(aTag)
                                 && !Utils.category.includes(aTag));
-                            return t.length === 0 || t.includes(tag);
+                            return t.length !== 0 && t.includes(tag);
                         }));
                 });
             } else {
