@@ -7,8 +7,10 @@
             <v-expansion-panel inset v-model="panel">
                 <v-expansion-panel-content v-for="relatedAntiPattern in relatedAntiPatterns"
                                            :key="relatedAntiPattern.name"
-                                           :class="getDynamicPrimaryHeaderClass(relatedAntiPattern.name)"
-                                           :hide-actions="isRelatedAntiPatternSelected(relatedAntiPattern.name)">
+                                           :class="getDynamicPrimaryHeaderClass(relatedAntiPattern.name)">
+                    <v-icon slot="actions" :class="getDynamicWhiteTextClass(relatedAntiPattern.name)">
+                        {{$vuetify.icons.expand}}
+                    </v-icon>
                     <div slot="header">
                         <v-tooltip top>
                             <v-btn :class="getDynamicWhiteTextClass(relatedAntiPattern.name)"
