@@ -1,0 +1,757 @@
+On the Definition of Microservice Bad Smells,https://ieeexplore.ieee.org/abstract/document/8354414/
+Microservices Antipatterns and Pitfalls,https://www.oreilly.com/library/view/microservices-antipatterns-and/9781492042716/ch01.html
+ORCAS: Efficient Resilience Benchmarking of Microservice Architectures,https://www.researchgate.net/profile/Andre_Van_Hoorn/publication/327137537_ORCAS_Efficient_Resilience_Benchmarking_of_Microservice_Architectures/links/5b7bf1cd299bf1d5a7191cda/ORCAS-Efficient-Resilience-Benchmarking-of-Microservice-Architectures.pdf
+Model-driven generation of microservice architectures for benchmarking performance and resilience engineering approaches,http://oceanrep.geomar.de/37425/1/DuellmannVanHoorn2017ModelDrivenGenerationOfMicroserviceArchitectures-publisher.pdf
+Using Microservices for Legacy Software Modernization,https://www.researchgate.net/profile/Wilhelm_Hasselbring/publication/324961770_Using_Microservices_for_Legacy_Software_Modernization/links/5b9b988545851574f7c85522/Using-Microservices-for-Legacy-Software-Modernization.pdf
+Exploiting load testing and profiling for Performance Antipattern Detection,https://www.sciencedirect.com/science/article/abs/pii/S0950584917302276
+Supporting Micro-services Deployment in a Safer Way: a Static Analysis and Automated Rewriting Approach,https://hal.archives-ouvertes.fr/hal-01659776/document
+Microservices: The Journey So Far and Challenges Ahead,https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8354433
+Microservice Architecture Suitability for Contemporary Software Development,https://www.theseus.fi/bitstream/handle/10024/149225/Salminen_Tomy.pdf?sequence=1
+The Sisyphus database retrieval software performance antipattern,https://dl.acm.org/citation.cfm?id=584372
+A domain-specific language for microservices,https://dl.acm.org/citation.cfm?id=3241654
+Research on Context-based Instances Selection of Microservice,https://dl.acm.org/citation.cfm?id=3277954
+A catalogue of OWL ontology antipatterns,https://dl.acm.org/citation.cfm?id=1597784
+Sustaining Runtime Performance while Incrementally Modernizing Transactional Monolithic Software towards Microservices,https://dl.acm.org/citation.cfm?id=2892039
+Delta debugging microservice systems,https://dl.acm.org/citation.cfm?id=3240730
+Container-based architecture to optimize the integration of microservices into cloud-based data-intensive application scenarios,https://dl.acm.org/citation.cfm?id=3241439
+Publishing linked data through semantic microservices composition,https://dl.acm.org/citation.cfm?id=3011155
+Transparent cross-system consistency,https://dl.acm.org/citation.cfm?id=3064898
+Towards Quantifiable Boundaries for Elastic Horizontal Scaling of Microservices,https://dl.acm.org/citation.cfm?id=3148111
+Detecting anti-patterns in Java EE runtime system model,https://dl.acm.org/citation.cfm?id=2430496
+The Hidden Dividends of Microservices,https://dl.acm.org/citation.cfm?id=2956643
+Microservices for the Enterprise,https://link.springer.com/book/10.1007/978-1-4842-3858-5
+Decoupling Drupal,https://link.springer.com/book/10.1007/978-1-4842-3321-4
+Agile objektorientierte Software-Entwicklung,https://link.springer.com/book/10.1007/978-3-658-00776-8
+Continuous Architecture,https://www.sciencedirect.com/book/9780128032848/continuous-architecture
+Advances in Using Agile and Lean Processes for Software Development,https://www.sciencedirect.com/science/article/pii/S0065245818300299
+Refactoring for software architecture smells,https://dl.acm.org/citation.cfm?id=2975946
+Policy enforcement upon software based on microservice architecture,https://ieeexplore.ieee.org/document/7965739
+Are Code smells the root cause of faults? A continuous experimentation approach,https://www.researchgate.net/publication/325644364_Are_Code_smells_the_root_cause_of_faults_A_continuous_experimentation_approach
+So ware Components Selection in Microservices-based Systems,https://www.researchgate.net/publication/325644110_Software_Components_Selection_in_Microservices-based_Systems
+Towards Defining a Microservice Migration Framework,https://www.researchgate.net/publication/325644419_Towards_Defining_a_Microservice_Migration_Framework
+Migrating towards microservices: migration and architecture smells,https://dl.acm.org/citation.cfm?id=3242164
+On the Definition of Microservice Bad Smells,https://ieeexplore.ieee.org/document/8354414
+Co-Occurrence of Design Patterns and Bad Smells in Software Systems: An Exploratory Study,https://dl.acm.org/citation.cfm?id=2814114
+"Do bad smells indicate ""trouble"" in code?",https://dl.acm.org/citation.cfm?id=1390831
+Perspectives on automated correction of bad smells,https://dl.acm.org/citation.cfm?id=1595827
+Are you still smelling it?: A comparative study between Java and Kotlin language,https://dl.acm.org/citation.cfm?id=3267186
+A systematic literature mapping on the relationship between design patterns and bad smells,https://dl.acm.org/citation.cfm?id=3167295
+An approach to safely evolve program families in C,https://dl.acm.org/citation.cfm?id=2660254
+A graph-based approach to detect unreachable methods in Java software,https://dl.acm.org/citation.cfm?id=2851968
+Replicomment: identifying clones in code comments,https://dl.acm.org/citation.cfm?id=3196360
+Bad Software Architecture is a People Problem,https://dl.acm.org/citation.cfm?id=2974011
+Combining clustering and pattern detection for the reengineering of component-based software systems,https://dl.acm.org/citation.cfm?id=2000265
+Architectural bad smells in software product lines: an exploratory study,https://dl.acm.org/citation.cfm?id=2578237
+Effectiveness of refactoring metrics model to identify smelly and error prone classes in open source software,https://dl.acm.org/citation.cfm?id=2108157
+A review-based comparative study of bad smell detection tools,https://dl.acm.org/citation.cfm?id=2915984
+Prioritization of Classes for Refactoring: A Step towards Improvement in Software Quality,https://dl.acm.org/citation.cfm?id=2791463
+Applying software metric thresholds for detection of bad smells,https://dl.acm.org/citation.cfm?id=3134268
+Detecting bad smells in source code using change history information,https://dl.acm.org/citation.cfm?id=3107692
+Effectiveness of encapsulation and object-oriented metrics to refactor code and identify error prone classes using bad smells,https://dl.acm.org/citation.cfm?id=2020994
+Identifying refactoring sequences for improving software maintainability,https://dl.acm.org/citation.cfm?id=2351760
+Detecting software modularity violations,https://dl.acm.org/citation.cfm?id=1985850
+Introduction,https://link.springer.com/chapter/10.1007/978-3-662-54677-2_1
+Monitoring Your Services,https://link.springer.com/chapter/10.1007/978-1-4842-1937-9_13
+Architectural refactoring for the cloud: a decision-centric view on cloud migration,https://link.springer.com/article/10.1007/s00607-016-0520-y
+Thoughts on Software Craftsmanship,https://link.springer.com/chapter/10.1007/978-3-319-98149-9_15
+Katharsis,https://link.springer.com/chapter/10.1007/978-1-4842-2196-9_17
+Design Patterns and Idioms,https://link.springer.com/chapter/10.1007/978-1-4842-2793-0_9
+A Systematic Mapping Study of Infrastructure as Code Research,https://www.sciencedirect.com/science/article/abs/pii/S0950584918302507
+Glossary,https://www.sciencedirect.com/science/article/pii/B9780128032848000245
+"A Unified Treatment of Horizontal Direct Investment, Vertical Direct Investment, and the Pattern of Trade in Goods and Services",https://www.nber.org/papers/w5696
+Use pattern of maternal health services and determinants of skilled care during delivery in Southern Tanzania: implications for achievement of MDG-5 targets,https://bmcpregnancychildbirth.biomedcentral.com/articles/10.1186/1471-2393-7-29
+Processing pipeline in a base services pattern environment,https://scholar.google.de/scholar?hl=de&as_sdt=0%2C5&q=pattern+services&btnG=
+Abstraction factory in a base services pattern environment,https://patentimages.storage.googleapis.com/e8/d3/1d/b26324c2e22764/US6615199.pdf
+Pattern-Based Translation of BPMN Process Models to BPEL Web Services,http://eprints.qut.edu.au/6810/1/6810.pdf
+Regular pattern of preventive dental services—A measure of access,https://ac.els-cdn.com/027795369290239M/1-s2.0-027795369290239M-main.pdf?_tid=0e8d98c4-cdd2-4caa-ad71-3261184021bd&acdnat=1544885945_2320dfa191e4e43fe4ab5ae5bb03b803
+Zero defections: quality comes to services.,https://europepmc.org/abstract/med/10107082
+Patients with and without intellectual disability seeking outpatient psychiatric services: diagnoses and prescribing pattern,https://onlinelibrary.wiley.com/doi/epdf/10.1046/j.1365-2788.2003.00463.x
+Service Configurator A Pattern for Dynamic Configuration of Services,http://static.usenix.org/publications/library/proceedings/coots97/full_papers/jain/jain.pdf
+E-mail usage pattern detection,https://patentimages.storage.googleapis.com/65/00/e7/0b2ab00f3d453f/US6507866.pdf
+A Service Pattern Model for Flexible Service Composition,https://ieeexplore.ieee.org/document/6257929
+RE2SEP: A Two-Phases Pattern-based Paradigm for Software Service Engineering,https://ieeexplore.ieee.org/document/8036723
+An Approach for Mining Web Service Composition Patterns from Execution Logs,https://ieeexplore.ieee.org/document/5552713
+Integrated Service Adaptation,https://ieeexplore.ieee.org/document/5575791
+SOI (Service Oriented Integration) and SIMM (Service Integration Maturity Model An Analysis,https://ieeexplore.ieee.org/document/5575818
+Automatic Business Process Pattern Matching for Enterprise Services Design,https://ieeexplore.ieee.org/document/5305978
+Aggregate QoS Estimation of Service Compositions - An Analysis of Pattern-Oriented Approaches,https://ieeexplore.ieee.org/document/6903291
+"Practical SOA: Service Modeling, Enterprise Service Bus and Governance",https://ieeexplore.ieee.org/document/4700492
+Service Recommendation Using Customer Similarity and Service Usage Pattern,https://ieeexplore.ieee.org/document/7195596
+A Relational Taxonomy of Services for Large Scale Service Repositories,https://ieeexplore.ieee.org/document/6257937
+WS-CHMA: A Composite-Pattern Based Hierarchical WS-Management Architecture,https://ieeexplore.ieee.org/document/5190701
+Service Pattern: An Integrated Business Process Model for Modern Service Industry,https://ieeexplore.ieee.org/document/7387773
+A Pattern-Based Design Approach for Subscription Management of Software as a Service,https://ieeexplore.ieee.org/document/5190713
+QoS Aware Service Clustering to Bootstrap the Web Service Selection,https://ieeexplore.ieee.org/document/8034990
+Service Pattern Evaluation: Studying Profitability from Perspective of Resource,https://ieeexplore.ieee.org/document/8029227
+From Web Services to Virtual Services - The Architecture and Patterns for 3D Services,https://ieeexplore.ieee.org/document/4278729
+Services Characterization with Statistical Study on Existing Web Services,https://ieeexplore.ieee.org/document/4670266
+Pattern Oriented Service Development for Coarse-Grained Service Reuse,https://ieeexplore.ieee.org/document/4732946
+A Transaction and QoS-Aware Service Selection Approach Based on Genetic Algorithm,https://ieeexplore.ieee.org/document/7047222
+Collaborative Business Informatization Service Pattern of Small and Medium-Sized Enterprise Cluster,https://ieeexplore.ieee.org/document/5591158/
+Using Design Patterns to Improve Web Service Performance,https://ieeexplore.ieee.org/document/7207424
+A study on the taxonomy of service antipatterns,http://sofa.uqam.ca/media/PPAP.pdf
+A Clustering Method for Web Service Discovery,https://ieeexplore.ieee.org/document/6009330
+A Metamodel for Security and Privacy Knowledge in Cloud Services,https://ieeexplore.ieee.org/document/7557413
+Evolution pattern for Service Evolution in Clouds,https://ieeexplore.ieee.org/document/6470908
+Towards Optimising the Data Flow in Distributed Applications,http://delivery.acm.org/10.1145/2750000/2743044/p1503-keppmann.pdf?ip=141.58.16.35&id=2743044&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544975912_3d8188641b375366787b1a47f8fdee40
+Two patterns for distributed systems: enterprise service bus (ESB) and distributed publish/subscribe,http://delivery.acm.org/10.1145/2580000/2579146/a8-fernandez.pdf?ip=141.58.16.35&id=2579146&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544975954_caa93c30496b6ad57bfb344af834b089
+Presence-pattern aware service selection and composition in a smart space,http://delivery.acm.org/10.1145/2540000/2532452/a4-ma.pdf?ip=141.58.16.35&id=2532452&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544975982_cdff69f978bf616dc926e3d13cdc2f70
+Model-based management of ubiquitous and autonomic M2M service architecture,http://delivery.acm.org/10.1145/1870000/1868446/a10-drira.pdf?ip=141.58.16.35&id=1868446&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976076_744bdc58e89558d5c2bfc50d688989be
+Ontological structuring of logistics services,http://delivery.acm.org/10.1145/3110000/3106538/p146-glockner.pdf?ip=141.58.16.35&id=3106538&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976095_ea68413eab772e58bd7da4ec34624c62
+A pattern language for service input data provisioning,http://delivery.acm.org/10.1145/1950000/1943245/a15-monsieur.pdf?ip=141.58.16.35&id=1943245&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976121_81e7045ef78754f7e9cfc2a21b5d54c4
+Flexible coordination of service interaction patterns,http://delivery.acm.org/10.1145/1040000/1035175/p49-zirpins.pdf?ip=141.58.16.35&id=1035175&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976140_b3d9c4d330a75c94e499ec14c9f240d1
+"Connecting remote FDDI installations with single-mode fiber, dedicated lines, or SMDS",http://delivery.acm.org/10.1145/380000/378963/p72-lang.pdf?ip=141.58.16.35&id=378963&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976159_2b8d93feb063edb681a2e63b82c8388c
+An ontology pattern language for service modeling,http://delivery.acm.org/10.1145/2860000/2851840/p321-falbo.pdf?ip=141.58.16.35&id=2851840&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976179_427a29991d77e788aea258ba90e50749
+A flexible approach for service composition using service patterns,http://delivery.acm.org/10.1145/2240000/2232102/p1976-emna.pdf?ip=141.58.16.35&id=2232102&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976199_cb935475c648966af6f6f31a8987d06e
+The WS-policy standard pattern,http://delivery.acm.org/10.1145/2590000/2581511/a4-ajaj.pdf?ip=141.58.16.35&id=2581511&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976322_5910939dc8bc021c0fb2f99f236aaaf0
+Incorporating Security Features in Service-Oriented Architecture using Security Patterns,http://delivery.acm.org/10.1145/2700000/2693229/p48c-dwivedi.pdf?ip=141.58.16.35&id=2693229&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976633_71c0a95195f547ae1354bd8bae4f7c81
+Telecom service delivery design patterns,http://delivery.acm.org/10.1145/1780000/1772082/a10-jain.pdf?ip=141.58.16.35&id=1772082&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976658_ec41779db2e642bd1a09ebf01ec1e9d8
+Patterns for service-oriented information exchange requirements,http://delivery.acm.org/10.1145/1420000/1415498/a22-mahfouz.pdf?ip=141.58.16.35&id=1415498&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976693_e4c257fc9c56dd2ff6dea800e3e7ecee
+Big Data Mining Applications and Services,http://delivery.acm.org/10.1145/2840000/2837076/p1-Leung.pdf?ip=141.58.16.35&id=2837076&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976734_833dacfac7af36cef2d47cc6562b6528
+Interaction patterns based checkpointing of choreographed web services,http://delivery.acm.org/10.1145/2600000/2593797/p28-vathsala.pdf?ip=141.58.16.35&id=2593797&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976773_0036a032b959d070394890074f38d611
+Service orchestration patterns: graduating from state of the practice to state of the art,http://delivery.acm.org/10.1145/1100000/1094907/p148-manolescu.pdf?ip=141.58.16.35&id=1094907&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976832_33fb145002d0e084628bfc9657e98be6
+A survey on checkpointing web services,http://delivery.acm.org/10.1145/2600000/2593795/p11-vathsala.pdf?ip=141.58.16.35&id=2593795&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976850_6df0d536bdb344e8eca2b4b81b1342c1
+"RESTful web services: principles, patterns, emerging technologies",http://delivery.acm.org/10.1145/1780000/1772929/p1359-pautasso.pdf?ip=141.58.16.35&id=1772929&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976870_badae4df18bc1ff7c5f953fb47e66eae
+A pattern language for RESTful conversations,http://delivery.acm.org/10.1145/3020000/3011788/a4-pautasso.pdf?ip=141.58.16.35&id=3011788&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1544976916_7d4fbf2b362842bb0508a02d3e6c029e
+SQL Server Integration Services Design Patterns,https://link.springer.com/book/10.1007/978-1-4842-0082-7
+Web Services Patterns: Java™ Platform Edition,https://link.springer.com/book/10.1007/978-1-4302-0776-4
+A Service Administration Design Pattern for Dynamically Configuring Communication Services in Autonomic Computing Systems,https://link.springer.com/chapter/10.1007/978-3-642-28487-8_6
+An Adaptive Design Pattern for Invocation of Synchronous and Asynchronous Web Services in Autonomic Computing Systems,https://link.springer.com/chapter/10.1007/978-3-642-29426-6_17
+An Adaptive Design Pattern for Genetic Algorithm-Based Composition of Web Services in Autonomic Computing Systems Using SOA,https://link.springer.com/chapter/10.1007/978-3-642-30767-6_9
+A Design Pattern for Service Injection and Composition of Web Services for Unstructured Peer-to-Peer Computing Systems with SOA,https://link.springer.com/chapter/10.1007/978-3-642-30111-7_104
+"Do Comprehensive, Coordinated, Recovery-Oriented Services Alter the Pattern of Use of Treatment Services? Mental Health Treatment Study Impacts on SSDI Beneficiaries’ Use of Inpatient, Emergency, and Crisis Services",https://link.springer.com/article/10.1007/s11414-013-9388-1
+Modeling the Variability of Web Services from a Pattern Point of View,https://link.springer.com/chapter/10.1007/978-3-540-30209-4_10
+Pattern Mining Approach for Social Network Services,https://link.springer.com/article/10.1007/s40009-016-0529-y
+Acquisition pattern Analysis with Mokken scales: Applications in the financial services market,https://link.springer.com/article/10.1057/palgrave.dbm.3240237
+Workflow Pattern Analysis in Web Services Orchestration: The BPEL4WS Example,https://link.springer.com/chapter/10.1007/11557654_48
+On the Peculiar Distribution Pattern of Health Services or Clinical Chemistry in Primary Health Care,https://link.springer.com/chapter/10.1007/978-3-642-93201-4_22
+A Model Profile for Pattern-Based Definition and Verification of Composite Cloud Services,https://link.springer.com/chapter/10.1007/978-3-319-59463-7_65
+A Novel Autonomic Design Pattern for Invocation of Services,https://link.springer.com/chapter/10.1007/978-3-642-22540-6_53
+PIP: An Injection Pattern for Inserting Privacy Patterns and Services in Software,https://link.springer.com/chapter/10.1007/978-3-319-31456-3_8
+Pattern Based Composition of Web Services for Symbolic Computations,https://link.springer.com/chapter/10.1007/978-3-540-69384-0_18
+Comparative Studies on Pattern and Ecosystem Services of the Traditional Rice Agricultural Landscapes in East Asia,https://link.springer.com/chapter/10.1007/978-3-319-96815-5_14
+Linking ecosystem services and circuit theory to identify ecological security patterns,https://www.sciencedirect.com/science/article/pii/S0048969718323684
+Patterns of health service utilization following the Tsunami in Thailand,https://ac.els-cdn.com/S2212420916301194/1-s2.0-S2212420916301194-main.pdf?_tid=99ed3076-dbe3-4e0e-b43a-d1cf73766451&acdnat=1545037965_146366d8c3900145a4877ec1a637c05d
+Semantic interoperability and pattern classification for a service-oriented architecture in pregnancy care,https://www.sciencedirect.com/science/article/pii/S0167739X17325438
+Linking biodiversity to ecosystem services supply: Patterns across aquatic ecosystems,https://reader.elsevier.com/reader/sd/pii/S004896971834796X?token=69CDA0F314FC6555E3D68435A2882FEC682FE49FDAD44EC389A2EE6FBCB19A36375048FFAE62140AF4B40A3CDFDC31D5
+Longitudinal patterns of mental health service utilisation by those with mental-physical comorbidity in the community,https://reader.elsevier.com/reader/sd/pii/S002239991830549X?token=0557BD0A4E884503114C900EFCBB03E22224539E719848D87AA37570667E0B20249AFBF65BEF294ACEA1E8B3206A3B67
+Exploiting Cloud and Workflow Patterns for the Analysis of Composite Cloud Services,https://reader.elsevier.com/reader/sd/pii/S0167739X16302291?token=EA2ABBDCD8D9F7DB48518131FCDD4529A5E12E9D7E93167DC7E6AF525D6940FD0CFEA6A38880A8ACA7C6B3273A55B3A9
+A framework for early design and prototyping of service-oriented applications with design patterns,https://ac.els-cdn.com/S1477842415300440/1-s2.0-S1477842415300440-main.pdf?_tid=a1c87b6a-7944-43bf-8262-140dd1444dc8&acdnat=1545038058_d552aa8a382eff4d46a8d7341ee391f0
+Spotting and Removing WSDL Anti-pattern Root Causes in Code-first Web Services Using NLP Techniques: A Thorough Validation of Impact on Service Discoverability,https://www.sciencedirect.com/science/article/abs/pii/S0920548917300892
+Pattern-based orchestration and automatic verification of composite cloud services,https://ac.els-cdn.com/S0045790616302026/1-s2.0-S0045790616302026-main.pdf?_tid=eed48b7e-d322-4a6c-bbab-8cedc6d8ac88&acdnat=1545038098_e280b4a3e425e95c78805d2a57141f87
+Investigation of the spatio-temporal dynamics in landscape variations in a shallow lake based on a new Tendency-Pattern-Service conceptual framework,https://reader.elsevier.com/reader/sd/pii/S0959652617310545?token=3E8235A5F7132DEF3B7BA1C0DDD55BE5760CD22B9A5725563F16429372722929AC8F88D8AFE0CFC5135AECB4486546C8
+Impacts of changes in climate and landscape pattern on ecosystem services,https://reader.elsevier.com/reader/sd/pii/S0048969716324676?token=BA8D6EA866BB5A24638A59F4CD8685FE660FF1E6A58C18882B88C5197729CBF9E7EBB379843748CAE1BB6803A46E53A6
+Utilization pattern of other preventive services during the US Medicare annual wellness visit,https://ac.els-cdn.com/S2211335517301882/1-s2.0-S2211335517301882-main.pdf?_tid=1b830ead-45b4-4c8c-bf39-09f3fdabcd81&acdnat=1545038173_129dbd265e35d8ab8dfad19559f628ed
+Revealing intra-urban travel patterns and service ranges from taxi trajectories,https://ac.els-cdn.com/S0966692316306664/1-s2.0-S0966692316306664-main.pdf?_tid=4dfcc736-e081-4d49-8ad0-d124822dbca1&acdnat=1545038193_e4805d6c62a760ec9cc7f1811c4882ea
+Sustainability perspectives and spatial patterns of multiple ecosystem services in the Venice lagoon: Possible roles in the implementation of the EU Water Framework Directive,https://www.sciencedirect.com/science/article/pii/S1470160X18309051
+Service regime: An empirical analysis of innovation patterns in service firms,https://ac.els-cdn.com/S0040162512001473/1-s2.0-S0040162512001473-main.pdf?_tid=2e3e354f-0e00-439e-be37-608d8a2d96ce&acdnat=1545038228_d2d849967325009d39b8cae5978c4eb9
+Seaport Network based on Change of Korean Liner Service Pattern,https://reader.elsevier.com/reader/sd/pii/S2092521217300615?token=FB0449B9544518A3AD2229199DFAF86C37E6E4373CE2C5D274B3FF1E6E9695B56A3497CD8CD0B8FE33A19103E436C7C2
+E-governance diffusion: Population level e-service adoption rates and usage patterns,https://reader.elsevier.com/reader/sd/pii/S0736585318309390?token=7FDB6AD052F6FFD03C2377F4EBAFD20F02357EC92573FCE359ACE82068DCF20994225EC50685F12BC8B76A01C7CDE90C
+Does cognitive remediation modify the use of psychiatric services and the patterns of care of patients with schizophrenia?,https://ac.els-cdn.com/S0920996416301268/1-s2.0-S0920996416301268-main.pdf?_tid=a88c57b5-951b-4c9c-b9a9-f3aec089709f&acdnat=1545038293_28de1db475f27ad35a4dc3e124c73ee6
+The spatial level of analysis affects the patterns of forest ecosystem services supply and their relationships,https://www.sciencedirect.com/science/article/pii/S004896971830175X
+"Using spatiotemporal patterns to optimize Earth Observation Big Data access: Novel approaches of indexing, service modeling and cloud computing",https://www.sciencedirect.com/science/article/pii/S0198971518300401
+Oil price shocks and the financial performance patterns of logistics service providers,https://www.sciencedirect.com/science/article/pii/S0140988318301300
+Alcohol-related social and health service use patterns as predictors of death and remission in patients with AUD,https://reader.elsevier.com/reader/sd/pii/S0740547218302411?token=D33729AA1149B5554CD6E6AE55AA839CDF10CE5D2D0959585C20D98EC165D5CE0CB01B97D8F25169A24B9A14591A2BFE
+Supporting the evolution of event-driven service-oriented architectures using change patterns,https://www.sciencedirect.com/science/article/abs/pii/S0950584916303251
+Anticipating trade-offs between urban patterns and ecosystem service production: Scenario analyses of sprawl alternatives for a rapidly urbanizing region,https://www.sciencedirect.com/science/article/pii/S0198971518300310
+An Empirical Study on the Current Feeder Shipping Network Patterns among Malaysian Feeder Service Providers,https://reader.elsevier.com/reader/sd/pii/S2092521217300573?token=891981F28AE54386204A1C61FFD950C02B4267F0129BAFBDD4FFBB0E097077B9BD98FD22900F358E6905AFBD14C5C5CC
+Service-Oriented Computing: State of the Art and Research Challenges,https://ieeexplore.ieee.org/abstract/document/4385255
+"Service-Oriented Computing: Semantics, Processes, Agents",https://books.google.de/books?hl=de&lr=&id=Wdx7UrjDaE8C&oi=fnd&pg=PR19&dq=pattern+service+oriented+computing&ots=PQxGB0z05Y&sig=c4DQGBKt1OH7oGK-jUv8yGqk1rQ#v=onepage&q=pattern%20service%20oriented%20computing&f=false
+A Study and Performance Evaluation of the Multi-Tenant Data Tier Design Patterns for Service Oriented Computing,https://ieeexplore.ieee.org/abstract/document/4690605
+Service-Oriented Cloud Computing Architecture,https://ieeexplore.ieee.org/abstract/document/5501650
+InterCloud: Utility-Oriented Federation of Cloud Computing Environments for Scaling of Application Services,https://link.springer.com/chapter/10.1007%2F978-3-642-13119-6_2
+Reference Architectural Styles for Service-Oriented Computing,https://link.springer.com/chapter/10.1007/978-3-540-74784-0_57
+"Web Services, Service-Oriented Computing, and Service-Oriented Architecture: Separating Hype from Reali",https://www.igi-global.com/article/journal-database-management-jdm/3390
+Disciplining Orchestration and Conversation in Service-Oriented Computing,https://ieeexplore.ieee.org/abstract/document/4343947
+Preparing for Service-Oriented Computing: A Composite Design Pattern for Stubless Web Service Invocation,https://link.springer.com/chapter/10.1007/978-3-540-27834-4_85
+Service-Oriented Computing Kit,https://ieeexplore.ieee.org/document/4026973
+Robotic Services in Cloud Computing Paradigm,https://ieeexplore.ieee.org/document/6481240
+CMU Sphinx4 speech recognizer in a Service-oriented Computing style,https://ieeexplore.ieee.org/document/6166263
+DDSoR: A Dependency Aware Dynamic Service Replication Strategy for Efficient Execution of Service-Oriented Applications in the Cloud,https://ieeexplore.ieee.org/document/8035134
+Service Migration Patterns -- Decision Support and Best Practices for the Migration of Existing Service-Based Applications to Cloud Environments,https://ieeexplore.ieee.org/document/6717278
+Concurrent classifier based analysis for climate prediction using service oriented architecture,https://ieeexplore.ieee.org/document/8076798
+A reputation pattern for service oriented computing,https://ieeexplore.ieee.org/document/5397618
+Mainframe Application Modernization Based on Service-Oriented Architecture,https://ieeexplore.ieee.org/document/5359601
+Agent-Based Service-Oriented Computing and Applications,https://ieeexplore.ieee.org/document/4079029
+A Data-Intensive Multimedia Service Invoking Method Based on SOAP Extending,https://ieeexplore.ieee.org/document/5233222
+Mediation of Service Overhead in Service-Oriented Grid Architectures,https://ieeexplore.ieee.org/document/6076493
+Change impact analysis for service based business processes,https://ieeexplore.ieee.org/document/5707155
+Data-Driven and Feedback-Enhanced Trust Computing Pattern for Large-Scale Multi-Cloud Collaborative Services,https://ieeexplore.ieee.org/document/7236926
+Research on Science and Technology Service Sharing Platform Based on Cloud Computing Technology,https://ieeexplore.ieee.org/document/7825157
+Optimal Service Selection Using Trust Based Recommendation System for Service-Oriented Grid,https://ieeexplore.ieee.org/document/6481244
+An integrated approach for improving the performance of semantic service discovery,https://ieeexplore.ieee.org/document/7238458
+Functionality-Driven Clustering of Web Service Registries,https://ieeexplore.ieee.org/document/5557290
+Rescue Wings: Mobile Computing and Active Services Support for Disaster Rescue,https://ieeexplore.ieee.org/document/7036133
+Contextual patterns in mobile service usage,http://delivery.acm.org/10.1145/1540000/1536076/779_2008_Article_197.pdf?ip=141.58.16.35&id=1536076&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1545041522_50ab3802168d0531962de9a2d8b1648e#URLTOKEN#
+Anytime dynamic programming for coalition structure generation,http://delivery.acm.org/10.1145/1840000/1838407/p1411-service.pdf?ip=141.58.16.35&id=1838407&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1545041539_1f2dc8f03d2300c138d01afdada31759#URLTOKEN#
+Strategyproof approximations of distance rationalizable voting rules,https://dl.acm.org/ft_gateway.cfm?id=2343778&ftid=1270337&dwn=1&#URLTOKEN#
+Software adaptation patterns for service-oriented architectures,https://dl.acm.org/ft_gateway.cfm?id=1774185&ftid=770403&dwn=1&#URLTOKEN#
+Communication complexity of approximating voting rules,https://dl.acm.org/ft_gateway.cfm?id=2343781&ftid=1270340&dwn=1&#URLTOKEN#
+Pattern-based design of a service-oriented middleware for remote object federations,https://dl.acm.org/ft_gateway.cfm?id=1361191&ftid=498447&dwn=1&#URLTOKEN#
+Modeling Process-Driven and Service-Oriented Architectures Using Patterns and Pattern Primitives,http://delivery.acm.org/10.1145/1290000/1281484/a14-zdun.pdf?ip=141.58.16.35&id=1281484&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1545041680_616ffe7f1d95acddbba6c89da4b89414#URLTOKEN#
+Trust as dependence: a logical approach,https://dl.acm.org/ft_gateway.cfm?id=2031741&ftid=1026960&dwn=1&#URLTOKEN#
+"Identifying, Modifying, Creating, and Removing Monitor Rules for Service Oriented Computing",http://delivery.acm.org/10.1145/1990000/1985401/p43-contreras.pdf?ip=141.58.16.35&id=1985401&acc=ACTIVE%20SERVICE&key=2BA2C432AB83DA15%2EB24C68F3238D7605%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1545041751_dee0d4e696a0235484f8e1ef0626e207#URLTOKEN#
+Service-Oriented Computing - ICSOC 2012 Workshops,https://link.springer.com/book/10.1007/978-3-642-37804-1
+A Unified Conceptual Framework for Service-Oriented Computing,https://link.springer.com/chapter/10.1007/978-3-642-35332-1_5
+QoS Analysis in Service Oriented Computing,https://link.springer.com/chapter/10.1007/978-1-4614-7518-7_14
+Reverse engineering relational databases to identify and specify basic Web services with respect to service oriented computing,https://link.springer.com/content/pdf/10.1007%2Fs10796-006-9007-2.pdf
+Core Calculi for Service-Oriented Computing,https://link.springer.com/chapter/10.1007/978-3-642-20401-2_8
+The 10th advanced summer school on service-oriented computing,https://link.springer.com/content/pdf/10.1007%2Fs00450-017-0341-z.pdf
+Introduction to the Fifth Workshop on Non-Functional Properties and Service Level Agreements Management in Service-Oriented Computing (NFPSLAM-SOC 2011),https://link.springer.com/chapter/10.1007/978-3-642-31875-7_11
+The 11th advanced summer school on service-oriented computing,https://link.springer.com/content/pdf/10.1007%2Fs00450-017-0389-9.pdf
+Exerted Enterprise Computing: From Protocol-Oriented Networking to Exertion-Oriented Networking,https://link.springer.com/chapter/10.1007/978-3-642-16961-8_36
+JXTA-SOAP: Implementing Service-Oriented Ubiquitous Computing Platforms for Ambient Assisted Living,https://link.springer.com/chapter/10.1007/978-3-540-89617-3_6
+Extending the MVC Design Pattern towards a Task-Oriented Development Approach for Pervasive Computing Applications,https://link.springer.com/chapter/10.1007/978-3-540-24714-2_23
+Mobility Mechanisms in Service Oriented Computing,https://link.springer.com/content/pdf/10.1007%2F11768869_18.pdf
+Mobile Agent Oriented Service for Offloading on Mobile Cloud Computing,https://link.springer.com/content/pdf/10.1007%2F978-981-10-3023-9_143.pdf
+An Aspectual Feature Module Based Service Injection Design Pattern for Unstructured Peer-to-Peer Computing Systems,https://link.springer.com/chapter/10.1007/978-3-642-30157-5_51
+Z-Based Agents for Service Oriented Computing,https://link.springer.com/chapter/10.1007/978-3-540-72619-7_12
+An Architecture for Dynamic Service-Oriented Computing in Networked Embedded Systems,https://link.springer.com/chapter/10.1007/978-3-642-30835-2_10
+Service-Oriented System Engineering,https://www.sciencedirect.com/science/article/pii/S0167739X17326122
+Ontology-based context modeling in service-oriented computing: A systematic mapping,https://www.sciencedirect.com/science/article/pii/S0169023X16301380/pdfft?md5=a3ef51d59d1ca51b65e5e0bfaa21e82a&pid=1-s2.0-S0169023X16301380-main.pdf
+Modelling and simulation of Opportunistic IoT Services with Aggregate Computing,https://www.sciencedirect.com/science/article/pii/S0167739X18307246
+Toward service selection for workflow reconfiguration:An interface-based computing solution,https://www.sciencedirect.com/science/article/pii/S0167739X17320575
+Sustainability-oriented service innovation: An emerging research field,https://www.sciencedirect.com/science/article/pii/S0959652618314033
+Type theory based semantic verification for service composition in cloud computing environments,https://www.sciencedirect.com/science/article/pii/S0020025518306467
+Analyzing the role of interfaces in enterprise service bus: A middleware epitome for service-oriented systems,https://www.sciencedirect.com/science/article/pii/S0920548917300521
+Building web-based services for practical exercises in parallel and distributed computing,https://www.sciencedirect.com/science/article/pii/S0743731518301023
+Non-functional requirements in model-driven development of service-oriented architectures,https://www.sciencedirect.com/science/article/pii/S0167642318303034
+A policy-aware Service Oriented Architecture for secure machine-to-machine communications,https://www.sciencedirect.com/science/article/pii/S1570870518303123
+"Internet of things-based real-time model study on e-healthcare: Device, message service and dew computing",https://www.sciencedirect.com/science/article/pii/S1389128618304973
+S-InTime: A social cloud analytical service oriented system,https://www.sciencedirect.com/science/article/pii/S0167739X16307397
+Genomics as a service: A joint computing and networking perspective,https://www.sciencedirect.com/science/article/pii/S1389128618307205
+A case-based reasoning approach to reuse quality-driven designs in service-oriented architectures,https://www.sciencedirect.com/science/article/abs/pii/S0306437915300181
+Accelerating smart eHealth services execution at the fog computing infrastructure,https://www.sciencedirect.com/science/article/pii/S0167739X17327425
+An engineering framework for Service-Oriented Intelligent Manufacturing Systems,https://www.sciencedirect.com/science/article/pii/S0166361516300045/pdfft?md5=1d09332ed5c6fdc7b42958451b7221cd&pid=1-s2.0-S0166361516300045-main.pdf
+Combining granular computing technique with deep learning for service planning under social manufacturing contexts,https://www.sciencedirect.com/science/article/pii/S0950705117303441
+Service oriented computing from a process algebraic perspective,https://www.sciencedirect.com/science/article/pii/S1567832606000270
+Building edge intelligence for online activity recognition in service-oriented IoT systems,https://www.sciencedirect.com/science/article/pii/S0167739X17306520
+Design Pattern for Feature-Oriented Service Injection and Composition of Web Services for Distributed Computing Systems with SOA,https://www.sciencedirect.com/science/article/pii/S1877705812022163/pdfft?md5=c243327e211aa18d773c4dc478bfe14b&pid=1-s2.0-S1877705812022163-main.pdf
+NMCDA: A framework for evaluating cloud computing services,https://www.sciencedirect.com/science/article/pii/S0167739X17327814
+Methodology for the model driven development of service oriented plant controls,https://www.sciencedirect.com/science/article/pii/S2212827117311393/pdfft?md5=ec7c13b9604f5c424133ba04fa5657b5&pid=1-s2.0-S2212827117311393-main.pdf
+Evaluating the monolithic and the microservice architecture pattern to deploy web applications in the cloud,https://www.researchgate.net/profile/Mario_Villamizar/publication/304317852_Evaluating_the_monolithic_and_the_microservice_architecture_pattern_to_deploy_web_applications_in_the_cloud/links/5b3ad04ca6fdcc8506ea541b/Evaluating-the-monolithic-and-the-microservice-architecture-pattern-to-deploy-web-applications-in-the-cloud.pdf
+Infrastructure cost comparison of running web applications in the cloud using AWS lambda and monolithic and microservice architectures,https://www.researchgate.net/profile/Mario_Villamizar/publication/304320076_Infrastructure_Cost_Comparison_of_Running_Web_Applications_in_the_Cloud_Using_AWS_Lambda_and_Monolithic_and_Microservice_Architectures/links/5b3ad2d94585150d23f1dcd3/Infrastructure-Cost-Comparison-of-Running-Web-Applications-in-the-Cloud-Using-AWS-Lambda-and-Monolithic-and-Microservice-Architectures.pdf
+Microservices validation: Mjolnirr platform case study,https://www.researchgate.net/profile/Gleb_Radchenko/publication/277006168_Microservices_validation_Mjolnirr_platform_case_study/links/555d879508ae86c06b5dadca.pdf
+Microservices architecture enables devops: Migration to a cloud-native architecture,https://spiral.imperial.ac.uk/bitstream/10044/1/40557/8/SO_SWSI-2015-10-0149.R1_Balalaie.pdf
+On micro-services architecture,https://cyberleninka.ru/article/n/on-micro-services-architecture
+Dekomposition und Komposition von Microservices,http://elib.uni-stuttgart.de/bitstream/11682/9302/1/ausarbeitung-final.pdf
+Microservices: A Systematic Mapping Study.,https://www.researchgate.net/profile/Claus_Pahl/publication/302973857_Microservices_A_Systematic_Mapping_Study/links/57395d3408aea45ee83ece80.pdf
+The database-is-the-service pattern for microservice architectures,https://www.researchgate.net/profile/Antonio_Messina7/publication/305909449_The_Database-is-the-Service_Pattern_for_Microservice_Architectures/links/5a65e59a4585158bca52c23b/The-Database-is-the-Service-Pattern-for-Microservice-Architectures.pdf
+Model-based engineering for microservice architectures using Enterprise Integration Patterns for inter-service communication,https://ieeexplore.ieee.org/document/8025912/
+"Migrating Enterprise Legacy Source Code to Microservices: On Multitenancy, Statefulness, and Data Consistency",https://ieeexplore.ieee.org/document/8186442/
+Extraction of Microservices from Monolithic Software Architectures,https://ieeexplore.ieee.org/document/8029803/
+Using Microservices for Rapid Creation of Remote Sensing Products,https://ieeexplore.ieee.org/document/8432192/
+Functionality-Oriented Microservice Extraction Based on Execution Trace Clustering,https://ieeexplore.ieee.org/document/8456351/
+Cyber-physical microservices: An IoT-based framework for manufacturing systems,https://ieeexplore.ieee.org/document/8387665/
+Microservices approach for the internet of things,https://ieeexplore.ieee.org/document/7733707/
+Gremlin: Systematic Resilience Testing of Microservices,https://ieeexplore.ieee.org/document/7536505/
+An application of microservices architecture pattern to create a modular computer numerical control system,https://ieeexplore.ieee.org/document/8071286/
+Online machine learning for cloud resource provisioning of microservice backend systems,https://ieeexplore.ieee.org/document/8258201/
+Workload-Based Clustering of Coherent Feature Sets in Microservice Architectures,https://ieeexplore.ieee.org/document/7930194/
+Supporting Microservice Evolution,https://ieeexplore.ieee.org/document/8094458/
+In Pursuit of Architectural Agility: Experimenting with Microservices,https://ieeexplore.ieee.org/document/8456408/
+A scalable routing mechanism for stateful microservices,https://ieeexplore.ieee.org/document/7899252/
+Reflections on SOA and Microservices,https://ieeexplore.ieee.org/document/7880473/
+A Secure Microservice Framework for IoT,https://ieeexplore.ieee.org/document/7943286/
+Data-Driven Workflows for Microservices: Genericity in Jolie,https://ieeexplore.ieee.org/document/7474121/
+Methodology to transform a monolithic software into a microservice architecture,https://ieeexplore.ieee.org/document/8169955/
+From the decorator pattern to circuit breakers in microservices,https://dl.acm.org/ft_gateway.cfm?id=3167427&ftid=1983696&dwn=1&#URLTOKEN#
+Guidelines for adopting frontend architectures and patterns in microservices-based systems,https://dl.acm.org/ft_gateway.cfm?id=3117775&ftid=1898325&dwn=1&#URLTOKEN#
+Partitioning microservices: a domain engineering approach,https://dl.acm.org/ft_gateway.cfm?id=3195535&ftid=1989218&dwn=1&#URLTOKEN#
+A pattern language for scalable microservices-based systems,https://dl.acm.org/ft_gateway.cfm?id=3241429&ftid=2004410&dwn=1&#URLTOKEN#
+Exploration of academic and industrial evidence about architectural tactics and patterns in microservices,https://dl.acm.org/ft_gateway.cfm?id=3194958&ftid=1980683&dwn=1&#URLTOKEN#
+The Container Manager Pattern,https://dl.acm.org/ft_gateway.cfm?id=3147735&ftid=1922953&dwn=1&#URLTOKEN#
+Increasing the Dependability of IoT Middleware with Cloud Computing and Microservices,https://dl.acm.org/ft_gateway.cfm?id=3148092&ftid=1930483&dwn=1&#URLTOKEN#
+Integrating Continuous Security Assessments in Microservices and Cloud Native Applications,https://dl.acm.org/ft_gateway.cfm?id=3147229&ftid=1929733&dwn=1&#URLTOKEN#
+Asynchronous Queue Based Approach for Building Reactive Microservices,https://dl.acm.org/ft_gateway.cfm?id=3126873&ftid=1914093&dwn=1&#URLTOKEN#
+ShareLatex on the Edge: Evaluation of the Hybrid Core/Edge Deployment of a Microservices-based Application,https://dl.acm.org/ft_gateway.cfm?id=3286687&ftid=2018105&dwn=1&#URLTOKEN#
+An Agile Farm Management Information System Framework for Precision Agriculture,https://dl.acm.org/ft_gateway.cfm?id=3149583&ftid=1935894&dwn=1&#URLTOKEN#
+An Aspect Oriented Approach for Renarrating Web Content,https://dl.acm.org/ft_gateway.cfm?id=3021466&ftid=1828654&dwn=1&#URLTOKEN#
+A microservices experience in the banking industry,https://dl.acm.org/ft_gateway.cfm?id=3241418&ftid=2004363&dwn=1&#URLTOKEN#
+Designing Microservices,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-3858-5_2.pdf
+The Microservices Journey Through Tools,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-3165-4_5.pdf
+Starting with Microservices,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-3165-4_4.pdf
+Microservices tenets,https://link.springer.com/content/pdf/10.1007%2Fs00450-016-0337-0.pdf
+Integrating Microservices,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-3858-5_7.pdf
+The Case for Microservices,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-3858-5_1.pdf
+Microservices Security Fundamentals,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-3858-5_11.pdf
+GranMicro: A Black-Box Based Approach for Optimizing Microservices Based Applications,https://link.springer.com/content/pdf/10.1007%2F978-3-319-65687-8_25.pdf
+Microservices,https://link.springer.com/chapter/10.1007/978-1-4842-1224-0_11
+The Aspect of Resilience in Microservices-Based Software Design,https://link.springer.com/content/pdf/10.1007%2F978-3-030-04771-9_44.pdf
+Microservices: The What and the Why,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-1937-9_1.pdf
+A Formal Framework for Specifying and Verifying Microservices Based Process Flows,https://link.springer.com/content/pdf/10.1007%2F978-3-319-74781-1_14.pdf
+Microservices Governance,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-3858-5_6.pdf
+Spring Microservices with Spring Cloud,https://link.springer.com/content/pdf/10.1007%2F978-1-4842-0811-3_8.pdf
+Architecture-Based Automated Updates of Distributed Microservices,https://link.springer.com/content/pdf/10.1007%2F978-3-030-03596-9_2.pdf
+Streaming Microservices,https://link.springer.com/referenceworkentry/10.1007/978-3-319-63962-8_198-1
+Migrating to Cloud-Native Architectures Using Microservices: An Experience Report,https://link.springer.com/content/pdf/10.1007%2F978-3-319-33313-7_15.pdf
+Low-Level Exploitation Mitigation by Diverse Microservices,https://link.springer.com/content/pdf/10.1007%2F978-3-319-67262-5_4.pdf
+Towards a Taxonomy of Microservices Architectures,https://link.springer.com/content/pdf/10.1007%2F978-3-319-74781-1_15.pdf
+"Microservices: Yesterday, Today, and Tomorrow",https://link.springer.com/content/pdf/10.1007%2F978-3-319-67425-4_12.pdf
+The pains and gains of microservices: A Systematic grey literature review,https://www.sciencedirect.com/science/article/pii/S0164121218302139
+Microservice-based cloud robotics system for intelligent space,https://www.sciencedirect.com/science/article/pii/S092188901830040X
+Defense-in-depth and Role Authentication for Microservice Systems,https://www.sciencedirect.com/science/article/pii/S1877050918304009/pdfft?md5=7e98338570a5dfb3f9840e117bd5f814&pid=1-s2.0-S1877050918304009-main.pdf
+Performance Evaluation of Replication Policies in Microservice Based Architectures,https://www.sciencedirect.com/science/article/pii/S1571066118300379/pdfft?md5=cdff5f481d631f2df353607a34ae28d5&pid=1-s2.0-S1571066118300379-main.pdf
+Configuration based process and knowledge management by structuring the software landscape of global operating industrial enterprises with Microservices,https://www.sciencedirect.com/science/article/pii/S2351978918305304/pdfft?md5=49c86e6ea692bb2039a896b244c6a4b3&pid=1-s2.0-S2351978918305304-main.pdf
+A Microservice-based Middleware for the Digital Factory,https://www.sciencedirect.com/science/article/pii/S2351978917304055/pdfft?md5=8320a2b5dadf6b0d7a093ddd0859ee40&pid=1-s2.0-S2351978917304055-main.pdf
+MiCADO—Microservice-based Cloud Application-level Dynamic Orchestrator,https://www.sciencedirect.com/science/article/pii/S0167739X17310506/pdfft?md5=dc221244ada7712ce41a93c1eff49564&pid=1-s2.0-S0167739X17310506-main.pdf
+Understanding the impact of cloud patterns on performance and energy consumption,https://www.sciencedirect.com/science/article/pii/S0164121218300621
+Automated Deployment of a Microservice-based Monitoring Infrastructure,https://www.sciencedirect.com/science/article/pii/S187705091503077X/pdfft?md5=3e3272447a03d96cd2a01aa7031042d0&pid=1-s2.0-S187705091503077X-main.pdf
+A practical approach for detecting multi-tenancy data interference,https://www.sciencedirect.com/science/article/pii/S0167642318301564
+KaliGreen: A distributed Scheduler for Energy Saving,https://www.sciencedirect.com/science/article/pii/S1877050918318222/pdfft?md5=2ae0abe113797561ffe44047bbbb31eb&pid=1-s2.0-S1877050918318222-main.pdf
+Design and evaluation of a scalable smart city software platform with large-scale simulations,https://www.sciencedirect.com/science/article/pii/S0167739X18307301
+Near Real-time Autonomous Quality Control for Streaming Environmental Sensor Data,https://www.sciencedirect.com/science/article/pii/S1877050918314170/pdfft?md5=ffb74a721f5d60ee72d9590c5b541128&pid=1-s2.0-S1877050918314170-main.pdf
+A Context Model and Policies Management Framework for Reconfigurable-by-design Distributed Applications,https://www.sciencedirect.com/science/article/pii/S1877050916321044/pdfft?md5=fb6c4833c266f2d5f361cee6dbce8303&pid=1-s2.0-S1877050916321044-main.pdf
+A flexible data acquisition system for storing the interactions on mashup user interfaces,https://www.sciencedirect.com/science/article/pii/S0920548917300661
+Improving reusability of software libraries through usage pattern mining,https://www.sciencedirect.com/science/article/pii/S0164121218301699
+Adaptive and technology-independent architecture for fault-tolerant distributed AAL solutions,https://www.sciencedirect.com/science/article/pii/S0010482517303621
+Patterns for emerging application integration scenarios: A survey,https://www.sciencedirect.com/science/article/pii/S0306437917301084/pdfft?md5=56c4a802bb67168fd7202622dfbf46a5&pid=1-s2.0-S0306437917301084-main.pdf
+A science gateway for Exploring the X-ray Transient and variable sky using EGI Federated Cloud,https://www.sciencedirect.com/science/article/pii/S0167739X17310051
+A Transformation Framework Proposal for Managers in Business Innovation and Business Transformation Projects-Enterprise Patterns Based Architecture,https://www.sciencedirect.com/science/article/pii/S1877050916323262/pdfft?md5=5029a70dbd6123fae130f37ca66c90c4&pid=1-s2.0-S1877050916323262-main.pdf
+Serverless computing for container-based architectures,https://www.sciencedirect.com/science/article/pii/S0167739X17316485
+Multi criteria biased randomized method for resource allocation in distributed systems: Application in a volunteer computing system,https://www.sciencedirect.com/science/article/pii/S0167739X17315236
+Understanding cloud-native applications after 10 years of cloud computing - A systematic mapping study,https://www.sciencedirect.com/science/article/pii/S0164121217300018/pdfft?md5=d0a20891c25fc0c649d612a47abe7de9&pid=1-s2.0-S0164121217300018-main.pdf
+Don't go with the flow: Web services composition standards exposed,http://www.martinfowler.workflowpatterns.com/documentation/documents/ieeewebflow.pdf
+Understanding SOA with Web services,http://cds.cern.ch/record/1508600/files/0321180860_TOC.pdf
+"Unraveling the Web services web: an introduction to SOAP, WSDL, and UDDI",https://ieeexplore.ieee.org/iel5/4236/21386/00991449.pdf
+Web services: beyond component-based computing,https://www.researchgate.net/profile/Michael_Stal2/publication/220422048_Web_Services_Beyond_Component-Based_Computing/links/53fd98420cf2364ccc08d792/Web-Services-Beyond-Component-Based-Computing.pdf
+Web services description language (WSDL) 1.1,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.460.467&rep=rep1&type=pdf
+Business process execution language for web services,http://xml.coverpages.org/BPELv11-20030505-20030331-Diffs.pdf
+What can context do for web services?,http://www.academia.edu/download/30593709/cacm-vol49n12-dec2006_contextwebservices_maamar-benslimane-narendra.pdf
+The web service modeling ontology,https://www.w3.org/Submission/WSMO/
+Patterns: service-oriented architecture and web services,https://www.researchgate.net/profile/Ali_Arsanjani/publication/200167132_IBM_Patterns_service-oriented_architecture_and_web_services/links/5488c92e0cf289302e30b950/IBM-Patterns-service-oriented-architecture-and-web-services.pdf
+Towards Automatic Discovering for a Real-World RESTful Web Service,https://ieeexplore.ieee.org/document/6385180/
+A Clustering-Based Approach for Assisting Semantic Web Service Retrieval,https://ieeexplore.ieee.org/document/4670281/
+Frequent Pattern Mining Using Semantic FP-Growth for Effective Web Service Ranking,https://ieeexplore.ieee.org/document/6928977/
+An actor-based language to unifying web service orchestration and web service choreography,https://ieeexplore.ieee.org/document/6309038/
+Dynamic Web Service Composition with QoS Clustering,https://ieeexplore.ieee.org/document/6928959/
+Constructing Operation-Level Ontologies for Web Services,https://ieeexplore.ieee.org/document/6009408/
+Ajax and Web Services Integrated Framework Based on Duplicate Proxy Pattern,https://ieeexplore.ieee.org/document/4409291/
+Integrating Information-Providing Web Services into the Data Integration System,https://ieeexplore.ieee.org/document/4670265/
+Implementation of Communities of Web Service Registries,https://ieeexplore.ieee.org/document/6009454/
+Dynamic Web Service Composition Based on Service Integration and HTN Planning,https://ieeexplore.ieee.org/document/6603689/
+Efficient Clustering Techniques for Web Services Clustering,https://ieeexplore.ieee.org/document/8524480/
+AADSS: Agent-Based Adaptive Dynamic Semantic Web Service Selection,https://ieeexplore.ieee.org/document/4700386/
+An Empirical Analysis on Web Service Anti-pattern Detection Using a Machine Learning Framework,https://ieeexplore.ieee.org/document/8377634/
+Web Service Discovery via Semantic Association Ranking and Hyperclique Pattern Discovery,https://ieeexplore.ieee.org/document/4061447/
+Applying Pattern Oriented Software Engineering to Web Service Development,https://ieeexplore.ieee.org/document/4746477/
+Segregating unique service object from multi-web sources for effective visualization,https://ieeexplore.ieee.org/document/6208283/
+Model driven distribution pattern design for dynamic web service compositions,https://dl.acm.org/ft_gateway.cfm?id=1145612&ftid=360934&dwn=1&#URLTOKEN#
+OpenMVC: a non-proprietry component-based framework for web applications,https://dl.acm.org/ft_gateway.cfm?id=1013527&ftid=278330&dwn=1&#URLTOKEN#
+Misuse pattern: spoofing web services,https://dl.acm.org/ft_gateway.cfm?id=2524643&ftid=1529002&dwn=1&#URLTOKEN#
+A Service Configuration and Composition Design Pattern for autonomic computing systems using Service Oriented Architecture,https://dl.acm.org/ft_gateway.cfm?id=2393284&ftid=1308188&dwn=1&#URLTOKEN#
+Execution patterns for visualizing web services,https://dl.acm.org/ft_gateway.cfm?id=1148499&ftid=368437&dwn=1&#URLTOKEN#
+WSAgent: an agent based on web services to promote interoperability between heterogeneous systems in the health domain,https://dl.acm.org/ft_gateway.cfm?id=1028756&ftid=283893&dwn=1&#URLTOKEN#
+Formal semantics and expressiveness of a web service composition language,https://dl.acm.org/ft_gateway.cfm?id=2480676&ftid=1368253&dwn=1&#URLTOKEN#
+Analyzing patterns in composing teaching materials from the web,https://dl.acm.org/ft_gateway.cfm?id=1958925&ftid=941674&dwn=1&#URLTOKEN#
+Overview of some patterns for architecting and managing composite web services,https://dl.acm.org/ft_gateway.cfm?id=844346&type=pdf&#URLTOKEN#
+On the structure and authorization management of RESTful web services,https://dl.acm.org/ft_gateway.cfm?id=3167315&ftid=1983722&dwn=1&#URLTOKEN#
+"Modeling Workflows, Interaction Patterns, Web Services and Business Processes: The ASM-Based Approach",https://link.springer.com/chapter/10.1007/978-3-540-87603-8_3
+Semantic Web-based Intelligent Geospatial Web Services,https://link.springer.com/book/10.1007/978-1-4614-6809-7
+Optimal Selection of Web Services for Efficient QoS Driven Web Service Compositions,https://link.springer.com/chapter/10.1007/978-3-642-29280-4_7
+An Architectural Pattern to Extend the Interaction Model between Web-Services: The Location-Based Service Context,https://link.springer.com/chapter/10.1007/978-3-540-24593-3_19
+Pattern-Based Specification and Validation of Web Services Interaction Properties,https://link.springer.com/content/pdf/10.1007%2F11596141_7.pdf
+A Pattern-Based Approach to Business Process Modeling and Implementation in Web Services,https://link.springer.com/chapter/10.1007/978-3-540-75492-3_15
+Applying Web Services and Design Patterns to Modeling and Simulating Real-World Systems,https://link.springer.com/content/pdf/10.1007%2F978-3-540-30583-5_38.pdf
+POESIA: An ontological workflow approach for composing Web services in agriculture,https://link.springer.com/content/pdf/10.1007%2Fs00778-003-0103-3.pdf
+"The Semantic Automated Discovery and Integration (SADI) Web service Design-Pattern, API and Reference Implementation",https://link.springer.com/content/pdf/10.1186%2F2041-1480-2-8.pdf
+Semantic Pattern Mining Based Web Service Recommendation,https://link.springer.com/content/pdf/10.1007%2F978-3-319-46295-0_26.pdf
+Bootstrapping trust of Web services based on trust patterns and Hidden Markov Models,https://link.springer.com/content/pdf/10.1007%2Fs10115-012-0554-1.pdf
+Asynchronous Web Services Communication Patterns in Business Protocols,https://link.springer.com/content/pdf/10.1007%2F11581062_33.pdf
+Overview of Transactional Patterns: Combining Workflow Flexibility and Transactional Reliability for Composite Web Services,https://link.springer.com/content/pdf/10.1007%2F11538394_37.pdf
+Webservices oriented data mining in knowledge architecture,https://www.sciencedirect.com/science/article/pii/S0167739X08001556/pdfft?md5=ab35a0d4441d35ed61c50b98174c3416&pid=1-s2.0-S0167739X08001556-main.pdf
+A geodata warehouse: Using denormalisation techniques as a tool for delivering spatially enabled integrated geological information to geologists,https://www.sciencedirect.com/science/article/pii/S0098300416301960/pdfft?md5=8608818d26b08e0c15d3d6434b0dc70e&pid=1-s2.0-S0098300416301960-main.pdf
+Multilingual processing of speech via web services,https://www.sciencedirect.com/science/article/pii/S0885230816302418/pdfft?md5=e79c26609a425a23fdd87b678e62e430&pid=1-s2.0-S0885230816302418-main.pdf
+Telemedicine using mobile telecommunication: Towards syntactic interoperability in teleexpertise,https://www.sciencedirect.com/science/article/pii/S0736585314000148/pdfft?md5=f0226f1bad9b7d76351f1ae1032090d0&pid=1-s2.0-S0736585314000148-main.pdf
+The use of evolutionary patterns in protein annotation,https://www.sciencedirect.com/science/article/pii/S0959440X12000759/pdfft?md5=2126e17cc478c6c62bcbd993706a301a&pid=1-s2.0-S0959440X12000759-main.pdf
+Discovering Coordination Patterns,https://www.sciencedirect.com/science/article/pii/S1571066109005209/pdfft?md5=9d2f9e9546790b985efddf511b51b80c&pid=1-s2.0-S1571066109005209-main.pdf
+A novel adaptive re-configuration compliance design pattern for autonomic computing systems,https://www.sciencedirect.com/science/article/pii/S1877705812009824/pdfft?md5=f0d0d44ae31af26a686a2dba746b0dec&pid=1-s2.0-S1877705812009824-main.pdf
+Tracking human routines towards adaptive monitoring: the MOVIDA.domus platform,https://www.sciencedirect.com/science/article/pii/S1877050918316387/pdfft?md5=72f4808324eb32e6cfa6dfc69a252b51&pid=1-s2.0-S1877050918316387-main.pdf
+Computer-assisted tree taxonomy by automated image recognition,https://www.sciencedirect.com/science/article/pii/S0952197608000870/pdfft?md5=a2c37b496dcfb4cfc98a49b9fcfa79af&pid=1-s2.0-S0952197608000870-main.pdf
+A web-based intelligent fault diagnosis system for customer service support,https://www.sciencedirect.com/science/article/pii/S0952197601000185/pdfft?md5=05a203c076b01172b4b2fc015979a0fb&pid=1-s2.0-S0952197601000185-main.pdf
+A high precise E-nose for daily indoor air quality monitoring in living environment,https://www.sciencedirect.com/science/article/pii/S0167926016301985/pdfft?md5=65bb348f8321c967d407332103fee602&pid=1-s2.0-S0167926016301985-main.pdf
+Enabling visual community learning analytics with Internet of Things devices,https://www.sciencedirect.com/science/article/pii/S0747563218303583
+Establishing Core Concepts for Information-Powered Collaborations,https://www.sciencedirect.com/science/article/pii/S0167739X17327619
+A pathway for every product? Tools to discover and design plant metabolism,https://www.sciencedirect.com/science/article/pii/S0168945217312505
+The Bio-Analytic Resource: Data visualization and analytic tools for multiple levels of plant biology,https://www.sciencedirect.com/science/article/pii/S2214662816300500/pdfft?md5=242638f9bc48bc9d15e721a66c42e2d0&pid=1-s2.0-S2214662816300500-main.pdf
+Improving Web Service descriptions for effective service discovery,https://www.sciencedirect.com/science/article/pii/S0167642310000134/pdfft?md5=02b661b2de69c4934c7044648a964fec&pid=1-s2.0-S0167642310000134-main.pdf
+A perspective on architectural re-engineering,https://www.sciencedirect.com/science/article/pii/S0167642314000938/pdfft?md5=d427803cd4c6c662212afaecb29a5245&pid=1-s2.0-S0167642314000938-main.pdf
+Time will tell: The role of mobile learning analytics in self-regulated learning,https://www.sciencedirect.com/science/article/pii/S0360131515300245/pdfft?md5=e934775b51e21138bf32b5fc9e372444&pid=1-s2.0-S0360131515300245-main.pdf
+WFCatalog: A catalogue for seismological waveform data,https://www.sciencedirect.com/science/article/pii/S0098300416308263/pdfft?md5=561cd21ed1c542463ee2819d1a57dd50&pid=1-s2.0-S0098300416308263-main.pdf
+Slicing for architectural analysis,https://www.sciencedirect.com/science/article/pii/S0167642310000298/pdfft?md5=f4b51b62136138076433645424693a3b&pid=1-s2.0-S0167642310000298-main.pdf
+Creating a spatial multi-criteria decision support system for energy related integrated environmental impact assessment,https://www.sciencedirect.com/science/article/pii/S0195925514000900/pdfft?md5=2c66abfacdff1576e35e349edf3f37ed&pid=1-s2.0-S0195925514000900-main.pdf
+Raising interoperability among base registries: The evolution of the Linked Base Registry for addresses in Flanders,https://www.sciencedirect.com/science/article/pii/S1570826818300519
+Service-oriented modeling and architecture,https://www.researchgate.net/profile/Ali_Arsanjani/publication/235720456_Service-Oriented_Modeling_and_Architecture/links/5488c92d0cf268d28f08ff39/Service-Oriented-Modeling-and-Architecture.pdf
+The enterprise service bus: making service-oriented architecture real,http://svn.wso2.org/repos/wso2/scratch/papers/mediation/ieee/papers/making-sao-real.pdf
+Enterprise SOA: service-oriented architecture best practices,https://books.google.de/books?hl=de&lr=&id=R7oGhITYUuUC&oi=fnd&pg=PR17&dq=pattern+service+oriented+architecture&ots=UD6AecGXEH&sig=m0JKg_zimBN1oCUeQHcCeKVsOz4
+Using architectural patterns and blueprints for service-oriented architecture,https://ieeexplore.ieee.org/iel5/52/33727/01605179.pdf
+Software architecture,https://www.computer.org/csdl/mags/so/2006/02/s2004.html
+Using service-oriented architecture and component-based development to build web service applications,http://dit.isuct.ru/Publish_RUP/soa.rup_soma/guidances/whitepapers/resources/using_soa_and_cbd_to_build_ws_applications.pdf
+"Impact of service-oriented architecture on enterprise systems, organizational structures, and individuals",http://www.academia.edu/download/6079308/10.1.1.136.6930.pdf
+Wsmx-a semantic service-oriented architecture,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.61.9549&rep=rep1&type=pdf
+Domain based analysis of messaging patterns in service-oriented architecture,https://ieeexplore.ieee.org/document/6513108/
+Early performance considerations in a Service-Oriented Architecture: A trade-off analysis,https://ieeexplore.ieee.org/document/6093388/
+Formal Approach for the Development of Business Processes in Terms of Service-Oriented Architectures Using Pi-ADL,https://ieeexplore.ieee.org/document/4730479/
+Fifteen Years of Service-Oriented Architecture at Credit Suisse,https://ieeexplore.ieee.org/document/6654116/
+Development of manufacturing execution system service oriented software architecture,https://ieeexplore.ieee.org/document/6693646/
+Attribute-Based Architecture Patterns for Lightweight Service-Oriented Architectures,https://ieeexplore.ieee.org/document/5358559/
+Connectivity abstractions and “service-oriented network” architecture,https://ieeexplore.ieee.org/document/6167439/
+Architecture-oriented design method for smart tourism innovative service systems,https://ieeexplore.ieee.org/document/7840284/
+A Unified Design Method of Asynchronous Service-Oriented Architecture Based on the Models and Patterns of Asynchronous Message Exchanges,https://ieeexplore.ieee.org/document/4670218/
+Research on the framework of Process Equipment Service-Oriented Platform,https://ieeexplore.ieee.org/document/5974960/
+An xADL Extension for Service Oriented Architecture Design,https://ieeexplore.ieee.org/document/6579474/
+Qualitative Analysis of the Impact of SOA Patterns on Quality Attributes,https://ieeexplore.ieee.org/document/6319243/
+A Practical and Automated Approach for Engineering Service-Oriented Applications with Design Patterns,https://ieeexplore.ieee.org/document/6903211/
+Monitoring performance-related QoS properties in service-oriented systems: a pattern-based architectural decision model,https://dl.acm.org/ft_gateway.cfm?id=2396729&ftid=1311560&dwn=1&#URLTOKEN#
+Pattern based adaptation for service oriented applications,https://dl.acm.org/ft_gateway.cfm?id=2088894&ftid=1135105&dwn=1&#URLTOKEN#
+Aspect-oriented modeling approach to define routing in enterprise service bus architectures,https://dl.acm.org/ft_gateway.cfm?id=1370735&ftid=498567&dwn=1&#URLTOKEN#
+Qos architectural patterns for self-architecting software systems,https://dl.acm.org/ft_gateway.cfm?id=1809084&ftid=807828&dwn=1&#URLTOKEN#
+Capability-based service identification in service-oriented legacy modernization,https://dl.acm.org/ft_gateway.cfm?id=2739021&ftid=1614523&dwn=1&#URLTOKEN#
+Dynamically reconfiguring services in SOA applications: a pattern-based approach,https://dl.acm.org/ft_gateway.cfm?id=2603082&ftid=1492078&dwn=1&#URLTOKEN#
+Patterns for service composition,https://dl.acm.org/ft_gateway.cfm?id=1992913&ftid=981081&dwn=1&#URLTOKEN#
+An approach for pattern mining through grounded theory techniques and its applications to process-driven SOA patterns,https://dl.acm.org/ft_gateway.cfm?id=2739020&ftid=1614534&dwn=1&#URLTOKEN#
+Feature Model as a Design-pattern-based Service Contract for the Service Provider in the Service Oriented Architecture,https://link.springer.com/content/pdf/10.1007%2F978-3-319-93375-7_12.pdf
+A Pattern Language for Process Execution and Integration Design in Service-Oriented Architectures,https://link.springer.com/chapter/10.1007/978-3-642-10832-7_6
+Service-Oriented Architecture,https://link.springer.com/referenceworkentry/10.1007/978-0-387-73003-5_1037
+Event Driven Service-oriented Architecture,https://link.springer.com/content/pdf/10.1007%2F978-0-387-39940-9_2577.pdf
+Modeling e-Negotiation Processes for a Service Oriented Architecture,https://link.springer.com/content/pdf/10.1007%2Fs10726-006-9038-6.pdf
+"XML Based Integration of Web, Mobile and Desktop Components in a Service Oriented Architecture",https://link.springer.com/chapter/10.1007/978-3-540-85863-8_67
+Trust-based service composition and selection in service oriented architecture,https://link.springer.com/content/pdf/10.1007%2Fs12083-017-0593-1.pdf
+Service-oriented architecture for ontologies supporting multi-agent system negotiations in virtual enterprise,https://link.springer.com/content/pdf/10.1007%2Fs10845-010-0469-1.pdf
+Language Support for Service Interactions in Service-Oriented Architecture,https://link.springer.com/chapter/10.1007/978-3-642-14819-4_6
+Towards a self-adaptive service-oriented methodology based on extended SOMA,https://link.springer.com/content/pdf/10.1631%2FFITEE.1400040.pdf
+An MDA-Based Modeling and Design of Service Oriented Architecture,https://link.springer.com/content/pdf/10.1007%2F11758532_76.pdf
+From inter-organizational business process models to service-oriented architecture models,https://link.springer.com/content/pdf/10.1007%2Fs11761-018-0246-0.pdf
+A service-oriented architecture for integrating the modeling and formal verification of genetic regulatory networks,https://link.springer.com/content/pdf/10.1186%2F1471-2105-10-450.pdf
+Service oriented architecture for medical image processing,https://link.springer.com/content/pdf/10.1007%2Fs11548-008-0231-8.pdf
+Pattern-Based Context Establishment for Service-Oriented Architectures,https://link.springer.com/chapter/10.1007/978-3-642-30835-2_7
+Anomaly Detection System Based on Service Oriented Architecture,https://link.springer.com/chapter/10.1007/978-3-642-28493-9_40
+Research on Service-Oriented Geospatial Information Sharing Mechanism and Technical Architecture,https://link.springer.com/chapter/10.1007/978-3-642-25986-9_67
+Usage-Aware Service Identification for Architecture Migration of Object-Oriented Systems to SoA,https://link.springer.com/content/pdf/10.1007%2F978-3-319-64471-4_6.pdf
+Design patterns for BIM-based service-oriented architectures,https://www.sciencedirect.com/science/article/pii/S0926580512000696/pdfft?md5=13ab7f32394b5e1f4d8627e75deefc9b&pid=1-s2.0-S0926580512000696-main.pdf
+An Approach to Knowledge Management in Construction Service – Oriented Architecture,https://www.sciencedirect.com/science/article/pii/S1877050916319718/pdfft?md5=34cdf1e412893c84d61376bfd3b93949&pid=1-s2.0-S1877050916319718-main.pdf
+Service vulnerability scanning based on service-oriented architecture in Web service environments,https://www.sciencedirect.com/science/article/pii/S1383762113000143/pdfft?md5=fa8c7f1929166c754f21cd5c2304d3bf&pid=1-s2.0-S1383762113000143-main.pdf
+COLLECT: COLLaborativE ConText-aware service oriented architecture for intelligent decision-making in the Internet of Things,https://www.sciencedirect.com/science/article/pii/S0957417417303573/pdfft?md5=c567d95f55075fd8715598b8e09cf5ac&pid=1-s2.0-S0957417417303573-main.pdf
+Specification and automatic checking of architecture constraints on object oriented programs,https://www.sciencedirect.com/science/article/pii/S095058491830079X
+A component based unified architecture for utility service in cloud,https://www.sciencedirect.com/science/article/pii/S0167739X17302935
+Application of service oriented architecture to finite element analysis,https://www.sciencedirect.com/science/article/pii/S0965997812000968/pdfft?md5=fceeb0d29072172b1521e82d6b5f24c2&pid=1-s2.0-S0965997812000968-main.pdf
+Manufacturing Service: From e-Work and Service-Oriented Approach towards a Product-Service Architecture,https://www.sciencedirect.com/science/article/pii/S2405896315005583/pdfft?md5=a34a4219bb1e7820002378fbc138ad62&pid=1-s2.0-S2405896315005583-main.pdf
+Methodology for the model-driven development of service oriented IoT applications,https://www.sciencedirect.com/science/article/pii/S1383762118301875
+A Service-Oriented Architecture for Networked Highway,https://www.sciencedirect.com/science/article/pii/S1877705811018923/pdfft?md5=d007920d43627a84d8cfb37ef4a9459a&pid=1-s2.0-S1877705811018923-main.pdf
+An Approach for QoS Based Fault Reconfiguration in Service Oriented Architecture,https://www.sciencedirect.com/science/article/pii/S1877050915002094/pdfft?md5=ebb6b69f1eeefd453b0ce5d8307b6fca&pid=1-s2.0-S1877050915002094-main.pdf
+RSAM: An enhanced architecture for achieving web services reliability in mobile cloud computing,https://www.sciencedirect.com/science/article/pii/S1319157817300642/pdfft?md5=719259d3cda7147ba0719eff88b9b8bc&pid=1-s2.0-S1319157817300642-main.pdf
+New frontiers of reverse engineering,https://ieeexplore.ieee.org/document/4221630
+Are RESTful APIs well-designed? Detection of their linguistic (anti) patterns,https://link.springer.com/chapter/10.1007/978-3-662-48616-0_11
+Web service antipatterns detection using genetic programming,https://dl.acm.org/citation.cfm?id=2754724
+Schedule of bad smell detection and resolution: A new way to save effort,https://ieeexplore.ieee.org/document/5680918
+Applications programming in a Health Sciences Computing center,https://dl.acm.org/citation.cfm?id=810528
+Free lunches in pareto coevolution,https://dl.acm.org/citation.cfm?id=1570132
+Co-optimization algorithms,https://dl.acm.org/citation.cfm?id=1389166
+A no-free-lunch framework for coevolution,https://dl.acm.org/citation.cfm?id=1389163
+Abstracts of Documents in This Supplement,https://link.springer.com/chapter/10.1007/978-1-4615-5971-9_1
+Demise of the Dogmatic Universe,https://link.springer.com/referenceworkentry/10.1007/978-3-540-68832-7_8
+On the Interplay Between Software Testing and Evolution and its Effect on Program Comprehension,https://link.springer.com/chapter/10.1007/978-3-540-76440-3_8
+High-performance computing framework with desynchronized information propagation for large-scale simulations,https://www.sciencedirect.com/science/article/pii/S1877750318303776
+Improving the Service Operations of Fast-food Restaurants,https://www.sciencedirect.com/science/article/pii/S1877042816305237
+Evolutionary computing applied to customer relationship management: A survey,https://www.sciencedirect.com/science/article/pii/S0952197616301439
+A survey on mobile affective computing,https://www.sciencedirect.com/science/article/pii/S1574013717300382
+Identification and application of Extract Class refactorings in object-oriented systems,https://www.sciencedirect.com/science/article/pii/S0164121212001057
+"Big Data for supply chain management in the service and manufacturing sectors: Challenges, opportunities, and future perspectives",https://www.sciencedirect.com/science/article/pii/S0360835216302388
+"Chapter Four: Anti-Pattern Detection: Methods, Challenges, and Open Issues",https://www.sciencedirect.com/science/article/pii/B9780128001608000048
+A systematic review on search-based refactoring,https://www.sciencedirect.com/science/article/pii/S0950584916303779
+Automatically detecting opportunities for web service descriptions improvement,https://link.springer.com/chapter/10.1007/978-3-642-16283-1_18
+An exploratory study of the impact of antipatterns on class change- and fault-proneness,https://link.springer.com/article/10.1007/s10664-011-9171-y
+Software Product Line Architectures: Reviewing the Literature and Identifying Bad Smells,https://www.semanticscholar.org/paper/Software-Product-Line-Architectures-%3A-Reviewing-the-Crnkovic/0536538d286c435742e4776ce37c459e29f424e7
+Software-evolvability,https://gi.de/informatiklexikon/software-evolvability/
+Genetics of taste and smell: poisons and pleasures,https://www.ncbi.nlm.nih.gov/pubmed/21036327
+Towards a computer assisted approach for migrating legacy systems to SOA,https://link.springer.com/chapter/10.1007/978-3-642-31128-4_36
+An empirical evaluation of the quality of interoperability specifications for the web,https://www.researchgate.net/publication/221593537_An_Empirical_Evaluation_of_the_Quality_of_Interoperability_Specifications_for_the_Web
+Biomonitoring study of people living near or working at a municipal solid-waste incinerator before and after two years of operation,https://www.ncbi.nlm.nih.gov/pubmed/11005431
+Arsenic,https://link.springer.com/chapter/10.1007/978-3-662-01611-4_1
+The Dictionary,https://link.springer.com/chapter/10.1007/978-1-349-12428-2_1
+Software Evolution and Modernisation,https://link.springer.com/chapter/10.1007/978-3-8348-8675-0_3
+Semantic and translation priming from a first language to a second and back: Making sense of the findings,https://link.springer.com/article/10.3758/MC.37.5.569
+DUSM: A Method for Requirements Specification and Refinement Based on Disciplined Use Cases and Screen Mockups,https://link.springer.com/article/10.1007/s11390-018-1866-8
+The Examples of Applications of the Agent Systems,https://link.springer.com/chapter/10.1007/978-3-319-13197-9_5
+Mechanisms underlying auditory and cross-modal emotional attentional biases: Engagement with and disengagement from aversive auditory stimuli,https://link.springer.com/article/10.1007/s11031-018-9739-6
+"“Adore”, a logical meta-model supporting business process evolution",https://www.sciencedirect.com/science/article/pii/S0167642312001220
+Chapter 3.2: Air Pollution and Air Quality,https://www.sciencedirect.com/science/article/pii/B9780128092705000078
+Semantic Memory: Some Insights from Feature-Based Connectionist Attractor Networks,https://www.sciencedirect.com/science/article/pii/S0079742103450020
+Software test-code engineering: A systematic mapping,https://www.sciencedirect.com/science/article/pii/S0950584914001487
+Olfactory ERPs in an odor/visual congruency task differentiate ApoE ?4 carriers from non-carriers,https://www.sciencedirect.com/science/article/pii/S0006899311022311
+Neurobehavioral performance in human volunteers during inhalation exposure to the unpleasant local irritant cyclohexylamine,https://www.sciencedirect.com/science/article/pii/S0161813X12001465
+Diverse tastes: Genetics of sweet and bitter perception,https://www.sciencedirect.com/science/article/pii/S0031938406002459
+Contribution of Social Science Electives to Engineering Students,https://www.sciencedirect.com/science/article/pii/S187704281305413X
+"Social attitudes towards smoking in pregnancy in East Surrey: A qualitative study of smokers, former smokers and non-smokers",https://www.sciencedirect.com/science/article/pii/S1355184107000038
+Chapter 5: Adaptive Security for Software Systems,https://www.sciencedirect.com/science/article/pii/B9780128028551000058
+The financial aspect of managing technical debt: A systematic literature review,https://www.sciencedirect.com/science/article/pii/S0950584915000762
+Attention,https://www.sciencedirect.com/science/article/pii/B0123708702000184
+The Explanatory Gap: 30 Years after,https://www.sciencedirect.com/science/article/pii/S1877042814023490
+12: Visual Inspection,https://www.sciencedirect.com/science/article/pii/B9780750675314500129
+"Effects of toxic Alexandrium species on the survival and feeding rates of brine shrimp, Artemia salina",https://www.sciencedirect.com/science/article/pii/S1872203207600043
+1: Architecting Scalable Enterprise Web Applications,https://www.sciencedirect.com/science/article/pii/B9780128022580000019
+Structured collaborative workflow design,https://www.sciencedirect.com/science/article/pii/S0167739X08002100
+Chapter 1: The End of Wisdom? The Future of Libraries in the Digital Age,https://www.sciencedirect.com/science/article/pii/B9780081001424000014
+Avoiding premature machinery failures — applying API 682 and case histories,https://www.sciencedirect.com/science/article/pii/S1350478902801350
+Soa antipatterns: An approach for their specification and detection,https://www.worldscientific.com/doi/abs/10.1142/S0218843013410049
+Soda: A Tool Support for the Detection of SOA Antipatterns,https://link.springer.com/chapter/10.1007/978-3-642-37804-1_51
+Interactive Ontology Alignment using Alignment Antipatterns: A First Experiment,https://dl.acm.org/citation.cfm?id=3021991
+Antipattern-based model refactoring for software performance improvement,https://dl.acm.org/citation.cfm?id=2304704
+AntiPatterns in Software Architecture,https://dl.acm.org/citation.cfm?id=878114
+Software reuse antipatterns,https://dl.acm.org/citation.cfm?id=505492
+Detection of SOA Patterns,https://link.springer.com/chapter/10.1007/978-3-642-45005-1_9
+Specification and Detection of Business Process Antipatterns,https://link.springer.com/chapter/10.1007/978-3-319-17957-5_3
+Detection of SOA Antipatterns,https://link.springer.com/chapter/10.1007/978-3-642-37804-1_43
+SOA Worlds,https://link.springer.com/chapter/10.1007/978-3-642-16419-4_2
+On semantic detection of cloud API (anti)patterns,https://www.sciencedirect.com/science/article/abs/pii/S095058491830226X
+Caching for Enterprise Web Application,https://www.sciencedirect.com/science/article/pii/B9780128022580000044
+"Architecture and Patterns for IT: Service Management, Resource Planning, and Governance",https://www.sciencedirect.com/book/9780123705938/architecture-and-patterns-for-it-service-management-resource-planning-and-governance
+A healthcare system as a service in the context of vital signs: Proposing a framework for realizing a model,https://www.sciencedirect.com/science/article/pii/S0898122112002817
+High-impact refactoring based on architecture violations,https://ieeexplore.ieee.org/document/4145033
+"Optimization of adaptation plans for a service-oriented architecture with cost, reliability, availability and performance tradeoff",https://www.sciencedirect.com/science/article/pii/S0164121212003226
+Service-oriented architecture structure for healthcare systems utilising vital signs,https://ieeexplore.ieee.org/document/6412954
+Workflow design using fragment composition,https://link.springer.com/chapter/10.1007%2F978-3-642-16086-8_6
+"Investigating the Relationship between Code Smell Agglomerations and Architectural Concerns: Similarities and Dissimilarities from Distributed, Service-Oriented, and Mobile Systems",https://dl.acm.org/citation.cfm?id=3267184
+TIPSTER text phase II configuration management plan,https://dl.acm.org/citation.cfm?id=1119068
+TIPSTER text phase II architecture concept,https://dl.acm.org/citation.cfm?id=1119065
+A Catalogue of Bad Smells for Software Process,https://dl.acm.org/citation.cfm?id=3275264
+Unbiased coevolutionary solution concepts,https://dl.acm.org/citation.cfm?id=1527142
+Contemporary Architects,https://link.springer.com/chapter/10.1007/978-1-349-04184-8_1
+Improving Object-Oriented Micro Architectural Design Through Knowledge Systematization,https://link.springer.com/chapter/10.1007/11568346_47
+Reengineering component-based software systems with Archimetrix,https://link.springer.com/article/10.1007/s10270-013-0341-9
+The Directory,https://link.springer.com/chapter/10.1007/978-1-349-03650-9_1
+Entries,https://link.springer.com/chapter/10.1007/978-1-349-74030-7_1
+An Agile Toolkit to Support Agent-Oriented and Service-Oriented Computing Mechanisms,https://link.springer.com/chapter/10.1007/978-3-540-73460-4_21
+Software sustainability: Research and practice from a software architecture viewpoint,https://www.sciencedirect.com/science/article/pii/S0164121217303072
+Chapter 9: Architectural Debt Management in Value-Oriented Architecting,https://www.sciencedirect.com/science/article/pii/B978012410464800009X
+Beyond ATAM: Early architecture evaluation method for large-scale distributed systems,https://www.sciencedirect.com/science/article/pii/S0164121212003032
+A reference architecture for organizing the internal structure of metadata-based frameworks,https://www.sciencedirect.com/science/article/pii/S0164121212003366
+Recovering architectural assumptions,https://www.sciencedirect.com/science/article/pii/S0164121205001615
+"Quality dimensions of public water services in Abuja, Nigeria",https://www.sciencedirect.com/science/article/pii/S0957178715301399
+Application of knowledge-based approaches in software architecture: A systematic mapping study,https://www.sciencedirect.com/science/article/pii/S0950584912002315
+Identifying thresholds for object-oriented software metrics,https://www.sciencedirect.com/science/article/pii/S0164121211001385
+The design and management of ambience—Implications for hotel architecture and service,https://www.sciencedirect.com/science/article/pii/S0261517707000179
+Combating architectural degeneration: a survey,https://www.sciencedirect.com/science/article/pii/S0950584904001740
+Chapter 3: Heuristics for a Pervasive Information Architecture,https://www.sciencedirect.com/science/article/pii/B9780123820945000204
+Modularity and architecture of PLC-based software for automated production Systems: An analysis in industrial companies,https://www.sciencedirect.com/science/article/pii/S0164121217300985
+Aspect based Sentiment Oriented Summarization of Hotel Reviews,https://www.sciencedirect.com/science/article/pii/S1877050917319439
+Reusable architectural decision models for enterprise application development,https://link.springer.com/chapter/10.1007/978-3-540-77619-2_2
+SOA Design Patterns -- Can They Improve the Process of Model Driven Development?,https://ieeexplore.ieee.org/document/6649769
+Anti-Patterns: Integrating Distributed and Heterogeneous Data Sources in SOAs,https://ieeexplore.ieee.org/document/4578306/
+TIPSTER text phase II architecture requirements,https://dl.acm.org/citation.cfm?id=1119067
+Porting game engines to Direct3D 10: Microsoft's Flight Simulator X,https://dl.acm.org/citation.cfm?id=1281580
+SHoP architects,https://dl.acm.org/citation.cfm?id=1400403
+An approach to detect Android antipatterns,https://dl.acm.org/citation.cfm?id=2819161
+Service-oriented architecture (SOA) concepts and implementations,https://dl.acm.org/citation.cfm?id=2402683
+On the Automated Modularisation of Java Programs Using Service Locators,https://link.springer.com/chapter/10.1007/978-3-642-30564-1_9
+Detection of REST Patterns and Antipatterns: A Heuristics-Based Approach,https://link.springer.com/chapter/10.1007/978-3-662-45391-9_16
+Improving the quality of use case models using antipatterns,https://link.springer.com/article/10.1007/s10270-009-0112-9
+Towards Quality-Driven SOA Systems Refactoring Through Planning,https://link.springer.com/chapter/10.1007/978-3-319-17957-5_18
+Performance-driven software model refactoring,https://www.sciencedirect.com/science/article/abs/pii/S0950584917301787
+"Chapter 5: Architecture Decisions: Who, How, and When?",https://www.sciencedirect.com/science/article/pii/B9780124077720000046
+Exploring the impact of inter-smell relations on software maintainability: An empirical study,https://ieeexplore.ieee.org/document/6606614
+Clinical experience of ketogenic diet on children with refractory epilepsy.,https://www.ncbi.nlm.nih.gov/pubmed/10910595
+"Bad breath--etiological, diagnostic and therapeutic problems",https://www.ncbi.nlm.nih.gov/pubmed/10838713
+Halitosis: a review.,https://www.ncbi.nlm.nih.gov/pubmed/15861957
+The Sensorial Map of the City,https://dl.acm.org/citation.cfm?id=2890469
+WePatch: a system enabling users to improve bad user interfaces on the web,https://dl.acm.org/citation.cfm?id=3156155
+CyberSafety 2016: The First International Workshop on Computational Methods in CyberSafety,https://dl.acm.org/citation.cfm?id=2988541
+Introduction to Linked Data and Its Lifecycle on the Web,https://link.springer.com/chapter/10.1007/978-3-642-23032-5_1
+Twentieth-Century Crime and Mystery Writers,https://link.springer.com/chapter/10.1007/978-1-349-81366-7_1
+Abstracts from the 36th Annual Meeting of the Society of General Internal Medicine,https://link.springer.com/article/10.1007/s11606-013-2436-y
+Posters,https://link.springer.com/article/10.1007/s12603-009-0095-9
+"Society of general internal medicine 29th Annual meeting Los Angeles, California April 26–29, 2006",https://link.springer.com/article/10.1111/j.1525-1497.2006.00469.x
+An Incremental Approach for Building Accessible and Usable Web Applications,https://link.springer.com/chapter/10.1007/978-3-642-17616-6_49
+Society of General Internal Medicine,https://link.springer.com/article/10.1007/s11606-011-1730-9
+Abstracts from the 31st Annual Meeting of the Society of General Internal Medicine,https://link.springer.com/article/10.1007/s11606-008-0556-6
+Refactoring code-first Web Services for early avoiding WSDL anti-patterns: Approach and comprehensive assessment,https://www.sciencedirect.com/science/article/pii/S0167642314001646
+Exploring Airbnb service quality attributes and their asymmetric effects on customer satisfaction,https://www.sciencedirect.com/science/article/pii/S027843191730909X
+Chapter 18: The Trade-Off Between the Three Columns of Sustainability: A Case Study From the Home Service Industry,https://www.sciencedirect.com/science/article/pii/B9780128142424000181
+Software trustworthiness 2.0—A semantic web enabled global source code analysis approach,https://www.sciencedirect.com/science/article/pii/S0164121213002173
+"The good, the bad, and the unresolved death in Kaliai",https://www.sciencedirect.com/science/article/pii/S0277953603005793
+Constructing professional services: For-profit care and domestic work agencies in the Czech Republic,https://www.sciencedirect.com/science/article/pii/S0277539518300815
+"Chapter 1: Service, Systems, and Science",https://www.sciencedirect.com/science/article/pii/B9781843346494000019
+11: The Supervisor’s Role in Improving Customer Service and Tenant Relations,https://www.sciencedirect.com/science/article/pii/B9780128001134000110
+The Top Ten Excuses for Bad Service (and How to Avoid Needing Them),https://www.sciencedirect.com/science/article/pii/S0090261605000173
+Integrating ecosystem services and disservices: insights from plant invasions,https://www.sciencedirect.com/science/article/pii/S2212041616302133
+Service-orientierte Architekturen mit Web Services: Konzepte-Standards-Praxis,https://books.google.de/books?hl=de&lr=&id=gCspBAAAQBAJ&oi=fnd&pg=PR7&dq=antipattern+web+services&ots=vyNuhSke8H&sig=D5z0Rhy6zhS94YsW4Yf-Mn3bOJM#v=onepage&q=antipattern%20web%20services&f=false
+Bottom-up and top-down cobol system migration to web services,https://ieeexplore.ieee.org/abstract/document/6109214/
+Anti-pattern free code-first web services for state-of-the-art Java WSDL generation tools,http://ri.conicet.gov.ar/handle/11336/1152
+Service-orientierte Architektur,https://link.springer.com/chapter/10.1007/978-3-8274-2550-8_2
+An approach for web service discoverability anti-pattern detection for journal of web engineering,https://www.riverpublishers.com/journal/journal_articles/RP_Journal_1540-9589_1215.pdf
+Asynchronous Semantics and Anti-patterns for Interacting Web Services,https://ieeexplore.ieee.org/document/4032271/
+Spinning Webs into the 21st century,https://dl.acm.org/citation.cfm?id=253752
+"On data skewness, stragglers, and MapReduce progress indicators",https://dl.acm.org/citation.cfm?id=2806843
+Evaluating the impact of fine-scale burstiness on cloud elasticity,https://dl.acm.org/citation.cfm?id=2806846
+Enabling open software project management data with antipatterns,https://dl.acm.org/citation.cfm?id=2818286
+What We Do Wrong: Web Antipatterns Explained,https://link.springer.com/chapter/10.1007/978-1-4302-0252-3_1
+The Challenges of Web Application Development,https://link.springer.com/chapter/10.1007/978-1-4302-1122-8_2
+Bi-level Identification of Web Service Defects,https://link.springer.com/chapter/10.1007/978-3-319-46295-0_22
+Computer and Information Security Handbook,https://www.sciencedirect.com/book/9780128038437/computer-and-information-security-handbook
+A practical approach to modelling and validating integrity constraints in the Semantic Web,https://www.sciencedirect.com/science/article/abs/pii/S0950705118301862
+Identifying architectural bad smells,https://ieeexplore.ieee.org/document/4812762
+Toward a catalogue of architectural bad smells,https://link.springer.com/chapter/10.1007/978-3-642-02351-4_10
+Medicinal applications of cyclodextrins.,https://www.ncbi.nlm.nih.gov/pubmed/8007740
+Automatic detection of bad smells in code: An experimental assessment.,https://www.semanticscholar.org/paper/Automatic-detection-of-bad-smells-in-code%3A-An-Fontana-Braione/5b9f1e1c092a9683a767f86a1169a08e8e3e6a09
+"Product metrics for automatic identification of"" bad smell"" design problems in java source-code",https://ieeexplore.ieee.org/document/1509287
+Critical incidents: Service failures that matter most,https://journals.sagepub.com/doi/10.1177/001088049803900313
+Removing Energy Code Smells with Reengineering Services.,https://dl.gi.de/handle/20.500.12116/17849
+A comparison of the service quality of fast food chain franchises,https://www.inderscienceonline.com/doi/abs/10.1504/IJSS.2007.012930
+A Validated Set of Smells in Model-View-Controller Architectures,https://ieeexplore.ieee.org/document/7816470/
+Dead Code,https://ieeexplore.ieee.org/document/8530095/
+Kobold: Web usability as a service,https://ieeexplore.ieee.org/document/8115717/
+"If we launch it, will they come? [comms service uptake]",https://ieeexplore.ieee.org/document/4806262/
+Refactoring for Usability in Web Applications,https://ieeexplore.ieee.org/document/5518753/
+Customizable automatic detection of bad usability smells in mobile accessed web applications,https://dl.acm.org/citation.cfm?id=3098558
+Investigating the relationship between bad smells and bugs in software systems,https://dl.acm.org/citation.cfm?id=3132513
+Code smells for Model-View-Controller architectures,https://link.springer.com/article/10.1007/s10664-017-9540-2
+Detecting Bad Smells of Refinement in Goal-Oriented Requirements Analysis,https://link.springer.com/chapter/10.1007/978-3-319-70625-2_12
+From a domain analysis to the specification and detection of code and design smells,https://link.springer.com/article/10.1007/s00165-009-0115-x
+Software Design Smell Detection: a systematic mapping study,https://link.springer.com/article/10.1007/s11219-018-9424-8
+A metamodeling approach for the identification of organizational smells in multi-agent systems: application to ASPECS,https://link.springer.com/article/10.1007/s10462-016-9521-7
+An Approach for Semantically-Enriched Recommendation of Refactorings Based on the Incidence of Code Smells,https://link.springer.com/chapter/10.1007/978-3-319-93375-7_15
+Investigating the relation between lexical smells and change- and fault-proneness: an empirical study,https://link.springer.com/article/10.1007/s11219-016-9318-6
+On the Use of Smelly Examples to Detect Code Smells in JavaScript,https://link.springer.com/chapter/10.1007/978-3-319-55792-2_2
+Prioritizing code-smells correction tasks using chemical reaction optimization,https://link.springer.com/article/10.1007/s11219-014-9233-7
+Security code smells in Android ICC,https://link.springer.com/article/10.1007/s10664-018-9673-y
+Assessing the capability of code smells to explain maintenance problems: an empirical study combining quantitative and qualitative data,https://link.springer.com/article/10.1007/s10664-013-9250-3
+"“Smells Like Teen Shakespirit” Or, the Shakespearean Films of Julia Stiles",https://link.springer.com/chapter/10.1057/9780230105249_3
+On the diffuseness and the impact on maintainability of code smells: a large scale empirical investigation,https://link.springer.com/article/10.1007/s10664-017-9535-z
+An integrated metamodel-based approach to software model refactoring,https://link.springer.com/article/10.1007/s10270-017-0628-3
+On the identification of design problems in stinky code: experiences and tool support,https://link.springer.com/article/10.1186/s13173-018-0078-y
+An approach to prioritize code smells for refactoring,https://link.springer.com/article/10.1007/s10515-014-0175-x
+Comparing and experimenting machine learning techniques for code smell detection,https://link.springer.com/article/10.1007/s10664-015-9378-4
+Twentieth-Century Children’s Writers,https://link.springer.com/chapter/10.1007/978-1-349-03648-6_1
+A systematic review on the code smell effect,https://www.sciencedirect.com/science/article/pii/S0164121218301444
+How developers perceive smells in source code: A replicated study,https://www.sciencedirect.com/science/article/pii/S0950584916304128
+Rapid quality assurance with Requirements Smells,https://www.sciencedirect.com/science/article/pii/S0164121216000789
+Understanding metric-based detectable smells in Python software: A comparative study,https://www.sciencedirect.com/science/article/pii/S0950584916301690
+Reducing redundancy of test cases generation using code smell detection and refactoring,https://www.sciencedirect.com/science/article/pii/S1319157818300296
+User interface design smell: Automatic detection and refactoring of Blob listeners,https://www.sciencedirect.com/science/article/pii/S0950584918300892
+An empirical study to improve software security through the application of code refactoring,https://www.sciencedirect.com/science/article/pii/S0950584916303664
+A systematic literature review: Refactoring for disclosing code smells in object oriented software,https://www.sciencedirect.com/science/article/pii/S2090447917300412
+Automatic detection of usability smells in web applications,https://www.sciencedirect.com/science/article/pii/S1071581916301215
+Less is more: Minimizing code reorganization using XTREE,https://www.sciencedirect.com/science/article/pii/S0950584916301641
+Perfume: A meditation on the countertransferential drama with babies who smell bad,https://www.sciencedirect.com/science/article/pii/S019745560800097X
+A genetic algorithm-based approach for automated refactoring of component-based software,https://www.sciencedirect.com/science/article/pii/S0950584917302495
+Contemplating museums’ service failure: Extracting the service quality dimensions of museums from negative on-line reviews,https://www.sciencedirect.com/science/article/pii/S0261517718301316
+To what extent can maintenance problems be predicted by code smell detection? – An empirical study,https://www.sciencedirect.com/science/article/pii/S0950584913001614
+Insight into consumer experience on UK train transportation services,https://www.sciencedirect.com/science/article/pii/S2214367X18300553
+Chapter 4: Encapsulation Smells,https://www.sciencedirect.com/science/article/pii/B9780128013977000047
+My baby doesn't smell as bad as yours: The plasticity of disgust,https://www.sciencedirect.com/science/article/pii/S1090513806000195
+Code smells as system-level indicators of maintainability: An empirical study,https://www.sciencedirect.com/science/article/pii/S0164121213001258
+A Case Study of the Effects of Posttraumatic Stress Disorder on Operational Fire Service Personnel Within the Lancashire Fire and Rescue Service,https://www.sciencedirect.com/science/article/pii/S2093791117302809
+"The Good, the Bad and the Ugly: Food Quality in UGC",https://www.sciencedirect.com/science/article/pii/S1877042815012471
+5: Sleight of hand: Service or the appearance of service,https://www.sciencedirect.com/science/article/pii/B9780081000762000056
+"Conservation in the face of ambivalent public perceptions – The case of peatlands as ‘the good, the bad and the ugly’",https://www.sciencedirect.com/science/article/pii/S0006320716310904
+The effects of online reviews on service expectations: Do cultural value orientations matter?,https://www.sciencedirect.com/science/article/pii/S0148296318302261
+Chapter 17: Neurotoxic exposure and impairment of the chemical senses of taste and smell,https://www.sciencedirect.com/science/article/pii/B9780444626271000160
+"Generating reusable, searchable and executable “architecture constraints as services”",https://www.sciencedirect.com/science/article/pii/S0164121217300213
+SOA patterns,http://www.rgoarchitects.com/Files/SOAPatterns/TheKnot.pdf
+J2EE antipatterns,https://books.google.de/books?hl=de&lr=&id=8cV8awbqyi0C&oi=fnd&pg=PR5&dq=antipattern+services&ots=HILO4bbQB8&sig=pMB-qIh5y0DY5l8Pyd3xCtrPyZ8#v=onepage&q=antipattern%20services&f=false
+Specification and Detection of SOA Antipatterns in Web Services,https://link.springer.com/chapter/10.1007/978-3-319-09970-5_6
+Moderne Enterprise Architekturen,https://link.springer.com/book/10.1007/b138869
+Legacysoftware,https://link.springer.com/book/10.1007/3-540-30320-0
+Investigating the Change-Proneness of Service Patterns and Antipatterns,https://ieeexplore.ieee.org/document/6978164
+Search-Based Web Service Antipatterns Detection,https://ieeexplore.ieee.org/document/7332971
+Improving SOA antipatterns detection in Service Based Systems by mining execution traces,https://ieeexplore.ieee.org/document/6671307
+On the Value of Quality of Service Attributes for Detecting Bad Design Practices,https://ieeexplore.ieee.org/document/8029780
+Specification and Detection of SOA Antipatterns,https://ieeexplore.ieee.org/document/6976169/
+Detection of Process Antipatterns: A BPEL Perspective,https://ieeexplore.ieee.org/document/6690549
+Popular SOA Antipatterns,https://ieeexplore.ieee.org/document/5359597
+UniDoSA: The Unified Specification and Detection of Service Antipatterns,https://ieeexplore.ieee.org/document/8325321
+Identification of Web Service Refactoring Opportunities as a Multi-objective Problem,https://ieeexplore.ieee.org/document/7558051/
+Analyzing the change-proneness of service-oriented systems from an industrial perspective,https://ieeexplore.ieee.org/document/6606718
+The Most Important Service-Oriented Antipatterns,https://ieeexplore.ieee.org/document/4299912/
+Software performance antipatterns,https://dl.acm.org/citation.cfm?id=350420
+Introducing Software Performance Antipatterns in Cloud Computing Environments: Does it Help or Hurt?,https://dl.acm.org/citation.cfm?id=2695528
+Performance Antipattern Detection through fUML Model Library,https://dl.acm.org/citation.cfm?id=2693565
+A framework for detecting performance design and deployment antipatterns in component based enterprise systems,https://dl.acm.org/citation.cfm?id=1101147
+Detecting Antipatterns Using a Web-Based Collaborative Antipattern Ontology Knowledge Base,https://link.springer.com/chapter/10.1007/978-3-642-22056-2_50
+An approach for modeling and detecting software performance antipatterns based on first-order logics,https://link.springer.com/article/10.1007/s10270-012-0246-z
+Software Performance Antipatterns: Modeling and Analysis,https://link.springer.com/chapter/10.1007/978-3-642-30982-3_9
+Using model transformation to refactor use case models based on antipatterns,https://link.springer.com/article/10.1007/s10796-014-9528-z
+Applying Design Patterns to Remove Software Performance Antipatterns: A Preliminary Approach,https://www.sciencedirect.com/science/article/pii/S1877050917309948
+A model-driven approach to catch performance antipatterns in ADL specifications,https://www.sciencedirect.com/science/article/pii/S0950584916303743
+Guilt-based handling of software performance antipatterns in palladio architectural models,https://www.sciencedirect.com/science/article/pii/S0164121214001010
+A survey on software smells,https://www.sciencedirect.com/science/article/pii/S0164121217303114
+Transient stress-induced cardiomyopathy with an “inverted takotsubo” contractile pattern,https://www.mayoclinicproceedings.org/article/S0025-6196(11)61258-5/fulltext
+"Effects of SOA and flash pattern manipulations on ERPs, performance, and preference: implications for a BCI system",https://www.sciencedirect.com/science/article/pii/S016787600500111X
+EPK nach BPEL Transformation als Voraussetzung für praktische Umsetzung einer SOA.,https://sebstein.hpfsc.de/publications/stein2007se.pdf
+"Reactions with 5-substituted-1, 3-thiazolidine-2, 4-dithiones heterodiene syntheses",https://www.degruyter.com/view/j/znb.1975.30.issue-5-6/znb-1975-5-626/znb-1975-5-626.xml
+Pattern based SOA deployment,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.841.7718&rep=rep1&type=pdf
+Model-driven and pattern-based integration of process-driven SOA models,http://eprints.cs.univie.ac.at/2814/1/06291.ZdunUwe.Paper.820.pdf
+The Sender Released Pattern: An SOA Design Pattern for Inter-service Message Exchange,https://ieeexplore.ieee.org/document/6269769/
+Simulation on high-speed all-optical pattern recognition using SOA-MZIs,https://ieeexplore.ieee.org/document/6276647/
+Feature model for modeling compound SOA design patterns,https://ieeexplore.ieee.org/document/7073224/
+An Approach for Modeling and Formalizing SOA Design Patterns,https://ieeexplore.ieee.org/document/6570637/
+Patterning effect mitigation using complementary data for NRZ wavelength conversion with a SOA-MZI,https://ieeexplore.ieee.org/document/6210662/
+Pattern-independent wavelength conversion of PAM signals in SOAs,https://ieeexplore.ieee.org/document/7718214/
+Simple Uplink SOA Pattern Effects Compensation for Reach-Extended 10G-EPONs,https://ieeexplore.ieee.org/document/6657698/
+Investigation of amplification characteristic for DPSK signal in SOA,https://ieeexplore.ieee.org/document/8121255/
+How to Design a Global SOA Infrastructure: Coping with Challenges in a Global Context,https://ieeexplore.ieee.org/document/6257850/
+Frequency chirp properties with data pattern dependence in quantum-dot SOAs,https://ieeexplore.ieee.org/document/7718494/
+Investigation of patterning effect in ultrafast SOA-based optical switches,https://ieeexplore.ieee.org/document/5196235/
+Application of semiconductor optical amplifier logic gates in high-speed all-optical pattern recognition,https://ieeexplore.ieee.org/document/4598393/
+A formal approach for SOA design patterns composition,https://ieeexplore.ieee.org/document/7507154/
+Compensation for patterning in SOA-based switches,https://ieeexplore.ieee.org/document/5307742/
+Experimental demonstration of pattern effect compensation using an asymmetrical Mach-Zehnder interferometer with SOAs,https://ieeexplore.ieee.org/document/969896/
+Investigation of Patterning Effects in Ultrafast SOA-Based Optical Switches,https://ieeexplore.ieee.org/document/5350906/
+Reduction of pattern effects in SOA-based all-optical switches by using cross-gain modulated holding signal,https://ieeexplore.ieee.org/document/1034076/
+Reusable SOA Assets Identification Using E-Business Patterns,https://ieeexplore.ieee.org/document/5305988/
+Reduction of pattern-effect in high-speed XGM-based all-optical switches using two-cascaded SOAs,https://ieeexplore.ieee.org/document/5375573/
+Designing and implementing Enterprise Service Bus (ESB) and SOA solutions,https://ieeexplore.ieee.org/document/1524413/
+An Approach for SOA Design Patterns Composition,https://ieeexplore.ieee.org/document/7399114/
+Freeway patterns for SOA systems,https://dl.acm.org/ft_gateway.cfm?id=1753204&ftid=783597&dwn=1&#URLTOKEN#
+Pattern-based process for a legacy to SOA modernization roadmap,https://dl.acm.org/ft_gateway.cfm?id=2721969&ftid=1574421&dwn=1&#URLTOKEN#
+Can design pattern detection be useful for legacy systemmigration towards SOA?,https://dl.acm.org/ft_gateway.cfm?id=1370932&ftid=517777&dwn=1&#URLTOKEN#
+Usability evaluation for enterprise SOA APIs,https://dl.acm.org/citation.cfm?id=1370924
+A pattern-driven security process for SOA applications,https://dl.acm.org/ft_gateway.cfm?id=1364217&ftid=512879&dwn=1&#URLTOKEN#
+Discovery of SOA patterns via model checking,https://dl.acm.org/ft_gateway.cfm?id=1294931&ftid=473112&dwn=1&#URLTOKEN#
+Collaboration patterns in the SOA ecosystem,https://dl.acm.org/ft_gateway.cfm?id=1993958&ftid=982051&dwn=1&#URLTOKEN#
+Architectural decision identification in architectural patterns,https://dl.acm.org/ft_gateway.cfm?id=2362021&ftid=1280194&dwn=1&#URLTOKEN#
+Towards an approach for modeling and formalizing SOA design patterns with Event-B,https://dl.acm.org/ft_gateway.cfm?id=2480721&ftid=1368294&dwn=1&#URLTOKEN#
+A new way of architecting the enterprise,https://dl.acm.org/ft_gateway.cfm?id=2457286&ftid=1357047&dwn=1&#URLTOKEN#
+A pattern-driven security advisor for service-oriented architectures,https://dl.acm.org/ft_gateway.cfm?id=1655126&ftid=699580&dwn=1&#URLTOKEN#
+Propagation of incremental changes to performance model due to SOA design pattern application,https://dl.acm.org/ft_gateway.cfm?id=2479887&ftid=1367915&dwn=1&CFID=36759944&CFTOKEN=f34cc55eb7e8a690-60D5FAA3-DCE4-1018-94E8C2FA00148125
+Surfing the API Web: Web Concepts,https://dl.acm.org/ft_gateway.cfm?id=3188743&ftid=1960253&dwn=1&#URLTOKEN#
+"IBM SOA ""on the edge""",https://dl.acm.org/ft_gateway.cfm?id=1066262&ftid=315119&dwn=1&#URLTOKEN#
+SOA Design Pattern for Distributing the Object Model in n-tier Applications,https://link.springer.com/chapter/10.1007/978-1-4020-8735-6_34
+Automatic Realization of SOA Deployment Patterns in Distributed Environments,https://link.springer.com/chapter/10.1007/978-3-540-89652-4_15
+An Ontology-Based Advisement Approach for SOA Design Patterns,https://link.springer.com/chapter/10.1007/978-94-007-7287-8_7
+Advanced SOA Patterns for Building Information Models,https://link.springer.com/content/pdf/10.1007%2F978-3-319-21825-0_6.pdf
+Building Correct by Construction SOA Design Patterns: Modeling and Refinement,https://link.springer.com/chapter/10.1007/978-3-642-39031-9_4
+Foundational SOA Patterns for Complex Information Models,https://link.springer.com/content/pdf/10.1007%2F978-3-319-21825-0_3.pdf
+Online Interaction Analysis Framework for Ad-Hoc Collaborative Processes in SOA-Based Environments,https://link.springer.com/chapter/10.1007/978-3-642-00899-3_15
+Architectural Decisions and Patterns for Transactional Workflows in SOA,https://link.springer.com/chapter/10.1007/978-3-540-74974-5_7
+Theoretical and Experimental Study on all-optical Wavelength Converters Based on the Single-port-coupled SOA,https://link.springer.com/content/pdf/10.1007%2Fs11082-005-8610-7.pdf
+"Implementation, Deployment and Governance of SOA Adaptive Systems",https://link.springer.com/chapter/10.1007/978-3-642-38957-3_6
+SOA-assisted Sagnac switch and investigation of its roadmap from 10 to 40 GHz,https://link.springer.com/content/pdf/10.1023%2FA%3A1027394606525.pdf
+Goodness takes effort: perceptual organization in dual-task settings,https://link.springer.com/content/pdf/10.1007%2Fs00426-005-0001-y.pdf
+SOA nonlinearities in 4 × 25 Gb/s WDM pre-amplified system for 100-Gb/s Ethernet,https://link.springer.com/content/pdf/10.1007%2Fs11082-009-9287-0.pdf
+SOA adoption in business networks: do service-oriented architectures really advance inter-organizational integration?,https://link.springer.com/content/pdf/10.1007%2Fs12525-010-0046-7.pdf
+All-optical wavelength conversion between 10 and 100 Gb/s with SOA delayed-interference configuration,https://link.springer.com/content/pdf/10.1023%2FA%3A1017582626348.pdf
+A service composition approach based on sequence mining for migrating e-learning legacy system to SOA,https://link.springer.com/content/pdf/10.1007%2Fs11633-010-0544-2.pdf
+Transformation of compound SOA Design Patterns,https://www.sciencedirect.com/science/article/pii/S1877050917310864/pdfft?md5=fffa4ec0bf2d3e8a70a36ed8a848bc71&pid=1-s2.0-S1877050917310864-main.pdf
+SOA and gas phase organic acid yields from the sequential photooxidation of seven monoterpenes,https://www.sciencedirect.com/science/article/pii/S1352231018303868/pdfft?md5=3e7ce1f4f12e3dd3028d8bbc33e131ff&pid=1-s2.0-S1352231018303868-main.pdf
+"Effects of NOx, SO2 and RH on the SOA formation from cyclohexene photooxidation",https://www.sciencedirect.com/science/article/pii/S0045653518320514
+"Comparison of secondary organic aerosol (SOA) formation during o-, m-, and p-xylene photooxidation",https://www.sciencedirect.com/science/article/pii/S0269749118324746
+Enabling distributed manufacturing resources through SOA: The REST approach,https://www.sciencedirect.com/science/article/pii/S073658451630309X/pdfft?md5=9f416579c98569b4e8ce835cf2642ae8&pid=1-s2.0-S073658451630309X-main.pdf
+640 Gb/s all-optical AND gate and wavelength converter using bulk SOA turbo–switched Mach–Zehnder interferometer with improved differential scheme,https://www.sciencedirect.com/science/article/pii/S0030399218301774
+"VOC characteristics, sources and contributions to SOA formation during haze events in Wuhan, Central China",https://www.sciencedirect.com/science/article/pii/S0048969718339032
+SOA SYSTEM ARCHITECTURE FOR INTERCONECTED MODERN HIGHER EDUCATION IN INDONESIA,https://www.sciencedirect.com/science/article/pii/S187705091831473X/pdfft?md5=fac3d1617e3a7117fa2497925eb0dd9c&pid=1-s2.0-S187705091831473X-main.pdf
+Synergy of Services within SOA,https://www.sciencedirect.com/science/article/pii/S1877050916321585/pdfft?md5=1f18c274bb52cde34676bb351b274bbd&pid=1-s2.0-S1877050916321585-main.pdf
+The Performance Metric for Enterprise Service Bus (ESB) in SOA system: Theoretical underpinnings and empirical illustrations for information processing,https://www.sciencedirect.com/science/article/pii/S0306437915301952/pdfft?md5=35e18d29a51eba4b8307723623ab9eec&pid=1-s2.0-S0306437915301952-main.pdf
+Modeling biogenic secondary organic aerosol (BSOA) formation from monoterpene reactions with NO3: A case study of the SOAS campaign using CMAQ,https://www.sciencedirect.com/science/article/pii/S1352231018301961
+Integrating MDA and SOA for improving telemedicine services,https://www.sciencedirect.com/science/article/pii/S0736585315300575/pdfft?md5=7691f801cc63d9e16857000238f30027&pid=1-s2.0-S0736585315300575-main.pdf
+"SOA formation from naphthalene, 1-methylnaphthalene, and 2-methylnaphthalene photooxidation",https://www.sciencedirect.com/science/article/pii/S1352231016301121/pdfft?md5=ae2de0edb5ca86370a2552b1f629d0a6&pid=1-s2.0-S1352231016301121-main.pdf
+Implementation of optical logic gates at 160Gbps using nonlinear effect of single SOA,https://www.sciencedirect.com/science/article/pii/S0030399215000092/pdfft?md5=37bf8c5efac6f4c4a686d4213e380d95&pid=1-s2.0-S0030399215000092-main.pdf
+Effects of diesel exhaust-derived secondary organic aerosol (SOA) on oocytes: Potential risks to meiotic maturation,https://www.sciencedirect.com/science/article/pii/S0890623817300606
+Molecular formula composition of ?-caryophyllene ozonolysis SOA formed in humid and dry conditions,https://www.sciencedirect.com/science/article/pii/S1352231016310093/pdfft?md5=bc6abea7370e876518e1479eacdc522d&pid=1-s2.0-S1352231016310093-main.pdf
+Optical Amplifiers: SOAs,https://www.sciencedirect.com/science/article/pii/B9780128035818094625
+Intercomparison of OH and OH reactivity measurements in a high isoprene and low NO environment during the Southern Oxidant and Aerosol Study (SOAS),https://www.sciencedirect.com/science/article/pii/S1352231017307306
+Goal-driven adaptive monitoring of SOA systems,https://www.sciencedirect.com/science/article/pii/S0164121215001764
+Topographic comparison of MMN to simple versus pattern regularity violations: The effect of timing,https://www.sciencedirect.com/science/article/pii/S0168010216300876/pdfft?md5=c9835177072539002815df3271a513c1&pid=1-s2.0-S0168010216300876-main.pdf
+Designs of all-optical NOR gates using SOA based MZI,https://www.sciencedirect.com/science/article/pii/S0030402614003945/pdfft?md5=d4da69d3c82b5821f86d32d8e5feef31&pid=1-s2.0-S0030402614003945-main.pdf
+MEdit4CEP: A model-driven solution for real-time decision making in SOA 2.0,https://www.sciencedirect.com/science/article/pii/S0950705115002397/pdfft?md5=652711a76a032e0ff145e777dd98c420&pid=1-s2.0-S0950705115002397-main.pdf
+SOAs for scientific applications: Experiences and challenges,https://www.sciencedirect.com/science/article/pii/S0167739X08001386/pdfft?md5=d9ee776530c6b417744666e6307b1e55&pid=1-s2.0-S0167739X08001386-main.pdf
