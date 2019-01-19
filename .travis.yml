@@ -7,7 +7,9 @@ cache:
 install:
   - npm install
 script:
-  - "npm run build"
+  - npm run build
+  # run SonarQube analysis
+  - npm run sonar -- -Dsonar.login=${SONAR_TOKEN}
 deploy:
   provider: pages
   skip-cleanup: true
