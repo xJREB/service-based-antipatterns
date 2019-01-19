@@ -75,11 +75,12 @@
         }
     }
 </script>
-<style>
-    .v-slider {
-        margin-left: 16px;
-        margin-right: 16px;
-        height: 15px;
-        background-image: linear-gradient(to right, gray 2%, rgb(255,165,0,0) 2%, rgb(255,165,0,1) 49%);
-    }
+<style lang="sass">
+    @import "../colors"
+    .v-slider
+        margin-left: 16px
+        margin-right: 16px
+        height: 15px
+        background-image: linear-gradient(to right, gray 2%, rgba($secondary, 0) 2%, rgba($secondary, 1) 49%)
+
 </style>

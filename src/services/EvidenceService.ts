@@ -2,6 +2,7 @@ import {AntiPattern} from "@/common/anti-pattern";
 import CrossRef from 'crossref';
 import Cite from 'citation-js';
 import Math from 'mathjs';
+import Color from 'color';
 
 export default class EvidenceService {
 
@@ -31,10 +32,10 @@ export default class EvidenceService {
         }
     }
 
-    public static getReferenceMedianColor(antiPattern: AntiPattern): string {
+    public static getReferenceMedianColor(antiPattern: AntiPattern, color: string): string {
         if (antiPattern.median) {
             const alphaValue = antiPattern.median / 100 + 0.1;
-            return "rgb(255, 165, 0, " + alphaValue + ")";
+            return new Color(color).alpha(alphaValue).string();
         }
         return "lightgrey";
     }
