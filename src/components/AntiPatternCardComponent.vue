@@ -1,9 +1,10 @@
 <template>
     <v-card style="display: flex; flex-direction: column;" height="100%">
-        <v-card-title class="primary white--text"
-                      v-bind:style="{ background: 'linear-gradient(to top, #10627a 80%, ' + referenceMedianColor + ' 20%) !important'}">
+        <v-card-title class="primary white--text">
             <div class="headline">{{antiPattern.name}}</div>
         </v-card-title>
+        <div v-bind:style="{ background: referenceMedianColor + ' !important',
+            height: '3%'}">&nbsp;</div>
         <v-card-text class="grow">
             <div>{{antiPattern.description}}</div>
         </v-card-text>
