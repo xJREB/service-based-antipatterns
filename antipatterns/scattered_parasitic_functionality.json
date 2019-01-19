@@ -18,7 +18,9 @@
       "tags": [
         "microservices",
         "soa",
-        "architecture"
+        "architecture",
+        "abstraction",
+        "dependency"
       ],
       "relatedItems": [
       ]

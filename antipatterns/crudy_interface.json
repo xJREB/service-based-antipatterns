@@ -18,7 +18,9 @@
       ],
       "tags": [
         "soa",
-        "application"
+        "application",
+        "data_management",
+        "rpc"
       ],
       "relatedItems": [
         {

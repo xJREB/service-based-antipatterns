@@ -21,7 +21,8 @@
         "microservices",
         "soa",
         "architecture",
-        "cohesion"
+        "cohesion",
+        "dependency"
       ],
       "relatedItems": [
       ]
