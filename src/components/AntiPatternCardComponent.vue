@@ -1,9 +1,10 @@
 <template>
     <v-card style="display: flex; flex-direction: column;" height="100%">
-        <v-card-title class="primary white--text"
-                      v-bind:style="{ background: 'linear-gradient(90deg, #10627a 96%, ' + referenceMedianColor + ' 4%) !important'}">
+        <v-card-title class="primary white--text">
             <div class="headline">{{antiPattern.name}}</div>
         </v-card-title>
+        <div v-bind:style="{ background: referenceMedianColor + ' !important',
+            height: '3%'}">&nbsp;</div>
         <v-card-text class="grow">
             <div>{{antiPattern.description}}</div>
         </v-card-text>
@@ -41,7 +42,7 @@
         public dialog: boolean = false;
 
         public get referenceMedianColor(): string {
-            return EvidenceService.getReferenceMedianColor(this.antiPattern);
+            return EvidenceService.getReferenceMedianColor(this.antiPattern, this.$vuetify.theme.secondary.toString());
         }
 
         @Watch('router', {immediate: true, deep: true})
