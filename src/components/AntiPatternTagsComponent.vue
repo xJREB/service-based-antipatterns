@@ -10,6 +10,32 @@
             This website serves as a knowledge base for Service-Based Antipatterns
             and has been created due to a study project at the University of Stuttgart.
         </v-card-text>
+        <v-subheader>Context</v-subheader>
+        <v-list-tile v-for="tag in filterContext" :key="tag">
+            <v-list-tile-action>
+                <v-checkbox v-model="value.tags.selectionContext" :value="tag"></v-checkbox>
+            </v-list-tile-action>
+
+            <v-list-tile-content>
+                <v-chip label>
+                    <v-icon left>label</v-icon>
+                    <v-list-tile-title>{{ tag }}</v-list-tile-title>
+                </v-chip>
+            </v-list-tile-content>
+        </v-list-tile>
+        <v-subheader>Category</v-subheader>
+        <v-list-tile v-for="tag in filterCategories" :key="tag">
+            <v-list-tile-action>
+                <v-checkbox v-model="value.tags.selectionCategory" :value="tag"></v-checkbox>
+            </v-list-tile-action>
+
+            <v-list-tile-content>
+                <v-chip label>
+                    <v-icon left>label</v-icon>
+                    <v-list-tile-title>{{ tag }}</v-list-tile-title>
+                </v-chip>
+            </v-list-tile-content>
+        </v-list-tile>
         <v-subheader>Tags</v-subheader>
         <v-list dense>
             <v-list-tile>
@@ -23,9 +49,9 @@
                     </v-chip>
                 </v-list-tile-content>
             </v-list-tile>
-            <v-list-tile v-for="tag in tags" :key="tag">
+            <v-list-tile v-for="tag in otherTags" :key="tag">
                 <v-list-tile-action>
-                    <v-checkbox v-model="value.selection" :value="tag"></v-checkbox>
+                    <v-checkbox v-model="value.tags.selection" :value="tag"></v-checkbox>
                 </v-list-tile-action>
 
                 <v-list-tile-content>
@@ -51,27 +77,41 @@
 <script lang="ts">
     import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
     import {Sidebar} from "../common/sidebar";
+    import Utils from "@/utils/Utils";
 
     @Component
     export default class AntiPatternTagsComponent extends Vue {
         @Prop(Object) public value!: Sidebar;
         @Prop(Array) public tags!: string[];
-        private allTagsEnabled: boolean = true;
+        private allTagsEnabled: boolean = false;
         private ticksLabels = [
             'not set', 'low', 'medium', 'high',
         ];
 
-        @Watch('value.selection')
+        @Watch('value.tags.selection')
         private selectionChange() {
-            this.allTagsEnabled = this.value.selection.length === this.tags.length;
+            this.allTagsEnabled = this.value.tags.selection.length === this.tags.length;
         }
 
         private toggleTags() {
-            if (this.value.selection.length === this.tags.length) {
-                this.value.selection = [];
+            if (!this.allTagsEnabled) {
+                this.value.tags.selection = [];
             } else {
-                this.value.selection = this.tags;
+                this.value.tags.selection = this.otherTags;
             }
+        }
+
+        private get filterContext() {
+            return this.tags.filter((tag) => Utils.context.includes(tag)).sort().reverse();
+        }
+
+        private get filterCategories() {
+            return this.tags.filter((tag) => Utils.category.includes(tag)).sort().reverse();
+        }
+
+        private get otherTags() {
+            return this.tags.filter((tag) => !this.filterContext.includes(tag)
+                && !this.filterCategories.includes(tag)).sort();
         }
     }
 </script>
@@ -82,5 +122,4 @@
         margin-right: 16px
         height: 15px
         background-image: linear-gradient(to right, gray 2%, rgba($secondary, 0) 2%, rgba($secondary, 1) 49%)
-
 </style>

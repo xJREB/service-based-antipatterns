@@ -17,8 +17,10 @@
         "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}"
       ],
       "tags": [
-        "antipattern",
-        "application"
+        "soa",
+        "application",
+        "data_management",
+        "rpc"
       ],
       "relatedItems": [
         {
