@@ -3,7 +3,7 @@
         <v-card-title class="primary white--text">
             <div class="headline">{{antiPattern.name}}</div>
         </v-card-title>
-        <div v-bind:style="{ background: referenceMedianColor + ' !important',
+        <div v-bind:style="{ background: referenceEvidenceColor + ' !important',
             height: '3%'}">&nbsp;</div>
         <v-card-text class="grow">
             <div>{{antiPattern.description}}</div>
@@ -29,7 +29,7 @@
     import {AntiPattern} from '../common/anti-pattern';
     import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
     import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
-    import EvidenceService from "../services/EvidenceService";
+    import EvidenceUtils from "../utils/EvidenceUtils";
 
     @Component({
         components: {
@@ -41,8 +41,8 @@
         @Prop(Object) public antiPattern!: AntiPattern;
         public dialog: boolean = false;
 
-        public get referenceMedianColor(): string {
-            return EvidenceService.getReferenceMedianColor(this.antiPattern, this.$vuetify.theme.secondary.toString());
+        public get referenceEvidenceColor(): string {
+            return EvidenceUtils.getReferenceEvidenceColor(this.antiPattern, this.$vuetify.theme.secondary.toString());
         }
 
         @Watch('router', {immediate: true, deep: true})

@@ -68,7 +68,7 @@
                 :tick-labels="ticksLabels"
                 :max="3"
                 step="1"
-                ticks="always"
+                always-dirty
                 tick-size="2"
         ></v-slider>
     </v-navigation-drawer>
@@ -78,15 +78,14 @@
     import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
     import {Sidebar} from "../common/sidebar";
     import Utils from "@/utils/Utils";
+    import EvidenceUtils from "@/utils/EvidenceUtils";
 
     @Component
     export default class AntiPatternTagsComponent extends Vue {
         @Prop(Object) public value!: Sidebar;
         @Prop(Array) public tags!: string[];
         private allTagsEnabled: boolean = false;
-        private ticksLabels = [
-            'not set', 'low', 'medium', 'high',
-        ];
+        private ticksLabels = EvidenceUtils.evidenceLabels;
 
         @Watch('value.tags.selection')
         private selectionChange() {
@@ -121,5 +120,5 @@
         margin-left: 16px
         margin-right: 16px
         height: 15px
-        background-image: linear-gradient(to right, gray 2%, rgba($secondary, 0) 2%, rgba($secondary, 1) 49%)
+        background-image: linear-gradient(to right, gray 2%, rgba($secondary, 0.15) 2%, rgba($secondary, 0.5) 33%, rgba($secondary, 0.8) 66%, rgba($secondary, 1) 99%)
 </style>

@@ -13,7 +13,7 @@
       "solution": "The primary avoidance technique for this antipattern is to migrate the functionality of the service first, and worry about the bounded context between the service and the data later. Once you learn more about the service you will likely find the need to adjust the level of granularity through service consolidation or service splitting. After you are satisfied that you have the level of granularity correct, then migrate the data.",
       "example": "",
       "sources": [
-        "@book{Richards2016, author = {Richards, Mark}, isbn = {9781491963319}, pages = {66}, title = {{Microservices AntiPatterns and Pitfalls}}, year = {2016}}"
+        "@book{richards2016microservices, author = {Richards, Mark}, isbn = {9781491963319}, pages = {66}, title = {{Microservices AntiPatterns and Pitfalls}}, year = {2016}}"
       ],
       "tags": [
         "microservices",
