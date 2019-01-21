@@ -16,7 +16,8 @@
         "@misc{Jones2006, title = {{SOA anti-patterns}}, year = {2006}, booktitle = {InfoQ}, author = {Jones, Steve}, url = {https://www.infoq.com/articles/SOA-anti-patterns} }"
       ],
       "tags": [
-        ""
+        "soa",
+        "application"
       ],
       "relatedItems": [
         {
