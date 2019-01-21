@@ -15,7 +15,6 @@
       "sources": [
         "@book{richards2016microservices, author = {Richards, Mark}, isbn = {9781491963319}, pages = {66}, title = {{Microservices AntiPatterns and Pitfalls}}, year = {2016}}"
       ],
-      "evidence": 13,
       "tags": [
         "microservices",
         "business",

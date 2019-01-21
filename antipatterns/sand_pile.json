@@ -16,7 +16,6 @@
         "@inproceedings{kral2007most,author={Kral, Jaroslav and Zemlicka, Michal},booktitle={International Conference on Software Engineering Advances (ICSEA 2007)},title={The Most Important Service-Oriented Antipatterns},year={2007},pages={29--29},doi={10.1109/ICSEA.2007.74},month={Aug}}",
         "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}"
       ],
-      "evidence": 15.5,
       "tags": [
         "soa",
         "architecture",

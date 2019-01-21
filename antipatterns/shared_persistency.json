@@ -15,7 +15,6 @@
       "sources": [
         "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}, doi={10.1109/ms.2018.2141031}}"
       ],
-      "evidence": 14,
       "tags": [
         "microservices",
         "architecture",

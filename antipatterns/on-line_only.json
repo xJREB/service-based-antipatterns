@@ -15,7 +15,6 @@
       "sources": [
         "@inproceedings{kral2007most,author={Kral, Jaroslav and Zemlicka, Michal},booktitle={International Conference on Software Engineering Advances (ICSEA 2007)},title={The Most Important Service-Oriented Antipatterns},year={2007},pages={29--29},doi={10.1109/ICSEA.2007.74},month={Aug}}"
       ],
-      "evidence": 19,
       "tags": [
         "soa",
         "architecture",
