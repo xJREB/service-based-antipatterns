@@ -17,9 +17,23 @@
       ],
       "evidence": 12,
       "tags": [
-        "bad_smell"
+        "microservices",
+        "architecture",
+        "dependency"
       ],
       "relatedItems": [
+        {
+          "relation": "follows",
+          "name": "Data Service"
+        },
+        {
+          "relation": "follows",
+          "name": "Transactional Integration"
+        },
+        {
+          "relation": "follows",
+          "name": "Service Chain"
+        }
       ]
     }
   ]

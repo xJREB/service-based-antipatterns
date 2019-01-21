@@ -21,9 +21,10 @@
       ],
       "evidence": 39.5,
       "tags": [
-        "antipattern",
-        "service",
-        "microservice"
+        "microservices",
+        "soa",
+        "application",
+        "ambiguity"
       ],
       "relatedItems": [
       ]

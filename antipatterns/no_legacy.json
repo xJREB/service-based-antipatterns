@@ -17,10 +17,11 @@
       ],
       "evidence": 19,
       "tags": [
-        "antipattern",
+        "soa",
+        "business",
         "management",
         "legacy",
-        "architecture"
+        "migration"
       ],
       "relatedItems": [
         {

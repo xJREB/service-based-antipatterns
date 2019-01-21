@@ -17,10 +17,18 @@
       ],
       "evidence": 115,
       "tags": [
-        "antipattern",
+        "soa",
         "architecture"
       ],
-      "relatedItems": [
+        "relatedItems": [
+          {
+            "relation": "related",
+            "name": "Silver Bullet"
+          },
+          {
+            "relation": "related",
+            "name": "Nothing New"
+          }
       ]
     }
   ]

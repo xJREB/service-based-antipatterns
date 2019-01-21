@@ -17,7 +17,8 @@
       ],
       "evidence": 39,
       "tags": [
-        "bad_smell",
+        "microservices",
+        "soa",
         "architecture"
       ],
       "relatedItems": [

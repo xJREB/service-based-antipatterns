@@ -17,11 +17,19 @@
       ],
       "evidence": 115,
       "tags": [
-        "antipattern",
+        "soa",
         "architecture",
         "system"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "Golden Hammer"
+        },
+        {
+          "relation": "related",
+          "name": "Nothing New"
+        }
       ]
     }
   ]

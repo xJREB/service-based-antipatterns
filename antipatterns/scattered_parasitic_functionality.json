@@ -17,8 +17,11 @@
       ],
       "evidence": 39,
       "tags": [
-        "antipattern",
-        "architecture"
+        "microservices",
+        "soa",
+        "architecture",
+        "abstraction",
+        "dependency"
       ],
       "relatedItems": [
       ]

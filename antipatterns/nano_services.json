@@ -28,10 +28,12 @@
       ],
       "evidence": 22.5,
       "tags": [
-        "antipattern",
+        "microservices",
+        "soa",
         "architecture",
         "system",
-        "microservice"
+        "dependency",
+        "abstraction"
       ],
       "relatedItems": [
         {
@@ -45,6 +47,10 @@
         {
           "relation": "follows",
           "name": "Big Bang"
+        },
+        {
+          "relation": "follows",
+          "name": "Chatty Service"
         }
       ]
     }

@@ -17,7 +17,10 @@
       ],
       "evidence": 14,
       "tags": [
-        "bad_smell"
+        "microservices",
+        "architecture",
+        "data_management",
+        "dependency"
       ],
       "relatedItems": [
       ]

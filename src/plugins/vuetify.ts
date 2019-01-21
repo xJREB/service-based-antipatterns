@@ -4,12 +4,12 @@ import 'vuetify/dist/vuetify.min.css';
 
 Vue.use(Vuetify, {
     theme: {
-        primary: '#3f51b5',
-        secondary: '#455066',
-        accent: '#82B1FF',
+        primary: {base: '#10627a', darken1: '#455066'},
+        secondary: '#ffa500',
+        accent: '#4395AD',
         error: '#FF5252',
-        info: '#2196F3',
-        success: '#4CAF50',
+        info: '#4395AD',
+        success: '#FFFFFF',
         warning: '#FFC107',
     },
     iconfont: 'md',

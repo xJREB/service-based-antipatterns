@@ -17,8 +17,9 @@
       ],
       "evidence": 115,
       "tags": [
-        "antipattern",
-        "architecture"
+        "soa",
+        "architecture",
+        "abstraction"
       ],
       "relatedItems": [
       ]

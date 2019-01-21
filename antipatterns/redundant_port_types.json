@@ -17,9 +17,16 @@
       ],
       "evidence": 2,
       "tags": [
-        "antipattern"
+        "microservices",
+        "soa",
+        "application",
+        "ambiguity"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Duplicated Service"
+        }
       ]
     }
   ]

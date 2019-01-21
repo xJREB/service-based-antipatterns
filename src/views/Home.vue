@@ -19,6 +19,7 @@
                 <v-select
                         v-model="sorting"
                         style="padding: 0;"
+                        success
                         label="Sorting"
                         :items="sortingItems"
                         item-text="name"
@@ -63,6 +64,7 @@
     import {BibliographyTemplate, Source} from "@/common/bibliography";
     import AntiPatternHelpComponent from "@/components/AntiPatternHelpComponent.vue";
     import EvidenceUtils from "../utils/EvidenceUtils";
+    import {Tags} from "@/common/tags";
 
     @Component({
         components: {AntiPatternHelpComponent, AntiPatternTagsComponent, AntiPatternsContainerComponent},
@@ -157,15 +159,27 @@
                     currentValue = currentValue ? currentValue : [];
                     return previousValue.concat(currentValue);
                 }, []);
-            this.tagsModel.selection = [...new Set(tags)];
             return [...new Set(tags)];
         }
 
-        @Watch('tagsModel.selection')
-        public filterForTags(selectedModel: string[]) {
-            if (selectedModel) {
+        @Watch('tagsModel.tags', {deep: true})
+        public filterForTags(tags: Tags) {
+            if (tags) {
                 this.antiPatternsSelected = this.antiPatternsAll.filter((antiPattern) => {
-                    return antiPattern.tags && antiPattern.tags.map((tag) => selectedModel.includes(tag)).includes(true);
+                    return antiPattern.tags
+                        && (tags.selectionContext.length === 0 || tags.selectionContext.some((tag) => {
+                            const t = antiPattern!.tags!.filter((aTag) => Utils.context.includes(aTag));
+                            return t.length !== 0 && t.includes(tag);
+                        }))
+                        && (tags.selectionCategory.length === 0 || tags.selectionCategory.some((tag) => {
+                            const t = antiPattern!.tags!.filter((aTag) => Utils.category.includes(aTag));
+                            return t.length !== 0 && t.includes(tag);
+                        }))
+                        && (tags.selection.length === 0 || tags.selection.some((tag) => {
+                            const t = antiPattern!.tags!.filter((aTag) => !Utils.context.includes(aTag)
+                                && !Utils.category.includes(aTag));
+                            return t.length !== 0 && t.includes(tag);
+                        }));
                 });
             } else {
                 this.antiPatternsSelected = this.antiPatternsAll;
@@ -211,3 +225,8 @@
         }
     }
 </script>
+<style>
+    .toast {
+        font-size: 20px !important;
+    }
+</style>

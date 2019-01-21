@@ -17,9 +17,15 @@
       ],
       "evidence": 87,
       "tags": [
+        "microservices",
+        "soa",
         "architecture"
       ],
       "relatedItems": [
+        {
+          "relation": "precedes",
+          "name": "Wrong Cuts"
+        }
       ]
     }
   ]

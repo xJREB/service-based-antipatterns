@@ -1,4 +1,5 @@
 import {AntiPattern} from "../common/anti-pattern";
+import Color from 'color';
 
 export default class EvidenceUtils {
 
@@ -11,10 +12,10 @@ export default class EvidenceUtils {
         3: [200, EvidenceUtils.evidenceLabels[3]],
     };
 
-    public static getReferenceEvidenceColor(antiPattern: AntiPattern): string {
-        if (antiPattern.evidence) {
-            const alphaValue = antiPattern.evidence / 100 + 0.1;
-            return "rgba(0, 172, 193, " + alphaValue + ")";
+    public static getReferenceEvidenceColor(antiPattern: AntiPattern, color: string): string {
+        if (antiPattern.evidence && antiPattern.evidence > -1) {
+            const alphaValue = antiPattern.evidence / 200 + 0.15;
+            return new Color(color).alpha(alphaValue).string();
         }
         return "lightgrey";
     }
@@ -23,11 +24,11 @@ export default class EvidenceUtils {
         if (antiPattern.evidence) {
             const size = 3;
             for (const i in this.evidenceModel) {
-                if (antiPattern.evidence > this.evidenceModel[size - +i][0]) {
+                if (antiPattern.evidence >= this.evidenceModel[size - +i][0]) {
                     return this.evidenceModel[size - +i][1];
                 }
             }
         }
-        return this.evidenceModel[0][1];
+        return "not set";
     }
 }

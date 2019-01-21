@@ -17,7 +17,8 @@
       ],
       "evidence": 2,
       "tags": [
-        "antipattern"
+        "soa",
+        "architecture"
       ],
       "relatedItems": [
       ]

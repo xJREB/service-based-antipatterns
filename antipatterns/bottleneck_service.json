@@ -18,8 +18,8 @@
       ],
       "evidence": 7,
       "tags": [
-        "antipattern",
-        "microservice",
+        "microservices",
+        "soa",
         "architecture"
       ],
       "relatedItems": [

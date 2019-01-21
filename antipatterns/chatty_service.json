@@ -21,11 +21,24 @@
       ],
       "evidence": 21,
       "tags": [
-        "antipattern",
-        "service",
-        "microservice"
+        "microservices",
+        "soa",
+        "architecture",
+        "abstraction"
       ],
       "relatedItems": [
+        {
+          "relation": "precedes",
+          "name": "Nanoservices"
+        },
+        {
+          "relation": "relates",
+          "name": "CRUDy Interface"
+        },
+        {
+          "relation": "relates",
+          "name": "Service Chain"
+        }
       ]
     }
   ]

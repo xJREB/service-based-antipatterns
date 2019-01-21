@@ -19,9 +19,11 @@
       ],
       "evidence": 14,
       "tags": [
+        "microservices",
+        "soa",
         "architecture",
-        "low_cohesion",
-        "architecture"
+        "cohesion",
+        "dependency"
       ],
       "relatedItems": [
       ]

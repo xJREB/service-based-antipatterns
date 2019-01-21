@@ -17,9 +17,19 @@
       ],
       "evidence": 12,
       "tags": [
-        "bad_smell"
+        "microservices",
+        "architecture",
+        "dependency"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Chatty Service"
+        },
+        {
+          "relation": "relates",
+          "name": "Nanoservices"
+        }
       ]
     }
   ]

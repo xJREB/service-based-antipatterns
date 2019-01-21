@@ -17,10 +17,16 @@
       ],
       "evidence": 39,
       "tags": [
-        "antipattern",
-        "architecture"
+        "microservices",
+        "soa",
+        "architecture",
+        "ambiguity"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "Bloated Service"
+        }
       ]
     }
   ]

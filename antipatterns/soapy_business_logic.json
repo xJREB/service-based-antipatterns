@@ -17,11 +17,14 @@
       ],
       "evidence": 115,
       "tags": [
-        "antipattern",
-        "application",
+        "soa",
         "architecture"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "Connector Envy"
+        }
       ]
     }
   ]

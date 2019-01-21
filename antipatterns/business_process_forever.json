@@ -17,7 +17,8 @@
       ],
       "evidence": 19,
       "tags": [
-        "antipattern",
+        "microservices",
+        "soa",
         "business"
       ],
       "relatedItems": [

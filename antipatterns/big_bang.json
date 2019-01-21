@@ -17,9 +17,10 @@
       ],
       "evidence": 24,
       "tags": [
-        "antipattern",
+        "soa",
+        "architecture",
         "legacy",
-        "architecture"
+        "dependency"
       ],
       "relatedItems": [
         {

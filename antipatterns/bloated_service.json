@@ -17,9 +17,16 @@
       ],
       "evidence": 2,
       "tags": [
-        "antipattern"
+        "microservices",
+        "soa",
+        "application",
+        "cohesion"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "Ambiguous Interface"
+        }
       ]
     }
   ]

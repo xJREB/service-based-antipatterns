@@ -18,10 +18,16 @@
       ],
       "evidence": 14.5,
       "tags": [
-        "antipattern",
-        "services"
+        "microservices",
+        "soa",
+        "architecture",
+        "ambiguity"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Redundant PortTypes"
+        }
       ]
     }
   ]

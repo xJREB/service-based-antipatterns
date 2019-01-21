@@ -18,7 +18,9 @@
       ],
       "evidence": 55.5,
       "tags": [
-        "antipattern"
+        "soa",
+        "application",
+        "migration"
       ],
       "relatedItems": [
         {
@@ -32,6 +34,14 @@
         {
           "relation": "follows",
           "name": "No Legacy"
+        },
+        {
+          "relation": "related",
+          "name": "Silver Bullet"
+        },
+        {
+          "relation": "related",
+          "name": "Golden Hammer"
         }
       ]
     }

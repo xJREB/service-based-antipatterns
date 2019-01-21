@@ -26,7 +26,13 @@
       ],
       "evidence": 21,
       "tags": [
-        "architecture", "system", "service", "many_methods", "low_cohesion"
+        "microservices",
+        "soa",
+        "architecture",
+        "system",
+        "many_methods",
+        "cohesion",
+        "abstraction"
       ],
       "relatedItems": [
       ]

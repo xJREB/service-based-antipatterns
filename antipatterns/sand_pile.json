@@ -18,12 +18,11 @@
       ],
       "evidence": 15.5,
       "tags": [
-        "antipattern",
-        "service",
-        "microservice",
+        "soa",
         "architecture",
         "system",
-        "high_cohesion"
+        "cohesion",
+        "dependency"
       ],
       "relatedItems": [
       ]

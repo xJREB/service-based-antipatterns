@@ -18,8 +18,10 @@
       ],
       "evidence": 15.5,
       "tags": [
-        "antipattern",
-        "system"
+        "soa",
+        "architecture",
+        "system",
+        "rpc"
       ],
       "relatedItems": [
       ]

@@ -4,6 +4,14 @@ import {Source} from "@/common/bibliography";
 
 export default class Utils {
 
+    public static get context() {
+        return ['microservices', 'soa'];
+    }
+
+    public static get category() {
+        return ['business', 'application', 'architecture'];
+    }
+
     public static cleanString(stringToClean: string) {
         if (stringToClean) {
             return stringToClean.toLowerCase().replace(/[^a-zA-Z ]/g, "");
@@ -41,13 +49,16 @@ export default class Utils {
     }
 
     public static setEvidence(antiPattern: AntiPattern, sources: Source[]) {
-        let evidence = 0;
+        let evidence = -1;
         if (sources.length > 0) {
             antiPattern.sources!.forEach((source) => {
                 const citeKey = source.match(/(?:@\w*{)(\w*\d*),/g);
                 if (citeKey) {
                     const filteredSources = sources.filter((sourceKey) => citeKey[0].includes(sourceKey.citeKey));
                     if (filteredSources.length === 1) {
+                        if (evidence < 0) {
+                            evidence = 0;
+                        }
                         evidence += filteredSources[0].citedBy;
                     }
                 }

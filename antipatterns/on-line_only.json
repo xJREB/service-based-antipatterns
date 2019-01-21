@@ -17,9 +17,9 @@
       ],
       "evidence": 19,
       "tags": [
-        "antipattern",
-        "service",
-        "architecture"
+        "soa",
+        "architecture",
+        "data_management"
       ],
       "relatedItems": [
       ]

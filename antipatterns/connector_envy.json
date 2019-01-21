@@ -18,10 +18,15 @@
       ],
       "evidence": 39,
       "tags": [
-        "antipattern",
+        "microservices",
+        "soa",
         "architecture"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "SOAPY Business Logic"
+        }
       ]
     }
   ]

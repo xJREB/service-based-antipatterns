@@ -18,10 +18,20 @@
       ],
       "evidence": 15.5,
       "tags": [
-        "antipattern",
-        "application"
+        "soa",
+        "application",
+        "data_management",
+        "rpc"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Chatty Service"
+        },
+        {
+          "relation": "precedes",
+          "name": "Data Service"
+        }
       ]
     }
   ]

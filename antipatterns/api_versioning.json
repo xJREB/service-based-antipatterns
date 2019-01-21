@@ -17,7 +17,9 @@
       ],
       "evidence": 12,
       "tags": [
-        "bad_smell"
+        "microservices",
+        "soa",
+        "application"
       ],
       "relatedItems": [
       ]

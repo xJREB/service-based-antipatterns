@@ -20,11 +20,20 @@
       ],
       "evidence": 24,
       "tags": [
-        "antipattern",
-        "service",
-        "high_data_cohesion"
+        "soa",
+        "architecture",
+        "cohesion",
+        "data_management"
       ],
       "relatedItems": [
+        {
+          "relation": "follows",
+          "name": "CRUDy Interface"
+        },
+        {
+          "relation": "precedes",
+          "name": "Wrong Cuts"
+        }
       ]
     }
   ]

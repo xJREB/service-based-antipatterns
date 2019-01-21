@@ -17,10 +17,21 @@
       ],
       "evidence": 14,
       "tags": [
-        "antipattern",
-        "system"
+        "microservices",
+        "soa",
+        "architecture",
+        "system",
+        "dependency"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "Chatty Service"
+        },
+        {
+          "relation": "precedes",
+          "name": "Wrong Cuts"
+        }
       ]
     }
   ]

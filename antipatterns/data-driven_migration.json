@@ -17,8 +17,10 @@
       ],
       "evidence": 13,
       "tags": [
-        "antipattern",
-        "microservice",
+        "microservices",
+        "business",
+        "migration",
+        "data_management",
         "migration"
       ],
       "relatedItems": [
