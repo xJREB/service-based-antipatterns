@@ -1,6 +1,7 @@
 # Service-Based Antipatterns
 
 [![Build Status](https://travis-ci.org/xJREB/service-based-antipatterns.svg?branch=master)](https://travis-ci.org/xJREB/service-based-antipatterns)
+[![Sonarcloud Dashboard](https://sonarcloud.io/api/project_badges/measure?project=xJREB_service-based-antipatterns&metric=alert_status)](https://sonarcloud.io/dashboard?id=xJREB_service-based-antipatterns)
 
 This repository should serve as a knowledge base for service-based antipatterns and has been created in a research project at the University of Stuttgart.
 

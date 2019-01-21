@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "sonar": "sonar-scanner"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.9",
@@ -37,6 +38,7 @@
     "merge-jsons-webpack-plugin": "^1.0.18",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
+    "sonarqube-scanner": "^2.1.2",
     "typescript": "^3.0.0",
     "vue-cli-plugin-vuetify": "^0.4.5",
     "vue-template-compiler": "^2.5.17"
