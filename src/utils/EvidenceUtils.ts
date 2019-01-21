@@ -6,9 +6,9 @@ export default class EvidenceUtils {
 
     public static evidenceModel: { [s: number]: [number, string]; } = {
         0: [0, EvidenceUtils.evidenceLabels[0]],
-        1: [20, EvidenceUtils.evidenceLabels[1]],
-        2: [60, EvidenceUtils.evidenceLabels[2]],
-        3: [100, EvidenceUtils.evidenceLabels[3]],
+        1: [50, EvidenceUtils.evidenceLabels[1]],
+        2: [100, EvidenceUtils.evidenceLabels[2]],
+        3: [200, EvidenceUtils.evidenceLabels[3]],
     };
 
     public static getReferenceEvidenceColor(antiPattern: AntiPattern): string {

@@ -13,3 +13,8 @@ export enum BibliographyFormat {
     TEXT = 'text',
     HTML = 'html',
 }
+
+export interface Source {
+    citeKey: string;
+    citedBy: number;
+}

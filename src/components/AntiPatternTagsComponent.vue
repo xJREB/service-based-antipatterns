@@ -79,7 +79,6 @@
         margin-left: 16px;
         margin-right: 16px;
         height: 15px;
-        /*background-image: linear-gradient(to right, white 2%, rgba(0,172,193,0) 2%, rgba(0,172,193,1) 49%);*/
         background-image: linear-gradient(to right, rgba(0, 172, 193, 0.1) 0%, rgba(0, 172, 193, 0.3) 33%, rgba(0, 172, 193, 0.7) 66%, rgba(0, 172, 193, 1) 100%);
     }
 </style>

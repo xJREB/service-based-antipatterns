@@ -60,7 +60,7 @@
     import Utils from "../utils/Utils";
     import {DefaultSidebar, Sidebar} from "../common/sidebar";
     import Cite from 'citation-js';
-    import {BibliographyTemplate} from "@/common/bibliography";
+    import {BibliographyTemplate, Source} from "@/common/bibliography";
     import AntiPatternHelpComponent from "@/components/AntiPatternHelpComponent.vue";
     import EvidenceUtils from "../utils/EvidenceUtils";
 
@@ -68,6 +68,7 @@
         components: {AntiPatternHelpComponent, AntiPatternTagsComponent, AntiPatternsContainerComponent},
     })
     export default class Home extends Vue {
+        private sources: Source[] = [];
         private antiPatterns: AntiPattern[] = [];
         private antiPatternsAll: AntiPattern[] = [];
         private antiPatternsSelected: AntiPattern[] = [];
@@ -76,7 +77,6 @@
         private searchTerm: string = "";
         private tagsModel: Sidebar = new DefaultSidebar();
         private files: MarkdownFile[] = [];
-        private evidenceLabel: { [s: number]: number; } = {0: -1, 1: 0, 2: 30, 3: 100};
         private dialog: boolean = false;
         private sorting: string = "";
         private sortingItems = [
@@ -109,20 +109,28 @@
         }
 
         public loadAntipatterns() {
-            axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
-                response.data.antiPatterns.filter((item: AntiPattern) => item.name)
-                    .forEach((filledAntiPattern: AntiPattern) => {
-                            this.antiPatternsAll.push(filledAntiPattern);
-                            this.antiPatterns.push(filledAntiPattern);
-                            this.antiPatternsFiltered.push(filledAntiPattern);
-                            this.antiPatternsSelected.push(filledAntiPattern);
-                            this.antiPatternsEvidence.push(filledAntiPattern);
-                            Utils.setRelatedAntiPatterns(this.antiPatternsAll);
-                        },
-                    );
+            axios.get(`/service-based-antipatterns/assets/sources.json`).then((response) => {
+                response.data.sources.forEach((item: Source) => this.sources.push(item));
             }).catch(() => {
-                this.$toasted.error('Failed to load antipatterns');
-            });
+                this.$toasted.error('Failed to read sources file used for evidence');
+            }).finally(() =>
+                axios.get(`/service-based-antipatterns/assets/result.json`).then((response) => {
+                    response.data.antiPatterns.filter((item: AntiPattern) => item.name)
+                        .forEach((filledAntiPattern: AntiPattern) => {
+                                this.antiPatternsAll.push(filledAntiPattern);
+                                this.antiPatterns.push(filledAntiPattern);
+                                this.antiPatternsFiltered.push(filledAntiPattern);
+                                this.antiPatternsSelected.push(filledAntiPattern);
+                                this.antiPatternsEvidence.push(filledAntiPattern);
+                                Utils.setRelatedAntiPatterns(this.antiPatternsAll);
+                                Utils.setEvidence(filledAntiPattern, this.sources);
+                            },
+                        );
+                }).catch(() => {
+                    this.$toasted.error('Failed to load antipatterns');
+                }),
+            );
+
         }
 
         public loadCitationStyles() {

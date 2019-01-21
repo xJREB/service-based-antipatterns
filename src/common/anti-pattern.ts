@@ -14,8 +14,8 @@ export class AntiPattern {
     public relatedAntiPatterns?: RelatedAntiPattern[];
 
     constructor(name?: string, aliases?: string[], description?: string, context?: string, detection?: string,
-                cause?: string, solution?: string, example?: string, sources?: string[], evidence?: number,
-                tags?: string[], relatedItems?: RelatedItem[]) {
+                cause?: string, solution?: string, example?: string, sources?: string[], tags?: string[],
+                relatedItems?: RelatedItem[]) {
         this.name = name;
         this.aliases = aliases;
         this.description = description;
@@ -25,7 +25,6 @@ export class AntiPattern {
         this.solution = solution;
         this.example = example;
         this.sources = sources;
-        this.evidence = evidence;
         this.tags = tags;
         this.relatedItems = relatedItems;
     }
