@@ -8,5 +8,5 @@ Vue.use(Toasted, {
     duration: 5000,
     iconPack: "material",
     icon: 'info_outline',
-    className: "application",
+    className: ["application", "toast"],
 });

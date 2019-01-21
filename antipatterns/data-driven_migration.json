@@ -16,8 +16,10 @@
         "@book{Richards2016, author = {Richards, Mark}, isbn = {9781491963319}, pages = {66}, title = {{Microservices AntiPatterns and Pitfalls}}, year = {2016}}"
       ],
       "tags": [
-        "antipattern",
-        "microservice",
+        "microservices",
+        "business",
+        "migration",
+        "data_management",
         "migration"
       ],
       "relatedItems": [

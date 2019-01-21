@@ -16,7 +16,8 @@
         "@inproceedings{de2014architectural, author = {de Andrade, Hugo Sica and Almeida, Eduardo and Crnkovic, Ivica}, year = {2014}, month = {04}, pages = {12}, title = {Architectural bad smells in Software Product Lines: An exploratory study}, journal = {ACM International Conference Proceeding Series}, doi = {10.1145/2578128.2578237}}"
       ],
       "tags": [
-        "bad_smell",
+        "microservices",
+        "soa",
         "architecture"
       ],
       "relatedItems": [

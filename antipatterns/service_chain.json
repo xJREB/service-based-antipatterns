@@ -16,8 +16,11 @@
         "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}}"
       ],
       "tags": [
-        "antipattern",
-        "system"
+        "microservices",
+        "soa",
+        "architecture",
+        "system",
+        "dependency"
       ],
       "relatedItems": [
         {

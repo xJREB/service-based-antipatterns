@@ -1,6 +1,6 @@
 <template>
     <v-card>
-        <v-toolbar class="secondary" card dark>
+        <v-toolbar class="primary darken1" card dark>
             <v-toolbar-title>{{antiPattern.name}}</v-toolbar-title>
             <v-spacer></v-spacer>
             <anti-pattern-actions-component :anti-pattern="antiPattern"/>
@@ -109,7 +109,7 @@
         }
 
         public get referenceMedianColor(): string {
-            return EvidenceService.getReferenceMedianColor(this.antiPattern);
+            return EvidenceService.getReferenceMedianColor(this.antiPattern, this.$vuetify.theme.secondary.toString());
         }
 
         public get referenceMedianLabel(): string {

@@ -36,6 +36,8 @@
     "browser-request": "^0.3.3",
     "copy-webpack-plugin": "^4.6.0",
     "merge-jsons-webpack-plugin": "^1.0.18",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "sonarqube-scanner": "^2.1.2",
     "typescript": "^3.0.0",
     "vue-cli-plugin-vuetify": "^0.4.5",
