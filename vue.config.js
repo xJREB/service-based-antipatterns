@@ -27,6 +27,10 @@ module.exports = {
                 {
                     from: './*.md',
                     to: './assets/[name].[ext]'
+                },
+                {
+                    from: './assets/*.json',
+                    to: './assets/[name].[ext]'
                 }
             ])
         ]
