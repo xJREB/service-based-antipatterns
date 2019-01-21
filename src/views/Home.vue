@@ -143,7 +143,7 @@
                 // citation.js already provides templates for the following styles, so we do not need to load them again
                 if (!['apa', 'harvard1', 'vancouver', 'bibtex'].includes(templateName)) {
                     axios.get(styleUrl).then((response) => {
-                        const config = Cite.plugins.config.get('csl');
+                        const config = Cite.plugins.config.get('@csl');
                         config.templates.add(templateName, response.data);
                     }).catch(() => {
                         this.$toasted.error('Failed to load citation style ' + templateName);
