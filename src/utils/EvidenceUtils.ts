@@ -6,15 +6,15 @@ export default class EvidenceUtils {
     public static evidenceLabels: string[] = ["low", "medium", "high", "very high"];
 
     public static evidenceModel: { [s: number]: [number, string]; } = {
-        0: [0, EvidenceUtils.evidenceLabels[0]],
-        1: [50, EvidenceUtils.evidenceLabels[1]],
-        2: [100, EvidenceUtils.evidenceLabels[2]],
-        3: [200, EvidenceUtils.evidenceLabels[3]],
+        0: [1, EvidenceUtils.evidenceLabels[0]],
+        1: [3, EvidenceUtils.evidenceLabels[1]],
+        2: [10, EvidenceUtils.evidenceLabels[2]],
+        3: [20, EvidenceUtils.evidenceLabels[3]],
     };
 
     public static getReferenceEvidenceColor(antiPattern: AntiPattern, color: string): string {
-        if (antiPattern.evidence && antiPattern.evidence > -1) {
-            const alphaValue = antiPattern.evidence / 200 + 0.15;
+        if (antiPattern.evidence && antiPattern.evidence > 0) {
+            const alphaValue = antiPattern.evidence / 20 + 0.15;
             return new Color(color).alpha(alphaValue).string();
         }
         return "lightgrey";

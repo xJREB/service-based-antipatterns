@@ -49,17 +49,17 @@ export default class Utils {
     }
 
     public static setEvidence(antiPattern: AntiPattern, sources: Source[]) {
-        let evidence = -1;
+        let evidence = 0;
         if (sources.length > 0) {
             antiPattern.sources!.forEach((source) => {
                 const citeKey = source.match(/(?:@\w*{)(\w*\d*),/g);
                 if (citeKey) {
                     const filteredSources = sources.filter((sourceKey) => citeKey[0].includes(sourceKey.citeKey));
                     if (filteredSources.length === 1) {
-                        if (evidence < 0) {
-                            evidence = 0;
+                        if (evidence === 0) {
+                            evidence = 1;
                         }
-                        evidence += filteredSources[0].citedBy;
+                        evidence += Math.log(filteredSources[0].citedBy);
                     }
                 }
             });
