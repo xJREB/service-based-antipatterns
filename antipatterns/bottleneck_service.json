@@ -5,11 +5,11 @@
       "aliases": [
         ""
       ],
-      "description": "This antipattern describes a service that is being used by too many external clients resulting in high response times and low availability of this service.",
-      "context": "A service is being used by too many external clients. ",
+      "description": "A service that is being used by too many consumers and therefore becomes a bottleneck and single point of failure.",
+      "context": "",
       "detection": "",
-      "consequences": "High response times and low availability of this service.",
-      "cause": "",
+      "consequences": "The service may have increased response times and low availability. It also becomes a single point of failure in the architecture.",
+      "cause": "Functionality may gradually become more and more important and is therefore used by more and more consumers, maybe even external ones via a public service interface. To maximize reuse, service interfaces are sometimes also generalized which leads to more service consumers as well.",
       "solution": "",
       "example": "",
       "sources": [

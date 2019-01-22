@@ -5,7 +5,7 @@
       "aliases": [
         ""
       ],
-      "description": "This antipattern describes a service that has one large interface with many parameters performing mostly heterogeneous operation with low cohesion among them.",
+      "description": "A service that has one large interface with many parameter data types and performs mostly heterogeneous operations with low cohesion.",
       "context": "",
       "detection": "",
       "consequences": "",

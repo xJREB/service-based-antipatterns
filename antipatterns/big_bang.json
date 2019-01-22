@@ -5,12 +5,12 @@
       "aliases": [
         ""
       ],
-      "description": "A strategy often preferred by large vendors where an entire system has to be built \"at once\".",
+      "description": "A strategy often preferred by large vendors where an entire system is built \"at once\".",
       "context": "",
       "detection": "",
-      "consequences": "The antipattern increases the burden of the users.",
-      "cause": "Due to fine-grained interfaces the services are not independent enough and an incremental development is not possible.",
-      "solution": "Use of coarse grained user-oriented interfaces and decomposing the required capabilities into autonomous services.",
+      "consequences": "Creating a large system in a Big Bang may lead to poorly understood requirements and inconsistencies in the architecture. Communication between and integration of services may be inefficient.",
+      "cause": "Due to fine-grained interfaces, services are not independent enough and an incremental development is not possible.",
+      "solution": "Coarse grained user-oriented interfaces should be used and required capabilities should be properly decomposed into autonomous services.",
       "example": "",
       "sources": [
         "@inproceedings{kral2009popular,author={Kr{\\'a}l, Jaroslav and {\\v{Z}}emlicka, Michal},booktitle={2009 Computation World: Future Computing, Service Computation, Cognitive, Adaptive, Content, Patterns},title={Popular SOA Antipatterns},year={2009},pages={271-276},doi={10.1109/ComputationWorld.2009.80},month={Nov}}"

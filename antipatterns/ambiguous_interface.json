@@ -4,13 +4,13 @@
       "name": "Ambiguous Interface",
       "aliases": [
       ],
-      "description": "Is an antipattern where the interfaces of a component offer a single and very general entry-point. ",
+      "description": "The interface of a service offers a single and very general operation.",
       "context":  "",
-      "detection": "Interface offers and processes multiple services, but offers only one public service. Usually all requests are accepted and internally other services are invoked.",
-      "consequences": "Reduce analyzability and understandability, because the component does not show the services that are accepted. Therefore a user has to analyze the implementation of the component before using it.",
-      "cause": "Especially appears in pub-sub systems, where the interactions are not explicitly modeled and multiple components exchange event messages via a shared event bus.",
-      "solution": "Split single-entry point up into multiple more specialized entry-points.",
-      "example": "Interface with a single public method that takes a generic type as parameter.",
+      "detection": "A service implements a large amount of functionality, but provides only one public operation to invoke all of it. Accepted requests are internally forwarded to various methods.",
+      "consequences": "Analyzability and understandability are reduced, because the service does not publish all its provided functionality in a clear manner. Therefore, a user has to analyze the implementation of the service before using it.",
+      "cause": "May easily appear in pub-sub systems, where interactions are not explicitly modeled and multiple services exchange event messages via a shared event bus.",
+      "solution": "Split the single generic operation into multiple more specialized operations.",
+      "example": "Interface with a single public operation that takes a generic type as parameter.",
       "sources": [
         "@inproceedings{garcia2009toward, author = {Garcia, Joshua and Popescu, Daniel and Edwards, George and Medvidovic, Nenad}, title = {Toward a Catalogue of Architectural Bad Smells}, booktitle = {Proceedings of the 5th International Conference on the Quality of Software Architectures: Architectures for Adaptive Software Systems}, series = {QoSA '09}, year = {2009}, isbn = {978-3-642-02350-7}, location = {East Stroudsburg, PA, USA}, pages = {146--162}, numpages = {17}, url = {http://dx.doi.org/10.1007/978-3-642-02351-4_10}, doi = {10.1007/978-3-642-02351-4_10}, publisher = {Springer-Verlag}, address = {Berlin, Heidelberg}}",
         "@inproceedings{de2014architectural, author = {de Andrade, Hugo Sica and Almeida, Eduardo and Crnkovic, Ivica}, year = {2014}, month = {04}, pages = {12}, title = {Architectural bad smells in Software Product Lines: An exploratory study}, journal = {ACM International Conference Proceeding Series}, doi = {10.1145/2578128.2578237}}"

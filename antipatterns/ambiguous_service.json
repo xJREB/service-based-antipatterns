@@ -6,10 +6,10 @@
         "Ambiguous Web Service",
         "Ambiguous Name"
       ],
-      "description": "Is an antipattern where the developers use the names of interface elements (e.g., port-types, operations, and messages) that are very short or long, include too general terms, or even show the improper use of verbs.",
+      "description": "A service that includes interface elements (e.g., port types, operations, and messages) with unclear names, i.e. names that are very short or long, include too general terms, or even show the improper use of verbs.",
       "context": "",
       "detection": "",
-      "consequences": "Reduce discoverability and the reusability.",
+      "consequences": "Discoverability and reusability are reduced.",
       "cause": "",
       "solution": "",
       "example": "callEventServiceWithUserEntityAndOrderAndUpdateList(), callEventServiceWithUserEntityAndOrderAndUpdateListAsync(), callUserService1(), callUserService2()",
