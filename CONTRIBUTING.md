@@ -18,13 +18,13 @@ Follow these six easy steps to contribute a new antippatern to the knowledge bas
 2. Create a **[new branch](#checkout-new-branch)**
 3. **Copy our antipattern skeleton** `./antipatterns/default_antipattern.json`, name it according to your antipattern and make sure to place it in the `antipatterns` folder in the project root
 4. **Fill out** as many fields of the skeleton as you can but make sure the fields `name`, `description` and `sources` are filled out
-5. If a new source has been added, you need to add the BibTeX key and its "cited by" count of google scholar to the file `./assets/sources.json`
-6. Each antipattern should also be tagged with one of the following **categories** `"business", "architecture", "application"` (single tag only) and with an **architectural style** `"soa", "microservices"` (multiple tags allowed)
-7. If you have a related antipattern you may want to use one of the following default relations `"precedes", "relates", "follows"` but you are also free to add a new relation type
+5. If a new source has been added, you need to add the BibTeX key and its "cited by" count from [Google Scholar](https://scholar.google.com) to the file `./assets/sources.json`
+6. Each antipattern should also be tagged with one of the following **categories** `business`, `architecture`, or `application` (mandatory, single tag only) and with an **architectural style** `soa` and/or `microservices` (optional, multiple tags allowed)
+7. If you want to relate your antipattern to existing ones, you may want to use one of the following default relations `precedes`, `relates`, or `follows`. You are also free to add a new relation type
 8. **Commit** your changes
 9. Create a **pull request** on the [Service-Based Antipatterns GitHub Repo](https://github.com/xJREB/service-based-antipatterns)
 
-Once all the checks on the changes of the pull request have passed, one of the maintainers will merge your changes and they will be available on the [website](https://xjreb.github.io/service-based-antipatterns/) shortly after.
+Once all the checks on the changes of the pull request have passed, one of the maintainers will merge your changes and they will be available on the [website](https://xjreb.github.io/service-based-antipatterns) shortly afterwards.
 
 # Contributing Code
 You can execute the following commands on the command line after you cloned the project.
