@@ -5,11 +5,11 @@
       "aliases": [
         ""
       ],
-      "description": "A set of low cohesive services are tightly coupled by hardcoded point-to-point integration and context-specific interfaces.",
+      "description": "A set of low cohesive services is tightly coupled by hardcoded point-to-point integration and context-specific interfaces.",
       "context": "",
       "detection": "",
-      "consequences": "Decrease flexibility, hard to maintain and reducing the reusability of the services. Due to the complex architecture of the services their response times might be higher and they have low availability.",
-      "cause": "To complex buisness processe, wrong cuts",
+      "consequences": "This decreases flexibility and reusability and makes it difficult to maintain and evolve these services. Due to the complex architecture, service response times may be higher and the availability of their abstractions may be lower.",
+      "cause": "Very complex or rapidly evolving business processes may cause such a harmful net of dependencies.",
       "solution": "",
       "example": "",
       "sources": [

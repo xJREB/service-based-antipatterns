@@ -5,13 +5,13 @@
       "aliases": [
         "Multilayer Service"
       ],
-      "description": "Common infrastructure functions are implemented in different services. These might include technical processes such as logging but can also extend to common business functions like currency conversion. These functions are implemented in multiple services and result in duplicated code and different implementations for the same functionality.",
+      "description": "Common low level functionality such as logging or currency conversion is duplicated over several services.",
       "context": "",
-      "detection": "Stovepipe services typically have a large number of private implementation methods",
-      "consequences": "Large number of (private) methods and overall large service implementation. Technical and utility functions are implemented inconsistently. The development time of stovepipe services is considerably larger.",
-      "cause": "Inexperience in developing multilayer architecture is one reason that can result in stovepipe services. They can also be caused by insufficient communication and insufficient design/code reviews during service implementation.",
-      "solution": "Refactor the common private methods of all services into new technical services or utility classes. Alternatively these functionality can be refactored to a new super class from which all services can inherit.",
-      "example": "A service implements private methods for technical tasks such as auditEvent and notify which might also be implemented by other services.",
+      "detection": "Stovepipe services typically have a large number of private implementation methods.",
+      "consequences": "Technical and utility functions are implemented inconsistently. Development time of stovepipe services is considerably larger. Duplicated code and different implementations for the same functionality also has a negative impact on maintainability.",
+      "cause": "Inexperience in developing multilayer architectures is one reason that can result in stovepipe services. They can also be caused by insufficient team communication and a lack of design or code reviews.",
+      "solution": "Refactor the common private methods of all services into new technical services or utility classes. Alternatively, these functionality can be refactored to a new super class from which all services can inherit.",
+      "example": "A service implements private methods for technical tasks such as 'auditEvent' or 'notify' which might also be implemented by other services.",
       "sources": [
         "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}",
         "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}"
@@ -23,6 +23,10 @@
         "system"
       ],
       "relatedItems": [
+        {
+          "relation": "related",
+          "name": "Scattered Parasitic Functionality"
+        }
       ]
     }
   ]

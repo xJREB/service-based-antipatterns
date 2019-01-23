@@ -5,10 +5,10 @@
       "aliases": [
         ""
       ],
-      "description": "Service provides mainly CRUD-type interfaces for significant business entities that most likely need many parameters and therefore, causes poor system performance.",
+      "description": "A service provides mainly CRUD-type operations for significant business entities that most likely need many parameters and therefore cause poor system performance.",
       "context": "",
-      "detection": "Service provides interfaces only for CRUD operations that which need many parameters.",
-      "consequences": "Poor system performance due to synchronous responses.",
+      "detection": "",
+      "consequences": "Such fine-grained interactions may cause poor performance due to chaining of synchronous requests.",
       "cause": "",
       "solution": "",
       "example": "",
@@ -23,6 +23,10 @@
         "rpc"
       ],
       "relatedItems": [
+        {
+          "relation": "relates",
+          "name": "CRUDy Interface"
+        }
       ]
     }
   ]

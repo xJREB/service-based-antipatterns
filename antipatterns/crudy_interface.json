@@ -28,6 +28,10 @@
           "name": "Chatty Service"
         },
         {
+          "relation": "relates",
+          "name": "Maybe It is Not RPC"
+        },
+        {
           "relation": "precedes",
           "name": "Data Service"
         }

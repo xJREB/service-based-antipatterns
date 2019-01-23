@@ -5,10 +5,10 @@
       "aliases": [
         "Data Web Service"
       ],
-      "description": "This antipattern describes a service that performs only information retrieval or access operations and typically contains only of accessor operations.",
-      "context": "A service is built for simple information retrieval or access operations.",
-      "detection": "Typically only contains accessor operations, i.e., getters and setters and usually deals with very small messages of primitive types and may have high data cohesion.",
-      "consequences": "A consequence of the data service antipattern is that these services may have a high data cohesion.",
+      "description": "A service that exclusively performs information retrieval and typically provides only simple read operations.",
+      "context": "",
+      "detection": "The service only contains accessor operations, i.e. getters and setters, and usually deals with very small messages with primitive data types.",
+      "consequences": "A data service may have a large number of operations with low cohesion, which can have a negative influence on maintainability.",
       "cause": "",
       "solution": "",
       "example": "",

@@ -5,13 +5,13 @@
       "aliases": [
         "Web Services Will Fix Our Problems"
       ],
-      "description": "Describes a number of web services that are used to solve a problem on top of an existing architecture. This comes from the assumption that (web-)services will fix any problem. If the underlying architecture has lacks in his structure, then the webservice will exhibit the this structure. ",
+      "description": "Web services are used to solve a problem on top of an existing architecture, even though they are not really fitting for this problem.",
       "context": "",
-      "detection": "Typically have a number of web services on top of an existing architecture.",
-      "consequences": "There is either a significant refactoring of the logic or if just copy and pasted there is a maintenance overhead. Also the web services that are created in this way are hard to reuse, because they were built for this specific purpose and tightly coupled. Additionally, there is a development overhead for the web services.",
-      "cause": "The assumption, that a web service can fix the issues that the implementation in the underlying structure has. It can also be caused by the decision high-level technical managers and not by architects, without understanding them. It can also be caused by a poor architecture and design.",
-      "solution": "A refactoring of the underlying system is needed.",
-      "example": "An example is a bloated session with a similarly structured web service endpoint on top of it. This is a tight coupling because the web service is specific to this session. The expectation is that the client view on this system will be usable, scalable and allow reusing.",
+      "detection": "The system involves not only web services, but also other architectural paradigms and styles.",
+      "consequences": "Using web services for such a problem either causes significant refactoring efforts or an additional maintenance overhead if functionality is just copied. Web services created in this way are also hard to reuse, because they were built for this specific purpose.",
+      "cause": "These issues are usually caused by the assumption that web services can fix issues that actually reside in the implementation of the underlying architecture. Another possibility is that high-level technical managers and not architects take these decisions without understanding them.",
+      "solution": "An extensive refactoring of the underlying system is needed.",
+      "example": "An example is a bloated session with a similarly structured web service endpoint on top of it. This causes tight coupling because the web service is specific to this session.",
       "sources": [
         "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
       ],

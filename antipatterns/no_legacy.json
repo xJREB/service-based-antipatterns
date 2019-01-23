@@ -5,12 +5,12 @@
       "aliases": [
         ""
       ],
-      "description": "Often it is prefer to rewrite a legacy application because they do not want to keep obsolete parts in their new system. Since SOA allows to integrate applications and rewriting legacy systems typically involves an immense investment, this strategy is often not a good idea.",
-      "context": "The management does not want to keep legacy systems and therefore, wants to rewrite the entire application.",
+      "description": "A legacy application is completely rewritten instead of being (partly) modernized and integrated.",
+      "context": "Management does not want to keep a legacy system of decent quality and therefore wants to rewrite the entire application. The idea is that obsolete parts should be dropped and integration and modernization efforts are perceived to be similar to a complete rewrite. However, since SOA usually enables the efficient integration of applications, a complete rewrite of the legacy system should require much more efforts.",
       "detection": "",
-      "consequences": "Very costly antipattern since legacy systems have to be rewritten which typically causes an immense additional investment.",
-      "cause": "Project management does not understand that integrating legacy systems into a new SOA system does not necessarily have to be a bad thing.",
-      "solution": "Project management first has to accept that stable parts of a legacy systems are not necessarily bad to integrate in the new system. The candidates for integration have to be chosen and equipped with user-oriented interfaces. On the legacy system we can use front-end gates to achieve this.",
+      "consequences": "Very high investements and considerable risk are associated with a complete rewrite of large complex systems.",
+      "cause": "Project management does not understand that integrating legacy systems into a new SOA environment does not necessarily have to be a bad thing.",
+      "solution": "Project management first has to accept that stable and solid parts of a legacy systems are worth keeping. Integration candidates have to be chosen and modernized with user-oriented interfaces. Front-end gates can be used to achieve this.",
       "example": "",
       "sources": [
         "@inproceedings{kral2007most,author={Kral, Jaroslav and Zemlicka, Michal},booktitle={International Conference on Software Engineering Advances (ICSEA 2007)},title={The Most Important Service-Oriented Antipatterns},year={2007},pages={29--29},doi={10.1109/ICSEA.2007.74},month={Aug}}"

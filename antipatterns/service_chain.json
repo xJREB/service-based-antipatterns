@@ -5,10 +5,10 @@
       "aliases": [
         ""
       ],
-      "description": "This antipattern describes a chain of service calls which is needed to fulfill goals of the services.",
-      "context": "Multiple services that call each other to fulfill their goals.",
+      "description": "A chain of service calls fulfills common functionality.",
+      "context": "Multiple services exist that call each other sequentially to fulfill an abstraction or business process.",
       "detection": "",
-      "consequences": "",
+      "consequences": "Such a chain may slow down performance and reduces the availability of the chained abstraction. It may also be harder to change the abstraction, especially with respect to the invocation order of services.",
       "cause": "",
       "solution": "",
       "example": "",
