@@ -10,7 +10,7 @@
             This website serves as a knowledge base for Service-Based Antipatterns
             and has been created due to a study project at the University of Stuttgart.
         </v-card-text>
-        <v-subheader>Context</v-subheader>
+        <v-subheader>Architectural Style</v-subheader>
         <v-list-tile v-for="tag in filterContext" :key="tag">
             <v-list-tile-action>
                 <v-checkbox v-model="value.tags.selectionContext" :value="tag"></v-checkbox>
