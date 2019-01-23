@@ -22,11 +22,11 @@
       ],
       "relatedItems": [
         {
-          "relation": "related",
+          "relation": "relates",
           "name": "Golden Hammer"
         },
         {
-          "relation": "related",
+          "relation": "relates",
           "name": "Nothing New"
         }
       ]

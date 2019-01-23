@@ -23,7 +23,7 @@
       ],
       "relatedItems": [
         {
-          "relation": "related",
+          "relation": "relates",
           "name": "SOAPY Business Logic"
         }
       ]

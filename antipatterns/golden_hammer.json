@@ -22,11 +22,11 @@
       ],
         "relatedItems": [
           {
-            "relation": "related",
+            "relation": "relates",
             "name": "Silver Bullet"
           },
           {
-            "relation": "related",
+            "relation": "relates",
             "name": "Nothing New"
           }
       ]

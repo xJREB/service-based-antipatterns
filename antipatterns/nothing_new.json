@@ -35,11 +35,11 @@
           "name": "No Legacy"
         },
         {
-          "relation": "related",
+          "relation": "relates",
           "name": "Silver Bullet"
         },
         {
-          "relation": "related",
+          "relation": "relates",
           "name": "Golden Hammer"
         }
       ]

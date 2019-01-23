@@ -24,7 +24,7 @@
       ],
       "relatedItems": [
         {
-          "relation": "related",
+          "relation": "relates",
           "name": "Stovepipe Service"
         }
       ]
