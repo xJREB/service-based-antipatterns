@@ -21,7 +21,7 @@
         "architecture",
         "system",
         "cohesion",
-        "dependency"
+        "coupling"
       ],
       "relatedItems": [
       ]

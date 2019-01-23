@@ -21,7 +21,7 @@
         "soa",
         "architecture",
         "system",
-        "dependency"
+        "coupling"
       ],
       "relatedItems": [
         {

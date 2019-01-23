@@ -19,7 +19,7 @@
         "soa",
         "architecture",
         "legacy",
-        "dependency"
+        "coupling"
       ],
       "relatedItems": [
         {
