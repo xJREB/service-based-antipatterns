@@ -1,0 +1,30 @@
+{
+  "antiPatterns": [
+    {
+      "name": "The Shiny Nickel",
+      "aliases": [
+        "Magpie"
+      ],
+      "description": "Used to incorporate the latest technology buzz within your SOA for the sake of telling people about it.",
+      "context": "",
+      "detection": "",
+      "consequences": "Technologies are rarely re-used from one project to the next as IT delivery moves to the next shiny nickel. Each project lays down another technology stratum that increases the cost and complexity of support and creates an integration challenge for future projects.",
+      "cause": "The Shiny Nickel anti-pattern is often caused by lax procurement rules and by a lack of common strategy in IT. Often driven by \"golf-course\" product selection from business and IT, these products go hunting for a solution. Often product procurement takes place independently from projects, which leads to technology decisions on projects being driven by a desire to minimise shelfware.",
+      "solution": "Fixing the shiny nickel is about knowing where you want to get to. It means defining what you want your architecture and enterprise to look like in a few years, and understanding the steps, standards and therefore technologies that will take you there. It also means getting a grip on IT procurement so decisions are ratified against the roadmap.",
+      "example": "Introducing an ESB for 2 services that have no translation or routing requirements.",
+      "sources": [
+        "@misc{Jones2006, title = {{SOA anti-patterns}}, year = {2006}, booktitle = {InfoQ}, author = {Jones, Steve}, url = {https://www.infoq.com/articles/SOA-anti-patterns} }"
+      ],
+      "tags": [
+        "soa",
+        "application"
+      ],
+      "relatedItems": [
+        {
+          "relation": "",
+          "name": ""
+        }
+      ]
+    }
+  ]
+}

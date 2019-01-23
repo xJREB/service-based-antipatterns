@@ -3,18 +3,20 @@
     {
       "name": "Duplicated Service",
       "aliases": [
-        "Duplicated Web Service"
+        "Duplicated Web Service",
+        "Too many Cooks in the SOA"
       ],
       "description": "Services with highly similar functionalities.",
       "context": "",
       "detection": "There might exist common or identical operations with the same names and–or message parameters.",
-      "consequences": "",
+      "consequences": "Projects are more interested in building services than in re-using them; the numbers of services proliferates while the amount of functionality increases slowly. A culture of build and expose becomes endemic and the enterprise becomes a mess of services all attempting to do the same thing.",
       "cause": "",
       "solution": "",
       "example": "",
       "sources": [
         "@article{Palma2014b, author={Palma, Francis and Moha, Naouel and Tremblay, Guy and Gu{\\'e}h{\\'e}neuc, Yann-Ga{\\\"e}l}, doi = {10.1007/978-3-319-09970-5_6}, isbn = {9783319099699}, issn = {16113349}, journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages = {58--73}, title = {{Specification and detection of SOA antipatterns in web services}}, volume = {8627 LNCS}, year = {2014}}",
-        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}"
+        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}",
+        "@misc{Jones2006, title = {{SOA anti-patterns}}, year = {2006}, booktitle = {InfoQ}, author = {Jones, Steve}, url = {https://www.infoq.com/articles/SOA-anti-patterns} }"
       ],
       "tags": [
         "microservices",
