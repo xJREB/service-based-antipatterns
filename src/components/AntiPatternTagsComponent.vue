@@ -10,32 +10,36 @@
             This website serves as a knowledge base for Service-Based Antipatterns
             and has been created due to a study project at the University of Stuttgart.
         </v-card-text>
-        <v-subheader>Context</v-subheader>
-        <v-list-tile v-for="tag in filterContext" :key="tag">
-            <v-list-tile-action>
-                <v-checkbox v-model="value.tags.selectionContext" :value="tag"></v-checkbox>
-            </v-list-tile-action>
+        <v-subheader>Architectural Style</v-subheader>
+        <v-list dense>
+            <v-list-tile v-for="tag in filterContext" :key="tag">
+                <v-list-tile-action>
+                    <v-checkbox v-model="value.tags.selectionContext" :value="tag"></v-checkbox>
+                </v-list-tile-action>
 
-            <v-list-tile-content>
-                <v-chip label>
-                    <v-icon left>label</v-icon>
-                    <v-list-tile-title>{{ tag }}</v-list-tile-title>
-                </v-chip>
-            </v-list-tile-content>
-        </v-list-tile>
+                <v-list-tile-content>
+                    <v-chip label>
+                        <v-icon left>label</v-icon>
+                        <v-list-tile-title>{{ tag }}</v-list-tile-title>
+                    </v-chip>
+                </v-list-tile-content>
+            </v-list-tile>
+        </v-list>
         <v-subheader>Category</v-subheader>
-        <v-list-tile v-for="tag in filterCategories" :key="tag">
-            <v-list-tile-action>
-                <v-checkbox v-model="value.tags.selectionCategory" :value="tag"></v-checkbox>
-            </v-list-tile-action>
+        <v-list dense>
+            <v-list-tile v-for="tag in filterCategories" :key="tag">
+                <v-list-tile-action>
+                    <v-checkbox v-model="value.tags.selectionCategory" :value="tag"></v-checkbox>
+                </v-list-tile-action>
 
-            <v-list-tile-content>
-                <v-chip label>
-                    <v-icon left>label</v-icon>
-                    <v-list-tile-title>{{ tag }}</v-list-tile-title>
-                </v-chip>
-            </v-list-tile-content>
-        </v-list-tile>
+                <v-list-tile-content>
+                    <v-chip label>
+                        <v-icon left>label</v-icon>
+                        <v-list-tile-title>{{ tag }}</v-list-tile-title>
+                    </v-chip>
+                </v-list-tile-content>
+            </v-list-tile>
+        </v-list>
         <v-subheader>Tags</v-subheader>
         <v-list dense>
             <v-list-tile>

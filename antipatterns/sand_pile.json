@@ -19,9 +19,8 @@
       "tags": [
         "soa",
         "architecture",
-        "system",
         "cohesion",
-        "dependency"
+        "coupling"
       ],
       "relatedItems": [
       ]
