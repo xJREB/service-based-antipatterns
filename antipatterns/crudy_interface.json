@@ -3,12 +3,12 @@
     {
       "name": "CRUDy Interface",
       "aliases": [
-        ""
+        "Maybe It is Not RPC"
       ],
-      "description": "An RPC-like behaviour is used to design create, read, update and delete (CRUD) operations as service interfaces which can result in chatty API interactions.",
+      "description": "An RPC-like behaviour is used to design create, read, update and delete (CRUD) operations as service interfaces which can result in chatty API interactions and poor system performance.",
       "context": "",
       "detection": "",
-      "consequences": "If several CRUD operations are necessary for the completion of one abstraction, this can lead to chatty API interaction, because multiple methods need to be invoked to achieve one goal.",
+      "consequences": "If several CRUD operations are necessary for the completion of one abstraction, this can lead to chatty API interaction, because multiple methods need to be invoked to achieve one goal. This can be especially harmful when synchronous requests are chained together.",
       "cause": "",
       "solution": "CRUD operations should not be exposed via interfaces. Instead, a more coarse-grained operation should be created to fulfill an abstraction.",
       "example": "create_X(), read_Y()",
@@ -26,10 +26,6 @@
         {
           "relation": "relates",
           "name": "Chatty Service"
-        },
-        {
-          "relation": "relates",
-          "name": "Maybe It is Not RPC"
         },
         {
           "relation": "precedes",
