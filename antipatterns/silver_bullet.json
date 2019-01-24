@@ -5,7 +5,7 @@
       "aliases": [
         "Web Services Will Fix Our Problems"
       ],
-      "description": "Web services are used to solve a problem on top of an existing architecture, even though they are not really fitting for this problem.",
+      "description": "Services are used to solve a problem on top of an existing architecture, even though they are not really fitting for this problem.",
       "context": "",
       "detection": "The system involves not only web services, but also other architectural paradigms and styles.",
       "consequences": "Using web services for such a problem either causes significant refactoring efforts or an additional maintenance overhead if functionality is just copied. Web services created in this way are also hard to reuse, because they were built for this specific purpose.",
@@ -27,6 +27,10 @@
         {
           "relation": "relates",
           "name": "Nothing New"
+        },
+        {
+          "relation": "relates",
+          "name": "The Shiny Nickel"
         }
       ]
     }

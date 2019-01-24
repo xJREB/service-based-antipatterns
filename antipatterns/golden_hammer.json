@@ -28,6 +28,10 @@
           {
             "relation": "relates",
             "name": "Nothing New"
+          },
+          {
+            "relation": "relates",
+            "name": "The Shiny Nickel"
           }
       ]
     }
