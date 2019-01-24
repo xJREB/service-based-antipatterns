@@ -29,7 +29,11 @@ module.exports = {
                     to: './assets/[name].[ext]'
                 },
                 {
-                    from: './assets/sources.json',
+                    from: './slr/*.md',
+                    to: './assets/[name].[ext]'
+                },
+                {
+                    from: './assets/*.json',
                     to: './assets/[name].[ext]'
                 }
             ])
