@@ -35,5 +35,5 @@ module.exports = {
             ])
         ]
     },
-    baseUrl: process.env.NODE_ENV === 'production' ? '/service-based-antipatterns/' : '/service-based-antipatterns/'
+    publicPath: process.env.NODE_ENV === 'production' ? '/service-based-antipatterns/' : '/service-based-antipatterns/'
 };
