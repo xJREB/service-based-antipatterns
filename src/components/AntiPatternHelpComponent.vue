@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card min-width="0">
         <v-toolbar class="secondary" card dark extended>
             <font-awesome-icon size="2x" :icon="['far', 'question-circle']"></font-awesome-icon>
             <v-toolbar-title>About Service-Based Antipatterns</v-toolbar-title>
