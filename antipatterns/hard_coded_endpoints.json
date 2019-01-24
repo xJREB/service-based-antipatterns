@@ -3,14 +3,15 @@
     {
       "name": "Hard-Coded Endpoints",
       "aliases": [
+        "Hardcoded IPs and Ports",
         "Point to Point Web Services"
       ],
-      "description": "Hardcoded IP addresses and ports of the services between connected microservices exist. Also proposed as Hardcoded IPs and Ports.",
+      "description": "Hardcoded IP addresses and ports are used to define endpoints of required services.",
       "context": "",
       "detection": "",
-      "consequences": "Microservices connected with hardcoded endpoints lead to problems when their locations need to be changed.",
+      "consequences": "Services connected via hardcoded endpoints may cause unnecessary amounts of effort when service locations or the number of service instances frequently changes.",
       "cause": "",
-      "solution": "Adopt a service discovery approach.",
+      "solution": "Adopt a dynamic service discovery approach via the service registry pattern.",
       "example": "",
       "sources": [
         "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}, doi={10.1109/ms.2018.2141031}}",

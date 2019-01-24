@@ -5,12 +5,12 @@
       "aliases": [
         "Percolating Process"
       ],
-      "description": "This antipattern describes a chain of service calls which is needed to fulfill goals of the services.",
-      "context": "Multiple services that call each other to fulfill their goals.",
+      "description": "A chain of service calls fulfills common functionality.",
+      "context": "Multiple services exist that call each other sequentially to fulfill an abstraction or business process.",
       "detection": "",
-      "consequences": "",
-      "cause": "The organisation has decided to map the processes and end to end and in detail; the work has created a series of grand \"end to end\" process models that are categorised by their large number of steps and the lack of sub-processes that they use. Once this exercise has been done to a great level of detail it is decided to make it SOA. The problem is that the valid business services have not been identified and thus the process maps have been created without a proper service structure. This makes identifying valid services a tricky process particularly when looking for cross-functional or horizontal services.",
-      "solution": "The first resolution is to independently of the process map create your services architecture. This will provide the structure for breaking down the processes and creating a clear hierarchy of use. Next, this service architecture should be over-laid onto the process map to understand where the cuts should be made. The current solutions can then be refactored to create a more service oriented solution by attacking the major inflexibilities in the system and then looking towards incremental change of the current systems.",
+      "consequences": "Such a chain may slow down performance and reduces the availability of the chained abstraction. It may also be harder to change the abstraction, especially with respect to the invocation order of services.",
+      "cause": "The organisation may have created a detailed map of processes, which resulted in a series of grand \"end to end\" process models that are categorised by their large number of steps and a lack of sub-processes. However, no valid business services have been identified and thus the process maps have been created without a proper service structure. This makes identifying valid services a tricky process, especially when looking for cross-functional or horizontal services.",
+      "solution": "The first resolution is to create the services architecture independently of the process map. This will provide a structure for breaking down processes and creating a clear hierarchy of use. Next, this service architecture should be compared with the process map to understand where the cuts should be made. The current system can then be incrementally refactored to create a more service-oriented solution by attacking major inflexibilities in the system.",
       "example": "",
       "sources": [
         "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}}",

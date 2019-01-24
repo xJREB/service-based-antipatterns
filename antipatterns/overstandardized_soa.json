@@ -4,14 +4,14 @@
       "name": "Overstandardized SOA",
       "aliases": [
         "Standardization Paralysis",
-        "Vendor-Lock-In"
+        "Vendor Lock-In"
       ],
-      "description": "In SOA there is a tendency to overstandardize the technical domain resulting in many SOA standards and adding additional complexity.",
-      "context": "Standardization is a useful part of any technical domain but most commonly SOA standards are set by large software vendors.",
+      "description": "The usage of diverse proprietary technology leads to many potentially conflicting SOA standards and additional complexity in a system.",
+      "context": "Standardization is a useful part of any technical domain, but SOA standards are commonly set by large software vendors and do not focus on compatibility with other standards.",
       "detection": "",
-      "consequences": "There are many (interdependent) standards that have to be introduced, updated and maintained constantly. Since most commonly these standards are set by large software vendors, the culture of large enterprises is (unintentionally) applied. Users of the standard are also depending on its vendor since the changes that are made to support it are typically very large.",
-      "cause": "Tendency to standardize all the technical aspects and dimensions of SOA. Especially since XML enables an easy transformation of languages to standards.",
-      "solution": "Reduce standards to SOA aspects where they have the greatest effect which can be done by using coarse-grained user knowledge domain oriented interfaces. Vendors should also first specify local standards and assess whether they are useful and based on that publish them as public ISO standards or discard them.",
+      "consequences": "There are many (interdependent) standards that have to be introduced, updated, and maintained. Since these standards are usually set by large software vendors, the culture of large enterprises is (unintentionally) applied. Users of the standards also heavily depend on the vendors.",
+      "cause": "The tendency to standardize all technical aspects and dimensions of SOA leads to such an overstandardization. Moreover, XML enables an easy transformation of languages to standards.",
+      "solution": "Reduce standards to SOA aspects where they have the greatest effect. This can be achieved by using coarse-grained and domain-oriented interfaces. At first, vendors should also specify local standards and assess whether they are useful. Based on that, they should publish them as public standards or discard them.",
       "example": "",
       "sources": [
         "@inproceedings{kral2009popular,author={Kr{\\'a}l, Jaroslav and {\\v{Z}}emlicka, Michal},booktitle={2009 Computation World: Future Computing, Service Computation, Cognitive, Adaptive, Content, Patterns},title={Popular SOA Antipatterns},year={2009},pages={271-276},doi={10.1109/ComputationWorld.2009.80},month={Nov}}",

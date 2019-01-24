@@ -3,22 +3,24 @@
     {
       "name": "Extraneous Adjacent Connector",
       "aliases": [
+        "Redundant PortTypes"
       ],
-      "description": "This antipattern describes that two connectors of different types are used to link a pair of components.",
+      "description": "Two or more connectors of different types are used to link a pair of services. The services therefore offer different port types that may perform similar operations on the same messages.",
       "context": "",
       "detection": "",
-      "consequences": "Using two different types of connectors may cancel the benefit of each one out. Additionally, the adaptability and the understandability are reduced.",
-      "cause": "Can be accidentially introduced by trying to overcome another issue. For example when always the same type of connector was used, but to avoid unnecessary network traffic, it was implemented that one service can adress another service directly.",
-      "solution": "Use e.g. an additional event bus instead of direct access.",
+      "consequences": "Using two different types of connectors may cancel the benefit of each one out. Additionally, adaptability and understandability of the service may be reduced.",
+      "cause": "May be accidentially introduced by trying to solve another issue. For example, one service received an additional connector to adress another service directly to avoid unnecessary network traffic.",
+      "solution": "If a harmonization of protocols and connectors is not possible, one solution is to use an event bus instead of direct access connectors.",
       "example": "Component B can directly access Component A, but they are also connected through an event bus.",
       "sources": [
         "@inproceedings{garcia2009toward, author = {Garcia, Joshua and Popescu, Daniel and Edwards, George and Medvidovic, Nenad}, title = {Toward a Catalogue of Architectural Bad Smells}, booktitle = {Proceedings of the 5th International Conference on the Quality of Software Architectures: Architectures for Adaptive Software Systems}, series = {QoSA '09}, year = {2009}, isbn = {978-3-642-02350-7}, location = {East Stroudsburg, PA, USA}, pages = {146--162}, numpages = {17}, url = {http://dx.doi.org/10.1007/978-3-642-02351-4_10}, doi = {10.1007/978-3-642-02351-4_10}, publisher = {Springer-Verlag}, address = {Berlin, Heidelberg}}",
-        "@inproceedings{de2014architectural, author = {de Andrade, Hugo Sica and Almeida, Eduardo and Crnkovic, Ivica}, year = {2014}, month = {04}, pages = {12}, title = {Architectural bad smells in Software Product Lines: An exploratory study}, journal = {ACM International Conference Proceeding Series}, doi = {10.1145/2578128.2578237}}"
+        "@inproceedings{de2014architectural, author = {de Andrade, Hugo Sica and Almeida, Eduardo and Crnkovic, Ivica}, year = {2014}, month = {04}, pages = {12}, title = {Architectural bad smells in Software Product Lines: An exploratory study}, journal = {ACM International Conference Proceeding Series}, doi = {10.1145/2578128.2578237}}",
+        "@inproceedings{palma2015study, title={A study on the taxonomy of service antipatterns}, author={Palma, Francis and Mohay, Naouel}, booktitle={Patterns Promotion and Anti-patterns Prevention (PPAP), 2015 IEEE 2nd Workshop on}, pages={5--8}, year={2015}, doi={10.1109/PPAP.2015.7076848}}"
       ],
       "tags": [
-        "microservices",
         "soa",
-        "architecture"
+        "architecture",
+        "ambiguity"
       ],
       "relatedItems": [
       ]

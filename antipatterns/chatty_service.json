@@ -5,10 +5,10 @@
       "aliases": [
         "Chatty Web Service"
       ],
-      "description": "A high number of operations are required to complete one abstraction where the operations are typically attribute-level setters or getters.",
+      "description": "A high number of operations is required to complete one abstraction. Such operations are typically attribute-level setters or getters.",
       "context": "",
-      "detection": "A service using this antipattern may have many fine-grained operations.",
-      "consequences": "Maintenance becomes harder since inferring the order of invocation is difficult. Many interactions are required, which degrades the overall performance with higher response time.",
+      "detection": "A chatty service may have many fine-grained operations.",
+      "consequences": "Maintenance becomes harder, like e.g. changing the order of invocations. Many interactions are required, which leads to overall higher response time.",
       "cause": "",
       "solution": "",
       "example": "",

@@ -6,12 +6,12 @@
         "Duplicated Web Service",
         "Too many Cooks in the SOA"
       ],
-      "description": "Services with highly similar functionalities.",
-      "context": "",
-      "detection": "There might exist common or identical operations with the same names and–or message parameters.",
-      "consequences": "Projects are more interested in building services than in re-using them; the numbers of services proliferates while the amount of functionality increases slowly. A culture of build and expose becomes endemic and the enterprise becomes a mess of services all attempting to do the same thing.",
+      "description": "Two or more services with highly similar functionality exist.",
+      "context": "While Microservices usually follow a 'share nothing' philosophy, reuse is a common theme in SOA. Service normalization and consolidation are therefore frequent activities in an SOA to reduce the level of duplication. In Microservices on the other, you consciously allow duplication to exist up to a certain degree, because it reduces coupling and dependencies in your system.",
+      "detection": "Services or operations with similar or identical names and/or message parameters may exist in your system.",
+      "consequences": "Duplicated functionality reduces the level of reuse and may confuse service consumers that cannot identify the service or operation they need. Moreover, if this common functionality changes, it needs to change in all duplicated locations, therefore causing higher maintenance efforts. A culture of 'build and expose' may form where the enterprise becomes a mess of services all attempting to do the same thing.",
       "cause": "",
-      "solution": "",
+      "solution": "Consolidate the duplicate functionality into a single service. If necessary, raise the level of abstraction. Be aware though that this increases coupling in the system and may make the consolidated service a bottleneck or single point of failure.",
       "example": "",
       "sources": [
         "@article{Palma2014b, author={Palma, Francis and Moha, Naouel and Tremblay, Guy and Gu{\\'e}h{\\'e}neuc, Yann-Ga{\\\"e}l}, doi = {10.1007/978-3-319-09970-5_6}, isbn = {9783319099699}, issn = {16113349}, journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, pages = {58--73}, title = {{Specification and detection of SOA antipatterns in web services}}, volume = {8627 LNCS}, year = {2014}}",
@@ -19,7 +19,6 @@
         "@misc{Jones2006, title = {{SOA anti-patterns}}, year = {2006}, booktitle = {InfoQ}, author = {Jones, Steve}, url = {https://www.infoq.com/articles/SOA-anti-patterns} }"
       ],
       "tags": [
-        "microservices",
         "soa",
         "architecture",
         "ambiguity"
@@ -27,7 +26,7 @@
       "relatedItems": [
         {
           "relation": "relates",
-          "name": "Redundant PortTypes"
+          "name": "Extraneous Adjacent Connector"
         }
       ]
     }

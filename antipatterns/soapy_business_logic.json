@@ -5,13 +5,13 @@
       "aliases": [
         "Muddy Tiers"
       ],
-      "description": "This antipattern describes that a service endpoint implements the business logic, but also deals with SOAP/XML processing.",
+      "description": "A service endpoint implements business logic, but also deals with SOAP/XML processing.",
       "context": "",
-      "detection": "There are web services data types or processing tasks that are also implementing business logic. This can be the case if the underlying business logic has methods, that get typical web service implementation arguments, like a javax.activation.DataHandler. Also if the business logic component also processes XML, like XML parsing.",
-      "consequences": "The business logic is not reusable, because it contains web service specific implementation. As consequence there could also be redundant business logic, because it is hard to reuse.",
-      "cause": "One cause could be the inexperience in architecting n-tier solutions. Another one is, if the goal is to implement a specific web service and it is not taken into account which other clients potentially want or need to access the same business logic.",
-      "solution": "A refactoring according to the business delegate pattern is needed. Therefore, on possibility would be to use stateless session beans or java classes to implement the web service. Then these components should dispatch requests to the underlying business logic.",
-      "example": "A stateless session bean is used as implementation component for a web service. The bean directly receives the requests to the web services container. Therefore, the bean has specially to JAX-RPC binding types coupled parameter types. ",
+      "detection": "Web service data types or processing tasks exist that also implement business logic. This can be the case, if the underlying business logic has methods that get typical web service implementation arguments, e.g. 'javax.activation.DataHandler'. Additionally, the business logic component may also process XML parsing.",
+      "consequences": "The business logic is not reusable, because it contains web service specific implementation.",
+      "cause": "One cause could be the inexperience in architecting n-tier solutions. Alternatively, the goal may be to implement a specific web service and it is not taken into account which other clients potentially want to access the same business logic.",
+      "solution": "A refactoring according to the business delegate pattern is needed. Therefore, one possibility would be to use stateless session beans or Java classes to implement the web service. Then these components should dispatch requests to the underlying business logic.",
+      "example": "A stateless session bean is used as implementation component for a web service. The bean directly receives the requests to the web services container and is therefore coupled to the JAX-RPC binding types.",
       "sources": [
         "@book{dudney2003j2ee, title={J2EE antipatterns}, author={Dudney, Bill and Asbury, Stephen and Krozak, Joseph K and Wittkopf, Kevin}, year={2003}, publisher={John Wiley \\& Sons}}"
       ],
@@ -21,7 +21,7 @@
       ],
       "relatedItems": [
         {
-          "relation": "related",
+          "relation": "relates",
           "name": "Connector Envy"
         }
       ]
