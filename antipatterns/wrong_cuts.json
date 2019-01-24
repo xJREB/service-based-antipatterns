@@ -19,7 +19,7 @@
         "microservices",
         "architecture",
         "cohesion",
-        "dependency"
+        "coupling"
       ],
       "relatedItems": [
         {

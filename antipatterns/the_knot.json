@@ -22,7 +22,7 @@
         "soa",
         "architecture",
         "cohesion",
-        "dependency"
+        "coupling"
       ],
       "relatedItems": [
       ]

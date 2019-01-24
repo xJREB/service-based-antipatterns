@@ -20,7 +20,7 @@
         "soa",
         "architecture",
         "abstraction",
-        "dependency"
+        "coupling"
       ],
       "relatedItems": [
         {

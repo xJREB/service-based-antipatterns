@@ -3,24 +3,24 @@
     {
       "name": "Service Chain",
       "aliases": [
-        ""
+        "Percolating Process"
       ],
       "description": "A chain of service calls fulfills common functionality.",
       "context": "Multiple services exist that call each other sequentially to fulfill an abstraction or business process.",
       "detection": "",
       "consequences": "Such a chain may slow down performance and reduces the availability of the chained abstraction. It may also be harder to change the abstraction, especially with respect to the invocation order of services.",
-      "cause": "",
-      "solution": "",
+      "cause": "The organisation may have created a detailed map of processes, which resulted in a series of grand \"end to end\" process models that are categorised by their large number of steps and a lack of sub-processes. However, no valid business services have been identified and thus the process maps have been created without a proper service structure. This makes identifying valid services a tricky process, especially when looking for cross-functional or horizontal services.",
+      "solution": "The first resolution is to create the services architecture independently of the process map. This will provide a structure for breaking down processes and creating a clear hierarchy of use. Next, this service architecture should be compared with the process map to understand where the cuts should be made. The current system can then be incrementally refactored to create a more service-oriented solution by attacking major inflexibilities in the system.",
       "example": "",
       "sources": [
-        "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}}"
+        "@inproceedings{nayrolles2013improving, title={Improving SOA antipatterns detection in Service Based Systems by mining execution traces}, author={Nayrolles, Mathieu and Moha, Naouel and Valtchev, Petko}, booktitle={Reverse Engineering (WCRE), 2013 20th Working Conference on}, pages={321--330}, year={2013}, doi={10.1109/WCRE.2013.6671307}}",
+        "@misc{Jones2006, title = {{SOA anti-patterns}}, year = {2006}, booktitle = {InfoQ}, author = {Jones, Steve}, url = {https://www.infoq.com/articles/SOA-anti-patterns} }"
       ],
       "tags": [
         "microservices",
         "soa",
         "architecture",
-        "system",
-        "dependency"
+        "coupling"
       ],
       "relatedItems": [
         {

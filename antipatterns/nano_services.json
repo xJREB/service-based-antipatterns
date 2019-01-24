@@ -30,8 +30,7 @@
         "microservices",
         "soa",
         "architecture",
-        "system",
-        "dependency",
+        "coupling",
         "abstraction"
       ],
       "relatedItems": [

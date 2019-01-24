@@ -3,7 +3,8 @@
     {
       "name": "Hard-Coded Endpoints",
       "aliases": [
-        "Hardcoded IPs and Ports"
+        "Hardcoded IPs and Ports",
+        "Point to Point Web Services"
       ],
       "description": "Hardcoded IP addresses and ports are used to define endpoints of required services.",
       "context": "",
@@ -13,7 +14,9 @@
       "solution": "Adopt a dynamic service discovery approach via the service registry pattern.",
       "example": "",
       "sources": [
-        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}, doi={10.1109/ms.2018.2141031}}"      ],
+        "@article{taibi2018definition, title={On the Definition of Microservice Bad Smells}, author={Taibi, Davide and Lenarduzzi, Valentina}, journal={IEEE software}, volume={35}, number={3}, pages={56--62}, year={2018}, publisher={IEEE}, doi={10.1109/ms.2018.2141031}}",
+        "@misc{Jones2006, title = {{SOA anti-patterns}}, year = {2006}, booktitle = {InfoQ}, author = {Jones, Steve}, url = {https://www.infoq.com/articles/SOA-anti-patterns} }"
+      ],
       "tags": [
         "microservices",
         "soa",
