@@ -1,5 +1,5 @@
 <template>
-    <v-card>
+    <v-card min-width="0">
         <v-toolbar class="primary darken1" card dark>
             <v-toolbar-title>{{antiPattern.name}}</v-toolbar-title>
             <v-spacer></v-spacer>
