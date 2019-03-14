@@ -8,7 +8,7 @@
         <v-card-text>
             <v-icon>info</v-icon>
             This website serves as a knowledge base for Service-Based Antipatterns
-            and has been created due to a study project at the University of Stuttgart.
+            and has been created in a research project at the University of Stuttgart.
         </v-card-text>
         <v-subheader>Architectural Style</v-subheader>
         <v-list dense>
