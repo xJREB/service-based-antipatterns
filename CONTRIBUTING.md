@@ -38,7 +38,7 @@ npm install
 ## Compiles and hot-reloads for development
 Use this to have a live preview for any changes you make to the code.
 ```bash
-npm run serve
+npm start
 ```
 
 ## Compiles and minifies for production
