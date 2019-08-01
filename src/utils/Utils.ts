@@ -1,15 +1,15 @@
-import {MarkdownFile} from "@/common/markdown-file";
 import {AntiPattern, RelatedAntiPattern} from "@/common/anti-pattern";
 import {Source} from "@/common/bibliography";
+import {MarkdownFile} from "@/common/markdown-file";
 
 export default class Utils {
 
     public static get context() {
-        return ['microservices', 'soa'];
+        return ["microservices", "soa"];
     }
 
     public static get category() {
-        return ['business', 'application', 'architecture'];
+        return ["business", "application", "architecture"];
     }
 
     public static cleanString(stringToClean: string) {
@@ -36,7 +36,7 @@ export default class Utils {
                         const relatedAntipattern = {
                             relation: relatedItem.relation,
                             name: relatedAntipatternName.name,
-                            description: relatedAntipatternName.description,
+                            description: relatedAntipatternName.description
                         } as RelatedAntiPattern;
                         if (antiPattern.relatedAntiPatterns.filter(
                             (p) => p.name === relatedAntipattern.name).length === 0) {

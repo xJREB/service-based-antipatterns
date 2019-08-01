@@ -40,40 +40,40 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue} from 'vue-property-decorator';
-    import {AntiPattern} from '@/common/anti-pattern';
-    import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
-    import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
-    import {RawLocation} from "vue-router";
+import {AntiPattern} from "@/common/anti-pattern";
+import {Component, Prop, Vue} from "vue-property-decorator";
+import {RawLocation} from "vue-router";
+import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
+import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
 
-    @Component({
-        components: {
-            AntiPatternCitationsComponent,
-            AntiPatternActionsComponent,
-        },
-    })
-    export default class AntiPatternRelatedComponent extends Vue {
-        @Prop(Array) public relatedAntiPatterns!: AntiPattern[];
-        private panel: number | null = null;
-
-        public getDynamicPrimaryHeaderClass(name: string) {
-            return {
-                'primary': this.isRelatedAntiPatternSelected(name),
-                'white--text': this.isRelatedAntiPatternSelected(name),
-            };
-        }
-
-        public getDynamicWhiteTextClass(name: string) {
-            return {'white--text': this.isRelatedAntiPatternSelected(name)};
-        }
-
-        public isRelatedAntiPatternSelected(name: string) {
-            return this.panel === this.relatedAntiPatterns.map((antiPattern) => antiPattern.name).indexOf(name);
-        }
-
-        public openAntiPattern(antiPatternName: string) {
-            this.$router.push({name: 'home', query: {antipattern: antiPatternName}} as RawLocation);
-            location.reload();
-        }
+@Component({
+    components: {
+        AntiPatternCitationsComponent,
+        AntiPatternActionsComponent
     }
+})
+export default class AntiPatternRelatedComponent extends Vue {
+    @Prop(Array) public relatedAntiPatterns!: AntiPattern[];
+    private panel: number | null = null;
+
+    public getDynamicPrimaryHeaderClass(name: string) {
+        return {
+            "primary": this.isRelatedAntiPatternSelected(name),
+            "white--text": this.isRelatedAntiPatternSelected(name)
+        };
+    }
+
+    public getDynamicWhiteTextClass(name: string) {
+        return {"white--text": this.isRelatedAntiPatternSelected(name)};
+    }
+
+    public isRelatedAntiPatternSelected(name: string) {
+        return this.panel === this.relatedAntiPatterns.map((antiPattern) => antiPattern.name).indexOf(name);
+    }
+
+    public openAntiPattern(antiPatternName: string) {
+        this.$router.push({name: "home", query: {antipattern: antiPatternName}} as RawLocation);
+        location.reload();
+    }
+}
 </script>

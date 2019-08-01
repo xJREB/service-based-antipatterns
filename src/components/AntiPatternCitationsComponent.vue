@@ -21,42 +21,42 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue} from 'vue-property-decorator';
-    import {BibliographyFormat, BibliographyTemplate} from "@/common/bibliography";
-    import Cite from 'citation-js';
+import {BibliographyFormat, BibliographyTemplate} from "@/common/bibliography";
+import Cite from "citation-js";
+import {Component, Prop, Vue} from "vue-property-decorator";
 
-    @Component
-    export default class AntiPatternDetailComponent extends Vue {
-        @Prop(Array) public sources!: string[];
-        public bibliographyTemplates = BibliographyTemplate;
-        public bibliographyFormat = BibliographyFormat;
+@Component
+export default class AntiPatternDetailComponent extends Vue {
+    @Prop(Array) public sources!: string[];
+    public bibliographyTemplates = BibliographyTemplate;
+    public bibliographyFormat = BibliographyFormat;
 
-        public getFormatted(bibtex: string, format: string, template: keyof typeof BibliographyTemplate) {
-            if (BibliographyTemplate[template] === BibliographyTemplate.BIBTEX) {
-                return new Cite(bibtex).format('bibtex', {
-                    format,
-                });
-            } else {
-                return new Cite(bibtex).format('bibliography', {
-                    format,
-                    template: template.toString().toLowerCase().replace(/_/g, '-'),
-                    lang: 'en-US',
-                });
-            }
-        }
-
-        public onCopySuccess(key: keyof typeof BibliographyTemplate): void {
-            this.$toasted.info(BibliographyTemplate[key] + ' was copied successfully');
-        }
-
-        public onCopyError(key: keyof typeof BibliographyTemplate): void {
-            this.$toasted.error('Error copying ' + BibliographyTemplate[key]);
-        }
-
-        public copy(message: string, key: keyof typeof BibliographyTemplate) {
-            (this as any).$copyText(message).then(() => this.onCopySuccess(key), () => this.onCopyError(key));
+    public getFormatted(bibtex: string, format: string, template: keyof typeof BibliographyTemplate) {
+        if (BibliographyTemplate[template] === BibliographyTemplate.BIBTEX) {
+            return new Cite(bibtex).format("bibtex", {
+                format
+            });
+        } else {
+            return new Cite(bibtex).format("bibliography", {
+                format,
+                template: template.toString().toLowerCase().replace(/_/g, "-"),
+                lang: "en-US"
+            });
         }
     }
+
+    public onCopySuccess(key: keyof typeof BibliographyTemplate): void {
+        this.$toasted.info(BibliographyTemplate[key] + " was copied successfully");
+    }
+
+    public onCopyError(key: keyof typeof BibliographyTemplate): void {
+        this.$toasted.error("Error copying " + BibliographyTemplate[key]);
+    }
+
+    public copy(message: string, key: keyof typeof BibliographyTemplate) {
+        (this as any).$copyText(message).then(() => this.onCopySuccess(key), () => this.onCopyError(key));
+    }
+}
 </script>
 
 <style>
