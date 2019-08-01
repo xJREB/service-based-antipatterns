@@ -1,5 +1,5 @@
+import Color from "color";
 import {AntiPattern} from "../common/anti-pattern";
-import Color from 'color';
 
 export default class EvidenceUtils {
 
@@ -9,7 +9,7 @@ export default class EvidenceUtils {
         0: [1, EvidenceUtils.evidenceLabels[0]],
         1: [3, EvidenceUtils.evidenceLabels[1]],
         2: [10, EvidenceUtils.evidenceLabels[2]],
-        3: [20, EvidenceUtils.evidenceLabels[3]],
+        3: [20, EvidenceUtils.evidenceLabels[3]]
     };
 
     public static getReferenceEvidenceColor(antiPattern: AntiPattern, color: string): string {

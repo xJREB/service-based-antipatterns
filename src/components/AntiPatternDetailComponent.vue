@@ -86,34 +86,34 @@
 </template>
 
 <script lang="ts">
-    import {Component, Emit, Prop, Vue} from 'vue-property-decorator';
-    import {AntiPattern} from '@/common/anti-pattern';
-    import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
-    import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
-    import AntiPatternRelatedComponent from "@/components/AntiPatternRelatedComponent.vue";
-    import EvidenceUtils from "../utils/EvidenceUtils";
+import {AntiPattern} from "@/common/anti-pattern";
+import AntiPatternRelatedComponent from "@/components/AntiPatternRelatedComponent.vue";
+import {Component, Emit, Prop, Vue} from "vue-property-decorator";
+import EvidenceUtils from "../utils/EvidenceUtils";
+import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
+import AntiPatternCitationsComponent from "./AntiPatternCitationsComponent.vue";
 
-    @Component({
-        components: {
-            AntiPatternRelatedComponent,
-            AntiPatternCitationsComponent,
-            AntiPatternActionsComponent,
-        },
-    })
-    export default class AntiPatternDetailComponent extends Vue {
-        @Prop(Object) public antiPattern!: AntiPattern;
-
-        @Emit('input')
-        public closeDialog() {
-            return false;
-        }
-
-        public get referenceEvidenceColor(): string {
-            return EvidenceUtils.getReferenceEvidenceColor(this.antiPattern, this.$vuetify.theme.secondary.toString());
-        }
-
-        public get referenceEvidenceLabel(): string {
-            return EvidenceUtils.getReferenceEvidenceLabel(this.antiPattern);
-        }
+@Component({
+    components: {
+        AntiPatternRelatedComponent,
+        AntiPatternCitationsComponent,
+        AntiPatternActionsComponent
     }
+})
+export default class AntiPatternDetailComponent extends Vue {
+    @Prop(Object) public antiPattern!: AntiPattern;
+
+    @Emit("input")
+    public closeDialog() {
+        return false;
+    }
+
+    public get referenceEvidenceColor(): string {
+        return EvidenceUtils.getReferenceEvidenceColor(this.antiPattern, this.$vuetify.theme.secondary.toString());
+    }
+
+    public get referenceEvidenceLabel(): string {
+        return EvidenceUtils.getReferenceEvidenceLabel(this.antiPattern);
+    }
+}
 </script>

@@ -33,24 +33,24 @@
 </template>
 
 <script lang="ts">
-    import {Component, Emit, Prop, Vue} from 'vue-property-decorator';
-    import {MarkdownFile} from "@/common/markdown-file";
-    import Utils from "@/utils/Utils";
+import {MarkdownFile} from "@/common/markdown-file";
+import Utils from "@/utils/Utils";
+import {Component, Emit, Prop, Vue} from "vue-property-decorator";
 
-    @Component
-    export default class AntiPatternDetailComponent extends Vue {
-        @Prop(Array) public files!: MarkdownFile[];
-        private tab: number = 0;
+@Component
+export default class AntiPatternDetailComponent extends Vue {
+    @Prop(Array) public files!: MarkdownFile[];
+    private tab: number = 0;
 
-        public get sortedFiles() {
-            return this.files.sort(Utils.sortMarkdownFiles);
-        }
-
-        @Emit('input')
-        public closeDialog() {
-            return false;
-        }
+    public get sortedFiles() {
+        return this.files.sort(Utils.sortMarkdownFiles);
     }
+
+    @Emit("input")
+    public closeDialog() {
+        return false;
+    }
+}
 </script>
 <style>
     .help-dialog {

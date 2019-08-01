@@ -25,43 +25,43 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
-    import {AntiPattern} from '../common/anti-pattern';
-    import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
-    import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
-    import EvidenceUtils from "../utils/EvidenceUtils";
+import {Component, Prop, Vue, Watch} from "vue-property-decorator";
+import {AntiPattern} from "../common/anti-pattern";
+import EvidenceUtils from "../utils/EvidenceUtils";
+import AntiPatternActionsComponent from "./AntiPatternActionsComponent";
+import AntiPatternDetailComponent from "./AntiPatternDetailComponent";
 
-    @Component({
-        components: {
-            AntiPatternActionsComponent,
-            AntiPatternDetailComponent,
-        },
-    })
-    export default class AntiPatternCardComponent extends Vue {
-        @Prop(Object) public antiPattern!: AntiPattern;
-        public dialog: boolean = false;
+@Component({
+    components: {
+        AntiPatternActionsComponent,
+        AntiPatternDetailComponent
+    }
+})
+export default class AntiPatternCardComponent extends Vue {
+    @Prop(Object) public antiPattern!: AntiPattern;
+    public dialog: boolean = false;
 
-        public get referenceEvidenceColor(): string {
-            return EvidenceUtils.getReferenceEvidenceColor(this.antiPattern, this.$vuetify.theme.secondary.toString());
-        }
+    public get referenceEvidenceColor(): string {
+        return EvidenceUtils.getReferenceEvidenceColor(this.antiPattern, this.$vuetify.theme.secondary.toString());
+    }
 
-        @Watch('router', {immediate: true, deep: true})
-        public beforeRouteUpdate(to: any, from: any) {
-            if (this.$route.query.antipattern === this.antiPattern.name) {
-                this.dialog = true;
-            }
-        }
-
-        @Watch('dialog')
-        public onDialogUpdate(newValue: boolean, oldValue: boolean) {
-            if (newValue) {
-                this.$router.push({
-                    name: 'home',
-                    query: {antipattern: this.antiPattern!.name!},
-                });
-            } else {
-                this.$router.push({name: 'home'});
-            }
+    @Watch("router", {immediate: true, deep: true})
+    public beforeRouteUpdate(to: any, from: any) {
+        if (this.$route.query.antipattern === this.antiPattern.name) {
+            this.dialog = true;
         }
     }
+
+    @Watch("dialog")
+    public onDialogUpdate(newValue: boolean, oldValue: boolean) {
+        if (newValue) {
+            this.$router.push({
+                name: "home",
+                query: {antipattern: this.antiPattern!.name!}
+            });
+        } else {
+            this.$router.push({name: "home"});
+        }
+    }
+}
 </script>

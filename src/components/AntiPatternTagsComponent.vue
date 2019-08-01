@@ -79,44 +79,44 @@
 </template>
 
 <script lang="ts">
-    import {Component, Prop, Vue, Watch} from 'vue-property-decorator';
-    import {Sidebar} from "../common/sidebar";
-    import Utils from "@/utils/Utils";
-    import EvidenceUtils from "@/utils/EvidenceUtils";
+import EvidenceUtils from "@/utils/EvidenceUtils";
+import Utils from "@/utils/Utils";
+import {Component, Prop, Vue, Watch} from "vue-property-decorator";
+import {Sidebar} from "../common/sidebar";
 
-    @Component
-    export default class AntiPatternTagsComponent extends Vue {
-        @Prop(Object) public value!: Sidebar;
-        @Prop(Array) public tags!: string[];
-        private allTagsEnabled: boolean = false;
-        private ticksLabels = EvidenceUtils.evidenceLabels;
+@Component
+export default class AntiPatternTagsComponent extends Vue {
+    @Prop(Object) public value!: Sidebar;
+    @Prop(Array) public tags!: string[];
+    private allTagsEnabled: boolean = false;
+    private ticksLabels = EvidenceUtils.evidenceLabels;
 
-        @Watch('value.tags.selection')
-        private selectionChange() {
-            this.allTagsEnabled = this.value.tags.selection.length === this.tags.length;
-        }
+    @Watch("value.tags.selection")
+    private selectionChange() {
+        this.allTagsEnabled = this.value.tags.selection.length === this.tags.length;
+    }
 
-        private toggleTags() {
-            if (!this.allTagsEnabled) {
-                this.value.tags.selection = [];
-            } else {
-                this.value.tags.selection = this.otherTags;
-            }
-        }
-
-        private get filterContext() {
-            return this.tags.filter((tag) => Utils.context.includes(tag)).sort().reverse();
-        }
-
-        private get filterCategories() {
-            return this.tags.filter((tag) => Utils.category.includes(tag)).sort().reverse();
-        }
-
-        private get otherTags() {
-            return this.tags.filter((tag) => !this.filterContext.includes(tag)
-                && !this.filterCategories.includes(tag)).sort();
+    private toggleTags() {
+        if (!this.allTagsEnabled) {
+            this.value.tags.selection = [];
+        } else {
+            this.value.tags.selection = this.otherTags;
         }
     }
+
+    private get filterContext() {
+        return this.tags.filter((tag) => Utils.context.includes(tag)).sort().reverse();
+    }
+
+    private get filterCategories() {
+        return this.tags.filter((tag) => Utils.category.includes(tag)).sort().reverse();
+    }
+
+    private get otherTags() {
+        return this.tags.filter((tag) => !this.filterContext.includes(tag)
+            && !this.filterCategories.includes(tag)).sort();
+    }
+}
 </script>
 <style lang="sass">
     @import "../colors"
