@@ -8,10 +8,12 @@
                 <v-card-text
                         v-for="bibtexSource in sources" :key="bibtexSource">
                     <v-tooltip top>
-                        <div slot="activator" :style="{ cursor: 'pointer'}"
-                             v-html="getFormatted(bibtexSource, bibliographyFormat.HTML, key)"
-                             @click="copy(getFormatted(bibtexSource, bibliographyFormat.TEXT, key), key)">
-                        </div>
+                        <template v-slot:activator="{ on }">
+                            <div v-on="on" :style="{ cursor: 'pointer'}"
+                                v-html="getFormatted(bibtexSource, bibliographyFormat.HTML, key)"
+                                @click="copy(getFormatted(bibtexSource, bibliographyFormat.TEXT, key), key)">
+                            </div>
+                        </template>
                         <span>Click to copy single source</span>
                     </v-tooltip>
                 </v-card-text>
