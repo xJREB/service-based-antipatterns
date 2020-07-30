@@ -1,35 +1,33 @@
-  
 name: Build and Publish Static Site
 
 on: [push]
 
 jobs:
-  buildStaticSite:
+    buildStaticSite:
+        runs-on: ubuntu-latest
 
-    runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [14.x]
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
-    steps:
-    - name: Checkout repo
-      uses: actions/checkout@v1
-    - name: Setup Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
-      run: npm install
-    - name: Build
-      run: npm run build
-    - name: Sonarqube
-      run: npm run sonar
-    - name: Deploy to GitHub pages
-      if: success()
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./dist
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v1
+            - name: Setup Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+            - name: Install dependencies
+              run: npm install
+            - name: Build
+              run: npm run build
+            - name: Sonarqube
+              run: npm run sonar
+            - name: Deploy to GitHub pages
+              if: success()
+              uses: peaceiris/actions-gh-pages@v2
+              env:
+                  GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+                  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+                  PUBLISH_BRANCH: gh-pages
+                  PUBLISH_DIR: ./dist
