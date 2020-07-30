@@ -1,0 +1,60 @@
+{
+  "sources": [
+    {
+      "citeKey": "garcia2009toward",
+      "citedBy": 61
+    },
+    {
+      "citeKey": "de2014architectural",
+      "citedBy": 17
+    },
+    {
+      "citeKey": "Palma2014b",
+      "citedBy": 27
+    },
+    {
+      "citeKey": "ouni2015web",
+      "citedBy": 21
+    },
+    {
+      "citeKey": "ouni2017search",
+      "citedBy": 29
+    },
+    {
+      "citeKey": "palma2015study",
+      "citedBy": 2
+    },
+    {
+      "citeKey": "taibi2018definition",
+      "citedBy": 12
+    },
+    {
+      "citeKey": "kral2009popular",
+      "citedBy": 24
+    },
+    {
+      "citeKey": "nayrolles2013improving",
+      "citedBy": 14
+    },
+    {
+      "citeKey": "kral2007most",
+      "citedBy": 19
+    },
+    {
+      "citeKey": "dudney2003j2ee",
+      "citedBy": 115
+    },
+    {
+      "citeKey": "richards2016microservices",
+      "citedBy": 13
+    },
+    {
+      "citeKey": "rotem2012soa",
+      "citedBy": 87
+    },
+    {
+      "citeKey": "Jones2006",
+      "citedBy": 4
+    }
+  ]
+}
