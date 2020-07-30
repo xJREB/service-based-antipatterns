@@ -2,21 +2,27 @@
     <v-card-actions>
         <v-layout justify-end>
             <v-tooltip top>
-                <v-btn slot="activator" icon @click="copy(antiPatternAsJson, 'JSON file')">
-                    <v-icon>content_copy</v-icon>
-                </v-btn>
+                <template v-slot:activator="{ on }">
+                    <v-btn v-on="on" icon @click="copy(antiPatternAsJson, 'JSON file')">
+                        <v-icon>content_copy</v-icon>
+                    </v-btn>
+                </template>
                 <span>Copy the json file</span>
             </v-tooltip>
             <v-tooltip top>
-                <v-btn slot="activator" icon @click="copy(bibTextCopy, 'BibTex')">
-                    <v-icon>format_quote</v-icon>
-                </v-btn>
+                <template v-slot:activator="{ on }">
+                    <v-btn v-on="on" icon @click="copy(bibTextCopy, 'BibTex')">
+                        <v-icon>format_quote</v-icon>
+                    </v-btn>
+                </template>
                 <span>Copy the BibTex source</span>
             </v-tooltip>
             <v-tooltip top>
-                <v-btn slot="activator" icon @click="copy(shareLink, 'Link')">
-                    <v-icon>share</v-icon>
-                </v-btn>
+                <template v-slot:activator="{ on }">
+                    <v-btn v-on="on" icon @click="copy(shareLink, 'Link')">
+                        <v-icon>share</v-icon>
+                    </v-btn>
+                </template>
                 <span>Copy the link to this antipattern to the clipboard</span>
             </v-tooltip>
         </v-layout>

@@ -1,70 +1,70 @@
 <template>
     <v-navigation-drawer clipped app v-model="value.drawer">
-        <v-toolbar dark clipped-left class="primary hidden-lg-and-up">
+        <v-app-bar dark clipped-left class="primary hidden-lg-and-up">
             <span class="title">Service-Based Antipatterns</span>
             <v-spacer></v-spacer>
-            <v-toolbar-side-icon @click.native="value.drawer = !value.drawer"></v-toolbar-side-icon>
-        </v-toolbar>
+            <v-app-bar-nav-icon @click.native="value.drawer = !value.drawer"></v-app-bar-nav-icon>
+        </v-app-bar>
         <v-card-text>
             <v-icon>info</v-icon>
             This website serves as a knowledge base for Service-Based Antipatterns
             and has been created in a research project at the University of Stuttgart.
         </v-card-text>
-        <v-subheader>Architectural Style</v-subheader>
         <v-list dense>
-            <v-list-tile v-for="tag in filterContext" :key="tag">
-                <v-list-tile-action>
+            <v-subheader>Architectural Style</v-subheader>
+            <v-list-item v-for="tag in filterContext" :key="tag">
+                <v-list-item-action>
                     <v-checkbox v-model="value.tags.selectionContext" :value="tag"></v-checkbox>
-                </v-list-tile-action>
+                </v-list-item-action>
 
-                <v-list-tile-content>
+                <v-list-item-content>
                     <v-chip label>
                         <v-icon left>label</v-icon>
-                        <v-list-tile-title>{{ tag }}</v-list-tile-title>
+                        <v-list-item-title>{{ tag }}</v-list-item-title>
                     </v-chip>
-                </v-list-tile-content>
-            </v-list-tile>
+                </v-list-item-content>
+            </v-list-item>
         </v-list>
-        <v-subheader>Category</v-subheader>
         <v-list dense>
-            <v-list-tile v-for="tag in filterCategories" :key="tag">
-                <v-list-tile-action>
+            <v-subheader>Category</v-subheader>
+            <v-list-item v-for="tag in filterCategories" :key="tag">
+                <v-list-item-action>
                     <v-checkbox v-model="value.tags.selectionCategory" :value="tag"></v-checkbox>
-                </v-list-tile-action>
+                </v-list-item-action>
 
-                <v-list-tile-content>
+                <v-list-item-content>
                     <v-chip label>
                         <v-icon left>label</v-icon>
-                        <v-list-tile-title>{{ tag }}</v-list-tile-title>
+                        <v-list-item-title>{{ tag }}</v-list-item-title>
                     </v-chip>
-                </v-list-tile-content>
-            </v-list-tile>
+                </v-list-item-content>
+            </v-list-item>
         </v-list>
-        <v-subheader>Tags</v-subheader>
         <v-list dense>
-            <v-list-tile>
-                <v-list-tile-action>
+            <v-subheader>Tags</v-subheader>
+            <v-list-item>
+                <v-list-item-action>
                     <v-checkbox v-model="allTagsEnabled" @change="toggleTags"></v-checkbox>
-                </v-list-tile-action>
-                <v-list-tile-content>
+                </v-list-item-action>
+                <v-list-item-content>
                     <v-chip label>
                         <v-icon left>label</v-icon>
-                        <v-list-tile-title>All</v-list-tile-title>
+                        <v-list-item-title>All</v-list-item-title>
                     </v-chip>
-                </v-list-tile-content>
-            </v-list-tile>
-            <v-list-tile v-for="tag in otherTags" :key="tag">
-                <v-list-tile-action>
+                </v-list-item-content>
+            </v-list-item>
+            <v-list-item v-for="tag in otherTags" :key="tag">
+                <v-list-item-action>
                     <v-checkbox v-model="value.tags.selection" :value="tag"></v-checkbox>
-                </v-list-tile-action>
+                </v-list-item-action>
 
-                <v-list-tile-content>
+                <v-list-item-content>
                     <v-chip label>
                         <v-icon left>label</v-icon>
-                        <v-list-tile-title>{{ tag }}</v-list-tile-title>
+                        <v-list-item-title>{{ tag }}</v-list-item-title>
                     </v-chip>
-                </v-list-tile-content>
-            </v-list-tile>
+                </v-list-item-content>
+            </v-list-item>
         </v-list>
         <v-subheader>Evidence</v-subheader>
         <v-slider
@@ -121,8 +121,9 @@ export default class AntiPatternTagsComponent extends Vue {
 <style lang="sass">
     @import "../colors"
     .v-slider
-        margin-left: 16px
-        margin-right: 16px
+        margin-left: 10px
+        margin-right: 10px
         height: 15px
         background-image: linear-gradient(to right, gray 2%, rgba($secondary, 0.15) 2%, rgba($secondary, 0.5) 33%, rgba($secondary, 0.8) 66%, rgba($secondary, 1) 99%)
+        font-size: 13px
 </style>

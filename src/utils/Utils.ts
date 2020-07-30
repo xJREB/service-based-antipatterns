@@ -1,9 +1,8 @@
-import {AntiPattern, RelatedAntiPattern} from "@/common/anti-pattern";
-import {Source} from "@/common/bibliography";
-import {MarkdownFile} from "@/common/markdown-file";
+import { AntiPattern, RelatedAntiPattern } from "@/common/anti-pattern";
+import { Source } from "@/common/bibliography";
+import { MarkdownFile } from "@/common/markdown-file";
 
 export default class Utils {
-
     public static get context() {
         return ["microservices", "soa"];
     }
@@ -27,8 +26,10 @@ export default class Utils {
     public static setRelatedAntiPatterns(antiPatterns: AntiPattern[]) {
         for (const antiPattern of antiPatterns) {
             if (antiPattern.relatedItems) {
-                antiPattern.relatedItems.forEach((relatedItem) => {
-                    const relatedAntipatternName = antiPatterns.filter((item) => item.name === relatedItem.name).pop();
+                antiPattern.relatedItems.forEach(relatedItem => {
+                    const relatedAntipatternName = antiPatterns
+                        .filter(item => item.name === relatedItem.name)
+                        .pop();
                     if (relatedAntipatternName) {
                         if (!antiPattern.relatedAntiPatterns) {
                             antiPattern.relatedAntiPatterns = [];
@@ -38,9 +39,14 @@ export default class Utils {
                             name: relatedAntipatternName.name,
                             description: relatedAntipatternName.description
                         } as RelatedAntiPattern;
-                        if (antiPattern.relatedAntiPatterns.filter(
-                            (p) => p.name === relatedAntipattern.name).length === 0) {
-                            antiPattern.relatedAntiPatterns.push(relatedAntipattern);
+                        if (
+                            antiPattern.relatedAntiPatterns.filter(
+                                p => p.name === relatedAntipattern.name
+                            ).length === 0
+                        ) {
+                            antiPattern.relatedAntiPatterns.push(
+                                relatedAntipattern
+                            );
                         }
                     }
                 });
@@ -51,10 +57,12 @@ export default class Utils {
     public static setEvidence(antiPattern: AntiPattern, sources: Source[]) {
         let evidence = 0;
         if (sources.length > 0) {
-            antiPattern.sources!.forEach((source) => {
+            antiPattern.sources!.forEach(source => {
                 const citeKey = source.match(/(?:@\w*{)(\w*\d*),/g);
                 if (citeKey) {
-                    const filteredSources = sources.filter((sourceKey) => citeKey[0].includes(sourceKey.citeKey));
+                    const filteredSources = sources.filter(sourceKey =>
+                        citeKey[0].includes(sourceKey.citeKey)
+                    );
                     if (filteredSources.length === 1) {
                         if (evidence === 0) {
                             evidence = 1;
@@ -67,4 +75,3 @@ export default class Utils {
         antiPattern.evidence = evidence;
     }
 }
-

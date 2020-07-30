@@ -1,11 +1,11 @@
 <template>
     <div class="home">
         <anti-pattern-tags-component v-model="tagsModel" :tags="tags" />
-        <v-toolbar class="primary" app dark clipped-left :extended="$vuetify.breakpoint.xs">
-            <v-toolbar-side-icon @click.native="tagsModel.drawer = !tagsModel.drawer"></v-toolbar-side-icon>
+        <v-app-bar class="primary" app dark clipped-left :extended="$vuetify.breakpoint.xs">
+            <v-app-bar-nav-icon @click.native="tagsModel.drawer = !tagsModel.drawer"></v-app-bar-nav-icon>
             <span class="title ml-1 mr-1 hidden-md-and-down">Service-Based Antipatterns</span>
             <v-text-field class="ml-1 mr-1" solo-inverted flat clearable hide-details label="Search" prepend-inner-icon="search" v-model="searchTerm" @keydown.esc="clearSearch()"></v-text-field>
-            <v-flex class="mr-2" xs12 sm4 md2 lg2 lx2 :slot="slot">
+            <v-flex class="mr-4" :slot="slot">
                 <v-select
                     v-model="sorting"
                     style="padding: 0;"
@@ -20,21 +20,23 @@
                     hide-details
                 ></v-select>
             </v-flex>
-            <v-chip class="title ml-1 mr-1" :slot="slot" outline text-color="white">{{antiPatterns.length}}/{{antiPatternsAll.length}}</v-chip>
+            <v-chip class="title ml-1 mr-1" :slot="slot" outlined text-color="white">{{antiPatterns.length}}/{{antiPatternsAll.length}}</v-chip>
             <v-spacer class="hidden-md-and-down"></v-spacer>
             <v-btn icon href="https://github.com/xJREB/service-based-antipatterns/">
                 <font-awesome-icon size="2x" :icon="['fab', 'github']"></font-awesome-icon>
             </v-btn>
-            <v-dialog content-class="help-dialog" help-dialog lazy scrollable v-model="dialog" @keydown.esc="dialog = false" width="1000px">
-                <v-btn icon slot="activator">
-                    <font-awesome-icon size="2x" :icon="['far', 'question-circle']"></font-awesome-icon>
-                </v-btn>
+            <v-dialog content-class="help-dialog" help-dialog scrollable v-model="dialog" @keydown.esc="dialog = false" width="1000px">
+                <template v-slot:activator="{ on }">
+                    <v-btn icon v-on="on">
+                        <font-awesome-icon size="2x" :icon="['far', 'question-circle']"></font-awesome-icon>
+                    </v-btn>
+                </template>
                 <anti-pattern-help-component v-model="dialog" :files="files" />
             </v-dialog>
-        </v-toolbar>
-        <v-content>
+        </v-app-bar>
+        <v-main>
             <anti-patterns-container-component :sorting="sorting" :anti-patterns="antiPatterns" />
-        </v-content>
+        </v-main>
     </div>
 </template>
 
