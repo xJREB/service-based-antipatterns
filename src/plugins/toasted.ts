@@ -3,7 +3,7 @@ import Toasted from "vue-toasted";
 
 // @ts-ignore
 Vue.use(Toasted, {
-    theme: "primary",
+    theme: "toasted-primary",
     position: "bottom-right",
     duration: 5000,
     iconPack: "material",

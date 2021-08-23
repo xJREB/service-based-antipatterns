@@ -285,5 +285,6 @@ export default class Home extends Vue {
 <style>
 .toast {
     font-size: 20px !important;
+    background-color: #10627a !important;
 }
 </style>

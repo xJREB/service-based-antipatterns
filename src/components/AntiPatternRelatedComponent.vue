@@ -101,9 +101,3 @@ export default class AntiPatternRelatedComponent extends Vue {
   }
 }
 </script>
-
-<style>
-.test {
-  background-color: blue;
-}
-</style>
